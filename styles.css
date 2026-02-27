@@ -220,3 +220,80 @@ a:hover {
 .card-header h2 {
     margin: 0;
 }
+
+.contenedor {
+    display: flex;
+    gap: 20px;
+}
+
+/* Cuando la pantalla sea menor a 768px */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1 1 250px;
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.card {
+    flex: 1;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column; /* móvil */
+    gap: 20px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Escritorio */
+@media (min-width: 768px) {
+    .contenedor {
+        flex-direction: row;
+    }
+}
+
+.card {
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        flex-direction: row;
+        background: red;
+    }
+}
+
+#contenedor-armas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Escritorio */
+@media (min-width: 768px) {
+    #contenedor-armas {
+        flex-direction: row;
+    }
+}
