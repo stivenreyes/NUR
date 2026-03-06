@@ -7,12 +7,18 @@
 
     h1 {
         color: gold;
+        font-size: 65px;
     }
 
     h2 {
         color: #ffffff;
         margin-top: 30px;
     }
+
+    h4 {
+        color: #d400ff;
+        margin-top: 30px;
+    }    
 
     p {
         font-size: 18px;
@@ -57,13 +63,9 @@ a:hover {
     cursor: pointer;
 }
 
-.boton:hover {
-    background-color: rgb(255, 0, 106);
-}
-
 .card {
     background-color: #2c2c2c;
-    color: #f4e4c1;
+    color: #5b0315;
     padding: 20px;
     margin: 20px auto;
     width: 250px;
@@ -169,7 +171,7 @@ a:hover {
 }
 
 .card__price {
-    color: gold;
+    color: rgb(254, 0, 173);
     font-weight: bold;
 }
 
@@ -188,23 +190,11 @@ a:hover {
     text-align: center;
 }
 
-.card__button {
-    background: darkred;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.card__button:hover {
-    background: crimson;
-}
-
+/* esta de abajo define el tamaño del contenedor*/
 .card {
     border: 1px solid #444;
     padding: 15px;
-    width: 250px;
+    width: 300px;
 }
 
 .card-header {
@@ -281,19 +271,100 @@ a:hover {
 @media (min-width: 768px) {
     .contenedor {
         flex-direction: row;
-        background: red;
     }
 }
 
+
 #contenedor-armas {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
-/* Escritorio */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     #contenedor-armas {
-        flex-direction: row;
+        grid-template-columns: 1fr;
     }
+}
+
+#contenedor-pociones  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    #contenedor-pociones {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+/* ================= DETALLES DE CADA TARJETA ================= */
+
+.label {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/*
+.tipo {
+    font-family: serif;
+    color: rgb(2, 250, 167);
+}
+    */
+
+.numero {
+    font-family: monospace;
+    color: rgb(196, 0, 186);
+}
+
+.valor {
+    font-style: normal;
+}
+
+.card-header {
+    gap: 10px;
+    text-align: left;
+    font-weight: bolder; 
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+/* ================= RESPONSIVE TIENDA GENERAL ================= */
+
+.contenedor-tienda-varias  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .contenedor-tienda-varias {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+
+/* ================= BOTON ================= */
+#btn-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 139, 69);
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    padding: 12px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 30px;
+    display: none; /* oculto al inicio */
+}
+
+#btn-arriba:hover {
+    background: #333;
 }
