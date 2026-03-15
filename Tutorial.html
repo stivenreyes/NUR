@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Crear un arma</h1>
+
+<p id="texto-paso">Paso 1 de 5</p>
+
+<div class="barra-progreso">
+    <div id="progreso"></div>
+</div>
+
+<div id="paso1" class="paso activo">
+    <h2>Paso 1</h2>
+    <p>Elegir tipo de arma</p>
+</div>
+
+<div id="paso2" class="paso">
+    <h2>Paso 2</h2>
+    <p>Elegir material</p>
+</div>
+
+<div id="paso3" class="paso">
+    <h2>Paso 3</h2>
+    <p>Elegir tamaño</p>
+</div>
+
+<div id="paso4" class="paso">
+    <h2>Paso 4</h2>
+    <p>Elegir daño</p>
+</div>
+
+<div id="paso5" class="paso">
+    <h2>Paso 5</h2>
+    <p>Confirmar arma</p>
+</div>
+
+<button id="btn-anterior"onclick="anterior()">Anterior</button>
+<button id="btn-siguiente" onclick="siguiente()">Siguiente</button>
+
+<div><a href="intro.html" class="btn">Salir del tutorial</a></div>
+
+<script src="01-tipos/Tutorial.js"></script>
+    
+</body>
+</html>

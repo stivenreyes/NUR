@@ -1,4 +1,4 @@
-    body {
+    /* ancho fijo    body {
         background-color: #1a1a1a;
         color: #f4e4c1;
         font-family: Georgia, serif;
@@ -23,6 +23,54 @@
     p {
         font-size: 18px;
     }
+ */
+body {
+    background-color: #1a1a1a;
+    color: #f4e4c1;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+h1 {
+    color: gold;
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #4caf50; /* verde */
+    font-size: 45px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-top: 25px;
+}
+
+h4 {
+    color: #4caf50;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+h5 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+h6 {
+    color: #888888;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 18px;
+}
+
 
     button {
         background-color: rgb(5, 139, 0);
@@ -40,7 +88,7 @@
     }
 
     button:hover {
-        background-color: rgb(20, 50, 220);
+        color: rgb(255, 251, 3);
     }
 
     a {
@@ -55,7 +103,7 @@ a:hover {
 
 .boton {
     display: inline-block;
-    background-color: darkred;
+    background-color: rgb(109, 5, 255);
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -63,9 +111,10 @@ a:hover {
     cursor: pointer;
 }
 
+/* ================= COLORES DE LAS TARJETAS ARMAS... ================= */
 .card {
     background-color: #2c2c2c;
-    color: #5b0315;
+    color: #ded9d9;
     padding: 20px;
     margin: 20px auto;
     width: 250px;
@@ -78,6 +127,43 @@ a:hover {
     color: gold;
 }
 
+/* ================= BOTON DE SIGUIENTE Y ANTERIOR ================= */
+
+#btn-siguiente {
+    display: inline-block;
+    background-color: rgb(0, 139, 69);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 18px;      /* tamaño de letra */
+    font-family: Georgia, serif;  /* fuente */
+    font-weight: bold;    /* grosor */   
+} 
+
+#btn-anterior {
+    display: inline-block;
+    background-color: rgb(0, 139, 69);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 18px;      /* tamaño de letra */
+    font-family: Georgia, serif;  /* fuente */
+    font-weight: bold;    /* grosor */   
+} 
+/* ============ EL HOVER ========== */
+#btn-siguiente:hover {
+    color: rgb(255, 251, 3);
+}
+
+#btn-anterior:hover {
+    color: rgb(255, 251, 3);
+}
+/* ================= BOTON DE VOLVER ================= */
+
 .btn {
     display: inline-block;
     background-color: rgb(0, 139, 69);
@@ -88,6 +174,9 @@ a:hover {
     margin-top: 10px;
 }
 
+
+
+/* ================= 0000000000000000 ================= */
 .contenedor {
     display: flex;
     justify-content: center;   /* centra horizontalmente */
@@ -122,39 +211,6 @@ a:hover {
     opacity: 0.9;
 }
 
-.contenedor {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap; /* clave para responsive */
-}
-
-.card {
-  background-color: #2c2c2c;
-    color: #f4e4c1;
-    width: 400px;
-    padding: 15px 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
-}
-
-/* Primera fila */
-.item-header {
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-/* Segunda fila */
-.item-stats {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    opacity: 0.9;
-}
 
 /* HEADER */
 .card__header {
@@ -189,7 +245,7 @@ a:hover {
     padding: 15px;
     text-align: center;
 }
-
+/* ================= DETALLE DE LAS TARJETAS ================= */
 /* esta de abajo define el tamaño del contenedor*/
 .card {
     border: 1px solid #444;
@@ -216,64 +272,12 @@ a:hover {
     gap: 20px;
 }
 
-/* Cuando la pantalla sea menor a 768px */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
     .contenedor {
         flex-direction: column;
     }
 }
-
-.contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.card {
-    flex: 1 1 250px;
-}
-
-@media (min-width: 768px) {
-    .contenedor {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-.card {
-    flex: 1;
-}
-
-.contenedor {
-    display: flex;
-    flex-direction: column; /* móvil */
-    gap: 20px;
-}
-
-.contenedor {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* Escritorio */
-@media (min-width: 768px) {
-    .contenedor {
-        flex-direction: row;
-    }
-}
-
-.card {
-    flex: 1;
-}
-
-@media (min-width: 768px) {
-    .contenedor {
-        flex-direction: row;
-    }
-}
-
 
 #contenedor-armas {
     display: grid;
@@ -348,7 +352,7 @@ a:hover {
 }
 
 
-/* ================= BOTON ================= */
+/* ================= BOTON HACIA ARRIBA ================= */
 #btn-arriba {
     position: fixed;
     bottom: 20px;
@@ -367,4 +371,510 @@ a:hover {
 
 #btn-arriba:hover {
     background: #333;
+}
+
+/* ================= BUSCADOR ================= */
+#buscador {
+    background-color: rgb(5, 139, 0);
+    color: rgb(255, 1, 247);
+    padding: 10px 20px;
+    border: none;
+
+    font-size: large;
+    color: #000;
+    background-color: rgb(5, 139, 0);
+
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 300px;           /* ancho fijo */
+    min-height: 45px;       /* altura mínima */
+    white-space: normal;    /* permite salto de línea */
+    word-wrap: break-word;  /* rompe palabras largas */
+    }
+
+    #buscador::placeholder {
+    color: #aaa;
+}
+
+#buscador::placeholder {
+    color: #aaa;
+}
+
+#buscador {
+    width: 260px;
+    padding: 12px;
+    border-color: (5, 139, 0);
+    border: 2px solid;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    color: rgb(5, 139, 0);
+    background-color: #1a1a1a;
+
+    transition: 0.3s;
+}
+
+#buscador::placeholder {
+    color: #888;
+}
+
+#buscador:focus {
+    outline: none;
+    border-color: rgb(5, 139, 0);
+    box-shadow: 0 0 5px rgb(5, 139, 0);
+}
+
+#buscador {
+    margin-bottom: 20px;
+}
+
+
+/* ================= BUSCADOR GENERAL DE LA TIENDA ================= */
+#buscador-general {
+    width: 260px;
+    padding: 12px;
+    border-color: (5, 139, 0);
+    border: 2px solid;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    color: rgb(5, 139, 0);
+    background-color: #1a1a1a;
+
+    transition: 0.3s;
+}
+
+#buscador-general::placeholder {
+    color: #888888;
+}
+
+#buscador-general:focus {
+    outline: none;
+    border-color: rgb(5, 139, 0);
+    box-shadow: 0 0 5px rgb(5, 139, 0);
+}
+
+/* ================= TARJETA DE LAS BESTIAS ================= */
+
+
+#contenedor-bestias  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    #contenedor-bestias {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+#contenedor-bestias .card{
+    width: 450px;
+    height: 650px;
+}
+
+#contenedor-bestias .card-body{
+    display: flex;
+    flex-wrap: wrap;   /* permite saltar de línea */
+    gap: 8px;          /* espacio entre stats */
+}
+
+#contenedor-bestias .card-body p{
+    display: flex;
+    gap: 3px; /* espacio entre fuerza y su valor */
+    padding: 1px 1px;
+
+}
+
+
+/* ================= Bestias enfoques ================= */
+#contenedor-bestias .enfoques {
+    display: flex;
+    flex-wrap: wrap;   /* permite saltar de línea */
+    gap: 8px;  
+}
+
+
+/* ================= BESTIAS HABILIDADES ================= */
+
+#contenedor-bestias .Habilidad {
+    display: flex;
+    flex-wrap: wrap;   /* permite saltar de línea */
+    gap: 8px;  
+}
+
+/* ================= Tutorial ================= */
+.paso {
+    display: none;
+}
+
+.paso.activo {
+    display: block;
+}
+
+.barra-progreso {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#progreso {
+    height: 100%;
+    width: 20%;
+    background: rgb(5,139,0);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+/* ================= LOGO EN LOS TITULOS ================= */
+img {
+    width: 150px;
+    height: auto;
+}
+
+.header-armas {
+    position: relative;
+    text-align: center;
+}
+
+.img-seccion {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+}
+
+@media (max-width: 768px) {
+
+.header-armas {
+    flex-direction: column;
+}
+
+.img-seccion {
+    margin-bottom: 10px;
+}
+
+}
+/* ================= BESTIA ATRIBUTOS ================= */
+.card-body2 {
+   flex-direction: column;
+
+    margin-bottom: 1px;
+}
+/* ================= FILTROS ================= */
+.filtros-bioma {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.filtros-bestias select {
+    background-color: #2c2c2c;
+    color: #888;
+    border: 2px solid rgb(5, 139, 0);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.filtros-bestias select:hover {
+    border-color: rgb(5, 139, 0);
+}
+
+.filtros-bestias select:focus {
+    outline: none;
+    border-color: rgb(5, 139, 0);
+}
+
+@media (max-width: 768px) {
+
+.filtros-bestias {
+    flex-direction: column;
+    align-items: center;
+}
+
+.filtros-bestias select {
+    width: 200px;
+}
+
+.filtros-bestias {
+    margin-top: 20px;
+}
+
+}
+
+/* ================= distancia entre habilidad y su texto ================= */
+.Habilidad h5 {
+    margin-bottom: 2px;
+}
+
+.Habilidad h6 {
+    margin-top: 2px;
+}
+/* ================= detalles de las tajetas de bestia con color gris ================= */
+.valor {
+    font-style: normal;
+    color: #888888;
+}
+
+
+/* ================= espacios dentro de las tajetas de bestia ================= */
+.cardEtiquetas,
+.cardCombate,
+.enfoques,
+.Habilidad {
+    margin: 10px 0;
+    padding: 1px;
+}
+
+.card-header h4 {
+    margin: 10px 0;
+}
+
+.card-body p,
+.card-header p {
+    margin: 15px 0;
+}
+
+.enfoques h5,
+.enfoques h6,
+.Habilidad h5,
+.Habilidad h6 {
+    margin: 5px 0;
+}
+
+
+/* ================= BARRA DE NAVEGACION ================= */
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: fixed;
+    width: 1200px;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: text-shadow 0.3s ease;
+}
+
+.logo:hover {
+    text-shadow: 0 0 15px rgba(241, 196, 15, 0.6);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.95rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links .active {
+    color: var(--accent-color);
+}
+
+.nav-links .active::after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+    /* Crea un área interactiva para no perder el hover */
+    margin-bottom: -20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(15, 23, 42, 0.95);
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    top: 100%;
+    /* Alinea exactamente bajo el botón para que el puntero no salga */
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.dropdown-content a {
+    color: var(--text-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s;
+    font-family: 'Cinzel', serif;
+}
+
+.dropdown-content a::after {
+    display: none;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(56, 189, 248, 0.2);
+    color: var(--primary-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+}
+
+.solid-nav {
+    background: #0f172a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Contenido central */
+.hero-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 10;
+    margin-top: 80px;
+    /* Para esquivar el navbar fijo */
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #ffffff 0%, var(--accent-color) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.3s;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin-bottom: 2.5rem;
+    color: var(--text-muted);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.5s;
+}
+
+
+
+/* Elementos decorativos abstractos tipo Glassmorphism / Blur */
+.glow-orb {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    filter: blur(150px);
+    opacity: 0.15;
+    top: -150px;
+    right: -100px;
+    z-index: 0;
+    animation: floatOrb 12s infinite ease-in-out alternate;
+    pointer-events: none;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.1;
+    bottom: -150px;
+    left: -100px;
+    z-index: 0;
+    animation: floatOrb 15s infinite ease-in-out alternate-reverse;
+    pointer-events: none;
+}
+
+/* Animaciones Clave */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatOrb {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        transform: translate(60px, 80px) scale(1.1);
+    }
 }

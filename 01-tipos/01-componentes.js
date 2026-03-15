@@ -53,6 +53,18 @@ function crearTarjeta(producto) {
         </div>
     `;
 }
+/* ================= BUSCADOR ================= */
+function renderProductos(lista, contenedor) {
+
+    contenedor.innerHTML = "";
+
+    for (let producto of lista) {
+        contenedor.innerHTML += crearTarjeta(producto);
+    }
+
+}
+
+
 
 
 /* ================= ARMAS ================= */
@@ -100,6 +112,10 @@ btnArriba.addEventListener("click", function() {
     });
 });
 
+/* ================= BUSCADOR GENERAL DE LA TIENDA ================= */
+
+let todosLosProductos = [...armas, ...pociones];
+
 /* ================= RENDER ================= */
 
 let contenedorArmas = document.getElementById("contenedor-armas");
@@ -115,4 +131,68 @@ if (contenedorPociones) {
     for (let pocion of pociones) {
         contenedorPociones.innerHTML += crearTarjeta(pocion);
     }
+}
+
+/* ================= BUSCADOR ================= */
+
+let buscador = document.getElementById("buscador");
+
+if (buscador) {
+
+    buscador.addEventListener("input", function() {
+
+        let texto = buscador.value.toLowerCase();
+
+        if (contenedorArmas) {
+
+            let resultado = armas.filter(function(arma){
+                return (
+                    arma.nombre.toLowerCase().includes(texto) ||
+                    arma.tipo.toLowerCase().includes(texto)
+                );
+            });
+
+            renderProductos(resultado, contenedorArmas);
+        }
+
+        if (contenedorPociones) {
+
+            let resultado = pociones.filter(function(pocion){
+                return pocion.nombre.toLowerCase().includes(texto);
+            });
+
+            renderProductos(resultado, contenedorPociones);
+        }
+
+    });
+
+}
+
+/* ================= BUSCADOR GENERAL DE LA TIENDA ================= */
+
+let buscadorGeneral = document.getElementById("buscador-general");
+let contenedorResultados = document.getElementById("contenedor-resultados");
+
+if (buscadorGeneral && contenedorResultados) {
+
+    buscadorGeneral.addEventListener("input", function() {
+
+        let texto = buscadorGeneral.value.toLowerCase();
+        
+        // 👇 si no hay texto
+        if (texto === "") {
+            contenedorResultados.innerHTML = "";
+            return;
+        }
+
+        let resultado = todosLosProductos.filter(function(producto){
+
+            return producto.nombre.toLowerCase().includes(texto);
+
+        });
+
+        renderProductos(resultado, contenedorResultados);
+
+    });
+
 }
