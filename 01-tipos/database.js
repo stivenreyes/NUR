@@ -1,0 +1,5 @@
+let TODAS_LAS_CLASES = [
+    GUERRERO,
+    EXPLORADOR,
+
+];

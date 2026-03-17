@@ -32,44 +32,69 @@
     <main class="page-content">
         <div class="content-header">
             <h1>Clases Disponibles</h1>
-            <p>Elige tu camino. Cada clase posee habilidades únicas que moldearán tu aventura en Nur.</p>
+            <p>Elige tu camino. Cada clase posee habilidades únicas que moldearán tu aventura .</p>
         </div>
 
+        <div class="buscadores">
+    <input type="text" id="buscar-especialidad" placeholder="Buscar especialidad...">
+    <input type="text" id="buscar-tecnica" placeholder="Buscar técnica o talento...">
+    <input type="text" id="buscar-hechizo" placeholder="Buscar hechizo...">
+</div>
+
+<div id="resultados-especialidades" class="resultados-busqueda"></div>
+<div id="resultados-tecnicas" class="resultados-busqueda"></div>
+<div id="resultados-hechizos" class="resultados-busqueda"></div>
+
+<div class="glow-orb" style="top: 20%; right: 10%;"></div>
+
+
+
+
         <div class="grid-container">
-            <a href="guerrero_clase.html" style="text-decoration: none; color: inherit; display: block;"
+            
+            <h3>Guerrero</h3>
+            <a href="guerrerov2.html" 
+                
+                
+            class="card class-card"></a></a>
+
+        <div class="card">
+        <h2>Guerrero</h2>
+        <p>Luchadores capacez.</p>
+        <a href="guerrerov2.html" class="btn">Ver más</a>
+        </div>    
+
+        <div class="grid-container">
+            <a href="exploradorv2.html" 
                 class="card class-card">
-                <img src="guerrero.png" alt="Guerrero" class="class-img">
-                <div class="class-title-overlay">
-                    <h3>Guerrero</h3>
-                </div>
-            </a>
-            <div class="card class-card">
-                <img src="img/explorador.png" alt="Explorador" class="class-img">
+                
                 <div class="class-title-overlay">
                     <h3>Explorador</h3>
                 </div>
-            </div>
-            <div class="card class-card">
+            </a>
+
+
+            <div class="grid-container">
                 <img src="investigador.png" alt="Investigador" class="class-img">
                 <div class="class-title-overlay">
                     <h3>Investigador</h3>
                 </div>
             </div>
             
-            <div class="card class-card">
+            <div class="grid-container">
                 <img src="https://placehold.co/400x500/1e293b/f1c40f?text=Hechicero+Cao" alt="Hechicero Cao"
                     class="class-img">
                 <div class="class-title-overlay">
                     <h3>Hechicero Cao</h3>
                 </div>
             </div>
-            <div class="card class-card">
+            <div class="grid-container">
                 <img src="https://placehold.co/400x500/1e293b/f1c40f?text=Artesano" alt="Artesano" class="class-img">
                 <div class="class-title-overlay">
                     <h3>Artesano</h3>
                 </div>
             </div>
-            <div class="card class-card">
+            <div class="grid-container">
                 <img src="https://placehold.co/400x500/1e293b/f1c40f?text=Bardo" alt="Bardo" class="class-img">
                 <div class="class-title-overlay">
                     <h3>Bardo</h3>
@@ -78,8 +103,20 @@
         </div>
     </main>
 
-    <div class="glow-orb" style="top: 20%; right: 10%;"></div>
-    <script src="script.js"></script>
-</body>
 
+
+<a href="index.html#seccion-tienda" class="btn">Volver</a>
+
+<button id="btn-arriba">↑</button>
+
+
+<script src="01-tipos/guerrero.js"></script>
+<script src="01-tipos/explorador.js"></script>
+<script src="01-tipos/database.js"></script>
+<script src="01-tipos/buscador.js"></script>
+<script src="01-tipos/01-componentes.js"></script>
+
+
+
+</body>
 </html>
