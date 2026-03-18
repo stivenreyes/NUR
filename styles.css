@@ -495,8 +495,8 @@ a:hover {
     }
 }
 
-#contenedor-bestias .card{
-    width: 450px;
+#contenedor-bestias .card{   /* tamaño de las tarjetas de bestias */
+    width: 380px;
     height: 650px;
 }
 
@@ -591,7 +591,7 @@ img {
     margin-bottom: 0px;
 }
 /* ================= FILTROS ================= */
-.filtros-bioma {
+.filtros-bestias {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -624,6 +624,7 @@ img {
 .filtros-bestias {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 .filtros-bestias select {
@@ -1188,6 +1189,11 @@ body {
     /* Mostrar hamburguesa */
     .menu-toggle {
         display: block;
+        margin-left: auto;
+        margin-right: 1px; /* o 10px si quieres más espacio */
+         margin-left: auto;
+        
+
     }
 
     /* Ocultar menú PC */
@@ -1218,4 +1224,40 @@ body {
     width: auto;
     display: block;
     object-fit: contain;
+}
+
+
+.navbar-top {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    margin-left: auto;
+}
+
+
+@media (max-width: 768px) {
+
+.navbar {
+    padding: 12px 10px; /* 🔥 menos espacio lateral */
+}
+
+.navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* déjalo */
+}
+
+.menu-toggle {
+    display: block;
+}
+
+}
+
+
+/* ================= tablas ================= */
+table {
+    margin-left: auto;
+    margin-right: auto;
 }

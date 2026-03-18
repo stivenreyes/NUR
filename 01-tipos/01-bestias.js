@@ -46,7 +46,7 @@ function crearTarjeta(producto) {
 
                     ${producto.percepcion ? `
                     <p>
-                        <span class="label">Percepción:</span>
+                        <span class="label">Percep.:</span>
                         <span class="valor percepcion">${producto.percepcion}</span>
                     </p>` : ""}
                 </div>
@@ -54,7 +54,7 @@ function crearTarjeta(producto) {
                 <div class="card-body2">
                     ${producto.comunicacion ? `
                     <p>
-                        <span class="label">Comunica.:</span>
+                        <span class="label">Comuni.:</span>
                         <span class="valor comunica.">${producto.comunicacion}</span>
                     </p>` : ""}
 
@@ -77,7 +77,7 @@ function crearTarjeta(producto) {
                 <div class="card-body2">
                     ${producto.constitucion ? `
                     <p>
-                        <span class="label">Constitución:</span>
+                        <span class="label">Consti.:</span>
                         <span class="valor constitucion">${producto.constitucion}</span>
                     </p>` : ""}
 
@@ -299,7 +299,7 @@ let bestias = [
   nombre: "Felino Montes",
   bioma: "Montaña",
   terreno: "Tierra",
-  tipo: "Explorador",
+  tipo: "Exploracion",
   tamaño: "7",
   armadura: "0",
   Destreza: "0", Precision: "0", pelea: "1", percepcion: "4", comunicacion: "-2",
