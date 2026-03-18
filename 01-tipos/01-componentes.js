@@ -95,22 +95,26 @@ let pociones = [
 ];
 
 /* ================= BOTON ================= */
-let btnArriba = document.getElementById("btn-arriba");
+const btnArriba = document.getElementById("btn-arriba");
 
-window.addEventListener("scroll", function() {
-    if (window.scrollY > 200) {
-        btnArriba.style.display = "block";
-    } else {
-        btnArriba.style.display = "none";
-    }
-});
-
-btnArriba.addEventListener("click", function() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+if (btnArriba) {
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) {
+            btnArriba.style.display = "block";
+        } else {
+            btnArriba.style.display = "none";
+        }
     });
-});
+
+    btnArriba.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+        btnArriba.blur(); // 🔥 evita que quede "gris" en móvil
+    });
+}
 
 /* ================= BUSCADOR GENERAL DE LA TIENDA ================= */
 

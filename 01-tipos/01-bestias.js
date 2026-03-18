@@ -54,8 +54,8 @@ function crearTarjeta(producto) {
                 <div class="card-body2">
                     ${producto.comunicacion ? `
                     <p>
-                        <span class="label">Comunicación:</span>
-                        <span class="valor comunicacion">${producto.comunicacion}</span>
+                        <span class="label">Comunica.:</span>
+                        <span class="valor comunica.">${producto.comunicacion}</span>
                     </p>` : ""}
 
                     ${producto.fuerza ? `
@@ -88,10 +88,10 @@ function crearTarjeta(producto) {
                     </p>` : ""}
 
                    
-                    ${producto.inteligencia ? `
+                    ${producto.Instinto ? `
                     <p>
-                        <span class="label">Inteligencia:</span>
-                        <span class="valor inteligencia">${producto.inteligencia}</span>
+                        <span class="label">Instinto:</span>
+                        <span class="valor Instinto">${producto.Instinto}</span>
                     </p>` : ""}
                 </div>
 
@@ -188,7 +188,7 @@ let bestias = [
   tamaño: "5",
   armadura: "0",
   Destreza: "1",Precision: "0",pelea: "0",percepcion: "3",comunicacion: "0",
-  fuerza: "-1",voluntad: "0",constitucion: "-2",inteligencia: "2",
+  fuerza: "-1",voluntad: "0",constitucion: "-2",Instinto: "2",
   enfoques: "Curación, Trepar",
   Habilidades: "Hechizo baba sanadora:Puede curar a su amo 2D6 o a un aliado 1D6 + voluntad.Dificultad 12.En cirugía la babosa plateada tiene +6 a la tirada de curación.Puede curar veneno de rango 1.",
   ataque: "Ácido +1",
@@ -198,88 +198,131 @@ let bestias = [
 },
 
 { 
-  nombre: "Serpiente",
-  bioma: "nada",
-  terreno: "nada",
-  tipo: "nada",
-  tamaño: "nada",
-  armadura: "nada",
-  Destreza: "0", Precision: "0", pelea: "0", percepcion: "0", comunicacion: "0",
-  fuerza: "0", voluntad: "0", constitucion: "0", inteligencia: "0",
-  enfoques: "nada", 
-  Habilidades: "nada",
-  ataque: "1", daño: "1", dureza: "1", alcance: "1"
+  nombre: "Gran Rana Purpura",
+  bioma: "Bosques",
+  terreno: "Tierra",
+  tipo: "Ataque",
+  tamaño: "5",
+  armadura: "0",
+  Destreza: "2", Precision: "4", pelea: "-1", percepcion: "3", comunicacion: "0",
+  fuerza: "-1", voluntad: "0", constitucion: "1", Instinto: "-2",
+  enfoques: "Saltar, Esquiva", 
+  Habilidades: "Latigazo de lengua: ataque a 5m (2d6), puede dañar armas con acido (1 daño)",
+  ataque: "+1", daño: "1D4", dureza: "2", alcance: "1"
 },
 
- { 
-  nombre: "Topo",
-  bioma: "Bosque",
-  terreno: "nada",
-  tipo: "nada",
-  tamaño: "nada",
-  armadura: "nada",
-  Destreza: "0", Precision: "0", pelea: "0", percepcion: "0", comunicacion: "0",
-  fuerza: "0", voluntad: "0", constitucion: "0", inteligencia: "0",
-  enfoques: "nada", 
-  Habilidades: "nada",
-  ataque: "1", daño: "1", dureza: "1", alcance: "1"
- },
+{ 
+  nombre: "Rata Carmesi",
+  bioma: "Bosques",
+  terreno: "Tierra",
+  tipo: "Exploracion",
+  tamaño: "3",
+  armadura: "0",
+  Destreza: "3", Precision: "0", pelea: "2", percepcion: "4", comunicacion: "0",
+  fuerza: "-2", voluntad: "0", constitucion: "-1", Instinto: "0",
+  enfoques: "Sigilo, Oler, Huir", 
+  Habilidades: "Rastrear sangre (100m, hasta 2 tipos), poder: Sangre en el aire (300m, detecta heridos a 50m)",
+  ataque: "+3", daño: "1D4", dureza: "2", alcance: "1"
+},
 
- { 
-  nombre: "Medusa",
+{ 
+  nombre: "Cuervo X2",
+  bioma: "Bosques",
+  terreno: "Aire",
+  tipo: "Exploracion",
+  tamaño: "3",
+  armadura: "0",
+  Destreza: "2", Precision: "0", pelea: "-2", percepcion: "1", comunicacion: "4",
+  fuerza: "0", voluntad: "1", constitucion: "-1", Instinto: "3",
+  enfoques: "Volar, Distraer", 
+  Habilidades: "Pareja unida (revive en 2 dias), Plumas +3 a tiradas",
+  ataque: "+3", daño: "1D4", dureza: "2", alcance: "1"
+},
+
+{ 
+  nombre: "Garza de las Lenguas",
+  bioma: "Costas",
+  terreno: "Aire",
+  tipo: "Comunicacion",
+  tamaño: "5",
+  armadura: "0",
+  Destreza: "0", Precision: "0", pelea: "-1", percepcion: "3", comunicacion: "4",
+  fuerza: "0", voluntad: "1", constitucion: "-1", Instinto: "1",
+  enfoques: "Distraer, Huir, Nadar", 
+  Habilidades: "Comunicacion a distancia (5km), daño psicologico 1d6, mensaje global 200m",
+  ataque: "+1", daño: "1D4", dureza: "3", alcance: "1"
+},
+
+{ 
+  nombre: "Erizo de 4 Brazos",
+  bioma: "Costas",
+  terreno: "Tierra",
+  tipo: "Ataque",
+  tamaño: "5",
+  armadura: "0",
+  Destreza: "0", Precision: "2", pelea: "0", percepcion: "0", comunicacion: "0",
+  fuerza: "-1", voluntad: "1", constitucion: "-2", Instinto: "-1",
+  enfoques: "Lanzar, Excavar", 
+  Habilidades: "Explosion de puas (area 2m, 1d6 daño, dif 15)",
+  ataque: "+1", daño: "1D4", dureza: "3", alcance: "1"
+},
+
+{ 
+  nombre: "Tiburon Unicornio",
+  bioma: "Costas",
+  terreno: "Agua",
+  tipo: "Exploracion",
+  tamaño: "10",
+  armadura: "0",
+  Destreza: "0", Precision: "-1", pelea: "3", percepcion: "2", comunicacion: "-1",
+  fuerza: "4", voluntad: "0", constitucion: "0", Instinto: "-2",
+  enfoques: "Nadar, Oler", 
+  Habilidades: "Detector de sangre (100m)",
+  ataque: "+1", daño: "1D4", dureza: "5", alcance: "1"
+},
+
+{ 
+  nombre: "Serpiente Manchada",
+  bioma: "Desierto",
+  terreno: "Tierra",
+  tipo: "Ataque",
+  tamaño: "10",
+  armadura: "10",
+  Destreza: "2", Precision: "4", pelea: "3", percepcion: "0", comunicacion: "-1",
+  fuerza: "2", voluntad: "3", constitucion: "1", Instinto: "0",
+  enfoques: "Arte marcial, Escapismo", 
+  Habilidades: "Relanza ataques del amo, puede tragar aliados/enemigos (3 turnos sin daño)",
+  ataque: "+4", daño: "1D4", dureza: "5", alcance: "1"
+},
+
+{ 
+  nombre: "Felino Montes",
   bioma: "Montaña",
-  terreno: "nada",
-  tipo: "nada",
-  tamaño: "nada",
-  armadura: "nada",
-  Destreza: "0", Precision: "0", pelea: "0", percepcion: "0", comunicacion: "0",
-  fuerza: "0", voluntad: "0", constitucion: "0", inteligencia: "0",
-  enfoques: "nada", 
-  Habilidades: "nada",
-  ataque: "1", daño: "1", dureza: "1", alcance: "1"
- },
+  terreno: "Tierra",
+  tipo: "Explorador",
+  tamaño: "7",
+  armadura: "0",
+  Destreza: "0", Precision: "0", pelea: "1", percepcion: "4", comunicacion: "-2",
+  fuerza: "2", voluntad: "0", constitucion: "-1", Instinto: "3",
+  enfoques: "Ver, Alerta", 
+  Habilidades: "+7 para detectar en el mundo espiritual",
+  ataque: "+4", daño: "1D6", dureza: "3", alcance: "1"
+},
 
- { 
-  nombre: "Cangrejo",
-  bioma: "nada",
-  terreno: "nada",
-  tipo: "nada",
-  tamaño: "nada",
-  armadura: "nada",
-  Destreza: "0", Precision: "0", pelea: "0", percepcion: "0", comunicacion: "0",
-  fuerza: "0", voluntad: "0", constitucion: "0", inteligencia: "0",
-  enfoques: "nada", 
-  Habilidades: "nada",
-  ataque: "1", daño: "1", dureza: "1", alcance: "1"
- },
+{ 
+  nombre: "Oso Montes",
+  bioma: "Montaña",
+  terreno: "Tierra",
+  tipo: "Tanque",
+  tamaño: "15",
+  armadura: "17",
+  Destreza: "0", Precision: "1", pelea: "2", percepcion: "4", comunicacion: "-1",
+  fuerza: "1", voluntad: "3", constitucion: "0", Instinto: "-2",
+  enfoques: "Aguante, Carga", 
+  Habilidades: "Montura resistente a magia, transporte masivo, habilidad de rescate",
+  ataque: "+1", daño: "1D4", dureza: "5", alcance: "1"
+}
 
- { 
-  nombre: "Oso montes",
-  bioma: "nada",
-  terreno: "nada",
-  tipo: "nada",
-  tamaño: "nada",
-  armadura: "nada",
-  Destreza: "0", Precision: "0", pelea: "0", percepcion: "0", comunicacion: "0",
-  fuerza: "0", voluntad: "0", constitucion: "0", inteligencia: "0",
-  enfoques: "nada", 
-  Habilidades: "Bestia montura, puede cargar hasta un maximo de 15 de tamaño osea un druida y una bestia o 3 bestias de tamaño 5",
-  ataque: "1", daño: "1", dureza: "1", alcance: "1"
- },
-
- { 
-  nombre: "Pavo real",
-  bioma: "nada",
-  terreno: "nada",
-  tipo: "nada",
-  tamaño: "nada",
-  armadura: "nada",
-  Destreza: "0", Precision: "0", pelea: "0", percepcion: "0", comunicacion: "0",
-  fuerza: "0", voluntad: "0", constitucion: "0", inteligencia: "0",
-  enfoques: "nada", 
-  Habilidades: "nada",
-  ataque: "1", daño: "1", dureza: "1", alcance: "1"
- }
 ]
 
 /* ================= BOTON ================= */
