@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <div id="navbar-container"></div>
+
+
+<h1>🩸 Sistema de Heridas</h1>
+
+<!-- ================= MECÁNICA GENERAL ================= -->
+<h2>⚙️ Funcionamiento General</h2>
+
+<p>
+Cada vez que un personaje llegue a:
+</p>
+<ul>
+<li>La mitad de su vida</li>
+<li>Vida total -10</li>
+<li>Vida total -5</li>
+</ul>
+
+<p>
+Recibe una <strong>herida</strong> dependiendo del tipo de daño:
+</p>
+
+<ul>
+<li>Física</li>
+<li>Psíquica</li>
+<li>Maldita</li>
+</ul>
+
+<p>
+La gravedad depende de la vida restante:
+<strong>leve, grave o crítica</strong>.
+</p>
+
+---
+
+<h3>⚠️ Penalizaciones</h3>
+
+<p>
+Cada herida aplica una penalización en la siguiente acción
+(relacionada con la herida). Si no aplica, queda guardada.
+</p>
+
+---
+
+<h3>💀 Estado de Vida 0</h3>
+
+<ul>
+<li>Debe recibir atención en: <strong>4 turnos - nº de heridas</strong></li>
+<li>Si no → muere</li>
+<li>Para estabilizar: llegar a <strong>5 de vida</strong></li>
+<li>Permanece inconsciente</li>
+</ul>
+
+---
+
+<h3>⚠️ Regla adicional</h3>
+
+<ul>
+<li>Si tiene todas las heridas llenas → cae a vida 0 automáticamente</li>
+<li>Solo puede recuperar <strong>la mitad de su vida máxima</strong></li>
+</ul>
+
+---
+
+<h3>🔥 Sacrificio de Supervivencia</h3>
+
+<p>
+Un personaje puede levantarse en estado crítico:
+</p>
+
+<ul>
+<li>Regresa con <strong>15 de vida</strong></li>
+<li>No puede curarse más de 15</li>
+<li>Si vuelve a 0 → muere</li>
+<li>Luego necesitará curarse hasta la mitad de su vida</li>
+</ul>
+
+<p><strong>Bonus:</strong> +7 Valentía</p>
+
+---
+
+<!-- ================= HERIDAS FÍSICAS ================= -->
+<h2>🩹 Heridas Físicas</h2>
+
+<h3>🟢 Leves</h3>
+<ul>
+<li>Dislocación de hombro</li>
+<li>Fractura de costilla</li>
+<li>Torcedura severa de tobillo</li>
+<li>Quemadura de segundo grado</li>
+<li>Sangrado persistente</li>
+<li>Vómito de sangre</li>
+<li>Nariz rota</li>
+<li>Sudor frío (veneno)</li>
+</ul>
+
+---
+
+<h3>🟠 Graves</h3>
+<ul>
+<li>Perforación pulmonar</li>
+<li>Corte en arteria principal</li>
+<li>Conmoción cerebral</li>
+<li>Amputación parcial</li>
+<li>Hemorragia interna</li>
+<li>Parálisis parcial</li>
+<li>Visión borrosa constante</li>
+<li>Fiebre alta (veneno)</li>
+</ul>
+
+---
+
+<h3>🔴 Críticas</h3>
+
+<p><strong>Nota:</strong> Mantenerla más de 1 día reduce 10 de vida máxima</p>
+
+<ul>
+<li>Perforación ocular</li>
+<li>Exposición de órganos</li>
+<li>Hemorragia masiva</li>
+<li>Ruptura de tráquea</li>
+<li>Muerte cerebral temporal</li>
+<li>Amputación total</li>
+<li>Infección crítica</li>
+<li>Convulsiones (veneno)</li>
+</ul>
+
+---
+
+<!-- ================= HERIDAS PSÍQUICAS ================= -->
+<h2>🧠 Heridas Psíquicas</h2>
+
+<h3>🟢 Leves</h3>
+<ul>
+<li>Trance</li>
+<li>Déjà vu</li>
+<li>Tristeza anormal</li>
+<li>Paranoia ligera</li>
+<li>Miedo</li>
+<li>Estrés</li>
+<li>Poca motivación</li>
+</ul>
+
+---
+
+<h3>🟠 Graves</h3>
+<ul>
+<li>Paranoia</li>
+<li>Pánico</li>
+<li>Ansiedad</li>
+<li>Depresión</li>
+<li>Pérdida leve de memoria</li>
+<li>Terror</li>
+</ul>
+
+---
+
+<h3>🔴 Críticas</h3>
+
+<p><strong>Nota:</strong> Mantenerla más de 1 día reduce 10 de vida máxima</p>
+
+<ul>
+<li>Pérdida de memoria</li>
+<li>Locura</li>
+<li>Voces</li>
+<li>Muerte cerebral parcial</li>
+<li>Esquizofrenia</li>
+<li>Sin sonido</li>
+<li>Manía</li>
+</ul>
+
+---
+
+<!-- ================= HERIDAS MALDITAS ================= -->
+<h2>🕯️ Heridas Malditas</h2>
+
+<h3>🟢 Leves</h3>
+<ul>
+<li>Escalofríos</li>
+<li>Marcas en la piel</li>
+<li>Envejecimiento leve</li>
+<li>Acné corrosivo</li>
+<li>Deformación leve</li>
+</ul>
+
+---
+
+<h3>🟠 Graves</h3>
+<ul>
+<li>Sangre podrida</li>
+<li>Pesadillas</li>
+<li>Olor terrible</li>
+<li>Caída de cabello</li>
+<li>Congelación de Nur</li>
+<li>Deformación grave</li>
+</ul>
+
+---
+
+<h3>🔴 Críticas</h3>
+
+<p><strong>Nota:</strong> Mantenerla más de 1 día reduce 10 de vida máxima</p>
+
+<ul>
+<li>Marcas en los ojos</li>
+<li>Foco de corrupción</li>
+<li>Atadura local</li>
+<li>Posesión</li>
+<li>Necrosis</li>
+</ul>
+
+
+
+
+<button id="btn-arriba">↑</button>
+
+<a href="#" class="btn" onclick="history.back()">Volver</a>
+
+
+<script src="01-tipos/navbar.js"></script>
+ <script src="01-tipos/01-componentes.js"></script>  
+</body>
+</html>

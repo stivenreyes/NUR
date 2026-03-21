@@ -350,9 +350,22 @@ let filtroTerreno = document.getElementById("filtro-terreno");
 
 /* ================= RENDER ================= */
 
+ // agregado
+
+
+let esPaginaBestias = window.location.pathname.includes("bestias.html");
+
+// agregado
+
 let contenedorBestias = document.getElementById("contenedor-bestias");
 
-if (contenedorBestias) {
+/*if (contenedorBestias) {
+    for (let bestia of bestias) {
+        contenedorBestias.innerHTML += crearTarjeta(bestia);
+    }
+} */
+
+if (contenedorBestias && esPaginaBestias) {
     for (let bestia of bestias) {
         contenedorBestias.innerHTML += crearTarjeta(bestia);
     }
@@ -363,7 +376,7 @@ let buscador = document.getElementById("buscador");
 
 if (buscador) {
 
-    buscador.addEventListener("input", function() {
+    /*buscador.addEventListener("input", function() {
 
         let texto = buscador.value.toLowerCase();
 
@@ -381,7 +394,32 @@ if (buscador) {
 
         }
 
-    });
+    });*/
+    buscador.addEventListener("input", function() {
+
+    let texto = buscador.value.toLowerCase();
+
+    if (contenedorBestias) {
+
+        // 🔥 SI ESTÁ VACÍO → NO MOSTRAR NADA (solo en escenas)
+        if (texto === "" && !esPaginaBestias) {
+            contenedorBestias.innerHTML = "";
+            return;
+        }
+
+        let resultado = bestias.filter(function(bestia){
+            return bestia.nombre.toLowerCase().includes(texto);
+        });
+
+        contenedorBestias.innerHTML = "";
+
+        for (let bestia of resultado) {
+            contenedorBestias.innerHTML += crearTarjeta(bestia);
+        }
+
+    }
+
+});
 
 }
 

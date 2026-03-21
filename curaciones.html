@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <div id="navbar-container"></div>
+
+<h1>🩺 Sistema de Curación</h1>
+
+<!-- ================= PRIMEROS AUXILIOS ================= -->
+<h2>🧪 Primeros Auxilios</h2>
+
+<p><strong>Tirada:</strong> Inteligencia / Primeros auxilios + 3d6</p>
+<p><strong>Tiempo:</strong> 30 minutos</p>
+<p><strong>Máx usos:</strong> 2</p>
+
+<table>
+<tr><th>Resultado</th><th>Efecto</th></tr>
+<tr><td>0 - 6</td><td>Falla, haces 1d6 de daño</td></tr>
+<tr><td>7 - 10</td><td>Curas 5 de vida</td></tr>
+<tr><td>11 - 15</td><td>Curas 6 de vida</td></tr>
+<tr><td>16 - 20</td><td>Curas 8 de vida</td></tr>
+<tr><td>21+</td><td>Curas 10 de vida</td></tr>
+</table>
+
+---
+
+<!-- ================= TIPOS DE DAÑO ================= -->
+<h2>⚔️ Tipos de Daño</h2>
+
+<h3>☠️ Daño por Veneno</h3>
+<p>
+Mientras el veneno permanezca en la víctima, seguirá causando daño.
+Solo se detiene si el veneno se elimina o es vencido mediante:
+</p>
+<ul>
+<li>Antibióticos</li>
+<li>Habilidades de bestias curativas</li>
+</ul>
+
+---
+
+<h3>🧠 Daño Psíquico</h3>
+<p>
+Se cura según el nivel de vínculo entre druida y bestia.
+Si el vínculo es negativo (-4 a -10), solo cura 1 punto.
+</p>
+
+<ul>
+<li>Bestias sin druida: se curan 3 por día (5 si duermen)</li>
+<li>Puede ser tratado por bestias guardianas (rango 5+)</li>
+</ul>
+
+---
+
+<h3>🕯️ Daño Maldito</h3>
+
+<p><strong>Tirada:</strong> Inteligencia / Bendición + 3d6</p>
+
+<table>
+<tr><th>Resultado</th><th>Efecto</th></tr>
+<tr><td>0 - 6</td><td>Falla, haces 1d6 daño maldito</td></tr>
+<tr><td>7 - 10</td><td>Curas 2</td></tr>
+<tr><td>11 - 15</td><td>Curas 3</td></tr>
+<tr><td>16 - 20</td><td>Curas 4</td></tr>
+<tr><td>21+</td><td>Curas 6</td></tr>
+</table>
+
+<p><strong>Nota:</strong> Fallar hace perder 10% de materiales.</p>
+
+---
+
+<!-- ================= CURACIÓN FÍSICA ================= -->
+<h2>🩹 Curación de Heridas Físicas</h2>
+
+<h3>📍 Bonificaciones por entorno</h3>
+<ul>
+<li>Suelo: sin bonus</li>
+<li>Carreta médica: -2 costo de Nur</li>
+<li>Carpa médica: -4 Nur + 1 reroll por turno</li>
+<li>Estómago de bestia: -1 Nur (pero la bestia pierde Nur)</li>
+</ul>
+
+---
+
+<h3>🟢 Heridas Leves</h3>
+
+<p><strong>Dificultad:</strong> 10 | <strong>Participantes:</strong> 1-2</p>
+
+<ul>
+<li>-1 Nur por participante</li>
+<li>Fallar causa 5 daño</li>
+<li>Más de 2 fallos = nueva herida</li>
+</ul>
+
+<table>
+<tr><th>Resultado</th><th>Efecto</th></tr>
+<tr><td>1</td><td>Cura 10 y elimina herida</td></tr>
+<tr><td>2 - 3</td><td>Cura 7 y elimina</td></tr>
+<tr><td>4 - 6</td><td>Cura 5 y elimina</td></tr>
+</table>
+
+---
+
+<h3>🟠 Heridas Graves</h3>
+
+<p><strong>Dificultad:</strong> 14 | <strong>Participantes:</strong> 1-3</p>
+
+<ul>
+<li>-2 Nur por participante</li>
+<li>Fallo: 7 daño</li>
+<li>Más de 2 fallos: nueva herida</li>
+</ul>
+
+<table>
+<tr><th>Resultado</th><th>Efecto</th></tr>
+<tr><td>1</td><td>Cura 15 + elimina grave y leve</td></tr>
+<tr><td>2 - 3</td><td>Cura 10</td></tr>
+<tr><td>4 - 6</td><td>Cura 7</td></tr>
+</table>
+
+---
+
+<h3>🔴 Heridas Críticas</h3>
+
+<p><strong>Dificultad:</strong> 18 | <strong>Participantes:</strong> 1-4</p>
+
+<ul>
+<li>-3 Nur por participante</li>
+<li>Fallo: 9 daño</li>
+<li>Más de 2 fallos: nueva herida</li>
+</ul>
+
+<table>
+<tr><th>Resultado</th><th>Efecto</th></tr>
+<tr><td>1</td><td>Cura 20 + elimina todas las heridas</td></tr>
+<tr><td>2 - 3</td><td>Cura 15 + elimina crítica y grave</td></tr>
+<tr><td>4 - 6</td><td>Cura 10</td></tr>
+</table>
+
+---
+
+<!-- ================= CURACIÓN PSÍQUICA ================= -->
+<h2>🧠 Curación de Heridas Psíquicas</h2>
+
+<h3>🔥 Bonificaciones por hoguera</h3>
+<ul>
+<li>Pequeña: -1 Nur</li>
+<li>Grande: -2 Nur + reroll</li>
+<li>Gigante: -4 Nur + reroll</li>
+</ul>
+
+---
+
+<h3>🟢 Heridas Psíquicas Leves</h3>
+
+<p><strong>Dificultad:</strong> 10 | <strong>Éxitos:</strong> 7</p>
+
+<table>
+<tr><th>Resultado</th><th>Efecto</th></tr>
+<tr><td>1 - 6</td><td>Cura 5 y elimina herida</td></tr>
+<tr><td>2 - 3</td><td>Cura 3</td></tr>
+<tr><td>4 - 6</td><td>Cura 2</td></tr>
+</table>
+
+---
+
+<h3>🟠 Heridas Psíquicas Graves</h3>
+
+<p>Tratamiento por terapia, descanso o bardos.</p>
+
+---
+
+<h3>🔴 Heridas Psíquicas Críticas</h3>
+
+<p><strong>Dificultad:</strong> 16 | <strong>Éxitos:</strong> 12</p>
+
+<ul>
+<li>Tratamiento por 3 días</li>
+<li>1 sesión diaria</li>
+<li>Puede duplicarse con victoria o apoyo</li>
+</ul>
+
+---
+
+<!-- ================= MUTACIONES Y BESTIAS ================= -->
+<h2>🐺 Notas de Bestias y Vínculo</h2>
+
+<ul>
+<li>Ayudar entre druida y bestia evita daño por fallo</li>
+<li>Superar cirugías da confianza o valentía</li>
+<li>Las bestias pueden curar, mutar o asistir según su tipo</li>
+</ul>
+
+
+
+<button id="btn-arriba">↑</button>
+
+<a href="#" class="btn" onclick="history.back()">Volver</a>
+
+
+<script src="01-tipos/navbar.js"></script>
+ <script src="01-tipos/01-componentes.js"></script>  
+</body>
+</html>

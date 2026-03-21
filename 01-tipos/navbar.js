@@ -18,22 +18,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
             <!-- MENÚ PC -->
             <ul class="desktop-menu">
-                <li><a href="index.html">Inicio</a></li>
                 <li><a href="Roles.html">Roles</a></li>
                 <li><a href="bestias.html">Bestias</a></li>
                 <li><a href="Tutorial.html">Crear PJ</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
                 <li><a href="Exp.html">Exp</a></li>
+                <li><a href="enfoques.html">Enfoques</a></li>
+                <li><a href="escenas.html">Escenas</a></li>
             </ul>
 
             <!-- MENÚ MÓVIL -->
             <ul class="mobile-menu" id="mobile-menu">
-                <li><a href="index.html">Inicio</a></li>
                 <li><a href="Roles.html">Roles</a></li>
                 <li><a href="bestias.html">Bestias</a></li>
                 <li><a href="Tutorial.html">Crear PJ</a></li>
                 <li><a href="tienda.html">Tienda</a></li>
                 <li><a href="Exp.html">Exp</a></li>
+                <li><a href="enfoques.html">Enfoques</a></li>
+                <li><a href="escenas.html">Escenas</a></li>
             </ul>
         </nav>
     `;

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Escenas</title>
+</head>
+<body>
+
+<div id="navbar-container"></div>
+
+<h1>Escenas</h1>
+<img src="NUR logo 2 enero 2025 2.png"/>
+
+<h3>Bienvenido a esta sección para lo que necesites mientras estás jugando</h3>
+
+<h4>Buscadores de roles</h4>
+
+<div class="buscadores">
+    <input type="text" id="buscar-especialidad" placeholder="Buscar especialidad...">
+    <input type="text" id="buscar-tecnica" placeholder="Buscar técnica o talento...">
+    <input type="text" id="buscar-hechizo" placeholder="Buscar hechizo...">
+</div>
+
+<div id="resultados-especialidades" class="resultados-busqueda"></div>
+<div id="resultados-tecnicas" class="resultados-busqueda"></div>
+<div id="resultados-hechizos" class="resultados-busqueda"></div>
+
+<!-- 🔥 BUSCADOR DE BESTIAS (SIN FILTROS) -->
+<h4>Buscar bestias</h4>
+
+<input 
+    type="text" 
+    id="buscador" 
+    placeholder="Buscar bestia..."
+>
+
+<!-- 🔥 CONTENEDOR DONDE APARECEN -->
+<div id="contenedor-bestias"></div>
+
+
+<!-- ================= SECCIONES ================= -->
+
+<h2 class="titulo-seccion">Combate</h2>
+
+<div class="contenedor-tienda-varias">
+    <div class="card">
+        <h2>Heridas</h2>
+        <p>Espadas, hachas y arcos legendarios.</p>
+        <a href="heridas.html" class="btn">Ver más</a>
+    </div>
+</div>
+
+<h2 class="titulo-seccion">Mantenimiento</h2>
+
+<div class="contenedor-tienda-varias">
+
+    <div class="card">
+        <h2>Curaciones</h2>
+        <p>Bebidas exquisitas de Amara.</p>
+        <a href="curaciones.html" class="btn">Ver más</a>
+    </div>
+
+    <div class="card">
+        <h2>Taller</h2>
+        <p>Bebidas exquisitas de Amara.</p>
+        <a href="taller.html" class="btn">Ver más</a>
+    </div>
+
+    <div class="card">
+        <h2>Cocina</h2>
+        <p>Bebidas exquisitas de Amara.</p>
+        <a href="cocina.html" class="btn">Ver más</a>
+    </div>
+
+        <div class="card">
+        <h2>Lutear</h2>
+        <p>Bebidas exquisitas de Amara.</p>
+        <a href="lutear.html" class="btn">Ver más</a>
+    </div>
+
+</div>
+
+<button id="btn-arriba">↑</button>
+
+<a href="#" class="btn" onclick="history.back()">Volver</a>
+
+<!-- ================= SCRIPTS ================= -->
+
+<script src="01-tipos/navbar.js"></script>
+
+<script src="01-tipos/guerrero.js"></script>
+<script src="01-tipos/explorador.js"></script>
+<script src="01-tipos/investigador.js"></script>
+<script src="01-tipos/artesano.js"></script> 
+<script src="01-tipos/ritualista.js"></script> 
+
+<script src="01-tipos/database.js"></script>
+<script src="01-tipos/buscador.js"></script>
+
+<!-- 🔥 ESTE ES EL IMPORTANTE -->
+<script src="01-tipos/01-bestias.js"></script>
+
+<script src="01-tipos/01-componentes.js"></script>
+
+</body>
+</html>

@@ -304,6 +304,19 @@ a:hover {
     }
 }
 
+#contenedor-bebidas  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    #contenedor-bebidas {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
 /* ================= DETALLES DE CADA TARJETA ================= */
 
 .label {
@@ -1260,4 +1273,14 @@ body {
 table {
     margin-left: auto;
     margin-right: auto;
+}
+
+/* ================= ESTO ES LA SECCION DE COMBATE Y MANTIMIENTO EN ESCENAS ================= */
+
+
+
+/* ================= BOTON VOLVER QUE NO SE QUEDE PEGADO ABAJO ================= */
+.btn {
+    display: inline-block;
+    margin-bottom: 40px;
 }
