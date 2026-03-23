@@ -28,7 +28,7 @@ let RITUALISTA = {
             [
                 {
                     nombre: "Grimorio pacto de intercambio",
-                    descripcionGrimorio: "Hechizos de intercambio de vida y recursos.",
+                    descripcionGrimorio: "Hechizos de intercambio de vida y recursos. Requisito: Pactador",
                     novato: "Aprendes 1 hechizo",
                     experto: "Aprendes 1 hechizo",
                     maestro: "Aprendes cualquier hechizo",
@@ -73,7 +73,7 @@ let RITUALISTA = {
                 },
                 {
                     nombre: "Grimorio pactos salvajes",
-                    descripcionGrimorio: "Transformaciones y supervivencia.",
+                    descripcionGrimorio: "Transformaciones y supervivencia. Requisito: Pactador",
                     novato: "Aprendes 1 hechizo",
                     experto: "Aprendes 1 hechizo",
                     maestro: "...",
@@ -109,7 +109,7 @@ let RITUALISTA = {
                 },
                 {
                     nombre: "Grimorio sello A",
-                    descripcionGrimorio: "Encierro y tortura mágica.",
+                    descripcionGrimorio: "Encierro y tortura mágica. Requisito: Sellador",
                     novato: "Aprendes 1 hechizo",
                     experto: "Aprendes 1 hechizo",
                     maestro: "...",
@@ -145,7 +145,7 @@ let RITUALISTA = {
                 },
                 {
                     nombre: "Grimorio sello B",
-                    descripcionGrimorio: "Sellado de vida, partes y habilidades.",
+                    descripcionGrimorio: "Sellado de vida, partes y habilidades. Requisito: Sellador",
                     novato: "Aprendes 1 hechizo",
                     experto: "Aprendes 1 hechizo",
                     maestro: "...",
@@ -181,9 +181,9 @@ let RITUALISTA = {
                 },
                 {
                     nombre: "Cementerio mental",
-                    descripcionGrimorio: "Requisito: Sellador (novato)",
+                    descripcionGrimorio: "Puedes redirir la mente de los que yacen muertos en tu mente para intentar acceder a sus recuerdos, dif 14, un fallo hace que la mente sea olvidada. Requisito: Sellador (novato)",
                     novato: "Puedes guardar 2 mentes",
-                    experto: "...",
+                    experto: "puede guardar una mente sencilla de algun druida o bestia y guardala en objetos hecho por un artesano",
                     maestro: "...",
                     hechizos: []
                 },
@@ -233,6 +233,22 @@ let RITUALISTA = {
                     novato: "+1 curación y apoyo a aliados",
                     experto: "+4 curación y reduce daño a la mitad",
                     maestro: "Inmune a daño maldito (se vuelve normal)",
+                    hechizos: []
+                },
+                 {
+                    nombre: "Guardar cicatriz",
+                    descripcionGrimorio: "Puedes guardar algunos atques que te han inflijido y expulsarlos a la mitad de su impacto original, el ataque se calcula por medio de tu inteligencia/h. sellado. este poder se prepara en 1 hora. Requisito: Sellador (novato)",
+                    novato: "Guardas un ataque sencillo",
+                    experto: "Puedes guardar hasta 2 ataques sencillos o magicos",
+                    maestro: "Puedes guardar hasta 4 ataques sencillos o magicos",
+                    hechizos: []
+                },
+                {
+                    nombre: "Buscando la inmortalidad",
+                    descripcionGrimorio: "Puedes, guardar mentes en plantas que aun estan naciendo, para tener un respaldo de alguien por si llegase a morir, el druida o bestia que renacen aparecen con todos los recuerdos este poder solo se puede hacer una vez en el ocaso. Requisito: Sellador (novato)",
+                    novato: "Puedes hacer un guardado",
+                    experto: "Puedes hacer dos guardados",
+                    maestro: "Puedes hacer tres guardados",
                     hechizos: []
                 }
             ]

@@ -205,10 +205,10 @@ let bestias = [
   tamaño: "5",
   armadura: "0",
   Destreza: "2", Precision: "4", pelea: "-1", percepcion: "3", comunicacion: "0",
-  fuerza: "-1", voluntad: "0", constitucion: "1", Instinto: "-2",
+  fuerza: "2", voluntad: "0", constitucion: "1", Instinto: "-2",
   enfoques: "Saltar, Esquiva", 
   Habilidades: "Latigazo de lengua: ataque a 5m (2d6), puede dañar armas con acido (1 daño)",
-  ataque: "+1", daño: "1D4", dureza: "2", alcance: "1"
+  ataque: "+1", daño: "1D6", dureza: "2", alcance: "1"
 },
 
 { 
@@ -232,7 +232,7 @@ let bestias = [
   tipo: "Exploracion",
   tamaño: "3",
   armadura: "0",
-  Destreza: "2", Precision: "0", pelea: "-2", percepcion: "1", comunicacion: "4",
+  Destreza: "2", Precision: "0", pelea: "-2", percepcion: "3", comunicacion: "4",
   fuerza: "0", voluntad: "1", constitucion: "-1", Instinto: "3",
   enfoques: "Volar, Distraer", 
   Habilidades: "Pareja unida (revive en 2 dias), Plumas +3 a tiradas",
@@ -246,7 +246,7 @@ let bestias = [
   tipo: "Comunicacion",
   tamaño: "5",
   armadura: "0",
-  Destreza: "0", Precision: "0", pelea: "-1", percepcion: "3", comunicacion: "4",
+  Destreza: "2", Precision: "0", pelea: "-1", percepcion: "3", comunicacion: "4",
   fuerza: "0", voluntad: "1", constitucion: "-1", Instinto: "1",
   enfoques: "Distraer, Huir, Nadar", 
   Habilidades: "Comunicacion a distancia (5km), daño psicologico 1d6, mensaje global 200m",
@@ -302,10 +302,10 @@ let bestias = [
   tipo: "Exploracion",
   tamaño: "7",
   armadura: "0",
-  Destreza: "0", Precision: "0", pelea: "1", percepcion: "4", comunicacion: "-2",
-  fuerza: "2", voluntad: "0", constitucion: "-1", Instinto: "3",
-  enfoques: "Ver, Alerta", 
-  Habilidades: "+7 para detectar en el mundo espiritual",
+  Destreza: "0", Precision: "0", pelea: "1", percepcion: "5", comunicacion: "-2",
+  fuerza: "2", voluntad: "2", constitucion: "-1", Instinto: "3",
+  enfoques: "Ver, Alerta, magica (percep.) ", 
+  Habilidades: "Puedes absorber el nur. voluntad vs voluntad y recargarse de nur con un 1d6, nur que podra enviar a su druida o incrementar el daño de otra bestia en un 1d3 por dado ganado",
   ataque: "+4", daño: "1D6", dureza: "3", alcance: "1"
 },
 
