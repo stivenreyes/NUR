@@ -3,7 +3,8 @@ const CLASE_ACTUAL =
     typeof ARTESANO !== "undefined" ? ARTESANO :
     typeof RITUALISTA !== "undefined" ? RITUALISTA :
     typeof EXPLORADOR !== "undefined" ? EXPLORADOR :
-     typeof INVESTIGADOR !== "undefined" ? INVESTIGADOR :
+    typeof HECHICERO !== "undefined" ? HECHICERO :
+    typeof INVESTIGADOR !== "undefined" ? INVESTIGADOR :
     null;
 
 function crearTarjeta(producto) {

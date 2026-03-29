@@ -4,5 +4,6 @@ let TODAS_LAS_CLASES = [
     INVESTIGADOR,
     RITUALISTA,
     ARTESANO,
+    HECHICERO,
 
 ];

@@ -1284,3 +1284,92 @@ table {
     display: inline-block;
     margin-bottom: 40px;
 }
+
+/* ================= CARRUSEL ================= */
+.carrusel {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carrusel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carrusel {
+  width: 90%;              /* se adapta al ancho de pantalla */
+  max-width: 500px;        /* no crece demasiado en PC */
+  aspect-ratio: 5 / 3;     /* mantiene proporción */
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carrusel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carrusel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.carrusel img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* ================= MAPA AMARA ================= */
+#contenedoramara {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  touch-action: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* IMAGEN */
+#imagenamara {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  touch-action: none;
+}
+
+/* BOTONES */
+.zoom-controls {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.zoom-controls button {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+/* ================= para el salto de pagina ================= */
+.descripcion {
+  white-space: pre-line;
+}

@@ -1,4 +1,4 @@
-const GUERRERO = {
+let GUERRERO = {
     nombreClase: "Guerrero",
     secciones: [
         {
