@@ -1,7 +1,10 @@
 const imagenes = [
   "Imagenes/111.png",
   "Imagenes/222.png",
-  "Imagenes/333.png"
+  "Imagenes/333.png",
+  "Imagenes/444.png",
+  "Imagenes/555.png",
+  "Imagenes/666.png"
 ];
 
 let index = 0;
