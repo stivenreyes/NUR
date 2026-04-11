@@ -5,6 +5,10 @@ const CLASE_ACTUAL =
     typeof EXPLORADOR !== "undefined" ? EXPLORADOR :
     typeof HECHICERO !== "undefined" ? HECHICERO :
     typeof INVESTIGADOR !== "undefined" ? INVESTIGADOR :
+    typeof BRUJO !== "undefined" ? BRUJO :
+    typeof MEDIADOR !== "undefined" ? MEDIADOR :
+    typeof BARDO !== "undefined" ? BARDO :
+    typeof CAOTICO !== "undefined" ? CAOTICO :
     null;
 
 function crearTarjeta(producto) {
