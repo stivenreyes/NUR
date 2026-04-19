@@ -7,25 +7,44 @@ const imagenes = [
   "Imagenes/666.png"
 ];
 
-let index = 0;
-const imgElement = document.getElementById("imagen");
+// Función para mezclar (shuffle)
+    function mezclarArray(array) {
+      return array.sort(() => Math.random() - 0.5);
+    }
 
-// 👇 AQUÍ va
-imgElement.onload = () => {
-  imgElement.style.opacity = 1;
-};
+    let imagenesMezcladas = mezclarArray([...imagenes]);
+    let index = 0;
 
-// 👇 Cargar primera imagen
-imgElement.src = imagenes[0];
+    const imgElement = document.getElementById("imagen");
 
-function cambiarImagen() {
-  imgElement.style.opacity = 0;
+    // Cuando carga la imagen → fade in
+    imgElement.onload = () => {
+      imgElement.style.opacity = 1;
+    };
 
-  setTimeout(() => {
-    index = (index + 1) % imagenes.length;
-    imgElement.src = imagenes[index];
-  }, 500);
-}
+    // Cargar primera imagen
+    imgElement.src = imagenesMezcladas[0];
 
-// Cambia cada 2.5 segundos
-setInterval(cambiarImagen, 2500);
+    function cambiarImagen() {
+      imgElement.style.opacity = 0;
+
+      setTimeout(() => {
+        index++;
+
+        // Si se acaban, se vuelven a mezclar
+        if (index >= imagenesMezcladas.length) {
+          imagenesMezcladas = mezclarArray([...imagenes]);
+          index = 0;
+        }
+
+        imgElement.src = imagenesMezcladas[index];
+      }, 500);
+    }
+
+    // Cambia cada 2.5 segundos
+    setInterval(cambiarImagen, 2500);
+
+
+
+
+

@@ -9,7 +9,7 @@ let GUERRERO = {
                     descripcionGrimorio: "Especialista en combate directo y contundente.",
                     novato: "Relanzar y quedar con el otro resultado al atacar, +2 de ataque con armas cortas",
                     experto: "+4 de ataque",
-                    maestro: "Nueva proeza: Noquear (6 puntos). Tirada enfrentada de ataque vs constitución; si gana, noquea 1d3 turnos",
+                    maestro: "Nueva proeza: Noquear (6 puntos). Tirada enfrentada de ataque vs constitución; si gana, noquea 1d3 turnos. <br> Puedes entrar una vez por dia en modo Berserker, donde tener una accion adicional de combate para ti y tu bestia, pero solo podras activar la proeza doble ataque una vez, despues de eso debes descansar un turno.",
                     hechizos: []
                 },
                 {
@@ -99,6 +99,14 @@ let GUERRERO = {
                     maestro: "...",
                     hechizos: []                   
                 },
+                                {                 
+                    nombre: "Grito de gloria",
+                    descripcionGrimorio: "Requisitos (Guía del combate) <br> Una vez por escena de combate, el guerrero hara un ataque muy fuerte acompañado de un grito de batalla y motivara a sus aliados para que su siguiente ataque sea igual de poderoso",
+                    novato: "+5 en el ataque, mas 3d6 de daño y +2 para el siguiente ataque de un aliado",
+                    experto: "+7 en el ataque y +3 para el siguiente ataque de hasta 2 aliados",
+                    maestro: "+10 en el ataque y +5 para el siguiente ataque de hasta 3 aliados",
+                    hechizos: []                   
+                }
             ]
 
         }

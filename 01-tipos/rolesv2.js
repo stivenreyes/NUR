@@ -60,7 +60,7 @@ function crearTarjeta(producto) {
                                 ` : ""}
 
                                 ${hechizo.costoMana ? `
-                                    <p><span class="label">Mana:</span> <span class="valor">${hechizo.costoMana}</span></p>
+                                    <p><span class="label">Nur:</span> <span class="valor">${hechizo.costoMana}</span></p>
                                 ` : ""}
 
                                 ${hechizo.dificultad ? `
