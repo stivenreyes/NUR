@@ -35,19 +35,11 @@ let INVESTIGADOR = {
                     hechizos: []                   
                 },
                 {                 
-                    nombre: "Rastrear bestias",
-                    descripcionGrimorio: "Especialización por terreno",
-                    novato: "Rastreo hasta 50m",
-                    experto: "Rastreo hasta 100m",
-                    maestro: "...",
-                    hechizos: []                   
-                },
-                {                 
                     nombre: "Rastreo y estudio de huellas",
-                    descripcionGrimorio: "Especialización por terreno, bestias terrestres, aereas, puedes seguir huellas y estudiarlas lanzando inteligencia/zoologia",
-                    novato: "Rastreo hasta 50m. <br> dif 10 un dato. <br>dif 15 dos datos.",
-                    experto: "Rastreo hasta 100m",
-                    maestro: "...",
+                    descripcionGrimorio: "Puedes encontrar y seguir huellas, descubrir informacion con ellas.",
+                    novato: "+3 percepcion para rastrear huellas frescas (de hace horas) y un rastreo hasta 1 zona. <br> +3 con inteligencia/zoologia para descubrir hasta una informacion de la bestia.",
+                    experto: "+5 percepcion para rastrear huellas (de hace dias) y un rastreo hasta 2 zonas, o eventos <br> +5 con inteligencia/zoologia para descubrir hasta dos informaciones de la bestia.",
+                    maestro: "+7 percepcion para rastrear huellas antiguas (de hace semanas) y un rastreo hasta 3 zonas o eventos <br> +7 con inteligencia/zoologia para descubrir hasta tres informaciones de la bestia.",
                     hechizos: []                   
                 },
                 {                 
@@ -129,7 +121,7 @@ let INVESTIGADOR = {
                 },
                 {                 
                     nombre: "Mantenimiento y curación de bestias",
-                    descripcionGrimorio: "Requiere kit. Reparación y mejora de bestias.",
+                    descripcionGrimorio: "Requiere kit de mantenimiento a bestias <br> Reparación de su armadura natural y armas naturales <br> lanzas destreza / artesanía<br>0 - 8  No logras arreglar las armas naturales de una bestia<br>9 - 12  logras arreglar las armas naturales de una bestia en 1<br>13 - 16  logras arreglar las armas naturales de una bestia y ganas un bonus<br>17 - 20 logras arreglar las armas naturales de una bestia y ganas 2 bonus<br></br>21 - ... logras arreglar las armas naturales de una bestia y ganas 3 bonus",
                     novato: "Curación +2 daño psíquico. Mejora armas naturales y bonus básicos",
                     experto: "Curación +3 daño psíquico. Mejora superior y más bonus",
                     maestro: "Curación +5 daño psíquico. Mejora máxima y mayores bonus",

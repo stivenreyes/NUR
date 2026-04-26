@@ -187,11 +187,11 @@ let bestias = [
   tipo: "Soporte",
   tamaño: "5",
   armadura: "0",
-  Destreza: "1",Precision: "0",pelea: "0",percepcion: "3",comunicacion: "0",
-  fuerza: "-1",voluntad: "0",constitucion: "-2",Instinto: "2",
+  Destreza: "1",Precision: "2",pelea: "0",percepcion: "2",comunicacion: "1",
+  fuerza: "-1",voluntad: "3",constitucion: "-2",Instinto: "4",
   enfoques: "Curación, Trepar",
   Habilidades: "Hechizo baba sanadora:Puede curar a su amo 2D6 o a un aliado 1D6 + voluntad.Dificultad 12.En cirugía la babosa plateada tiene +6 a la tirada de curación.Puede curar veneno de rango 1.",
-  ataque: "Ácido +1",
+  ataque: "Baba acida +1",
   daño: "1D4",
   dureza: "1",
   alcance: "3"
@@ -204,11 +204,11 @@ let bestias = [
   tipo: "Ataque",
   tamaño: "5",
   armadura: "0",
-  Destreza: "2", Precision: "4", pelea: "-1", percepcion: "3", comunicacion: "0",
+  Destreza: "2", Precision: "5", pelea: "-1", percepcion: "3", comunicacion: "0",
   fuerza: "2", voluntad: "0", constitucion: "1", Instinto: "-2",
   enfoques: "Saltar, Esquiva", 
-  Habilidades: "Latigazo de lengua: ataque a 5m (2d6), puede dañar armas con acido (1 daño)",
-  ataque: "+1", daño: "1D6", dureza: "2", alcance: "1"
+  Habilidades: "Latigazo de lengua: ataque a 5m (2d6), puede dañar armas y armaduras con acido (1d3)<br> apresar criaturas de un maximo del tamaño de la rana mas 5",
+  ataque: "Latigazo +1", daño: "1D6", dureza: "2", alcance: "5"
 },
 
 { 
@@ -232,11 +232,11 @@ let bestias = [
   tipo: "Exploracion",
   tamaño: "3",
   armadura: "0",
-  Destreza: "2", Precision: "0", pelea: "-2", percepcion: "3", comunicacion: "4",
-  fuerza: "0", voluntad: "1", constitucion: "-1", Instinto: "3",
+  Destreza: "2", Precision: "0", pelea: "-2", percepcion: "4", comunicacion: "3",
+  fuerza: "0", voluntad: "0", constitucion: "-1", Instinto: "4",
   enfoques: "Volar, Distraer", 
   Habilidades: "Pareja unida (revive en 2 dias), Plumas +3 a tiradas",
-  ataque: "+3", daño: "1D4", dureza: "2", alcance: "1"
+  ataque: "Picotazo +1", daño: "1D3", dureza: "2", alcance: "1"
 },
 
 { 
@@ -246,11 +246,11 @@ let bestias = [
   tipo: "Comunicacion",
   tamaño: "5",
   armadura: "0",
-  Destreza: "2", Precision: "0", pelea: "-1", percepcion: "3", comunicacion: "4",
+  Destreza: "4", Precision: "0", pelea: "-1", percepcion: "3", comunicacion: "4",
   fuerza: "0", voluntad: "1", constitucion: "-1", Instinto: "1",
   enfoques: "Distraer, Huir, Nadar", 
   Habilidades: "Comunicacion a distancia (5km), daño psicologico 1d6, mensaje global 200m",
-  ataque: "+1", daño: "1D4", dureza: "3", alcance: "1"
+  ataque: "Picotazo +1", daño: "1D6", dureza: "3", alcance: "1"
 },
 
 { 
@@ -278,7 +278,7 @@ let bestias = [
   fuerza: "4", voluntad: "0", constitucion: "0", Instinto: "-2",
   enfoques: "Nadar, Oler", 
   Habilidades: "Detector de sangre (100m)",
-  ataque: "+1", daño: "1D4", dureza: "5", alcance: "1"
+  ataque: "+1", daño: "1D6", dureza: "5", alcance: "1"
 },
 
 { 
@@ -288,11 +288,11 @@ let bestias = [
   tipo: "Ataque",
   tamaño: "10",
   armadura: "10",
-  Destreza: "2", Precision: "4", pelea: "3", percepcion: "0", comunicacion: "-1",
-  fuerza: "2", voluntad: "3", constitucion: "1", Instinto: "0",
+  Destreza: "2", Precision: "0", pelea: "3", percepcion: "0", comunicacion: "-1",
+  fuerza: "2", voluntad: "-2", constitucion: "1", Instinto: "-1",
   enfoques: "Arte marcial, Escapismo", 
   Habilidades: "Relanza ataques del amo, puede tragar aliados/enemigos (3 turnos sin daño)",
-  ataque: "+4", daño: "1D4", dureza: "5", alcance: "1"
+  ataque: "mordidas +4", daño: "2D6", dureza: "5", alcance: "1"
 },
 
 { 
@@ -301,7 +301,7 @@ let bestias = [
   terreno: "Tierra",
   tipo: "Exploracion",
   tamaño: "7",
-  armadura: "0",
+  armadura: "5",
   Destreza: "0", Precision: "0", pelea: "1", percepcion: "5", comunicacion: "-2",
   fuerza: "2", voluntad: "2", constitucion: "-1", Instinto: "3",
   enfoques: "Ver, Alerta, magica (percep.) ", 
@@ -316,11 +316,11 @@ let bestias = [
   tipo: "Tanque",
   tamaño: "15",
   armadura: "17",
-  Destreza: "0", Precision: "1", pelea: "2", percepcion: "4", comunicacion: "-1",
-  fuerza: "1", voluntad: "3", constitucion: "0", Instinto: "-2",
-  enfoques: "Aguante, Carga", 
-  Habilidades: "Montura resistente a magia, transporte masivo, habilidad de rescate",
-  ataque: "+1", daño: "1D4", dureza: "5", alcance: "1"
+  Destreza: "0", Precision: "-1", pelea: "1", percepcion: "4", comunicacion: "-1",
+  fuerza: "3", voluntad: "3", constitucion: "2", Instinto: "-2",
+  enfoques: "Aguante, Vida", 
+  Habilidades: "Montura resistente a magia, transporte masivo, <br> <h7>Poder especial - Oso camilla (Rango 7)</h7> <br> Una vez por dia el oso podrá llevar 50 de tamaño adicionales muy heridos (solo 1 sexto de vida) o inconscientes y huir o simplemente llevarlos por 20 minutos, sin importar que superen su aguante, pero luego de eso el oso necesitara media hora para descansar",
+  ataque: "Garras", daño: "2D6", dureza: "5", alcance: "1"
 },
 { 
     nombre: "Mono albino",

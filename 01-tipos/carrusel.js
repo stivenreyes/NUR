@@ -4,7 +4,12 @@ const imagenes = [
   "Imagenes/333.png",
   "Imagenes/444.png",
   "Imagenes/555.png",
-  "Imagenes/666.png"
+  "Imagenes/666.png",
+  "Imagenes/777.png",
+  "Imagenes/888.png",
+  "Imagenes/999.png",
+  "Imagenes/001.png",
+  "Imagenes/002.png"
 ];
 
 // Función para mezclar (shuffle)

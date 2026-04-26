@@ -98,6 +98,14 @@ let EXPLORADOR = {
                     hechizos: []                   
                 },
                 {                 
+                    nombre: "Rastreo y estudio de huellas",
+                    descripcionGrimorio: "Puedes encontrar y seguir huellas, descubrir informacion con ellas.",
+                    novato: "+3 percepcion para rastrear huellas frescas (de hace horas) y un rastreo hasta 1 zona. <br> +1 con inteligencia para descubrir hasta una informacion de la criatura.",
+                    experto: "+5 percepcion para rastrear huellas (de hace dias) y un rastreo hasta 2 zonas, o eventos <br> +3 con inteligencia para descubrir hasta dos informaciones de la criatura.",
+                    maestro: "+7 percepcion para rastrear huellas antiguas (de hace semanas) y un rastreo hasta 3 zonas o eventos <br> +5 con inteligencia para descubrir hasta tres informaciones de la criatura.",
+                    hechizos: []                   
+                },
+                {                 
                     nombre: "La sombra - espectro",
                     descripcionGrimorio: "Requisitos (Explorador asesino)",
                     novato: "+3 sigilo",

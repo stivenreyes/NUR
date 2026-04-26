@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li><a href="Exp.html">Exp</a></li>
                 <li><a href="enfoques.html">Enfoques</a></li>
                 <li><a href="escenas.html">Escenas</a></li>
+                <li><a href="lore.html">Lore</a></li>
             </ul>
 
             <!-- MENÚ MÓVIL -->
@@ -36,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li><a href="Exp.html">Exp</a></li>
                 <li><a href="enfoques.html">Enfoques</a></li>
                 <li><a href="escenas.html">Escenas</a></li>
+                <li><a href="lore.html">Lore</a></li>
             </ul>
         </nav>
     `;
