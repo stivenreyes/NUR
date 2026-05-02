@@ -10,7 +10,18 @@ let HECHICERO = {
       novato: "Eliges un elemento. +3 daño a fuego, +1 daño a trueno",
       experto: "Eliges un nuevo elemento y aprendes un hechizo experto o creas uno nuevo (consultar con el master)",
       maestro: "Eliges un nuevo elemento y aprendes un hechizo maestro o creas uno nuevo (consultar con el master)",
-      hechizos: []
+      legendario: "Eliges un hechizo de un elemento que domines de nivel legendario de los siguientes:",
+      hechizos: [
+        {
+          nombreHechizo: "Fenix de fuego legendarios",
+          nivelHechizo: "Legendario",
+          descripcion: "Una vez por dia, puedes encender una llama interna con tu bestia, sin gastar accion. luego de usar 3 hechizos de fuego, podras por una accion tu y tu bestia convertirsen en dos grandes fenix de fuego (30 de tamaño), quien toque cada uno de esos fenix puede recibir 7d6+ inteligencia o instinto de curación o daño magico. dura solo un turno",
+          tipoHechizo: "Ataque",
+          costoMana: "0",
+          dificultad: "Inteligencia + 5 vs esquiva",
+          alcanceMaximo: "20 m"
+        },
+      ]
     },
     {
       nombre: "Espiritual",

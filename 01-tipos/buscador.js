@@ -94,6 +94,7 @@ function mostrarResultadosEspecialidades(resultados) {
             ${r.item.novato ? `<p><strong>Novato:</strong> ${r.item.novato}</p>` : ""}
             ${r.item.experto ? `<p><strong>Experto:</strong> ${r.item.experto}</p>` : ""}
             ${r.item.maestro ? `<p><strong>Maestro:</strong> ${r.item.maestro}</p>` : ""}
+            ${r.item.legendario ? `<p><strong>Legendario:</strong> ${r.item.legendario}</p>` : ""}
             ${r.item.hechizos && r.item.hechizos.length > 0 ? `
                 <p><strong>Hechizos:</strong> ${r.item.hechizos.length}</p>
                 <div class="mini-hechizos">
@@ -123,6 +124,7 @@ function mostrarResultadosTecnicas(resultados) {
             ${r.item.novato ? `<p><strong>Novato:</strong> ${r.item.novato}</p>` : ""}
             ${r.item.experto ? `<p><strong>Experto:</strong> ${r.item.experto}</p>` : ""}
             ${r.item.maestro ? `<p><strong>Maestro:</strong> ${r.item.maestro}</p>` : ""}
+            ${r.item.legendario ? `<p><strong>Legendario:</strong> ${r.item.legendario}</p>` : ""}
             ${r.item.hechizos && r.item.hechizos.length > 0 ? `
                 <p><strong>Hechizos:</strong> ${r.item.hechizos.length}</p>
                 <div class="mini-hechizos">
@@ -152,7 +154,7 @@ function mostrarResultadosHechizos(resultados) {
             ${r.hechizo.nivelHechizo ? `<p><strong>Nivel:</strong> ${r.hechizo.nivelHechizo}</p>` : ""}
             ${r.hechizo.descripcion ? `<p><strong>Descripción:</strong> ${r.hechizo.descripcion}</p>` : ""}
             ${r.hechizo.tipoHechizo ? `<p><strong>Tipo:</strong> ${r.hechizo.tipoHechizo}</p>` : ""}
-            ${r.hechizo.costoMana ? `<p><strong>Costo de Mana:</strong> ${r.hechizo.costoMana}</p>` : ""}
+            ${r.hechizo.costoMana ? `<p><strong>Costo de Nur:</strong> ${r.hechizo.costoMana}</p>` : ""}
             ${r.hechizo.dificultad ? `<p><strong>Dificultad:</strong> ${r.hechizo.dificultad}</p>` : ""}
             ${r.hechizo.alcanceMaximo ? `<p><strong>Alcance Máximo:</strong> ${r.hechizo.alcanceMaximo}</p>` : ""}
         </div>

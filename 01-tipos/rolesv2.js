@@ -36,6 +36,10 @@ function crearTarjeta(producto) {
                     <p><span class="label">Maestro:</span> <span class="valor maestro">${producto.maestro}</span></p>
                 ` : ""}
 
+                ${producto.legendario ? `
+                    <p><span class="label">Legendario:</span> <span class="valor legendario">${producto.legendario}</span></p>
+                ` : ""}
+
                 ${producto.hechizos && producto.hechizos.length > 0 ? `
                     <div class="grimorio-hechizos">
                         <h3 class="subtitulo-hechizos">Hechizos</h3>

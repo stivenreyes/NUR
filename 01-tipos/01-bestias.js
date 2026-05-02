@@ -342,12 +342,12 @@ let bestias = [
     terreno: "Tierra",
     tipo: "Rara",
     tamaño: "5",
-    armadura: "10",
+    armadura: "15",
     Destreza: "2", Precision: "4", pelea: "-1", percepcion: "3", comunicacion: "0",
     fuerza: "0", voluntad: "1", constitucion: "-1", Instinto: "-2",
     enfoques: "Oler", 
-    Habilidades: "Ataque oculto con lengua hasta 5m, canaliza poderes del amo, daño lengua 1D6",
-    ataque: "+1", daño: "1D4", dureza: "4", alcance: "1"
+    Habilidades: "Puede lanzar su lengua por el suelo y atacar a alguien desde la tierra o el agua hasta una distancia de 5 metros, el ataque de la lengua será oculto destreza + 2 para evitar que se descubra, el oso hormiguero se podrá conectar a su amo, y transferir cualquier poder donde se use nur en su lengua <br> Lengua daño: 1d6",
+    ataque: "+1", daño: "1D6", dureza: "4", alcance: "1"
   },
 
   { 
@@ -413,11 +413,11 @@ let bestias = [
     tipo: "Tanque",
     tamaño: "15",
     armadura: "20",
-    Destreza: "2", Precision: "0", pelea: "2", percepcion: "-1", comunicacion: "-1",
-    fuerza: "3", voluntad: "1", constitucion: "4", Instinto: "-2",
+    Destreza: "-1", Precision: "-2", pelea: "2", percepcion: "-1", comunicacion: "-1",
+    fuerza: "4", voluntad: "2", constitucion: "4", Instinto: "-2",
     enfoques: "Aguante, Respiración, Sumergirse", 
     Habilidades: "Sirve como montura, da oxígeno bajo el agua y transporta aliados según tamaño",
-    ataque: "+3", daño: "1D4", dureza: "6", alcance: "1"
+    ataque: "Tenazas +1", daño: "3D6", dureza: "6", alcance: "1"
   },
 
   { 
@@ -495,12 +495,12 @@ let bestias = [
     terreno: "Viento",
     tipo: "Montura",
     tamaño: "14",
-    armadura: "5",
-    Destreza: "4", Precision: "0", pelea: "-1", percepcion: "3", comunicacion: "1",
-    fuerza: "1", voluntad: "2", constitucion: "0", Instinto: "-1",
+    armadura: "0",
+    Destreza: "4", Precision: "0", pelea: "-1", percepcion: "3", comunicacion: "0",
+    fuerza: "2", voluntad: "0", constitucion: "0", Instinto: "-1",
     enfoques: "Volar, Huir, Olor", 
     Habilidades: "Montura aérea. Evita daño por caídas y es inmune temporal a terrenos peligrosos",
-    ataque: "+1", daño: "1D4", dureza: "3", alcance: "1"
+    ataque: "Garras +1", daño: "1D6", dureza: "3", alcance: "1"
   },
 
   { 

@@ -2,7 +2,7 @@ let MEDIADOR = {
   nombreClase: "Mediador",
   secciones: [
     {
-      titulo: "Especializaciones",
+      titulo: "Especialidades",
       items: [
         {
           nombre: "Erudito mental",

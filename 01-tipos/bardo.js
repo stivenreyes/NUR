@@ -2,7 +2,7 @@ let BARDO = {
   nombreClase: "Bardo",
   secciones: [
     {
-      titulo: "Especializaciones",
+      titulo: "Especialidades",
       items: [
         {
           nombre: "Artista de las criaturas",

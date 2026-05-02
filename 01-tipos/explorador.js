@@ -1,5 +1,5 @@
 let EXPLORADOR = {
-    nombreClase: "Guerrero",
+    nombreClase: "Explorador",
     secciones: [
         {
             titulo: "especialidades",

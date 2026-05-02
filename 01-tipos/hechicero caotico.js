@@ -2,7 +2,7 @@ let CAOTICO = {
   nombreClase: "Caótico",
   secciones: [
     {
-      titulo: "Especializaciones",
+      titulo: "Especialidades",
       items: [
         {
           nombre: "Loco del caos",
@@ -192,8 +192,8 @@ let CAOTICO = {
         {
           nombre: "Conocimiento en grimorios",
           descripcionGrimorio: "Mejora o creación de hechizos.",
-          novato: "Mejora hechizo",
-          experto: "Crea hechizo",
+          novato: "Mejora hechizo (discutelo con tu master)",
+          experto: "Crea hechizo (discutelo con tu master)",
           maestro: "...",
           hechizos: []
         }
