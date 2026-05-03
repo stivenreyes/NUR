@@ -9,8 +9,18 @@ let INVESTIGADOR = {
                     descripcionGrimorio: "Empatía y conexión natural con las bestias.",
                     novato: "+1 vínculo. +3 entender (zoología/inteligencia), +5 empatizar (trato animales/comunicación). Aprendes un talento",
                     experto: "+3 vínculo. +5 entender tipo de bestias, +7 empatizar tipo de bestias",
-                    maestro: "+4 vínculo",
-                    hechizos: []
+                    maestro: "+4 vínculo y aprendes un hechizo de nivel experto de los siguientes",
+                    hechizos: [
+                            {
+        nombreHechizo: "Extremidad bestial",
+        nivelHechizo: "Experto",
+        descripcion: "Cada dia al alba, puedes dibujar una runa de bestia en alguna extremidad, podras transformar una parte de esa extremidad por una extremidad de una bestia y tomar una habilidad correspondiente. tendras esa modificacion por un 1d6 turnos o minutos ",
+        tipoHechizo: "Ataque",
+        costoMana: "4 nur",
+        dificultad: "14",
+        alcanceMaximo: "1"
+    },
+                    ]
                 },
                 {
                     nombre: "Zoólogo",
@@ -134,7 +144,15 @@ let INVESTIGADOR = {
                     experto: "...",
                     maestro: "...",
                     hechizos: []                   
-                }    
+                },    
+                {                 
+                    nombre: "Clones del vinculo",
+                    descripcionGrimorio: "Puedes convertirte tu y otros druidas de pende del tipo de vinculo en su bestia. o viceversa con la bestia. por 1 d6 turnos o minutos, dif 12 -2 de nur",
+                    novato: "Quienes tengan los vinculos: compañeros de juegos y compañeros estrategicos",
+                    experto: "...",
+                    maestro: "...",
+                    hechizos: []                   
+                } 
             ]
 
         }
