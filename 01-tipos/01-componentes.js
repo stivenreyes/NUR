@@ -3,12 +3,11 @@ function crearTarjeta(producto) {
         <div class="card">
             <div class="card-header">
                 <h2>${producto.nombre}</h2>
-                <span class="precio"> 
-                ${producto.precio}</span>
+                <span class="precio">${producto.precio}</span>
             </div>
 
             <div class="card-body">
-                
+
                 ${producto.dano ? `
                     <p>
                         <span class="label">Daño:</span>
@@ -29,86 +28,150 @@ function crearTarjeta(producto) {
 
                 ${producto.requisitos ? `
                     <p>
-                        <span class="label">Requisitos:</span> 
+                        <span class="label">Requisitos:</span>
                         <span class="valor requisitos">${producto.requisitos}</span>
-                     </p>` : ""}   
-                     
+                    </p>` : ""}
+
                 ${producto.dureza ? `
                     <p>
-                        <span class="label">Dureza:</span> 
+                        <span class="label">Dureza:</span>
                         <span class="valor dureza">${producto.dureza}</span>
-                     </p>` : ""}  
+                    </p>` : ""}
 
                 ${producto.manos ? `
                     <p>
-                        <span class="label">Manos:</span> 
+                        <span class="label">Manos:</span>
                         <span class="valor manos">${producto.manos}</span>
-                     </p>` : ""}       
+                    </p>` : ""}
 
                 ${producto.curacion ? `
                     <p>
-                        <span class="label">Curación:</span> 
+                        <span class="label">Curación:</span>
                         <span class="valor curacion">${producto.curacion}</span>
                     </p>` : ""}
 
                 ${producto.restablecimiento ? `
                     <p>
-                        <span class="label">Restablecimiento:</span> 
+                        <span class="label">Restablecimiento:</span>
                         <span class="valor restablecimiento">${producto.restablecimiento}</span>
                     </p>` : ""}
 
                 ${producto.ganancia ? `
                     <p>
-                        <span class="label">Ganancia:</span> 
+                        <span class="label">Ganancia:</span>
                         <span class="valor ganancia">${producto.ganancia}</span>
                     </p>` : ""}
 
                 ${producto.objetivos ? `
                     <p>
-                        <span class="label">Objetivos:</span> 
+                        <span class="label">Objetivos:</span>
                         <span class="valor objetivos">${producto.objetivos}</span>
                     </p>` : ""}
 
                 ${producto.tipoObjetivos ? `
                     <p>
-                        <span class="label">Tipo de objetivos:</span> 
+                        <span class="label">Tipo de objetivos:</span>
                         <span class="valor tipoObjetivos">${producto.tipoObjetivos}</span>
                     </p>` : ""}
+
                 ${producto.tradicion ? `
                     <p>
-                        <span class="label">Tradición:</span> 
+                        <span class="label">Tradición:</span>
                         <span class="valor tradicion">${producto.tradicion}</span>
                     </p>` : ""}
 
                 ${producto.potencia ? `
                     <p>
-                        <span class="label">Potencia:</span> 
+                        <span class="label">Potencia:</span>
                         <span class="valor potencia">${producto.potencia}</span>
                     </p>` : ""}
 
                 ${producto.efectos ? `
                     <p>
-                        <span class="label">Efectos:</span> 
+                        <span class="label">Efectos:</span>
                         <span class="valor efectos">${producto.efectos}</span>
                     </p>` : ""}
 
                 ${producto.curiosidad ? `
                     <p>
-                        <span class="label">Curiosidad:</span> 
+                        <span class="label">Curiosidad:</span>
                         <span class="valor curiosidad">${producto.curiosidad}</span>
                     </p>` : ""}
 
                 ${producto.dificultadIntoxicacion ? `
                     <p>
-                        <span class="label">Dificultad para intoxicación:</span> 
+                        <span class="label">Dificultad para intoxicación:</span>
                         <span class="valor dificultadIntoxicacion">${producto.dificultadIntoxicacion}</span>
                     </p>` : ""}
 
                 ${producto.duracion ? `
                     <p>
-                        <span class="label">Duración:</span> 
+                        <span class="label">Duración:</span>
                         <span class="valor duracion">${producto.duracion}</span>
                     </p>` : ""}
+
+                <!-- 🆕 NUEVOS CAMPOS -->
+
+                ${producto.tiempoLectura ? `
+                    <p>
+                        <span class="label">Tiempo de lectura:</span>
+                        <span class="valor tiempoLectura">${producto.tiempoLectura}</span>
+                    </p>` : ""}
+
+                ${producto.gananciaLectura ? `
+                    <p>
+                        <span class="label">Ganancia por lectura:</span>
+                        <span class="valor gananciaLectura">${producto.gananciaLectura}</span>
+                    </p>` : ""}
+
+                ${producto.gananciaAbsorcion ? `
+                    <p>
+                        <span class="label">Ganancia por absorción:</span>
+                        <span class="valor gananciaAbsorcion">${producto.gananciaAbsorcion}</span>
+                    </p>` : ""}
+
+                ${producto.proteccion ? `
+                    <p>
+                        <span class="label">Protección:</span>
+                        <span class="valor proteccion">${producto.proteccion}</span>
+                    </p>` : ""}
+
+                ${producto.tipoProteccion ? `
+                    <p>
+                        <span class="label">Tipo de protección:</span>
+                        <span class="valor tipoProteccion">${producto.tipoProteccion}</span>
+                    </p>` : ""}
+
+                ${producto.rango ? `
+                    <p>
+                        <span class="label">Rango:</span>
+                        <span class="valor rango">${producto.rango}</span>
+                    </p>` : ""}
+
+                ${producto.contenido ? `
+                    <p>
+                        <span class="label">Contenido:</span>
+                        <span class="valor contenido">${producto.contenido}</span>
+                    </p>` : ""}
+
+                ${producto.ingredientes ? `
+                    <p>
+                        <span class="label">Ingredientes:</span>
+                        <span class="valor ingredientes">${producto.ingredientes}</span>
+                    </p>` : ""}
+
+                ${producto.dificultadPreparacion ? `
+                    <p>
+                        <span class="label">Dificultad de preparación:</span>
+                        <span class="valor dificultadPreparacion">${producto.dificultadPreparacion}</span>
+                    </p>` : ""}
+
+                ${producto.duracionCoccion ? `
+                    <p>
+                        <span class="label">Duración de cocción:</span>
+                        <span class="valor duracionCoccion">${producto.duracionCoccion}</span>
+                    </p>` : ""}
+
             </div>
         </div>
     `;
@@ -409,6 +472,87 @@ let bebidas = [
         duracion: "1D3 horas"
     }
 ];
+/* ================= PERGAMINOS ================= */
+let pergaminos = [
+    {
+        nombre: "Pergaminos de biografías de antiguos druidas",
+        precio: "100 L",
+        requisitos: "Rango 1 - 15",
+        tiempoLectura: "2 horas",
+        gananciaLectura: "40 exp",
+        gananciaAbsorcion: "90 exp"
+    },
+    {
+        nombre: "Pergaminos de técnicas de combate",
+        precio: "50 L",
+        requisitos: "Rango 1 - 15 (Guerrero)",
+        tiempoLectura: "3 horas",
+        gananciaLectura: "20 exp",
+        gananciaAbsorcion: "60 exp"
+    },
+    {
+        nombre: "Pergaminos de técnicas de exploración",
+        precio: "50 L",
+        requisitos: "Rango 1 - 15 (Explorador)",
+        tiempoLectura: "3 horas",
+        gananciaLectura: "20 exp",
+        gananciaAbsorcion: "60 exp"
+    },
+    {
+        nombre: "Pergaminos de álbum de plantas",
+        precio: "50 L",
+        requisitos: "Rango 1 - 15 (Botánico)",
+        tiempoLectura: "3 horas",
+        gananciaLectura: "20 exp",
+        gananciaAbsorcion: "60 exp"
+    },
+    {
+        nombre: "Guía de Maestro de combate - Lección 1",
+        precio: "80 L",
+        requisitos: "Tutor: Rango 4 - 15 (Guerrero) / Alumno: Rango 1 - 2 (Guerrero)",
+        tiempoLectura: "1 hora + 2 horas de enseñanza",
+        gananciaLectura: "Tutor: 20 exp / Alumno: 40 exp",
+        gananciaAbsorcion: "60 exp"
+    }
+];
+let paquetes = [
+    {
+        nombre: "Paquete de artesano (normal)",
+        precio: "50 L",
+        tipo: "Normal",
+        contenido: "Cuchilla de talla, Martillo de piedra, Punzón, Funda de herramientas, Péndulo de Nur, Roca de artesano (20 de vida)"
+    },
+    {
+        nombre: "Paquete de artesano (mágico)",
+        precio: "80 L",
+        tipo: "Mágico",
+        contenido: "Cuchilla de talla, Martillo de piedra, Punzón, Funda de herramientas, Péndulo de Nur, Gemas de Nur, Roca de artesano (30 de vida)"
+    },
+    {
+        nombre: "Paquete de brujo botánico (básico)",
+        precio: "60 L",
+        tipo: "Básico",
+        contenido: "Caldero ritual (10 de vida), Mortero y mano de piedra, Bolsas de tela o cuero, Funda de herramientas, Péndulo de Nur, Roca de artesano (30 de vida)"
+    },
+    {
+        nombre: "Paquete de brujo botánico (avanzado)",
+        precio: "60 L",
+        tipo: "Avanzado",
+        contenido: "Ungüentos de hierbas, Mortero y mano de piedra, Aceites rituales, Vendajes de fibra natural, Cristales medicinales"
+    },
+    {
+        nombre: "Paquete de explorador",
+        precio: "40 L",
+        tipo: "Exploración",
+        contenido: "Cuerda de fibras resistentes (10–15 m), Ganchos o garfios de hueso/piedra, Mapa hecho con corteza o tejido, Manta camuflada de hojas o piel teñida"
+    },
+    {
+        nombre: "Paquete de cocinero",
+        precio: "20 L",
+        tipo: "Cocina",
+        contenido: "Caldero para cocinar, Tabla para picar y cortar, Cuchillos y cucharas de varios tamaños, Trípode para el fuego, Set de cuencas para servir la comida"
+    }
+];
 
 /* ================= BOTON ================= */
 const btnArriba = document.getElementById("btn-arriba");
@@ -434,13 +578,15 @@ if (btnArriba) {
 
 /* ================= BUSCADOR GENERAL DE LA TIENDA ================= */
 
-let todosLosProductos = [...armas, ...pociones, ...bebidas];
+let todosLosProductos = [...armas, ...pociones, ...bebidas, ...pergaminos, ...paquetes,];
 
 /* ================= RENDER ================= */
 
 let contenedorArmas = document.getElementById("contenedor-armas");
 let contenedorPociones = document.getElementById("contenedor-pociones");
 let contenedorBebidas = document.getElementById("contenedor-bebidas");
+let contenedorPergaminos = document.getElementById("contenedor-pergaminos");
+let contenedorPaquetes = document.getElementById("contenedor-paquetes");
 
 if (contenedorArmas) {
     for (let arma of armas) {
@@ -460,6 +606,17 @@ if (contenedorBebidas) {
     }
 }
 
+if (contenedorPergaminos) {
+    for (let pergamino of pergaminos) {
+        contenedorPergaminos.innerHTML += crearTarjeta(pergamino);
+    }
+}
+
+if (contenedorPaquetes) {
+    for (let paquete of paquetes) {
+        contenedorPaquetes.innerHTML += crearTarjeta(paquete);
+    }
+}
 /* ================= BUSCADOR ================= */
 
 let buscador = document.getElementById("buscador");
@@ -499,6 +656,24 @@ if (buscador) {
 
             renderProductos(resultado, contenedorBebidas);
         }
+
+        if (contenedorPergaminos) {
+
+            let resultado = pergaminos.filter(function(pergamino){
+                return pergamino.nombre.toLowerCase().includes(texto);
+            });
+
+            renderProductos(resultado, contenedorPergaminos);
+        }
+
+        if (contenedorPaquetes) {
+
+            let resultado = paquetes.filter(function(paquetes){
+                return paquetes.nombre.toLowerCase().includes(texto);
+            });
+
+            renderProductos(resultado, contenedorPaquetes);
+        } 
 
     });
 

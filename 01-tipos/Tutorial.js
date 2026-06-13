@@ -18,7 +18,7 @@ function mostrarPaso() {
 
     let progreso = document.getElementById("progreso");
 
-    let porcentaje = (pasoActual / 5) * 100;
+    let porcentaje = (pasoActual / 7) * 100;
 
     progreso.style.width = porcentaje + "%";
 
@@ -26,7 +26,7 @@ function mostrarPaso() {
 
     let btnSiguiente = document.getElementById("btn-siguiente");
 
-    if (pasoActual === 5) {
+    if (pasoActual === 7) {
         btnSiguiente.style.display = "none";
     } else {
         btnSiguiente.style.display = "inline-block";
@@ -36,7 +36,7 @@ function mostrarPaso() {
 
 function siguiente() {
 
-    if (pasoActual < 5) {
+    if (pasoActual < 7) {
         pasoActual++;
         mostrarPaso();
     }

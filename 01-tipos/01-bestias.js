@@ -228,7 +228,7 @@ let bestias = [
 { 
   nombre: "Cuervo X2",
   bioma: "Bosque",
-  terreno: "Aire",
+  terreno: "Viento",
   tipo: "Exploracion",
   tamaño: "3",
   armadura: "0",
@@ -242,7 +242,7 @@ let bestias = [
 { 
   nombre: "Garza de las Lenguas",
   bioma: "Costa",
-  terreno: "Aire",
+  terreno: "Viento",
   tipo: "Comunicacion",
   tamaño: "5",
   armadura: "0",
