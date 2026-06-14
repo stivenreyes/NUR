@@ -171,6 +171,20 @@ function crearTarjeta(producto) {
                         <span class="label">Duración de cocción:</span>
                         <span class="valor duracionCoccion">${producto.duracionCoccion}</span>
                     </p>` : ""}
+                
+                    
+                ${producto.requisitoTamano ? `
+                    <p>
+                        <span class="label">Requisito de Tamano:</span>
+                        <span class="valor requisitoTamano">${producto.requisitoTamano}</span>
+                    </p>` : ""}
+
+
+                ${producto.requisitoTipo ? `
+                    <p>
+                        <span class="label">Requisito tipo de bestia:</span>
+                        <span class="valor requisitoTipo">${producto.requisitoTipo}</span>
+                    </p>` : ""}
 
             </div>
         </div>
@@ -553,6 +567,210 @@ let paquetes = [
         contenido: "Caldero para cocinar, Tabla para picar y cortar, Cuchillos y cucharas de varios tamaños, Trípode para el fuego, Set de cuencas para servir la comida"
     }
 ];
+let armaduras = [
+    {
+        nombre: "Escudo de roble",
+        precio: "40 L",
+        requisitos: "-1 o más de Constitución",
+        proteccion: "5",
+        peso: "1",
+        tipoProteccion: "Normal",
+        rango: "1"
+    },
+    {
+        nombre: "Pechera de rocas volcánicas",
+        precio: "50 L",
+        requisitos: "1 de Constitución, 0 de Voluntad y rango 1 o más de Artesano de Roca",
+        proteccion: "25",
+        peso: "2",
+        tipoProteccion: "Normal",
+        rango: "2"
+    },
+    {
+        nombre: "Pechera de cuero",
+        precio: "80 L",
+        requisitos: "1 de Constitución",
+        proteccion: "10",
+        peso: "2",
+        tipoProteccion: "Normal",
+        rango: "1"
+    },
+    {
+        nombre: "Pechera de roble",
+        precio: "100 L",
+        requisitos: "2 de Constitución",
+        proteccion: "15",
+        peso: "3",
+        tipoProteccion: "Normal",
+        rango: "2"
+    },
+    {
+        nombre: "Pechera de coraza de rino",
+        precio: "200 L",
+        requisitos: "3 de Constitución",
+        proteccion: "20",
+        peso: "4",
+        tipoProteccion: "Normal",
+        rango: "2"
+    },
+    {
+        nombre: "Pechera de escamas encantada",
+        precio: "300 L",
+        requisitos: "2 de Constitución y 2 de Voluntad",
+        proteccion: "15",
+        peso: "3",
+        tipoProteccion: "Normal y Mágica",
+        rango: "3"
+    },
+    {
+        nombre: "Pechera de cocodrilo",
+        precio: "500 L",
+        requisitos: "4 de Constitución",
+        proteccion: "35",
+        peso: "4",
+        tipoProteccion: "Normal",
+        rango: "3"
+    },
+    {
+        nombre: "Pechera de cangrejo",
+        precio: "600 L",
+        requisitos: "7 de Constitución",
+        proteccion: "60",
+        peso: "4",
+        tipoProteccion: "Normal",
+        rango: "4"
+    }
+];
+
+let armadurasbestia = [
+
+    {
+        nombre: "Casco de calabaza",
+        precio: "40L",
+        proteccion: "5",
+        requisitos: "Tamaño 0 a 5, Bestia terrestre",
+        tipoProteccion: "Normal",
+        rango: "1"
+    },
+
+    {
+        nombre: "Capa de hojas gruesas encantadas",
+        precio: "50L",
+        proteccion: "15",
+        requisitos: "Tamaño 0 a 5, Bestia terrestre",
+        tipoProteccion: "Mágica",
+        rango: "1"
+    },
+
+    {
+        nombre: "Mini casquito de calabaza",
+        precio: "60L",
+        proteccion: "5",
+        requisitos: "Tamaño 0 a 5, Bestia aérea",
+        tipoProteccion: "Normal",
+        rango: "1"
+    },
+
+    {
+        nombre: "Mini pechera ligera de piel encantada",
+        precio: "70L",
+        proteccion: "15",
+        requisitos: "Tamaño 0 a 5, Bestia aérea",
+        tipoProteccion: "Mágica",
+        rango: "1"
+    },
+
+    {
+        nombre: "Casco de corteza de árbol",
+        precio: "60L",
+        proteccion: "10",
+        requisitos: "Tamaño 6 a 10, Bestia terrestre",
+        tipoProteccion: "Normal",
+        rango: "2"
+    },
+
+    {
+        nombre: "Escudo mediano de roble encantado",
+        precio: "70L",
+        proteccion: "15",
+        requisitos: "Tamaño 6 a 10, Bestia terrestre",
+        tipoProteccion: "Mágica",
+        rango: "2"
+    },
+
+    {
+        nombre: "Casco espinoso liviano",
+        precio: "80L",
+        proteccion: "10",
+        requisitos: "Tamaño 6 a 10, Bestia aérea",
+        tipoProteccion: "Normal",
+        rango: "2"
+    },
+
+    {
+        nombre: "Pechera de cucaracha encantada",
+        precio: "90L",
+        proteccion: "15",
+        requisitos: "Tamaño 6 a 10, Bestia aérea",
+        tipoProteccion: "Mágica",
+        rango: "2"
+    },
+
+    {
+        nombre: "Pechera de cuero de armadillo",
+        precio: "80L",
+        proteccion: "15",
+        requisitos: "Tamaño 11 a 15, Bestia aérea",
+        tipoProteccion: "Normal",
+        rango: "3"
+    },
+
+    {
+        nombre: "Casco espinoso encantado",
+        precio: "90L",
+        proteccion: "20",
+        requisitos: "Tamaño 11 a 15, Bestia aérea",
+        tipoProteccion: "Mágica",
+        rango: "3"
+    },
+
+    {
+        nombre: "Pechera de cuero de rino pesada",
+        precio: "100L",
+        proteccion: "15",
+        requisitos: "Tamaño 11 a 15, Bestia terrestre",
+        tipoProteccion: "Normal",
+        rango: "3"
+    },
+
+    {
+        nombre: "Gran casco de hueso encantado",
+        precio: "110L",
+        proteccion: "20",
+        requisitos: "Tamaño 11 a 15, Bestia terrestre",
+        tipoProteccion: "Mágica",
+        rango: "3"
+    },
+
+    {
+        nombre: "Gran casco de hueso",
+        precio: "100L",
+        proteccion: "20",
+        requisitos: "Tamaño 16 a 20, Bestia terrestre",
+        tipoProteccion: "Normal",
+        rango: "4"
+    },
+
+    {
+        nombre: "Gran casco de hueso aéreo",
+        precio: "110L",
+        proteccion: "20",
+        requisitos: "Tamaño 16 a 20, Bestia aérea",
+        tipoProteccion: "Normal",
+        rango: "4"
+    }
+
+];
 
 /* ================= BOTON ================= */
 const btnArriba = document.getElementById("btn-arriba");
@@ -578,7 +796,7 @@ if (btnArriba) {
 
 /* ================= BUSCADOR GENERAL DE LA TIENDA ================= */
 
-let todosLosProductos = [...armas, ...pociones, ...bebidas, ...pergaminos, ...paquetes,];
+let todosLosProductos = [...armas, ...pociones, ...bebidas, ...pergaminos, ...paquetes, ...armaduras, ...armadurasbestia];
 
 /* ================= RENDER ================= */
 
@@ -587,6 +805,8 @@ let contenedorPociones = document.getElementById("contenedor-pociones");
 let contenedorBebidas = document.getElementById("contenedor-bebidas");
 let contenedorPergaminos = document.getElementById("contenedor-pergaminos");
 let contenedorPaquetes = document.getElementById("contenedor-paquetes");
+let contenedorArmaduras = document.getElementById("contenedor-armaduras");
+let contenedorArmadurasBestia = document.getElementById("contenedor-armadurasBestia");
 
 if (contenedorArmas) {
     for (let arma of armas) {
@@ -617,6 +837,20 @@ if (contenedorPaquetes) {
         contenedorPaquetes.innerHTML += crearTarjeta(paquete);
     }
 }
+
+if (contenedorArmaduras) {
+    for (let armadura of armaduras) {
+        contenedorArmaduras.innerHTML += crearTarjeta(armadura);
+    }
+}
+
+
+if (contenedorArmadurasBestia) {
+    for (let armadurabestia of armadurasbestia) {
+        contenedorArmadurasBestia.innerHTML += crearTarjeta(armadurabestia);
+    }
+}
+
 /* ================= BUSCADOR ================= */
 
 let buscador = document.getElementById("buscador");
@@ -673,7 +907,25 @@ if (buscador) {
             });
 
             renderProductos(resultado, contenedorPaquetes);
-        } 
+        }
+        
+        if (contenedorArmaduras) {
+
+              let resultado = armaduras.filter(function(armadura) {
+                return armadura.nombre.toLowerCase().includes(texto);
+            });
+
+            renderProductos(resultado, contenedorArmaduras);
+        }
+
+        if (contenedorArmadurasBestia) {
+
+             let resultado = armadurasbestia.filter(function(armadurabestia) {
+                return armadurabestia.nombre.toLowerCase().includes(texto);
+            });
+
+            renderProductos(resultado, contenedorArmadurasBestia);
+        }
 
     });
 

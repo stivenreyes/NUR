@@ -33,7 +33,7 @@ let BRUJO = {
         },
         {
           nombre: "Botánico",
-          descripcionGrimorio: "Dominio de pociones y conexión con el entorno natural.",
+          descripcionGrimorio: "Dominio de pociones y conexión con el entorno natural.<br> el botanico puede consumir pociones con solo tocarlas, haciendo que no cuente como acción",
           novato: "Puedes conectarte a 1 caldero y péndulo. Aprendes un talento adicional",
           experto: "Puedes conectarte a 2 calderos y péndulos",
           maestro: "Conexión avanzada con el nur del entorno mediante péndulo",
@@ -163,23 +163,39 @@ let BRUJO = {
         },
         {
           nombre: "Vinculación grupal de poción",
-          descripcionGrimorio: "Activas pociones con pensamiento.",
-          novato: "1 poción hasta 5 m",
-          experto: "2 pociones hasta 15 m",
+          descripcionGrimorio: "Requisitos (Brujo botanico) <br> Activas pociones con pensamiento. <br> un caldero puede almacenar hasta una -pocion tribu- esta pocion cuando se activa afecta a todos los aliados enuna distancia de acuerdo al nivel de este talento <br> <br>",
+          novato: " poción hasta 5 m. se puede hacer el ritual de pocion de tribu una vez al dia",
+          experto: " pociones hasta 10 m",
           maestro: "...",
           hechizos: []
         },
         {
           nombre: "Forrajear el lugar",
           descripcionGrimorio: "Recolección de materiales.",
-          novato: "+2 a forrajear/percepción",
+          novato: "+3 a forrajear/percepción",
           experto: "Puedes relanzar búsqueda",
           maestro: "...",
           hechizos: []
         },
         {
+          nombre: "Pociones de dones",
+          descripcionGrimorio: "Requisitos (Brujo botanico) <br> puedes tomar una pocion que da bonus en algunos atributos <br> puedes vincular a otros druidas y su bestia vinculada que tengan tipo de vinculo: compañero de sangre y compañero leal para tener el mismo bonus a la mitad redondeado para arriba. esta pociones solo pueden ser almacenadas en un caldero, y ocupan completamente el mismo.",
+          novato: "+1 a cualquier atributo por un 1d6+1 turnos/minutos",
+          experto: "+2 a cualquier atributo por un 1d6+2 turnos/minutos",
+          maestro: "...",
+          hechizos: []
+        },
+        {
+          nombre: "Pociones de heridas pasadas",
+          descripcionGrimorio: "Requisitos (Brujo botanico) <br> puedes a la hora de curar a alguien tomar una parte del origen de esa herida y tomar la mitad del daño <br> puedes almacenar hasta un maximo de 2 pociones de este tipo en cada caldero, o en tu bestia hasta maximo una vez o en vbestia que tengan tipo de vinculo: compañero de sangre y compañero leal para tener el mismo bonus a la mitad redondeado para arriba. esta pociones solo pueden ser almacenadas en un caldero, y ocupan completamente el mismo.",
+          novato: "+1 a cualquier atributo por un 1d6+1 turnos/minutos",
+          experto: "+2 a cualquier atributo por un 1d6+2 turnos/minutos",
+          maestro: "...",
+          hechizos: []
+        },
+        {
           nombre: "Ritos de curación (Curandero)",
-          descripcionGrimorio: "Mejora en cirugía y soporte.",
+          descripcionGrimorio: "Requisitos (Brujo curandero)<br> Mejora en cirugía y soporte.",
           novato: "+5 cirugía, +7 evitar muerte, bestia ayuda +3",
           experto: "+2 voluntad al paciente",
           maestro: "+10 vida extra y recuperación más rápida",
@@ -187,7 +203,7 @@ let BRUJO = {
         },
         {
           nombre: "Ritos de curación (Botánico)",
-          descripcionGrimorio: "Cirugía sin daño y mejoras con pociones.",
+          descripcionGrimorio: "Requisitos (Brujo botánico)<br> Cirugía sin daño y mejoras con pociones.",
           novato: "+5 cirugía, sin daño al fallar",
           experto: "Reduce tiempo de recuperación y mejora resultados",
           maestro: "+5 para evitar muerte",
@@ -211,7 +227,7 @@ let BRUJO = {
         },
         {
           nombre: "Puesto médico en batalla",
-          descripcionGrimorio: "Teletransporte a zona segura.",
+          descripcionGrimorio: "La bestia del brujo podrá tocar a cualquiera y de forma voluntaria llevarlo a un puesto medico que haga el brujo el cual le tomara un turno en armar en medio del combate, solo el druida se teletransportara y quedara inconsciente por 1d6 turnos <br> la bestia puede lanzar destreza dif 14 si quiere hacer esto y que no cuente como accion y en cualquier momento. <br> El objetivo debe tener menos de la mitad de vida disponible.",
           novato: "Alcance 10 m",
           experto: "Alcance 100 m",
           maestro: "Alcance 1 km",
@@ -219,7 +235,7 @@ let BRUJO = {
         },
         {
           nombre: "Conocimiento en grimorios de curandero",
-          descripcionGrimorio: "Mejora o creación de hechizos.",
+          descripcionGrimorio: "Requisitos (Brujo curandero)<br> Mejora o creación de hechizos.",
           novato: "Mejora hechizo de nivel novato (discutelo con tu master)",
           experto: "Mejora hechizo de nivel experto, Crea hechizo de nivel experto (discutelo con tu master)",
           maestro: "...",
