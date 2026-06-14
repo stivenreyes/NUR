@@ -187,9 +187,9 @@ let BRUJO = {
         },
         {
           nombre: "Pociones de heridas pasadas",
-          descripcionGrimorio: "Requisitos (Brujo botanico) <br> puedes a la hora de curar a alguien tomar una parte del origen de esa herida y tomar la mitad del daño <br> puedes almacenar hasta un maximo de 2 pociones de este tipo en cada caldero, o en tu bestia hasta maximo una vez o en vbestia que tengan tipo de vinculo: compañero de sangre y compañero leal para tener el mismo bonus a la mitad redondeado para arriba. esta pociones solo pueden ser almacenadas en un caldero, y ocupan completamente el mismo.",
-          novato: "+1 a cualquier atributo por un 1d6+1 turnos/minutos",
-          experto: "+2 a cualquier atributo por un 1d6+2 turnos/minutos",
+          descripcionGrimorio: "Requisitos (Brujo botanico) <br> puedes a la hora de curar a alguien tomar una parte del origen de esa herida y tomar la mitad del daño <br> puedes almacenar hasta un maximo de 2 pociones de este tipo en cada caldero, o en tu bestia hasta maximo una vez o en vbestia que tengan tipo de vinculo: compañero de sangre y compañero leal para tener el mismo bonus a la mitad redondeado para arriba. usar una pocion cuenta como 1 acción.",
+          novato: "Puedes almacenar heridas hechas por criaturas de rango de 1 a 5",
+          experto: "Puedes almacenar heridas hechas por criaturas  de rango de 6 a 10",
           maestro: "...",
           hechizos: []
         },
