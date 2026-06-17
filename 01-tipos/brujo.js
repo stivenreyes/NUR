@@ -34,7 +34,7 @@ let BRUJO = {
         {
           nombre: "Botánico",
           descripcionGrimorio: "Dominio de pociones y conexión con el entorno natural.<br> el botanico puede consumir pociones con solo tocarlas, haciendo que no cuente como acción",
-          novato: "Puedes conectarte a 1 caldero y péndulo. Aprendes un talento adicional",
+          novato: "Puedes conectarte a 1 caldero y péndulo. Aprendes un talento adicional. una vez por dia puedes crear una pocion improvisada de curación usando el propio nur del botanico, de su bestia vinculada, pocion que cura 1d6+nur gastado",
           experto: "Puedes conectarte a 2 calderos y péndulos",
           maestro: "Conexión avanzada con el nur del entorno mediante péndulo",
           hechizos: []
@@ -54,7 +54,7 @@ let BRUJO = {
             {
               nombreHechizo: "Toque sanador (Druida)",
               nivelHechizo: "Novato",
-              descripcion: "Cura 15 + voluntad a un objetivo",
+              descripcion: "Cura 10+1d6 + voluntad a un objetivo",
               tipoHechizo: "Curación",
               costoMana: 2,
               dificultad: 12,
@@ -63,7 +63,7 @@ let BRUJO = {
             {
               nombreHechizo: "Viento sanador (Druida)",
               nivelHechizo: "Novato",
-              descripcion: "Cura 7 + voluntad a un objetivo",
+              descripcion: "Cura 4+1d6 + voluntad a un objetivo",
               tipoHechizo: "Curación",
               costoMana: 2,
               dificultad: 12,
@@ -72,7 +72,7 @@ let BRUJO = {
             {
               nombreHechizo: "Toque sanador (Bestia)",
               nivelHechizo: "Novato",
-              descripcion: "Cura 10 a un objetivo",
+              descripcion: "Cura 7+1d6 a un objetivo",
               tipoHechizo: "Curación",
               costoMana: 2,
               dificultad: 12,
@@ -117,7 +117,7 @@ let BRUJO = {
             {
               nombreHechizo: "Silbido sanador",
               nivelHechizo: "Novato",
-              descripcion: "Cura 15 a hasta 3 druidas",
+              descripcion: "Cura 10+1d6 a hasta 3 druidas",
               tipoHechizo: "Curación",
               costoMana: 2,
               dificultad: 12,
@@ -126,7 +126,7 @@ let BRUJO = {
             {
               nombreHechizo: "Gutural sanador",
               nivelHechizo: "Experto",
-              descripcion: "Cura 10 repartido entre 6 objetivos. <br> si alguien cuenta con los vinculos: compañero de sangre o compañero leal se curara 1d6 adicionales",
+              descripcion: "Cura 7+1d6 repartido entre 6 objetivos. <br> si alguien cuenta con los vinculos: compañero de sangre o compañero leal se curara 1d6 adicionales",
               tipoHechizo: "Curación",
               costoMana: 2,
               dificultad: 12,
@@ -135,7 +135,7 @@ let BRUJO = {
             {
               nombreHechizo: "Aullido sanador",
               nivelHechizo: "Novato",
-              descripcion: "Cura 10 a hasta 3 bestias",
+              descripcion: "Cura 7+1d6 a hasta 3 bestias",
               tipoHechizo: "Curación",
               costoMana: 2,
               dificultad: 12,
@@ -187,10 +187,34 @@ let BRUJO = {
         },
         {
           nombre: "Pociones de heridas pasadas",
-          descripcionGrimorio: "Requisitos (Brujo botanico) <br> puedes a la hora de curar a alguien tomar una parte del origen de esa herida y tomar la mitad del daño <br> puedes almacenar hasta un maximo de 2 pociones de este tipo en cada caldero, o en tu bestia hasta maximo una vez o en vbestia que tengan tipo de vinculo: compañero de sangre y compañero leal para tener el mismo bonus a la mitad redondeado para arriba. usar una pocion cuenta como 1 acción.",
-          novato: "Puedes almacenar heridas hechas por criaturas de rango de 1 a 5",
-          experto: "Puedes almacenar heridas hechas por criaturas  de rango de 6 a 10",
+          descripcionGrimorio: "Requisitos (Brujo botanico) <br> puedes a la hora de curar a alguien tomar una parte del origen de esa herida y tomar la mitad del daño <br> puedes almacenar hasta un maximo de 2 pociones de este tipo en cada caldero, o en tu bestia hasta maximo una vez o en vbestia que tengan tipo de vinculo: compañero de sangre y compañero leal para tener el mismo bonus a la mitad redondeado para arriba. usar una pocion cuenta como 1 acción. si tambien se llega a curar una herida, se hara mas daño. siendo para herida leve +1d6, herida grave 2d6 y herida critica 3d6 de daño",
+          novato: "Puedes almacenar daño hecho por criaturas de rango de 1 a 5",
+          experto: "Puedes almacenar daño hecho por criaturas  de rango de 6 a 10",
           maestro: "...",
+          hechizos: []
+        },
+        {
+          nombre: "Planta ",
+          descripcionGrimorio: "Requisitos (Brujo botanico) <br> que tengan tipo de vinculo: compañero de sangre y compañero leal",
+          novato: "Puedes almacenar daño hecho por criaturas de rango de 1 a 5",
+          experto: "Tu bestia puede tener una tambien",
+          maestro: "...",
+          hechizos: []
+        },
+        {
+          nombre: "Pociones bestiales",
+          descripcionGrimorio: "Requisitos (Brujo botanico) <br> que tengan tipo de vinculo: compañero de sangre y compañero leal",
+          novato: "Puedes ganar una mutacion por unos instantes, debes darle un calmante de lo contrario entrara en modo bestia",
+          experto: "Puedes almacenar daño hecho por criaturas  de rango de 6 a 10",
+          maestro: "...",
+          hechizos: []
+        },
+        {
+          nombre: "Caldero para bestia vinculada",
+          descripcionGrimorio: "Requisitos (Brujo botanico) <br> Tu bestia puede adquirir un caldero (u otro adicional) para hacer pociones  que tengan tipo de vinculo: compañero de sangre y compañero leal ",
+          novato: "Puedes almacenar daño hecho por criaturas de rango de 1 a 5",
+          experto: "Puedes almacenar daño hecho por criaturas  de rango de 6 a 10",
+          maestro: "Requisitos (Brujo botanico) <br> que tengan tipo de vinculo: compañero de sangre y compañero leal",
           hechizos: []
         },
         {

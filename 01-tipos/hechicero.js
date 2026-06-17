@@ -71,7 +71,7 @@ let HECHICERO = {
           alcanceMaximo: "6"
         },
         {
-          nombreHechizo: "Fuego que daña",
+          nombreHechizo: "Fuego corrosivo",
           nivelHechizo: "Experto",
           descripcion: "Tus hechizos de fuego dañan armaduras (5) o armas (1)",
           tipoHechizo: "Ataque",

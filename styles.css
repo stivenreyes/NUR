@@ -1373,3 +1373,16 @@ table {
 .descripcion {
   white-space: pre-line;
 }
+
+
+
+/* ================= para LA TABLA DE ASPECTOS SOCIALES ================= */
+.contenedor-tablas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.contenedor-tablas table {
+    width: 350px;
+}
