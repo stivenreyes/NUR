@@ -471,12 +471,9 @@ a:hover {
     padding: 12px;
     border-color: (5, 139, 0);
     border: 2px solid;
-
     border-radius: 10px;
-
     font-size: 16px;
-
-    color: rgb(5, 139, 0);
+    color: rgb(5, 139, 0);              
     background-color: #1a1a1a;
 
     transition: 0.3s;
@@ -984,6 +981,8 @@ img {
     flex-wrap: wrap;
     margin: 25px 0;
 }
+
+
 
 .buscadores input {
     width: 260px;

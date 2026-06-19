@@ -33,7 +33,7 @@ let BRUJO = {
         },
         {
           nombre: "Botánico",
-          descripcionGrimorio: "Dominio de pociones y conexión con el entorno natural.<br> el botanico puede consumir pociones con solo tocarlas, haciendo que no cuente como acción",
+          descripcionGrimorio: "Dominio de pociones y conexión con el entorno natural.<br> el botanico puede consumir pociones con solo tocarlas, haciendo que no cuente como acción. <br> Puedes crear pociones en situaciones tensas, en medio de un combate.. podras hacerlas es segundos, pero tendran la mitad del efecto (excluyendo proezas)",
           novato: "Puedes conectarte a 1 caldero y péndulo. Aprendes un talento adicional. una vez por dia puedes crear una pocion improvisada de curación usando el propio nur del botanico, de su bestia vinculada, pocion que cura 1d6+nur gastado",
           experto: "Puedes conectarte a 2 calderos y péndulos",
           maestro: "Conexión avanzada con el nur del entorno mediante péndulo",
@@ -179,9 +179,9 @@ let BRUJO = {
         },
         {
           nombre: "Pociones de dones",
-          descripcionGrimorio: "Requisitos (Brujo botanico) <br> puedes tomar una pocion que da bonus en algunos atributos <br> puedes vincular a otros druidas y su bestia vinculada que tengan tipo de vinculo: compañero de sangre y compañero leal para tener el mismo bonus a la mitad redondeado para arriba. esta pociones solo pueden ser almacenadas en un caldero, y ocupan completamente el mismo.",
-          novato: "+1 a cualquier atributo por un 1d6+1 turnos/minutos",
-          experto: "+2 a cualquier atributo por un 1d6+2 turnos/minutos",
+          descripcionGrimorio: "Requisitos (Brujo botanico) <br> puedes tomar una pocion que da bonus en algunos atributos <br> puedes vincular a otros druidas y su bestia vinculada que tengan tipo de vinculo: compañero de sangre y compañero leal para tener el mismo bonus a la mitad redondeado para arriba. esta pociones solo pueden ser almacenadas en un caldero, y ocupan completamente el mismo. <br> lanzas inteligencia / herbolaria <br>0 - 8  No logras crear la pocion <br> 9 - 12  logras crear la pocion +1 al atributo elejido <br>13 - 16  logras crear la pocion +2 al atributo elejido <br>17 - 24 logras crear la pocion  +3 al atributo elejido <br> 25 - ... logras crear la pocion +4 al atributo elejido ",
+          novato: "Duración del efecto 1 turnos/minutos",
+          experto: "Duración del efecto 2 turnos/minutos",
           maestro: "...",
           hechizos: []
         },
@@ -202,6 +202,30 @@ let BRUJO = {
           hechizos: []
         },
         {
+          nombre: "Recipiente de aceite ",
+          descripcionGrimorio: "Requisitos (Brujo botanico) <br> con solo una parte del cuerpo de otro ser, puedes guardar una habilidad que este tenia e invocarlo",
+          novato: "Puedes almacenar daño hecho por criaturas de rango de 1 a 5",
+          experto: "puedes activarlo 2 veces si el recipiente lo has mantenido por 1 mes",
+          maestro: "...",
+          hechizos: []
+        },
+        {
+          nombre: "Clones botanicos  ",
+          descripcionGrimorio: "Requisitos: (Brujo botanico rango 5) <br> puedes invocar dos clones de tu bestia y tuyo para que estos tengan la orden de seguir trabjando creando pociones, solo se puede pedir ordenes muy sencillas y no podran salir del sitio donde fueron invocados ",
+          novato: "Puedes hacer clon de tu bestia",
+          experto: "Puedes hacer clon de ti mismo",
+          maestro: "...",
+          hechizos: []
+        },
+        {
+          nombre: "Pocion de guerra",
+          descripcionGrimorio: "Requisitos: (Brujo botanico rango 5) <br> puedes crear una pocion de rango 3 muy poderosa que requerira tiempo y preparacion para alcanzar su punto maximo, empezara como una simple pocion, requerira horas y dias de trabajo arduo ",
+          novato: "Tu bestia podra almacenar otra pocion asi (adicional si ya cuenta con una pocion asi)",
+          experto: "...",
+          maestro: "...",
+          hechizos: []
+        },        
+        {
           nombre: "Pociones bestiales",
           descripcionGrimorio: "Requisitos (Brujo botanico) <br> que tengan tipo de vinculo: compañero de sangre y compañero leal",
           novato: "Puedes ganar una mutacion por unos instantes, debes darle un calmante de lo contrario entrara en modo bestia",
@@ -212,8 +236,8 @@ let BRUJO = {
         {
           nombre: "Caldero para bestia vinculada",
           descripcionGrimorio: "Requisitos (Brujo botanico) <br> Tu bestia puede adquirir un caldero (u otro adicional) para hacer pociones  que tengan tipo de vinculo: compañero de sangre y compañero leal ",
-          novato: "Puedes almacenar daño hecho por criaturas de rango de 1 a 5",
-          experto: "Puedes almacenar daño hecho por criaturas  de rango de 6 a 10",
+          novato: "Ella puede aprende el talento de: pociones de heridas pasadas o pociones de dones o vinculacion grupal de pocion",
+          experto: "Ella puede obtener otro caldero",
           maestro: "Requisitos (Brujo botanico) <br> que tengan tipo de vinculo: compañero de sangre y compañero leal",
           hechizos: []
         },

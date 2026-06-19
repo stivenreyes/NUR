@@ -69,9 +69,7 @@ function crearTarjeta(producto) {
                         <span class="label">Voluntad:</span>
                         <span class="valor voluntad">${producto.voluntad}</span>
                     </p>` : ""}
-
-
-                    
+                 
                 </div>
 
                 <div class="card-body2">

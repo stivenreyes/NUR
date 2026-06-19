@@ -50,103 +50,148 @@
     <tr><td>Legendario</td><td>10</td></tr>
 </table>
 
-<h3>Tamaño de creación</h3>
-<table>
-    <tr><th>Tamaño</th><th>Bonus</th></tr>
-    <tr><td>Pequeño</td><td>+5</td></tr>
-    <tr><td>Mediano</td><td>+6</td></tr>
-    <tr><td>Grande</td><td>+10</td></tr>
-    <tr><td>Enorme</td><td>+12</td></tr>
-    <tr><td>Gigante</td><td>+17</td></tr>
-    <tr><td>Titánico</td><td>+20</td></tr>
-</table>
 
-<h2>Tiempo</h2>
+<p>
+        Si en la creación de algo el brujo falla y saca un 1 en el dado especial,
+        la mitad de los materiales se dañan (redondeado hacia abajo).
+    </p>
 
-<h3>Dificultad</h3>
-<table>
-    <tr><th>Nivel</th><th>Valor</th></tr>
-    <tr><td>Sencillo</td><td>2</td></tr>
-    <tr><td>Normal</td><td>7</td></tr>
-    <tr><td>Difícil</td><td>10</td></tr>
-    <tr><td>Muy difícil</td><td>15</td></tr>
-    <tr><td>Legendario</td><td>20</td></tr>
-</table>
+    <p>
+        Cada creación dura como mínimo 1 hora.
+    </p>
 
-<h3>Tamaño de creación</h3>
-<table>
-    <tr><th>Tamaño</th><th>Bonus</th></tr>
-    <tr><td>Pequeño</td><td>+5</td></tr>
-    <tr><td>Mediano</td><td>+10</td></tr>
-    <tr><td>Grande</td><td>+15</td></tr>
-    <tr><td>Enorme</td><td>+20</td></tr>
-    <tr><td>Gigante</td><td>+25</td></tr>
-    <tr><td>Titánico</td><td>+30</td></tr>
-</table>
+    <h2>Fabricación</h2>
 
-<h2>Manos</h2>
 
-<h3>Tamaño de creación</h3>
-<table>
-    <tr><th>Tamaño</th><th>Manos</th></tr>
-    <tr><td>Pequeño</td><td>+1</td></tr>
-    <tr><td>Mediano</td><td>+2</td></tr>
-    <tr><td>Grande</td><td>+4</td></tr>
-    <tr><td>Enorme</td><td>+6</td></tr>
-    <tr><td>Gigante</td><td>+8</td></tr>
-    <tr><td>Titánico</td><td>+10</td></tr>
-</table>
+    <div class="requirements">
+        gasta 2 materiales de pocion, por cada botanico o bestia que ayude mas 1 material. maximo 2 participantes
+        Lanza <strong>Inteligencia + Herbolaria</strong> y gasta
+        <strong>3 puntos de Nur</strong>.
+    </div>
 
-<h2>Recursos</h2>
-
-<h3>Dificultad</h3>
-<table>
-    <tr><th>Nivel</th><th>Valor</th></tr>
-    <tr><td>Sencillo</td><td>3</td></tr>
-    <tr><td>Normal</td><td>5</td></tr>
-    <tr><td>Difícil</td><td>10</td></tr>
-    <tr><td>Muy difícil</td><td>15</td></tr>
-    <tr><td>Legendario</td><td>20</td></tr>
-</table>
+    <table>
+        <thead>
+            <tr>
+                <th>Resultado</th>
+                <th>Efecto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0 - 8</td>
+                <td class="fail">❌ No logras crear la poción, dañas la mitad de los materiales, redondeando hacia arriba.</td>
+            </tr>
+            <tr>
+                <td>9 - 12</td>
+                <td class="success">✅ Logras crear la poción (<span class="dice">+2d6</span> de curación).</td>
+            </tr>
+            <tr>
+                <td>13 - 16</td>
+                <td class="success">✅ Logras crear la poción (<span class="dice">+3d6</span> de curación).</td>
+            </tr>
+            <tr>
+                <td>17 - 24</td>
+                <td class="success">✅ Logras crear la poción (<span class="dice">+4d6</span> de curación).</td>
+            </tr>
+            <tr>
+                <td>25 - 30</td>
+                <td class="success">✅ Logras crear la poción (<span class="dice">+5d6</span> de curación).</td>
+            </tr>
+            <tr>
+                <td>31+</td>
+                <td class="success">✨ Logras crear una poción excepcional (<span class="dice">+6d6</span> de curación).</td>
+            </tr>
+        </tbody>
+    </table>
 
 
 
-<h3>Tamaño de creación</h3>
-<table>
-    <tr><th>Tamaño</th><th>Multiplicador</th></tr>
-    <tr><td>Pequeño</td><td>x1</td></tr>
-    <tr><td>Mediano</td><td>x2</td></tr>
-    <tr><td>Grande</td><td>x4</td></tr>
-    <tr><td>Enorme</td><td>x6</td></tr>
-    <tr><td>Gigante</td><td>x8</td></tr>
-    <tr><td>Titánico</td><td>x10</td></tr>
-</table>
+    <table>
+        <thead>
+            <tr>
+                <th>Objeto</th>
+                <th>Requisitos</th>
+                <th>Dificultad</th>
+                <th>Éxitos Requeridos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Poción de salud básica</td>
+                <td>2 materiales, -10 de nur, -2 luxorios</td>
+                <td>12</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Poción de salud mejorada</td>
+                <td>2 materiales, -10 de nur, -5 luxorios</td>
+                <td>14</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Poción de salud avanzada</td>
+                <td>2 materiales, -10 de nur, -8 luxorios</td>
+                <td>15</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Poción de salud amplia básica</td>
+                <td>2 materiales, -10 de nur, -8 luxorios</td>
+                <td>12</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Poción de salud básica (bestias terrestres)</td>
+                <td>2 materiales, -5 de nur, -10 luxorios</td>
+                <td>13</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Poción de salud básica (bestias aéreas)</td>
+                <td>2 materiales, -5 de nur, -10 luxorios</td>
+                <td>14</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Poción de salud básica (bestias acuáticas)</td>
+                <td>2 materiales, -5 de nur, -10 luxorios</td>
+                <td>15</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Poción de nur básica</td>
+                <td>1 material, -5 de nur, -10 luxorios</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Poción de nur mejorada</td>
+                <td>2 materiales, -5 de nur, -10 luxorios</td>
+                <td>14</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Venenos</td>
+                <td>1 material, -5 de nur, -5 luxorios</td>
+                <td>10</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Antídotos</td>
+                <td>3 materiales, -5 de nur, -50 luxorios</td>
+                <td>8</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Fumicidas</td>
+                <td>3 materiales, -5 de nur, -50 luxorios</td>
+                <td>8</td>
+                <td>7</td>
+            </tr>
+        </tbody>
+    </table>
 
-
-
-<h2>Experiencia ganada</h2>
-
-<h3>Dificultad</h3>
-<table>
-    <tr><th>Nivel</th><th>XP</th></tr>
-    <tr><td>Sencillo</td><td>20</td></tr>
-    <tr><td>Normal</td><td>30</td></tr>
-    <tr><td>Difícil</td><td>50</td></tr>
-    <tr><td>Muy difícil</td><td>60</td></tr>
-    <tr><td>Legendario</td><td>80</td></tr>
-</table>
-
-<h3>Tamaño de creación</h3>
-<table>
-    <tr><th>Tamaño</th><th>Bonus</th></tr>
-    <tr><td>Pequeño</td><td>+5</td></tr>
-    <tr><td>Mediano</td><td>+10</td></tr>
-    <tr><td>Grande</td><td>+15</td></tr>
-    <tr><td>Enorme</td><td>+20</td></tr>
-    <tr><td>Gigante</td><td>+25</td></tr>
-    <tr><td>Titánico</td><td>+30</td></tr>
-</table>
-
+</div>
 
 
 <!------------------------------------- REPARACION ----------------------------------------->
