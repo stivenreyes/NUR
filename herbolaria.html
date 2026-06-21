@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taller - Tienda de Nur</title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div id="navbar-container"></div>
+
+<h1>⚗️ Herbolaria ⚗️</h1>
+
+<div class="tabs-container">
+  <button class="tab-btn" data-tab="content1">Pociones de curación</button>
+  <button class="tab-btn" data-tab="content2">Pociones de Nur</button>
+  <button class="tab-btn" data-tab="content3">Pociones de Venenos y antidotos</button>
+  <button class="tab-btn" data-tab="content4">Pociones de fumicidas</button>
+    <button class="tab-btn" data-tab="content5">Creaciones</button>
+</div>
+
+<!-- PESTAÑAS -->
+
+<div class="content">
+  <div id="content1" class="tab-content">
+    <h2>❤️ Pociones de curación ❤️</h2>
+    <p>
+
+
+<p>
+        Si en la creación de algo el brujo falla y saca un 1 en el dado especial,
+        la mitad de los materiales se dañan (redondeado hacia abajo).
+    </p>
+
+    <p>
+        Cada creación dura como mínimo 1 hora.
+    </p>
+
+    <h2>Fabricación</h2>
+
+
+    <div class="requirements">
+        gasta 2 materiales de pocion, por cada botanico o bestia que ayude mas 1 material. maximo 2 participantes
+        Lanza <strong>Inteligencia + Herbolaria</strong> y gasta
+        <strong>3 puntos de Nur</strong>.
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Resultado</th>
+                <th>Efecto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0 - 8</td>
+                <td class="fail">❌ No logras crear la poción, dañas la mitad de los materiales, redondeando hacia arriba.</td>
+            </tr>
+            <tr>
+                <td>9 - 12</td>
+                <td class="success">✅ Logras crear la poción (<span class="dice">+2d6</span> de curación).</td>
+            </tr>
+            <tr>
+                <td>13 - 16</td>
+                <td class="success">✅ Logras crear la poción (<span class="dice">+3d6</span> de curación).</td>
+            </tr>
+            <tr>
+                <td>17 - 24</td>
+                <td class="success">✅ Logras crear la poción (<span class="dice">+4d6</span> de curación).</td>
+            </tr>
+            <tr>
+                <td>25 - 30</td>
+                <td class="success">✅ Logras crear la poción (<span class="dice">+5d6</span> de curación).</td>
+            </tr>
+            <tr>
+                <td>31+</td>
+                <td class="success">✨ Logras crear una poción excepcional (<span class="dice">+6d6</span> de curación).</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Objeto</th>
+                <th>Requisitos</th>
+                <th>Dificultad</th>
+                <th>Éxitos Requeridos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Poción de salud básica</td>
+                <td>2 materiales, -10 de nur, -2 luxorios</td>
+                <td>12</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Poción de salud mejorada</td>
+                <td>2 materiales, -10 de nur, -5 luxorios</td>
+                <td>14</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Poción de salud avanzada</td>
+                <td>2 materiales, -10 de nur, -8 luxorios</td>
+                <td>15</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Poción de salud amplia básica</td>
+                <td>2 materiales, -10 de nur, -8 luxorios</td>
+                <td>12</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Poción de salud básica (bestias terrestres)</td>
+                <td>2 materiales, -5 de nur, -10 luxorios</td>
+                <td>13</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Poción de salud básica (bestias aéreas)</td>
+                <td>2 materiales, -5 de nur, -10 luxorios</td>
+                <td>14</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Poción de salud básica (bestias acuáticas)</td>
+                <td>2 materiales, -5 de nur, -10 luxorios</td>
+                <td>15</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Poción de nur básica</td>
+                <td>1 material, -5 de nur, -10 luxorios</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Poción de nur mejorada</td>
+                <td>2 materiales, -5 de nur, -10 luxorios</td>
+                <td>14</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Venenos</td>
+                <td>1 material, -5 de nur, -5 luxorios</td>
+                <td>10</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Antídotos</td>
+                <td>3 materiales, -5 de nur, -50 luxorios</td>
+                <td>8</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Fumicidas</td>
+                <td>3 materiales, -5 de nur, -50 luxorios</td>
+                <td>8</td>
+                <td>7</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+<!------------------------------------- REPARACION ----------------------------------------->
+<!------------------------------------- REPARACION ----------------------------------------->
+<!------------------------------------- REPARACION ----------------------------------------->
+<!------------------------------------- REPARACION ----------------------------------------->
+<!------------------------------------- REPARACION ----------------------------------------->
+<!------------------------------------- REPARACION ----------------------------------------->
+
+
+<div class="content">
+  <div id="content2" class="tab-content">
+    <h2>🔮 Pociones de Nur 🔮</h2>
+    
+    <p>
+  gasta 2 materiales de pocion, por cada botanico o bestia que ayude mas 1 material. maximo 2 participantes
+        Lanza <strong>Inteligencia/Herbolaria +3D6</strong> y gasta
+        <strong>2 puntos de Nur</strong>.
+</p>
+
+
+<table>
+        <thead>
+            <tr>
+                <th>Resultado</th>
+                <th>Efecto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0 - 8</td>
+                <td class="fail">❌ No logras crear la poción, dañas la mitad de los materiales, redondeando hacia arriba.</td>
+            </tr>
+            <tr>
+                <td>9 - 12</td>
+                <td class="success">✅ Logras crear la poción (<span class="dice">+1d6</span> de curación).</td>
+            </tr>
+            <tr>
+                <td>13 - 16</td>
+                <td class="success">✅ Logras crear la poción (<span class="dice">+2d6</span> de curación).</td>
+            </tr>
+            <tr>
+                <td>17 - 24</td>
+                <td class="success">✅ Logras crear la poción (<span class="dice">+3d6</span> de curación).</td>
+            </tr>
+            <tr>
+                <td>25 - 30</td>
+                <td class="success">✅ Logras crear la poción (<span class="dice">+4d6</span> de curación).</td>
+            </tr>
+            <tr>
+                <td>31+</td>
+                <td class="success">✨ Logras crear una poción excepcional (<span class="dice">+5d6</span> de curación).</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</div>
+
+<!------------------------------------- REPARACION ----------------------------------------->
+<!------------------------------------- REPARACION ----------------------------------------->
+<!------------------------------------- REPARACION ----------------------------------------->
+<!------------------------------------- REPARACION ----------------------------------------->
+<!------------------------------------- REPARACION ----------------------------------------->
+<!------------------------------------- REPARACION ----------------------------------------->
+
+  </div>
+  <div id="content3" class="tab-content">
+    <h2>☠️ Pociones de Venenos y antidotos ☠️</h2>
+
+    <h2>Creación de Venenos</h2>
+
+<p>
+  gasta 2 materiales de pocion, por cada botanico o bestia que ayude mas 1 material. maximo 2 participantes
+        Lanza <strong>Inteligencia/Herbolaria +3D6</strong> y gasta
+        <strong>2 puntos de Nur</strong>.
+</p>
+
+<h3>1. Medio de Aplicación</h3>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Medio</th>
+      <th>Dificultad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tomándolo</td>
+      <td>10</td>
+      <td>El objetivo debe ingerir el veneno.</td>
+    </tr>
+    <tr>
+      <td>Tacto</td>
+      <td>13</td>
+      <td>El veneno actúa al entrar en contacto con la piel.</td>
+    </tr>
+    <tr>
+      <td>Heridas</td>
+      <td>15</td>
+      <td>Debe entrar al cuerpo mediante una herida o arma impregnada.</td>
+    </tr>
+    <tr>
+      <td>Respiratorio</td>
+      <td>18</td>
+      <td>Se dispersa en el aire y afecta al ser inhalado.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>2. Efecto del Veneno</h3>
+
+<p>
+  Utiliza la misma tirada de
+  <strong>Inteligencia + Herbolaria + 3d6</strong>
+  para determinar el efecto que puedes añadir.
+</p>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Efecto</th>
+      <th>Dificultad</th>
+      <th>Daño</th>
+      <th>Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Al instante</td>
+      <td>17</td>
+      <td>4d6</td>
+      <td>El daño se aplica inmediatamente.</td>
+    </tr>
+    <tr>
+      <td>Demorado</td>
+      <td>13</td>
+      <td>6d6</td>
+      <td>Se activa después de 1d6 + 1 turnos.</td>
+    </tr>
+    <tr>
+      <td>Todos los turnos</td>
+      <td>13</td>
+      <td>1d6</td>
+      <td>Inflige daño cada turno mientras dure el efecto.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>3. Ocultar el Veneno</h3>
+
+<p>
+  Realiza una tirada de
+  <strong>Inteligencia + Herbolaria + 3d6</strong>.
+</p>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Resultado</th>
+      <th>Efecto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tirada obtenida</td>
+      <td>
+        Se convierte en la <strong>Dificultad para detectar el veneno</strong>.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  Esta dificultad representa qué tan bien se ha ocultado el veneno en una bebida,
+  alimento, arma, nube tóxica u otro medio de aplicación.
+</p>
+
+<h3>Rango del veneno</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Resultado</th>
+            <th>Efecto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>3 - 12</td>
+            <td class="success">✅ El rango de tu veneno es de 1 (+2 de daño).</td>
+        </tr>
+        <tr>
+            <td>13 - 16</td>
+            <td class="success">✅ El rango de tu veneno es de 2 (+3 de daño).</td>
+        </tr>
+        <tr>
+            <td>17 - 24</td>
+            <td class="success">✅ El rango de tu veneno es de 3 (+4 de daño).</td>
+        </tr>
+        <tr>
+            <td>25 - 30</td>
+            <td class="success">✅ El rango de tu veneno es de 4 (+5 de daño).</td>
+        </tr>
+        <tr>
+            <td>31+</td>
+            <td class="success">✨ El rango de tu veneno es de 5 y logras crear un veneno excepcional (+6 de daño).</td>
+        </tr>
+    </tbody>
+</table>
+        <h2>Creación de antidotos</h2>
+
+
+
+        <p>
+  gasta 2 materiales de pocion, por cada botanico o bestia que ayude mas 1 material. maximo 2 participantes
+        Lanza <strong>Inteligencia/Herbolaria +3D6</strong> y gasta
+        <strong>4 puntos de Nur</strong>.
+</p>
+
+<h3>1. Medio de Aplicación</h3>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Medio</th>
+      <th>Dificultad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tomándolo</td>
+      <td>10</td>
+      <td>El objetivo debe ingerir el antídoto.</td>
+    </tr>
+    <tr>
+      <td>Tacto</td>
+      <td>13</td>
+      <td>El antídoto actúa al entrar en contacto con la piel.</td>
+    </tr>
+    <tr>
+      <td>Heridas</td>
+      <td>15</td>
+      <td>Debe entrar al cuerpo mediante una herida o aplicación directa.</td>
+    </tr>
+    <tr>
+      <td>Respiratorio</td>
+      <td>18</td>
+      <td>Se dispersa en el aire y actúa al ser inhalado.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>2. Efecto del Antídoto</h3>
+
+<p>
+  Utiliza la misma tirada de
+  <strong>Inteligencia + Herbolaria + 3d6</strong>
+  para determinar el efecto que puedes añadir.
+</p>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Efecto</th>
+      <th>Dificultad</th>
+      <th>Curación</th>
+      <th>Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Al instante</td>
+      <td>17</td>
+      <td>La curación se aplica inmediatamente.</td>
+    </tr>
+    <tr>
+      <td>Demorado</td>
+      <td>13</td>
+      <td>Se activa después de 1d6 + 1 turnos.</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<p>
+  Esta dificultad representa qué tan compleja y refinada es la preparación del antídoto.
+</p>
+
+<h3>Rango del Antídoto</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resultado</th>
+      <th>Efecto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3 - 12</td>
+      <td class="success">✅ El rango de tu antídoto es de 1 (<span class="dice">0</span> de curación).</td>
+    </tr>
+    <tr>
+      <td>13 - 16</td>
+      <td class="success">✅ El rango de tu antídoto es de 2 (<span class="dice">+1d6</span> de curación).</td>
+    </tr>
+    <tr>
+      <td>17 - 24</td>
+      <td class="success">✅ El rango de tu antídoto es de 3 (<span class="dice">+2d6</span> de curación).</td>
+    </tr>
+    <tr>
+      <td>25 - 30</td>
+      <td class="success">✅ El rango de tu antídoto es de 4 (<span class="dice">+3d6</span> de curación).</td>
+    </tr>
+    <tr>
+      <td>31+</td>
+      <td class="success">✨ El rango de tu antídoto es de 5 y logras crear una poción excepcional (<span class="dice">+4d6</span> de curación).</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+
+
+
+<!------------------------------------- MEJORAR ----------------------------------------->
+<!------------------------------------- MEJORAR ----------------------------------------->
+<!------------------------------------- MEJORAR ----------------------------------------->
+<!------------------------------------- MEJORAR ----------------------------------------->
+<!------------------------------------- MEJORAR ----------------------------------------->
+
+
+
+
+
+
+  <div id="content4" class="tab-content">
+    <h2>☣️Fumicidas☣️</h2>
+
+    <h2>Inteligencia necesaria</h2>
+
+<h3>Dificultad</h3>
+<table>
+    <tr><th>Nivel</th><th>Puntuación</th></tr>
+    <tr><td>Sencillo</td><td>2</td></tr>
+    <tr><td>Normal</td><td>4</td></tr>
+    <tr><td>Difícil</td><td>6</td></tr>
+    <tr><td>Muy difícil</td><td>9</td></tr>
+    <tr><td>Legendario</td><td>12</td></tr>
+</table>
+
+  </div>
+  
+<!------------------------------------- MEJORAR ----------------------------------------->
+<!------------------------------------- MEJORAR ----------------------------------------->
+<!------------------------------------- MEJORAR ----------------------------------------->
+<!------------------------------------- MEJORAR ----------------------------------------->
+<!------------------------------------- MEJORAR ----------------------------------------->
+
+
+
+
+
+
+  <div id="content5" class="tab-content">
+    <h2>🏺 Creaciones 🏺</h2>
+
+    <h2>Inteligencia necesaria</h2>
+
+<h3>Dificultad</h3>
+<table>
+    <tr><th>Nivel</th><th>Puntuación</th></tr>
+    <tr><td>Sencillo</td><td>2</td></tr>
+    <tr><td>Normal</td><td>4</td></tr>
+    <tr><td>Difícil</td><td>6</td></tr>
+    <tr><td>Muy difícil</td><td>9</td></tr>
+    <tr><td>Legendario</td><td>12</td></tr>
+</table>
+
+<h2>Dificultad de la tirada</h2>
+
+<h3>Dificultad</h3>
+<table>
+    <tr><th>Nivel</th><th>Valor</th></tr>
+    <tr><td>Sencillo</td><td>4</td></tr>
+    <tr><td>Normal</td><td>6</td></tr>
+    <tr><td>Difícil</td><td>8</td></tr>
+    <tr><td>Muy difícil</td><td>10</td></tr>
+    <tr><td>Legendario</td><td>13</td></tr>
+</table>
+
+<h3>Tamaño de creación</h3>
+<table>
+    <tr><th>Tamaño</th><th>Bonus</th></tr>
+    <tr><td>Pequeño</td><td>+5</td></tr>
+    <tr><td>Mediano</td><td>+6</td></tr>
+    <tr><td>Grande</td><td>+10</td></tr>
+    <tr><td>Enorme</td><td>+12</td></tr>
+    <tr><td>Gigante</td><td>+17</td></tr>
+    <tr><td>Titánico</td><td>+20</td></tr>
+</table>
+
+<h2>Tiempo</h2>
+
+<h3>Dificultad</h3>
+<table>
+    <tr><th>Nivel</th><th>Valor</th></tr>
+    <tr><td>Sencillo</td><td>2</td></tr>
+    <tr><td>Normal</td><td>7</td></tr>
+    <tr><td>Difícil</td><td>10</td></tr>
+    <tr><td>Muy difícil</td><td>15</td></tr>
+    <tr><td>Legendario</td><td>20</td></tr>
+</table>
+
+<h2>Recursos</h2>
+
+<h3>Dificultad</h3>
+<table>
+    <tr><th>Nivel</th><th>Valor</th></tr>
+    <tr><td>Sencillo</td><td>3</td></tr>
+    <tr><td>Normal</td><td>5</td></tr>
+    <tr><td>Difícil</td><td>10</td></tr>
+    <tr><td>Muy difícil</td><td>15</td></tr>
+    <tr><td>Legendario</td><td>20</td></tr>
+</table>
+
+
+
+
+<h3>Mejora</h3>
+
+<p><strong>Tirada:</strong> Precision, Destreza, fuerza o voluntad / Artesania + 3d6</p>
+
+<table>
+<tr><th>Resultado</th><th>Efecto</th></tr>
+<tr><td>0 - 6</td><td> No obtienes alguna mejora</td></tr>
+<tr><td>7 - 10</td><td>Obtienes una mejora</td></tr>
+<tr><td>11 - 15</td><td>Obtienes dos mejoras</td></tr>
+<tr><td>16 - 20</td><td>Obtienes tres mejoras</td></tr>
+<tr><td>21+</td><td>Obtienes cuatro mejoras</td></tr>
+</table>
+
+
+
+<h2>Experiencia ganada</h2>
+
+<h3>Dificultad</h3>
+<table>
+    <tr><th>Nivel</th><th>XP</th></tr>
+    <tr><td>Sencillo</td><td>30</td></tr>
+    <tr><td>Normal</td><td>40</td></tr>
+    <tr><td>Difícil</td><td>60</td></tr>
+    <tr><td>Muy difícil</td><td>70</td></tr>
+    <tr><td>Legendario</td><td>100</td></tr>
+</table>
+
+<h3>Tamaño de creación</h3>
+<table>
+    <tr><th>Tamaño</th><th>Bonus</th></tr>
+    <tr><td>Pequeño</td><td>+5</td></tr>
+    <tr><td>Mediano</td><td>+10</td></tr>
+    <tr><td>Grande</td><td>+15</td></tr>
+    <tr><td>Enorme</td><td>+20</td></tr>
+    <tr><td>Gigante</td><td>+25</td></tr>
+    <tr><td>Titánico</td><td>+30</td></tr>
+</table>
+  </div> 
+</div>
+
+
+
+
+<!-- TABLAS DE CREACIÓN -->
+
+
+<!-- ================= MECÁNICA GENERAL ================= -->
+
+
+
+<button id="btn-arriba">↑</button>
+
+<a href="#" class="btn" onclick="history.back()">Volver</a>
+
+
+<script src="01-tipos/navbar.js"></script>
+<script src="01-tipos/tabs.js"></script>
+ <script src="01-tipos/01-componentes.js"></script>  
+</body>
+</html>

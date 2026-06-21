@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amara</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div id="navbar-container"></div>
+
+<div class="header-armas">
+  <h1>Arbol de decision</h1>
+</div>
+
+<div id="contenedoramara">
+  <img id="imagenamara" src="arbol.png">
+</div>
+
+
+<!-- BOTONES -->
+<div class="zoom-controls">
+  <button id="zoomIn">+</button>
+  <button id="zoomOut">−</button>
+</div>
+
+<a href="#" class="btn" onclick="history.back()">Volver</a>
+
+<script src="https://unpkg.com/@panzoom/panzoom/dist/panzoom.min.js"></script>
+
+<script>
+  const elem = document.getElementById('imagenamara');
+
+  const panzoom = Panzoom(elem, {
+    maxScale: 5,
+    minScale: 1,
+    contain: 'none'
+  });
+
+  // 🔥 zoom inicial (2x)
+  window.addEventListener('load', () => {
+    panzoom.zoom(2);
+  });
+
+  document.getElementById('zoomIn').addEventListener('click', () => {
+    panzoom.zoomIn();
+  });
+
+  document.getElementById('zoomOut').addEventListener('click', () => {
+    panzoom.zoomOut();
+  });
+</script>
+
+<script src="01-tipos/navbar.js"></script>
+<script src="01-tipos/01-componentes.js"></script>
+
+</body>
+</html>

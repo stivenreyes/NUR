@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Escenas</title>
+</head>
+<body>
+
+<div id="navbar-container"></div>
+
+<h1>Crear una bestia vinculada</h1>
+
+<p id="texto-paso">Paso 1 de 5</p>
+
+<div class="barra-progreso">
+    <div id="progreso"></div>
+</div>
+
+<!-- BOTONES -->
+<button onclick="anterior()">Anterior</button>
+<button onclick="siguiente()">Siguiente</button>
+
+
+<!-- ================= PASO 1 ================= -->
+<div id="paso1" class="paso activo">
+
+    <h2>Paso 1</h2>
+
+    <section>
+        <h2>Elige la especie de tu bestia</h2>
+
+        <p>
+            Selecciona una bestia disponible de tu nación.
+        </p>
+
+        <button onclick="window.location.href='bestias.html'">
+            Lista de bestias
+        </button>
+    </section>
+
+    <h2>Detalles generales</h2>
+
+    <p>
+        Busca tu bestia para ver sus atributos, habilidades y características.
+    </p>
+
+
+<!-- 🔥 BUSCADOR DE BESTIAS (SIN FILTROS) -->
+<h4>Buscar bestias</h4>
+
+<input 
+    type="text" 
+    id="buscador" 
+    placeholder="Buscar bestia..."
+>
+
+<!-- 🔥 CONTENEDOR DONDE APARECEN -->
+<div id="contenedor-bestias"></div>
+
+
+    <section>
+
+        <h3>Edad</h3>
+        <p>Escribe la edad de tu bestia.</p>
+
+        <h3>Género</h3>
+        <p>Elige: <strong>Macho</strong> o <strong>Hembra</strong>.</p>
+
+        <h3>Características de la Bestia</h3>
+        <p>Usa los datos de la bestia elegida.</p>
+
+        <ul>
+            <li><strong>Terreno:</strong> viento, agua, tierra u otro.</li>
+            <li><strong>Armadura Natural:</strong> defensa innata.</li>
+            <li><strong>Tamaño:</strong> dimensiones.</li>
+            <li><strong>Rango:</strong> según la bestia o el máster.</li>
+        </ul>
+
+        <h3>Atributos</h3>
+        <p>Cada bestia tiene atributos base definidos.</p>
+
+        <p>Puedes añadir <strong>+1</strong> a un atributo.</p>
+
+            <p>Elegir enfoques</p>
+
+    <h3>Enfoques</h3>
+
+    <p>
+        Los enfoques otorgan un bonificador de <strong>+2</strong> en las tiradas relacionadas
+        con una habilidad específica dentro de un atributo.
+    </p>
+
+        <h3>Habilidades</h3>
+        <p>Anota las habilidades de la bestia elegida.</p>
+
+        <h3>Ataques</h3>
+        <p>Anota el ataque de la bestia elegida.</p>
+
+    </section>
+
+</div>
+
+
+<!-- ================= PASO 2 ================= -->
+
+<div id="paso2" class="paso">
+    <h2>Paso 2</h2>
+    
+<section>
+    <h2>Comportamiento de las Bestias</h2>
+    <p>
+        Las personalidades representan el temperamento base de una bestia y otorgan un bonificador
+        de atributo asociado a su comportamiento.
+    </p>
+</section>
+
+<section>
+    <h3>Tímido</h3>
+    <p>Bestia que siente inseguridad o miedo al interactuar con otros.</p>
+    <p><strong>Bonificación:</strong> +1 Precisión</p>
+</section>
+
+<section>
+    <h3>Agresivo</h3>
+    <p>Bestia que muestra ira o hostilidad fácilmente, a menudo de forma impulsiva.</p>
+    <p><strong>Bonificación:</strong> +1 Fuerza</p>
+</section>
+
+<section>
+    <h3>Ansioso</h3>
+    <p>Bestia que siente preocupación excesiva o nerviosismo ante situaciones.</p>
+    <p><strong>Bonificación:</strong> +1 Destreza</p>
+</section>
+
+<section>
+    <h3>Frío</h3>
+    <p>Bestia que muestra poca empatía o calidez emocional hacia los demás.</p>
+    <p><strong>Bonificación:</strong> +1 Instinto</p>
+</section>
+
+<section>
+    <h3>Alegre</h3>
+    <p>Bestia que transmite buen humor y entusiasmo en su forma de ser.</p>
+    <p><strong>Bonificación:</strong> +1 Comunicación</p>
+</section>
+
+<section>
+    <h3>Inseguro</h3>
+    <p>Bestia que duda constantemente de sí misma o de sus decisiones.</p>
+    <p><strong>Bonificación:</strong> +1 Percepción</p>
+</section>
+
+<section>
+    <h3>Coqueto</h3>
+    <p>Bestia que usa gestos o palabras para mostrar interés romántico o atracción.</p>
+    <p><strong>Bonificación:</strong> +1 Comunicación</p>
+</section>
+
+<section>
+    <h3>Cortés</h3>
+    <p>Bestia que trata a los demás con respeto, educación y buenas formas.</p>
+    <p><strong>Bonificación:</strong> +1 Comunicación</p>
+</section>
+
+<section>
+    <h3>Egocéntrico</h3>
+    <p>Bestia que piensa principalmente en sí misma y sus propias necesidades.</p>
+    <p><strong>Bonificación:</strong> +1 Voluntad</p>
+</section>
+
+<section>
+    <h3>Reflexivo</h3>
+    <p>Bestia que analiza las situaciones antes de actuar o tomar decisiones.</p>
+    <p><strong>Bonificación:</strong> +1 Instinto</p>
+</section>
+
+<section>
+    <h3>Perezoso</h3>
+    <p>Bestia que evita hacer esfuerzos o actividades por falta de motivación o energía.</p>
+    <p><strong>Bonificación:</strong> +1 Percepción</p>
+</section>
+
+<section>
+    <h3>Compasivo</h3>
+    <p>Bestia que muestra empatía y deseo de ayudar a quienes sufren o necesitan apoyo.</p>
+    <p><strong>Bonificación:</strong> +1 Comunicación</p>
+</section>
+
+
+</section>
+
+
+</div>
+
+
+
+<!-- ================= PASO 3 ================= -->
+<div id="paso3" class="paso">
+    <h2>Paso 3</h2>
+    
+<section>
+    <h2>Aspectos Sociales</h2>
+
+<section>
+
+
+    <p>
+        En esta sección definirás cómo es tu relación con tu bestia vinculada.
+    </p>
+
+    <p>
+        Existen tres aspectos sociales que representan distintos elementos de vuestro vínculo:
+    </p>
+
+    <ul>
+        <li>
+            <strong>Entendimiento:</strong> representa qué tan bien te comprende tu bestia mediante
+            palabras, gestos, señales o lenguaje corporal.
+        </li>
+
+        <li>
+            <strong>Confianza:</strong> representa la seguridad que ambos tienen el uno en el otro.
+            Refleja la cooperación, la honestidad y la certeza de que el otro actuará de forma adecuada
+            cuando sea necesario.
+        </li>
+
+        <li>
+            <strong>Valentía:</strong> representa la disposición de tu bestia para enfrentarse a peligros,
+            luchar y afrontar dificultades mientras permanece a tu lado.
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Tipo de Vinculación</h2>
+
+    <p>
+        El primer paso es definir el tipo de vínculo que existe entre tu personaje y su bestia.
+    </p>
+
+    <p>
+        Cada tipo de vinculación representa la forma en que normalmente se relacionan y determina
+        las puntuaciones iniciales de los aspectos sociales.
+    </p>
+
+    <p>
+        Elige una de las siguientes opciones y anótala en el apartado
+        <strong>Tipo de Vinculación</strong> de tu hoja de personaje.
+    </p>
+
+    <h3>Compañero de Guerra</h3>
+    <p>
+        Tú y tu bestia destacan luchando juntos. El combate es el momento donde mejor encuentran
+        su sincronía.
+    </p>
+
+    <h3>Compañero Leal</h3>
+    <p>
+        Tú y tu bestia disfrutan de la compañía mutua en los momentos tranquilos de la vida.
+        Compartir tiempo juntos fortalece vuestro vínculo.
+    </p>
+
+    <h3>Compañero de Sangre</h3>
+    <p>
+        Existe una conexión profunda entre ambos. En los momentos más difíciles saben que pueden
+        contar el uno con el otro sin necesidad de palabras.
+    </p>
+
+    <h3>Compañero Estratégico</h3>
+    <p>
+        La planificación y la coordinación son vuestra mayor fortaleza. Vuestro vínculo destaca
+        por la estrategia y la capacidad de actuar como una sola mente.
+    </p>
+
+    <h3>Compañero de Armas</h3>
+    <p>
+        Ambos se protegen mutuamente en combate. Cada uno vigila la espalda del otro y lucha
+        como parte de un mismo equipo.
+    </p>
+
+    <h3>Compañero de Juego</h3>
+    <p>
+        La relación entre ambos se basa en la diversión, los gestos, las señales y la compañía.
+        Es uno de los vínculos más tiernos entre un druida y su bestia.
+    </p>
+</section>
+
+<h2>🎭 Bonus por Tipo de Vínculo</h2>
+
+<p>
+Cada tipo de vínculo otorga un <strong>+1 a atributos específicos</strong>, tanto para el druida como para la bestia.
+El atributo de <strong>Inteligencia del druida</strong> se refleja como <strong>Instinto en la bestia</strong>.
+</p>
+
+<p>
+El bonus se aplica al mismo atributo en ambos (druida y bestia), según el tipo de vínculo elegido.
+</p>
+
+<hr>
+
+<h3>⚔️ Compañero de Guerra</h3>
+<p>
++1 a <strong>Pelea</strong>, <strong>Inteligencia</strong>, <strong>Voluntad</strong> o <strong>Precisión</strong>.
+</p>
+
+<h3>🤝 Compañero Leal</h3>
+<p>
++1 a <strong>Voluntad</strong> o <strong>Comunicación</strong>.
+</p>
+
+<h3>🩸 Compañero de Sangre</h3>
+<p>
++1 a <strong>Voluntad</strong> o <strong>Constitución</strong>.
+</p>
+
+<h3>🧠 Compañero Estratégico</h3>
+<p>
++1 a <strong>Inteligencia</strong>, <strong>Comunicación</strong> o <strong>Percepción</strong>.
+</p>
+
+<h3>🗡️ Compañero de Armas</h3>
+<p>
++1 a <strong>Pelea</strong> o <strong>Precisión</strong>.
+</p>
+
+<h3>🎲 Compañero de Juego</h3>
+<p>
++1 a cualquier atributo <strong>excepto Constitución</strong>.
+</p>
+
+
+<section>
+    <h2>Puntuaciones Iniciales</h2>
+
+    <p>
+        Una vez elegido el tipo de vinculación, asigna las siguientes puntuaciones y bonificadores
+        a los aspectos sociales.
+    </p>
+<div class="contenedor-tablas">
+    <table>
+        <thead>
+            <tr>
+                <th>Compañero de Guerra</th>
+                <th>Puntuación</th>
+                <th>Bonificador</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Entendimiento</td>
+                <td>1</td>
+                <td>x2</td>
+            </tr>
+            <tr>
+                <td>Confianza</td>
+                <td>0</td>
+                <td>x1</td>
+            </tr>
+            <tr>
+                <td>Valentía</td>
+                <td>2</td>
+                <td>x3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Compañero Leal</th>
+                <th>Puntuación</th>
+                <th>Bonificador</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Entendimiento</td>
+                <td>1</td>
+                <td>x2</td>
+            </tr>
+            <tr>
+                <td>Confianza</td>
+                <td>2</td>
+                <td>x3</td>
+            </tr>
+            <tr>
+                <td>Valentía</td>
+                <td>0</td>
+                <td>x1</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Compañero de Sangre</th>
+                <th>Puntuación</th>
+                <th>Bonificador</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Entendimiento</td>
+                <td>0</td>
+                <td>x1</td>
+            </tr>
+            <tr>
+                <td>Confianza</td>
+                <td>2</td>
+                <td>x3</td>
+            </tr>
+            <tr>
+                <td>Valentía</td>
+                <td>1</td>
+                <td>x2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Compañero Estratégico</th>
+                <th>Puntuación</th>
+                <th>Bonificador</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Entendimiento</td>
+                <td>2</td>
+                <td>x3</td>
+            </tr>
+            <tr>
+                <td>Confianza</td>
+                <td>0</td>
+                <td>x1</td>
+            </tr>
+            <tr>
+                <td>Valentía</td>
+                <td>1</td>
+                <td>x2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Compañero de Armas</th>
+                <th>Puntuación</th>
+                <th>Bonificador</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Entendimiento</td>
+                <td>0</td>
+                <td>x1</td>
+            </tr>
+            <tr>
+                <td>Confianza</td>
+                <td>1</td>
+                <td>x2</td>
+            </tr>
+            <tr>
+                <td>Valentía</td>
+                <td>2</td>
+                <td>x3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Compañero de Juego</th>
+                <th>Puntuación</th>
+                <th>Bonificador</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Entendimiento</td>
+                <td>2</td>
+                <td>x3</td>
+            </tr>
+            <tr>
+                <td>Confianza</td>
+                <td>1</td>
+                <td>x2</td>
+            </tr>
+            <tr>
+                <td>Valentía</td>
+                <td>0</td>
+                <td>x1</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</section>
+
+<section>
+    <h2>Valor Máximo y Diferencia</h2>
+
+    <p>
+        Cada aspecto social tiene una puntuación actual, un valor máximo y una diferencia.
+    </p>
+
+    <ul>
+        <li>
+            <strong>Puntuación:</strong> valor actual del aspecto social.
+        </li>
+
+        <li>
+            <strong>Máximo:</strong> normalmente es 5, a menos que el Director de Juego indique lo contrario.
+        </li>
+
+        <li>
+            <strong>Diferencia:</strong> se calcula restando la puntuación al valor máximo e ignorando
+            cualquier signo negativo.
+        </li>
+    </ul>
+
+    <p><strong>Ejemplos:</strong></p>
+
+    <ul>
+        <li>2 − 5 = -3 → Diferencia: 3</li>
+        <li>1 − 5 = -4 → Diferencia: 4</li>
+        <li>0 − 5 = -5 → Diferencia: 5</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Desvinculación y Vinculación</h2>
+
+    <p>
+        Estos valores representan el estado general de la relación entre tu personaje y su bestia.
+    </p>
+
+    <h3>Desvinculación</h3>
+    <p>
+        Suma las diferencias actuales de Entendimiento, Confianza y Valentía.
+        El resultado es tu valor de Desvinculación.
+    </p>
+
+    <h3>Vinculación</h3>
+    <p>
+        Resta la Desvinculación a 10.
+    </p>
+
+    <p>
+        <strong>Fórmula:</strong>
+    </p>
+
+    <p>
+        Vinculación = 10 − Desvinculación
+    </p>
+
+    <h3>Ejemplo</h3>
+
+    <ul>
+        <li>Entendimiento: Diferencia 5</li>
+        <li>Confianza: Diferencia 4</li>
+        <li>Valentía: Diferencia 4</li>
+    </ul>
+
+    <p>
+        Desvinculación = 5 + 4 + 4 = 13
+    </p>
+
+    <p>
+        Vinculación = 10 − 13 = -3
+    </p>
+</section>
+
+
+</section>
+
+
+</div>
+
+
+<!-- ================= PASO 4 ================= -->
+<div id="paso4" class="paso">
+    <h2>Paso 4</h2>
+    <p>Detalles adicionales</p>
+    <!-- ================= ATRIBUTOS ================= -->
+
+<h2>Detalles adicionales</h2>
+
+
+<h3>❤️ Vida (Constitución)</h3>
+
+<table>
+    <tr><th>Constitución</th><th>Vida</th></tr>
+     <tr><td>-2</td><td>40</td></tr>
+    <tr><td>-1</td><td>45</td></tr>
+    <tr><td>0</td><td>50</td></tr>
+    <tr><td>1</td><td>55</td></tr>
+    <tr><td>2</td><td>60</td></tr>
+    <tr><td>3</td><td>65</td></tr>
+    <tr><td>4</td><td>70</td></tr>
+    <tr><td>5</td><td>75</td></tr>
+    <tr><td>6</td><td>80</td></tr>
+    <tr><td>7</td><td>90</td></tr>
+    <tr><td>8</td><td>100</td></tr>
+    <tr><td>9</td><td>110</td></tr>
+    <tr><td>10</td><td>130</td></tr>
+    <tr><td>11</td><td>145</td></tr>
+    <tr><td>12</td><td>160</td></tr>
+    <tr><td>13</td><td>175</td></tr>
+    <tr><td>14</td><td>180</td></tr>
+    <tr><td>15</td><td>200</td></tr>
+</table>
+
+<h3>🔮 Nur (Voluntad / Inteligencia - Hechicero Caótico)</h3>
+
+<table>
+    <tr><th>Puntuación (Voluntad / Inteligencia)</th><th>Nur</th></tr>
+    
+
+    <tr><td>-2</td><td>0</td></tr>
+    <tr><td>-1</td><td>0</td></tr>
+    <tr><td>0</td><td>0</td></tr>
+    <tr><td>1</td><td>5</td></tr>
+    <tr><td>2</td><td>8</td></tr>
+    <tr><td>3</td><td>10</td></tr>
+    <tr><td>4</td><td>13</td></tr>
+    <tr><td>5</td><td>15</td></tr>
+    <tr><td>6</td><td>18</td></tr>
+    <tr><td>7</td><td>22</td></tr>
+    <tr><td>8</td><td>25</td></tr>
+    <tr><td>9</td><td>28</td></tr>
+    <tr><td>10</td><td>30</td></tr>
+</table>
+
+<h3>⚡ Velocidad / Destreza</h3>
+
+<table>
+    <tr>
+        <th>Puntuación en destreza</th>
+        <th>Velocidad</th>
+    </tr>
+    <tr><td>-2</td><td>2</td></tr>
+    <tr><td>-1</td><td>2</td></tr>
+    <tr><td>0</td><td>2</td></tr>
+    <tr><td>1</td><td>3</td></tr>
+    <tr><td>2</td><td>3</td></tr>
+    <tr><td>3</td><td>4</td></tr>
+    <tr><td>4</td><td>4</td></tr>
+    <tr><td>5</td><td>5</td></tr>
+    <tr><td>6</td><td>5</td></tr>
+    <tr><td>7</td><td>6</td></tr>
+    <tr><td>8</td><td>6</td></tr>
+    <tr><td>9</td><td>7</td></tr>
+    <tr><td>10</td><td>7</td></tr>
+    <tr><td>11</td><td>8</td></tr>
+    <tr><td>12</td><td>8</td></tr>
+    <tr><td>13</td><td>9</td></tr>
+    <tr><td>14</td><td>9</td></tr>
+    <tr><td>15</td><td>10</td></tr>
+</table>
+
+<h3>📦 Nivel de aguante de peso del equipo</h3>
+
+<table>
+    <tr>
+        <th>Puntuación en Constitución</th>
+        <th>Peso soportado</th>
+    </tr>
+
+    <tr><td>-2</td><td>3</td></tr>
+    <tr><td>-1</td><td>5</td></tr>
+    <tr><td>0</td><td>6</td></tr>
+    <tr><td>1</td><td>8</td></tr>
+    <tr><td>2</td><td>10</td></tr>
+    <tr><td>3</td><td>14</td></tr>
+    <tr><td>4</td><td>17</td></tr>
+    <tr><td>5</td><td>20</td></tr>
+    <tr><td>6</td><td>25</td></tr>
+    <tr><td>7</td><td>30</td></tr>
+    <tr><td>8</td><td>35</td></tr>
+    <tr><td>9</td><td>40</td></tr>
+    <tr><td>10</td><td>50</td></tr>
+</table>
+
+
+
+
+<h2>🌀 Esquiva</h2>
+<p>La esquiva es igual a la destreza y si tienes el enfoque de esquivar mas 2.</p>
+
+
+
+</div>
+
+<!-- ================= PASO 5 ================= -->
+<div id="paso5" class="paso">
+
+    <h2>Paso 5</h2>
+
+    <section>
+        <h2>Equipo</h2>
+
+        <p>
+            Escribe un objeto especial que conecte a tu bestia contigo. Tanto tú como ella tendrán una copia en la sección de equipo, este objeto será necesario para hacer ceremonias con tu bestia vinculada        </p>
+
+        <p>
+            Ejemplos: Anillo de madera, arete de pluma, tatuaje runa, esmeralda...
+        </p>
+    </section>
+
+</div>
+
+
+<!-- ================= PASO 6 ================= -->
+<div id="paso6" class="paso">
+    <h2>Paso 6</h2>
+    <p>Elegir el nombre de tu druida</p>
+<section>
+    <h2>Nombra tu druida</h2>
+
+    <p>
+<section>
+    <p>Cada nación posee un idioma propio con patrones fonéticos únicos.</p>
+</section>
+
+```html id="b7k3xq"
+<section>
+    <h2>Sistema de nombres de bestias</h2>
+
+    <h3>Estructura</h3>
+    <p>
+        <strong>[Sílaba del jinete] + [Sílaba de nación] + [Sílaba variable]</strong>
+    </p>
+
+    <p><strong>Ejemplo:</strong> Rra + Na + Kru → Rranakru</p>
+    <p>Yak + Ta + Bel → Yaktabel</p>
+    <p>Cry + Sha + Mor → Cryshamor</p>
+</section>
+
+<section>
+    <h2>Sílabas del jinete (vínculo)</h2>
+    <p>Representan a la persona que vincula a la bestia.</p>
+    <p>Rra, Kro, Vek, Dru, Gha, Tho, Zek, Bra, Rhu, Kha, Vra, Trok, Nha, Sku, Dza</p>
+</section>
+
+<section>
+    <h2>Sílabas de nación</h2>
+    <p>Identifican el origen cultural.</p>
+    <p>Na (bosque), Ta (costa), Sha (desierto), Dra (montaña), Ke, Lu, Va, Se, Mo, Ri, Za, Qu, He, Yi, Tu</p>
+</section>
+
+<section>
+    <h2>Sílabas de color</h2>
+    <ul>
+        <li>Ba = negro</li>
+        <li>Bi = blanco</li>
+        <li>Bo = rojo</li>
+        <li>Ge = verde</li>
+        <li>Bu = azul</li>
+        <li>Ye = amarillo</li>
+        <li>Ash = gris</li>
+        <li>Brn = marrón</li>
+        <li>Crm = crema</li>
+        <li>Pur = púrpura</li>
+        <li>Gol = dorado</li>
+        <li>Sil = plateado</li>
+        <li>Oxb = óxido</li>
+        <li>Smk = humo</li>
+        <li>Iri = iridiscente</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Sílabas de comportamiento</h2>
+    <ul>
+        <li>Hu = agresivo</li>
+        <li>Ca = calmado</li>
+        <li>Sk = rápido</li>
+        <li>St = sigiloso</li>
+        <li>Fu = feroz</li>
+        <li>Pl = protector</li>
+        <li>Cu = curioso</li>
+        <li>Wi = inteligente</li>
+        <li>Du = obediente</li>
+        <li>Ro = errático</li>
+        <li>Ba = territorial</li>
+        <li>Li = leal</li>
+        <li>Ve = salvaje</li>
+        <li>Gl = juguetón</li>
+        <li>Mo = paciente</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Sílabas de rasgo físico</h2>
+    <ul>
+        <li>Ho = cuernos</li>
+        <li>Wi = alas</li>
+        <li>Ta = cola larga</li>
+        <li>Sc = cicatriz</li>
+        <li>Fu = pelaje grueso</li>
+        <li>Sh = escamas</li>
+        <li>Cl = garras grandes</li>
+        <li>Te = dientes prominentes</li>
+        <li>Fi = bioluminiscencia</li>
+        <li>El = ojos </li>
+        <li>Br = armadura natural</li>
+        <li>Sn = serpentino</li>
+        <li>Fe = plumas</li>
+        <li>Cr = cresta</li>
+        <li>Sp = espinas</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Ejemplos completos</h2>
+    <p>Rra + Na + Re → Rranare</p>
+    <p>Yak + Ta + Sk → Yaktask</p>
+    <p>Cry + Sha + Ho → Cryshaho</p>
+    <p>Vek + Dra + Bl → Vekdrabl</p>
+    <p>Tho + Na + Wi → Thonawi</p>
+</section>
+
+<section>
+    <h2>Reglas de pronunciación (idioma tribal)</h2>
+
+    <h3>1. Regla de alternancia</h3>
+    <p>No se pueden unir sílabas del mismo tipo de sonido consecutivamente.</p>
+
+    <p><strong>Tipos:</strong></p>
+    <ul>
+        <li>Duras: Rra, Kro, Dra, Gha, Kha, Trok</li>
+        <li>Suaves: Yak, Na, Sha, Lu, Ri, Mo</li>
+        <li>Neutras: Vek, Dru, Zek, Tho, Vra</li>
+    </ul>
+
+    <p><strong>Ejemplo:</strong> Rra + Na + Bl ✔️ / Rra + Kro + Bl ❌</p>
+
+    <h3>2. Regla de choque consonántico</h3>
+    <p>Si dos consonantes chocan, se suavizan con vocales intermedias.</p>
+    <p>Krsh → Karesh / Rrbl → Rarabel / Dshk → Dashak</p>
+
+    <h3>3. Regla de vocal dominante</h3>
+    <p>Cada nombre debe tener una vocal dominante: A, O, I, U o E.</p>
+
+    <h3>4. Regla de suavizado final</h3>
+    <p>Los nombres no deben terminar en sonido duro sin vocal final.</p>
+
+    <p>❌ Rranak / ✔️ Rranaka</p>
+
+    <h3>5. Regla de fusión obligatoria</h3>
+    <p>Las sílabas se fusionan al unirse:</p>
+    <p>Rra + Na → Rrana / Yak + Ta → Yakta / Cry + Sha → Crysha</p>
+
+    <h3>6. Regla de ritmo tribal</h3>
+    <ul>
+        <li>Suave → medio → suave</li>
+        <li>Fuerte → suave → fuerte</li>
+        <li>Alternado rápido</li>
+    </ul>
+
+    <h3>7. Regla de límite de sonidos raros</h3>
+    <p>Solo puede haber un sonido raro por nombre (rr, zh, kh, sh, qr, th).</p>
+
+    <h3>8. Regla de contracción</h3>
+    <p>Los nombres pueden acortarse en uso cotidiano:</p>
+    <p>Rranakru → Rrakru / Yaknabel → Yakbel / Cryshamor → Cryshor</p>
+</section>
+
+<section>
+    <h2>Ejemplo completo de creación</h2>
+
+    <p><strong>Entrada:</strong> Rra + Na + Re + Ho</p>
+
+    <p><strong>Proceso:</strong></p>
+    <ul>
+        <li>Rra + Na → Rrana</li>
+        <li>Añadir Re → Rranare</li>
+        <li>Añadir Ho → Rranareho</li>
+        <li>Suavizado → Rranareho ✔</li>
+        <li>Versión corta → Rraneho</li>
+    </ul>
+
+    <p><strong>Resultado:</strong></p>
+    <p>Rranareho (ritual) / Rraneho (cotidiano)</p>
+</section>
+</div>
+
+<!-- ================= PASO 7 ================= -->
+ <div id="paso7" class="paso">
+    <h2>Paso 7</h2>
+
+    <h2>Final</h2>
+
+    <section>
+
+        <p>
+            ¡Felicidades tu bestia esta lista para la aventura!
+        
+    </section>
+
+</div>
+
+
+
+
+<button id="btn-anterior"onclick="anterior()">Anterior</button>
+<button id="btn-siguiente" onclick="siguiente()">Siguiente</button>
+
+<div><a href="tutorialdruidabestia.html" class="btn">Salir del tutorial</a></div>
+
+
+
+
+
+<button id="btn-arriba">↑</button>
+
+<a href="#" class="btn" onclick="history.back()">Volver</a>
+
+<!-- ================= SCRIPTS ================= -->
+
+<script src="01-tipos/navbar.js"></script>
+
+
+
+
+
+<!-- 🔥 ESTE ES EL IMPORTANTE -->
+<script src="01-tipos/01-bestias.js"></script>
+
+<script src="01-tipos/01-componentes.js"></script>
+
+
+<script src="01-tipos/Tutorial.js"></script>
+
+
+</body>
+</html>

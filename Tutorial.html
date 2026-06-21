@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <div id="navbar-container"></div>
+
+<h1>Crear un personaje</h1>
+
+<p id="texto-paso">Paso 1 de 5</p>
+
+<div class="barra-progreso">
+    <div id="progreso"></div>
+</div>
+
+<button id="btn-anterior"onclick="anterior()">Anterior</button>
+<button id="btn-siguiente" onclick="siguiente()">Siguiente</button>
+
+<div id="paso1" class="paso activo">
+    <h2>Paso 1</h2>
+    <p>Detalles iniciales</p>
+    
+<section>
+    <h2>Elige tu Rol</h2>
+
+    <p>
+        Selecciona uno de los roles disponibles para tu personaje y escribe su nombre
+        en la hoja de personaje.
+    </p>
+
+    <p>
+        Si necesitas más información sobre cada rol, puedes consultar la lista de roles
+        mediante el botón disponible más abajo.
+    </p>
+    <button id="btn-anterior" onclick="window.location.href='Roles.html'">Lista de roles</button>
+
+<button onclick="window.location.href='flujo.html'">
+    Ver flujo de creación de personaje
+</button>
+
+</section>
+
+
+<section>
+    <h2>Elige tu especialidad y un talento relacionado con tu rol</h2>
+
+    <p>
+        Selecciona una de las dos especializaciones disponibles dentro del rol que hayas elegido,
+        y escoge también un talento. Ten en cuenta que algunas técnicas requieren pertenecer a una
+        especialidad específica.
+    </p>
+
+    <p>
+        Puedes regresar al rol que elegiste utilizando los botones disponibles a continuación.
+    </p>
+
+    <!-- BOTONES DE ROLES -->
+    <div class="roles-botones">
+
+        <button onclick="window.location.href='guerrerov2.html'">Guerrero</button>
+        <button onclick="window.location.href='exploradorv2.html'">Explorador</button>
+        <button onclick="window.location.href='investigadorv2.html'">Investigador</button>
+        <button onclick="window.location.href='mediadorv2.html'">Mediador</button>
+        <button onclick="window.location.href='artesanov2.html'">Artesano</button>
+        <button onclick="window.location.href='caoticov2.html'">Hechicero Caótico</button>
+        <button onclick="window.location.href='hechicerov2.html'">Hechicero</button>
+        <button onclick="window.location.href='bardov2.html'">Bardo</button>
+        <button onclick="window.location.href='ritualistav2.html'">Ritualista</button>
+        <button onclick="window.location.href='brujov2.html'">Brujo</button>
+
+    </div>
+</section>
+
+
+
+<section>
+    <h2>Género</h2>
+
+    <p>
+        Si lo deseas, indica el género con el que se identifica tu personaje.
+        Este apartado es completamente opcional y sirve únicamente para definir mejor
+        su identidad dentro del mundo de juego.
+    </p>
+</section>
+
+<section>
+    <h2>Descripción</h2>
+
+    <p>
+        Describe los aspectos principales de tu personaje y añade todos los detalles
+        que consideres importantes para darle personalidad y presencia.
+    </p>
+
+    <h3>Edad</h3>
+    <p>
+        Escribe la edad de tu personaje.
+    </p>
+
+    <h3>Apariencia</h3>
+    <p>
+        Define el atractivo físico de tu personaje utilizando una puntuación de
+        <strong>1 a 10</strong>.
+    </p>
+
+    <ul>
+        <li><strong>1:</strong> Extremadamente desagradable a la vista.</li>
+        <li><strong>5:</strong> Apariencia promedio.</li>
+        <li><strong>10:</strong> Excepcionalmente atractivo.</li>
+    </ul>
+
+    <p>
+        Para la mayoría de los personajes se recomienda elegir una puntuación entre
+        <strong>3 y 7</strong>.
+    </p>
+
+    <p>
+        Si prefieres dejarlo al azar, lanza <strong>2d10</strong> y escoge el resultado
+        que prefieras de entre ambos dados.
+    </p>
+
+    <h3>Detalles adicionales</h3>
+    <p>
+        Puedes añadir cualquier detalle que ayude a visualizar mejor a tu personaje:
+        color de cabello, ojos, estatura, complexión, vestimenta, cicatrices,
+        tatuajes, accesorios distintivos, expresiones habituales o cualquier otro
+        rasgo físico relevante.
+    </p>
+</section>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div id="paso2" class="paso">
+    <h2>Paso 2</h2>
+    <p>Atributos</p>
+    
+<section>
+    <h2>Asignación de Atributos</h2>
+
+    <p>
+        Reparte los siguientes 9 valores entre los 9 atributos de tu personaje.
+        Ten en cuenta cuáles serán los atributos más utilizados según el rol que hayas elegido.
+    </p>
+
+    <ul>
+        <li>+4</li>
+        <li>+3</li>
+        <li>+2</li>
+        <li>+1</li>
+        <li>0</li>
+        <li>0</li>
+        <li>0</li>
+        <li>-1</li>
+        <li>-2</li>
+    </ul>
+
+    <p>
+        También puedes definir la puntuación de <strong>Apariencia</strong>, la cual se añade en la sección de descripción del personaje.
+        Para ello, puedes elegir un valor entre 1 y 7 o lanzar 2d10 y escoger el resultado que prefieras.
+    </p>
+</section>
+
+<section>
+    <h2>¿Qué significan los atributos?</h2>
+
+    <article>
+        <h3>Precisión</h3>
+        <p>
+            Representa la precisión física de tu personaje y su habilidad con armas de precisión y a distancia,
+            como arcos y lanzas. También refleja la coordinación mano-ojo y la capacidad de lanzar objetos,
+            como bombas u otros proyectiles.
+        </p>
+    </article>
+
+    <article>
+        <h3>Comunicación</h3>
+        <p>
+            Abarca las habilidades sociales de tu personaje, sus interacciones personales y su capacidad
+            para tratar con los demás, ya sea persuadiendo, negociando o engañando.
+        </p>
+    </article>
+
+    <article>
+        <h3>Constitución</h3>
+        <p>
+            Representa la fortaleza y resistencia física de tu personaje.
+            Este atributo permite utilizar armaduras pesadas con mayor eficacia,
+            resistir venenos y evitar los efectos del alcohol durante más tiempo.
+            Además, determina parte de la cantidad de vida del personaje.
+        </p>
+    </article>
+
+    <article>
+        <h3>Destreza</h3>
+        <p>
+            Abarca la agilidad y rapidez de tu personaje.
+            Determina su capacidad para esquivar ataques, actuar con rapidez,
+            moverse con sigilo, huir de situaciones peligrosas y su iniciativa en combate.
+        </p>
+    </article>
+
+    <article>
+        <h3>Pelea</h3>
+        <p>
+            Representa la habilidad de tu personaje en el combate cuerpo a cuerpo,
+            utilizando armas pesadas como hachas, martillos o lanzas, así como técnicas de artes marciales.
+        </p>
+    </article>
+
+    <article>
+        <h3>Inteligencia</h3>
+        <p>
+            Mide la inteligencia, el conocimiento y la educación de tu personaje.
+            También determina su comprensión y uso de la magia.
+        </p>
+
+        <p>
+            Para todos los roles excepto el <strong>Hechicero Caótico</strong>,
+            este atributo se utiliza para activar hechizos.
+        </p>
+
+        <p>
+            En el caso del <strong>Hechicero Caótico</strong>,
+            define su capacidad para enfocar el Nur de su interior al utilizar magia.
+        </p>
+
+        <p>
+            Además, se emplea para realizar primeros auxilios y curar heridas
+            si el personaje es un Brujo o un Investigador.
+        </p>
+    </article>
+
+    <article>
+        <h3>Percepción</h3>
+        <p>
+            Abarca todos los sentidos y la capacidad de interpretar la información sensorial,
+            tanto del entorno como de otras personas.
+            Permite detectar mentiras, descubrir detalles ocultos y anticipar peligros.
+        </p>
+
+        <p>
+            También añade daño adicional a los ataques realizados utilizando el atributo Precisión.
+        </p>
+    </article>
+
+    <article>
+        <h3>Fuerza</h3>
+        <p>
+            Representa la capacidad de generar fuerza física bruta.
+            Determina el daño adicional causado con armas cuerpo a cuerpo
+            y puede ser un requisito para utilizar armas especialmente pesadas.
+        </p>
+
+        <p>
+            También añade daño adicional a los ataques realizados utilizando el atributo Pelea.
+        </p>
+    </article>
+
+    <article>
+        <h3>Voluntad</h3>
+        <p>
+            Abarca la fortaleza mental, la disciplina y la confianza en uno mismo.
+            Permite resistir manipulaciones mentales y otras influencias sobrenaturales.
+        </p>
+
+        <p>
+            Además, define la capacidad de enfocar el Nur interior para lanzar hechizos
+            u otras habilidades especiales.
+        </p>
+
+        <p>
+            Para todos los roles excepto el <strong>Hechicero Caótico</strong>,
+            la Voluntad determina la capacidad de enfocar el Nur.
+            En el caso del Hechicero Caótico, este atributo se utiliza para activar los hechizos.
+        </p>
+    </article>
+</section>
+
+<section>
+    <h2>Atributos recomendados según el rol</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Rol</th>
+                <th>Atributos recomendados</th>
+                <th>Atributo prioritario</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Guerrero</td>
+                <td>Constitución, Fuerza y Pelea</td>
+                <td>Cualquiera de los anteriores</td>
+            </tr>
+
+            <tr>
+                <td>Explorador</td>
+                <td>Destreza y Percepción</td>
+                <td>Destreza</td>
+            </tr>
+
+            <tr>
+                <td>Investigador</td>
+                <td>Percepción, Inteligencia, Comunicación y Voluntad</td>
+                <td>Inteligencia</td>
+            </tr>
+
+            <tr>
+                <td>Mediador</td>
+                <td>Comunicación y Voluntad</td>
+                <td>Comunicación</td>
+            </tr>
+
+            <tr>
+                <td>Artesano</td>
+                <td>Precisión, Destreza, Inteligencia, Voluntad y Constitución</td>
+                <td>Cualquiera de los anteriores</td>
+            </tr>
+
+            <tr>
+                <td>Hechicero Caótico</td>
+                <td>Voluntad, Inteligencia y Constitución</td>
+                <td>Voluntad</td>
+            </tr>
+
+            <tr>
+                <td>Hechicero</td>
+                <td>Voluntad e Inteligencia</td>
+                <td>Inteligencia</td>
+            </tr>
+
+            <tr>
+                <td>Bardo</td>
+                <td>Comunicación, Destreza y Voluntad</td>
+                <td>Comunicación</td>
+            </tr>
+
+            <tr>
+                <td>Ritualista</td>
+                <td>Voluntad e Inteligencia</td>
+                <td>Inteligencia</td>
+            </tr>
+
+            <tr>
+                <td>Brujo</td>
+                <td>Voluntad e Inteligencia</td>
+                <td>Inteligencia</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+
+</div>
+
+<div id="paso3" class="paso">
+    <h2>Paso 3</h2>
+    <p>Bonus por nación</p>
+    
+<section>
+    <h2>Elige tu Nación</h2>
+
+    <p>
+        Escoge una de las cuatro naciones disponibles y aplica los dos bonificadores de atributos
+        que otorga la nación elegida.
+    </p>
+
+    <div class="alert">
+        <strong>Importante:</strong> No podrás comenzar con cualquier bestia de la lista general.
+        Solo podrás elegir bestias cuyo hábitat corresponda a tu nación de origen.
+    </div>
+</section>
+
+<section class="nation">
+    <h2>Nación de la Montaña</h2>
+
+    <div class="attribute-bonus">
+        <strong>Bonificadores:</strong>
+        <ul>
+            <li>+1 Fuerza</li>
+            <li>+1 Constitución</li>
+        </ul>
+    </div>
+
+    <p>
+        Imponentes como los riscos que habitan, los <strong>Thar'Zul</strong> forjan su voluntad
+        entre cuevas de piedra y hielo. Sus bestias suelen ser mágicas o aéreas, adaptadas al clima
+        salvaje de las alturas.
+    </p>
+
+    <p>
+        Orgullosos y resistentes, consideran la inminente congelación una prueba más que deben superar.
+        Para ellos, abandonar su tierra es una deshonra; solo quienes permanecen y resisten tienen
+        derecho a llamarse verdaderos druidas.
+    </p>
+
+    <blockquote>
+        "Sobrevivir sin huir es la única forma de vencer."
+    </blockquote>
+
+    <h3>Hábitat</h3>
+    <p>
+        Cordilleras, montañas nevadas, cuevas profundas, acantilados y altiplanos azotados por el viento.
+    </p>
+
+    <h3>Actitudes comunes</h3>
+    <ul>
+        <li>Son directos y prácticos. Lo útil vale más que lo hermoso.</li>
+        <li>Consideran el silencio una forma de respeto.</li>
+        <li>Se enfrentan a los problemas con acciones antes que con palabras.</li>
+        <li>No toleran la cobardía, pero honran a quienes caen luchando.</li>
+        <li>Ven la magia como una fuerza salvaje de la naturaleza.</li>
+    </ul>
+
+    <blockquote>
+        "Si la piedra no se rompe, se escala. Si el viento no cesa, se avanza con más fuerza."
+    </blockquote>
+
+    <h3>Curiosidades</h3>
+    <ol>
+        <li>
+            <strong>Nieve sagrada:</strong> Durante los primeros copos del año, nadie puede tocar la nieve
+            con los pies descalzos. Es una ofrenda a los espíritus del invierno.
+        </li>
+        <li>
+            <strong>La roca hablante:</strong> Algunas cuevas producen ecos extraños que parecen responder
+            preguntas. Allí se lleva a los niños para descubrir su destino.
+        </li>
+        <li>
+            <strong>Fuegos sin llama:</strong> Utilizan piedras volcánicas que irradian calor sin producir
+            humo ni llamas visibles, consideradas más dignas para los rituales.
+        </li>
+    </ol>
+</section>
+
+<section class="nation">
+    <h2>Nación del Desierto</h2>
+
+    <div class="attribute-bonus">
+        <strong>Bonificadores:</strong>
+        <ul>
+            <li>+1 Destreza</li>
+            <li>+1 Voluntad</li>
+        </ul>
+    </div>
+
+    <p>
+        Los <strong>Sha'Adra</strong> son hijos del sol y la arena. Recorren el desierto sin esperar
+        recompensa y construyen refugios ligeros capaces de resistir el calor abrasador y los vientos
+        implacables.
+    </p>
+
+    <p>
+        Su vínculo con las bestias es directo y feroz. Enfrentan la inminente congelación sin temor,
+        no porque crean que sobrevivirán, sino porque les preocupa más el legado que dejarán atrás.
+    </p>
+
+    <blockquote>
+        "No tememos morir. Tememos no dejar huella."
+    </blockquote>
+
+    <h3>Hábitat</h3>
+    <p>
+        Dunas, oasis, cañones áridos, desiertos de roca y llanuras abrasadas por el sol.
+    </p>
+
+    <h3>Actitudes comunes</h3>
+    <ul>
+        <li>Hablan poco, pero cada palabra tiene peso.</li>
+        <li>No se apegan fácilmente a lugares, posesiones o personas.</li>
+        <li>Prefieren demostrar su valor mediante acciones.</li>
+        <li>Otorgan gran importancia a símbolos, cicatrices y ofrendas.</li>
+        <li>Respetan las preguntas profundas más que las emociones desbordadas.</li>
+    </ul>
+
+    <blockquote>
+        "Camina con el viento, deja poco rastro, pero haz que el mundo te recuerde."
+    </blockquote>
+
+    <h3>Curiosidades</h3>
+    <ol>
+        <li>
+            <strong>El agua compartida:</strong> Nadie bebe sin ofrecer antes una parte a su bestia
+            o compañero. Hacerlo se considera una traición espiritual.
+        </li>
+        <li>
+            <strong>Tatuajes solares:</strong> Utilizan tintes visibles únicamente bajo la luz del sol,
+            empleados para transmitir mensajes secretos entre clanes.
+        </li>
+        <li>
+            <strong>Silencio ritual:</strong> Durante ciertos periodos, viven semanas enteras sin hablar,
+            comunicándose únicamente mediante gestos.
+        </li>
+    </ol>
+</section>
+
+<section class="nation">
+    <h2>Nación del Bosque</h2>
+
+    <div class="attribute-bonus">
+        <strong>Bonificadores:</strong>
+        <ul>
+            <li>+1 Precisión</li>
+            <li>+1 Inteligencia</li>
+        </ul>
+    </div>
+
+    <p>
+        Los druidas de <strong>Syl'Vahar</strong> habitan en troncos huecos o entre las ramas de árboles
+        ancestrales. Su nación es tan diversa como la fauna que protege, y criaturas de toda clase
+        conviven en un delicado equilibrio.
+    </p>
+
+    <p>
+        Frente a la amenaza del hielo, algunos partirán en busca de respuestas más allá del mar,
+        mientras otros permanecerán para proteger la tierra que los vio nacer.
+    </p>
+
+    <blockquote>
+        "Alguien debe buscar el futuro, pero alguien debe quedarse a cuidar el pasado."
+    </blockquote>
+
+    <h3>Hábitat</h3>
+    <p>
+        Bosques antiguos, selvas, arboledas encantadas y regiones cubiertas por vegetación abundante.
+    </p>
+
+    <h3>Actitudes comunes</h3>
+    <ul>
+        <li>Hablan despacio y reflexionan antes de actuar.</li>
+        <li>Observan primero y actúan después.</li>
+        <li>Confían en la intuición y las señales del entorno.</li>
+        <li>Creen que todo lo que se toma debe devolverse de alguna forma.</li>
+        <li>No juzgan con rapidez, pero rara vez olvidan.</li>
+    </ul>
+
+    <blockquote>
+        "Todo lo que respira enseña. Todo lo que cae, crece otra vez."
+    </blockquote>
+
+    <h3>Curiosidades</h3>
+    <ol>
+        <li>
+            <strong>Raíces de memoria:</strong> Entierran recuerdos junto a árboles sagrados para
+            preservarlos o pedir protección.
+        </li>
+        <li>
+            <strong>Cacería de sombras:</strong> Durante ciertas lunas cazan sin armas ni fuego,
+            guiándose únicamente por la intuición.
+        </li>
+        <li>
+            <strong>Lengua del follaje:</strong> Algunos druidas son capaces de leer mensajes ocultos
+            en hojas, musgos y ramas.
+        </li>
+        <li>
+            <strong>Nombres compartidos:</strong> En ocasiones, un druida y su bestia comparten el mismo
+            nombre, símbolo de un vínculo espiritual excepcional.
+        </li>
+    </ol>
+</section>
+
+<section class="nation">
+    <h2>Nación de la Costa</h2>
+
+    <div class="attribute-bonus">
+        <strong>Bonificadores:</strong>
+        <ul>
+            <li>+1 Comunicación</li>
+            <li>+1 Percepción</li>
+        </ul>
+    </div>
+
+    <p>
+        Los habitantes de <strong>Kael'Nar</strong> son navegantes, comunicadores y espiritistas.
+        Sus aldeas flotan en los límites del mundo conocido, donde bestias marinas y aladas actúan
+        como guardianas y mensajeras.
+    </p>
+
+    <p>
+        Creen que el destino de Amara se encuentra más allá del horizonte y que negarse a partir
+        equivale a negarse a vivir.
+    </p>
+
+    <blockquote>
+        "No nacimos para hundirnos con el continente. Nacimos para seguir el viento."
+    </blockquote>
+
+    <h3>Hábitat</h3>
+    <p>
+        Islas, archipiélagos, costas, lagunas, manglares y aldeas flotantes.
+    </p>
+
+    <h3>Actitudes comunes</h3>
+    <ul>
+        <li>Son sociables, bromistas y no temen al conflicto verbal.</li>
+        <li>Creen que toda historia merece ser contada.</li>
+        <li>Se adaptan con facilidad a los cambios.</li>
+        <li>Consideran las emociones como olas: algunas se afrontan y otras se dejan pasar.</li>
+        <li>Valoran profundamente la comunidad y las tradiciones orales.</li>
+    </ul>
+
+    <blockquote>
+        "Ninguna palabra se pierde si se lanza al viento correcto."
+    </blockquote>
+
+    <h3>Curiosidades</h3>
+    <ol>
+        <li>
+            <strong>Ofrendas al mar:</strong> Toda conversación importante comienza lanzando una piedra
+            o una concha al agua.
+        </li>
+        <li>
+            <strong>Pieles pintadas:</strong> Se decoran el cuerpo con tintes de algas antes de los viajes.
+            Los colores representan sus intenciones.
+        </li>
+        <li>
+            <strong>Comidas parlantes:</strong> Ninguna comida comunitaria está completa sin historias
+            compartidas. Comer en silencio se considera un mal augurio.
+        </li>
+    </ol>
+</section>
+
+
+</div>
+
+
+
+
+
+
+
+<div id="paso4" class="paso">
+    <h2>Paso 4</h2>
+    <p>Elegir enfoques</p>
+<section>
+    <h2>Enfoques</h2>
+
+    <p>
+        Los enfoques otorgan un bonificador de <strong>+2</strong> en las tiradas relacionadas
+        con una habilidad específica dentro de un atributo.
+    </p>
+
+    <p>
+        Cada atributo posee distintos enfoques. Por ejemplo, dentro del atributo <strong>Comunicación</strong>
+        existen enfoques como <strong>Persuasión</strong> o <strong>Engaño</strong>.
+    </p>
+
+    <p>
+        Si un personaje tiene el atributo Comunicación con un valor de +3 y posee el enfoque
+        de Persuasión, al intentar persuadir a alguien sumará +5 (Comunicación +3 y Enfoque +2).
+    </p>
+
+    <p>
+        Sin embargo, si intenta realizar una acción relacionada con Engaño sin tener ese enfoque,
+        solo utilizará el valor base del atributo (en este caso +3).
+    </p>
+
+    <p>
+        En resumen: los enfoques representan especializaciones dentro de cada atributo que mejoran
+        tus tiradas en situaciones concretas.
+    </p>
+
+    <p>
+        Elige dos enfoques de la lista disponible en la siguiente sección.
+    </p>
+
+    <!-- BOTÓN -->
+    <button onclick="window.location.href='enfoques.html'">
+        Ver lista de enfoques
+    </button>
+</section>
+```
+
+</div>
+
+
+
+
+
+
+
+<div id="paso5" class="paso">
+    <h2>Paso 5</h2>
+    <p>Detalles adicionales</p>
+    <!-- ================= ATRIBUTOS ================= -->
+
+<h2>⚙️ Sistema de Atributos</h2>
+
+<ul>
+    <li>Habilidades 0–5: 1 avance</li>
+    <li>Habilidades 6–8: 2 avances</li>
+    <li>Habilidades 9+: 3 avances</li>
+</ul>
+
+<h3>❤️ Vida (Constitución)</h3>
+
+<table>
+    <tr><th>Constitución</th><th>Vida</th></tr>
+     <tr><td>-2</td><td>40</td></tr>
+    <tr><td>-1</td><td>45</td></tr>
+    <tr><td>0</td><td>50</td></tr>
+    <tr><td>1</td><td>55</td></tr>
+    <tr><td>2</td><td>60</td></tr>
+    <tr><td>3</td><td>65</td></tr>
+    <tr><td>4</td><td>70</td></tr>
+    <tr><td>5</td><td>75</td></tr>
+    <tr><td>6</td><td>80</td></tr>
+    <tr><td>7</td><td>90</td></tr>
+    <tr><td>8</td><td>100</td></tr>
+    <tr><td>9</td><td>110</td></tr>
+    <tr><td>10</td><td>130</td></tr>
+    <tr><td>11</td><td>145</td></tr>
+    <tr><td>12</td><td>160</td></tr>
+    <tr><td>13</td><td>175</td></tr>
+    <tr><td>14</td><td>180</td></tr>
+    <tr><td>15</td><td>200</td></tr>
+</table>
+
+<h3>🔮 Nur (Voluntad / Inteligencia - Hechicero Caótico)</h3>
+
+<table>
+    <tr><th>Puntuación (Voluntad / Inteligencia)</th><th>Nur</th></tr>
+    
+
+    <tr><td>-2</td><td>0</td></tr>
+    <tr><td>-1</td><td>0</td></tr>
+    <tr><td>0</td><td>0</td></tr>
+    <tr><td>1</td><td>5</td></tr>
+    <tr><td>2</td><td>8</td></tr>
+    <tr><td>3</td><td>10</td></tr>
+    <tr><td>4</td><td>13</td></tr>
+    <tr><td>5</td><td>15</td></tr>
+    <tr><td>6</td><td>18</td></tr>
+    <tr><td>7</td><td>22</td></tr>
+    <tr><td>8</td><td>25</td></tr>
+    <tr><td>9</td><td>28</td></tr>
+    <tr><td>10</td><td>30</td></tr>
+</table>
+
+<h3>⚡ Velocidad / Destreza</h3>
+
+<table>
+    <tr>
+        <th>Puntuación en destreza</th>
+        <th>Velocidad</th>
+    </tr>
+    <tr><td>-2</td><td>2</td></tr>
+    <tr><td>-1</td><td>2</td></tr>
+    <tr><td>0</td><td>2</td></tr>
+    <tr><td>1</td><td>3</td></tr>
+    <tr><td>2</td><td>3</td></tr>
+    <tr><td>3</td><td>4</td></tr>
+    <tr><td>4</td><td>4</td></tr>
+    <tr><td>5</td><td>5</td></tr>
+    <tr><td>6</td><td>5</td></tr>
+    <tr><td>7</td><td>6</td></tr>
+    <tr><td>8</td><td>6</td></tr>
+    <tr><td>9</td><td>7</td></tr>
+    <tr><td>10</td><td>7</td></tr>
+    <tr><td>11</td><td>8</td></tr>
+    <tr><td>12</td><td>8</td></tr>
+    <tr><td>13</td><td>9</td></tr>
+    <tr><td>14</td><td>9</td></tr>
+    <tr><td>15</td><td>10</td></tr>
+</table>
+
+
+
+
+
+<h2>🌀 Esquiva</h2>
+<p>La esquiva es igual a la destreza y si tienes el enfoque de esquivar mas 2.</p>
+
+
+
+</div>
+
+
+<div id="paso6" class="paso">
+    <h2>Paso 6</h2>
+    <p>Elegir el nombre de tu druida</p>
+<section>
+    <h2>Nombra tu druida</h2>
+
+    <p>
+<section>
+    <p>Cada nación posee un idioma propio con patrones fonéticos únicos.</p>
+</section>
+
+<section>
+    <h2>Bosques</h2>
+
+    <p><strong>Sonido:</strong> Suave, predominan vocales.</p>
+
+    <p><strong>Prefijos:</strong></p>
+    <ul>
+        <li>Mujeres: Na-</li>
+        <li>Hombres: Ka-</li>
+        <li>Neutro: Sha-</li>
+    </ul>
+
+    <p><strong>Ejemplos:</strong></p>
+    <p>Nalua, Nairi, Kashen, Kaluma, Shariel, Shalua</p>
+
+    <p><strong>Familias:</strong></p>
+    <p>Dek, Naru, Sel, Iven</p>
+
+    <p><strong>Ejemplos de nombres completos:</strong></p>
+    <p>Nalua-Dek, Kashen-Sel, Nairi-Naru</p>
+</section>
+
+<section>
+    <h2>Costas</h2>
+
+    <p><strong>Sonido:</strong> Fluido, predominan T, L, R.</p>
+
+    <p><strong>Prefijos:</strong></p>
+    <ul>
+        <li>Mujeres: Ta-</li>
+        <li>Hombres: Ra-</li>
+        <li>Neutro: Sa-</li>
+    </ul>
+
+    <p><strong>Ejemplos:</strong></p>
+    <p>Talori, Tamera, Rakei, Ralun, Sariel, Saloka</p>
+
+    <p><strong>Familias:</strong></p>
+    <p>Mor, Vela, Tir, Kora</p>
+
+    <p><strong>Ejemplos de nombres completos:</strong></p>
+    <p>Talori-Mor, Rakei-Vela</p>
+</section>
+
+<section>
+    <h2>Montañas</h2>
+
+    <p><strong>Sonido:</strong> Fuerte, predominan K, G, R, D.</p>
+
+    <p><strong>Prefijos:</strong></p>
+    <ul>
+        <li>Mujeres: Dra-</li>
+        <li>Hombres: Gro-</li>
+        <li>Neutro: Kra-</li>
+    </ul>
+
+    <p><strong>Ejemplos:</strong></p>
+    <p>Drakar, Druma, Grolk, Goren, Kradar, Krumek</p>
+
+    <p><strong>Familias:</strong></p>
+    <p>Rok, Gar, Dur, Tharn</p>
+
+    <p><strong>Ejemplos de nombres completos:</strong></p>
+    <p>Druma-Rok, Goren-Dur</p>
+</section>
+
+<section>
+    <h2>Desierto</h2>
+
+    <p><strong>Sonido:</strong> Largo y áspero, predominan H, Z, S, Q.</p>
+
+    <p><strong>Prefijos:</strong></p>
+    <ul>
+        <li>Mujeres: Za-</li>
+        <li>Hombres: Ha-</li>
+        <li>Neutro: Sha-</li>
+    </ul>
+
+    <p><strong>Ejemplos:</strong></p>
+    <p>Zahira, Zamet, Harek, Hasem, Sharuq, Shazir</p>
+
+    <p><strong>Familias:</strong></p>
+    <p>Qir, Sarek, Zun, Mahir</p>
+
+    <p><strong>Ejemplos de nombres completos:</strong></p>
+    <p>Zahira-Qir, Harek-Sarek</p>
+</section>
+
+<section>
+    <h2>Segundos Nombres</h2>
+
+    <p>
+        Los segundos nombres son otorgados por druidas o bestias poderosas de Amara.
+        Representan crecimiento espiritual y conexión con el mundo.
+        Normalmente nadie tiene un segundo nombre (Nisiquiera la primera silaba) hasta ser minimo ser un druida experto (rango 5) 
+
+        Y este nombre solo es mencionado es cosas muy importante, mencionarlo en cualquier momento hace perder su importante y pierde respeto y reconocimiento hacia el druida
+    </p>
+</section>
+
+<section>
+    <h2>Sílabas iniciales (identidad)</h2>
+
+    <h3>Hombres</h3>
+    <p>Rra, Kro, Vek, Dru, Gha, Tho, Zek</p>
+
+    <h3>Mujeres</h3>
+    <p>Yak, Nya, Lhe, Vya, Shae, Tsi, Mya</p>
+
+    <h3>Neutros</h3>
+    <p>Cry, Xae, Shy, Qri, Yth, Vhy, Zhy</p>
+</section>
+
+<section>
+    <h2>Núcleos</h2>
+    <p>ru, ma, lo, kei, thu, sha, ven, rai, kor, nur, zi, dra</p>
+</section>
+
+<section>
+    <h2>Terminaciones</h2>
+    <p>k, n, r, th, m, s, q, l</p>
+</section>
+
+<section>
+    <h2>Ejemplos de segundos nombres</h2>
+
+    <h3>Hombres</h3>
+    <p>Rra-ma-k → Rramak, Kro-rai-n → Krorain, Dru-thu-r → Druthur, Gha-kor-th → Ghakorth, Zek-ven-l → Zekvenl</p>
+
+    <h3>Mujeres</h3>
+    <p>Yak-lo-r → Yaklor, Nya-ma-th → Nyamath, Shae-rai-m → Shaeraim, Tsi-ven-k → Tsivenk, Mya-nur-l → Myanurl</p>
+
+    <h3>Neutros</h3>
+    <p>Cry-zi-r → Cryzir, Xae-ma-th → Xaemath, Qri-kor-m → Qrikorm, Yth-ven-l → Ythvenl, Vhy-dra-k → Vhydrak</p>
+</section>
+
+<section>
+    <h2>Nombres Finales de Ejemplo</h2>
+
+    <p>Rrathuk, Gharven, Krozhal, Yakthur, Nyakorq, Cryzhar, Qriven, Ythkral</p>
+
+    <div><a href="tutorialbestia.html" class="btn">Crear bestia</a></div>
+</section>
+</div>
+
+<!-- ================= PASO 7 ================= -->
+ <div id="paso7" class="paso">
+    <h2>Paso 7</h2>
+
+    <h2>Final</h2>
+
+    <section>
+
+        <p>
+            ¡Felicidades tu druida esta listo para la aventura!</p> 
+        
+                <p>Continua ahora con la creación de tu bestia</p> 
+               <div><a href="tutorialbestia.html" class="btn">Crear bestia</a></div>
+    </section>
+
+</div>
+
+
+</section>
+
+
+</div>
+
+
+<button id="btn-anterior"onclick="anterior()">Anterior</button>
+<button id="btn-siguiente" onclick="siguiente()">Siguiente</button>
+
+<div><a href="tutorialdruidabestia.html" class="btn">Salir del tutorial</a></div>
+
+
+<script src="01-tipos/navbar.js"></script>
+<script src="01-tipos/Tutorial.js"></script>
+    
+</body>
+</html>

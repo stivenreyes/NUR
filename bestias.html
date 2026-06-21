@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="navbar-container"></div>
+     <h1>Bestias</h1>
+    <h3>Bestias vinculadas disponibles por el momento</h3>
+        <input 
+    type="text" 
+    id="buscador" 
+    placeholder="Buscar bestia..."
+>
+
+<!-- * ================= FILTRO ================= * -->
+<div class="filtros-bestias">
+<select id="filtro-bioma">
+    <option value="">Todos los biomas</option>
+    <option value="Bosque">Bosque</option>
+    <option value="Desierto">Desierto</option>
+    <option value="Montaña">Montaña</option>
+    <option value="Costa">Costa</option>
+</select>
+
+<select id="filtro-tipo">
+    <option value="">Todos los tipos</option>
+<option value="Ataque">Ataque</option>
+<option value="Soporte">Soporte</option>
+<option value="Tanque">Tanque</option>
+<option value="Especial">Especial</option>
+<option value="Social">Social</option>
+<option value="Exploracion">Exploracion</option>
+<option value="Comunicacion">Comunicacion</option>
+</select>
+
+<select id="filtro-terreno">
+    <option value="">Todos los terrenos</option>
+    <option value="Tierra">Tierra</option>
+    <option value="Viento">Viento</option>
+    <option value="Agua">Agua</option>
+</select>
+</div>
+
+
+<!-- * ================= ====== ================= * -->
+
+<a href="domar.html" class="btn" >Domar bestias vinculadas</a>
+
+<div id="contenedor-bestias"></div>
+
+<a href="#" class="btn" onclick="history.back()">Volver</a>
+
+<button id="btn-arriba">↑</button>
+
+
+<script src="01-tipos/navbar.js"></script>
+<script src="01-tipos/01-bestias.js"></script>
+
+    
+</body>
+</html>
