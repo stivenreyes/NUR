@@ -209,10 +209,10 @@ let HECHICERO = {
       maestro: "...",
       hechizos: [
         {
-          nombreHechizo: "Latigo de agua",
+          nombreHechizo: "muro viviente",
           nivelHechizo: "Novato",
-          descripcion: "Ataque de alcance 3 metros, para hacer 1d6 de daño",
-          tipoHechizo: "Ataque",
+          descripcion: "Con este hechizo puedes hacer que tu atacante lance su fuerza contra tu inteligencia para evitar moverte.",
+          tipoHechizo: "hechizo pasivo",
           costoMana: "2",
           dificultad: "Inteligencia vs esquiva",
           alcanceMaximo: "3"
