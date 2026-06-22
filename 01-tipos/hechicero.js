@@ -365,7 +365,7 @@ let HECHICERO = {
         },
         {
         nombre: "Combinar elementos 🔮",
-        descripcionGrimorio: "Requisito: Hechicero elemental",
+        descripcionGrimorio: "Requisito: Hechicero elemental. Puedes combinar dos elementos  ",
         novato: "Puedes combinar tu elemento que dominas con otro, puedes crear un nuevo hechizo y elejir un nuevo hechizo de ese elemento",
         experto: "Puedes elegir otro hechizo o duplicar el efecto",
         maestro: "Eliges otro hechizo adicional",
