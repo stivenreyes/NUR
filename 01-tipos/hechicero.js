@@ -293,7 +293,7 @@ let HECHICERO = {
     },
     {
       nombre: "Grimorio del viento",
-      descripcionGrimorio: "Requisitos (Brujo curandero)<br> .",
+      descripcionGrimorio: "Requisitos hechicero domar de viento)<br> .",
       novato: "Aprendes dos hechizo de nivel novato",
       experto: "Aprendes un hechizo de nivel experto",
       maestro: "Aprendes un hechizo de nivel maestro",
