@@ -60,7 +60,7 @@ let HECHICERO = {
     {
       nombre: "Grimorio del fuego 🔥",
       descripcionGrimorio: "Requisitos: hechicero domador del fuego)<br> Manipulación de fuego ofensivo y potenciación de daño. ",
-      novato: "Aprendes 1 hechizo",
+      novato: "Aprendes 1 hechizo 😁",
       experto: "Aprendes 2 hechizos novato o 1 experto",
       maestro: "Aprendes un hechizo experto o maestro",
       hechizos: [
