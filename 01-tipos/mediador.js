@@ -7,9 +7,9 @@ let MEDIADOR = {
         {
           nombre: "Erudito mental",
           descripcionGrimorio: "Manipulación mental, percepción emocional y control psíquico.",
-          novato: "Sientes emociones en 5 km y +3 para calmar druidas",
-          experto: "Posees druidas (2 veces), telepatía en área y mensajes a marcados",
-          maestro: "Posees druidas (4 veces) con mismas condiciones",
+          novato: "Logras sentir las emociones de cualquier persona que sepas su nombre y la hayas visto al menos una vez en un radio de 5 km <br> Logras un +3 para calmar a cualquier druida que este a vista <br> Puedes poseer druidas de un rango inferior al tuyo, puedes hacer solo 2 veces por combate, poseerlos un turno, y quedar luego desmayado un turno, la victima no quedara inconsiente <br> Aprendes un nuevo talento",
+          experto: "Puedes hacer que todos a tu alrededor hablen telepáticamente en un radio de 5 metros <br> Puedes enviarle mensajes solo a alguien que hayas marcado (solo se puede un druida) en un radio de 2 km",
+          maestro: "Puedes poseer druidas de un rango inferior al tuyo, puedes hacer solo 4 veces por combate, poseerlos un turno, y quedar luego desmayado un turno, la victima no quedara inconsciente",
           hechizos: []
         },
         {
@@ -26,19 +26,19 @@ let MEDIADOR = {
       titulo: "Talentos",
       items: [
         {
-          nombre: "Leer la línea del tiempo",
-          descripcionGrimorio: "Acceso al pasado y futuro de un druida.",
-          novato: "Leer pasado voluntariamente",
-          experto: "Leer futuro voluntariamente",
-          maestro: "Leer pasado/futuro involuntariamente (tirada enfrentada)",
+          nombre: "Leer la línea del tiempo ",
+          descripcionGrimorio: "Requisito: Erudito mental <br> Con una palabra puedes buscar en el registro de vida de un druida lo que necesites saber, la información no será del todo precisa y para lecturas al futuro pueden haber cambios pero se podrá cambiar el futuro o reforzar la visión.<br> solo 1 ves al mes se puede hacer lectura a una persona.<br> se dice que para que la lectura al futuro sea 100% exacta el druida debe no contarle a nadie la información ni dejarse leer la mente y morir al instante, o eso dicen algunos escritos",
+          novato: "De forma voluntaria puedes leer el pasado de alguien",
+          experto: "De forma voluntaria puedes leer el futuro de alguien",
+          maestro: "De forma involuntaria puedes leer el futuro y el pasado de alguien, la tirada será de comunicación vs voluntad d ela victima para lograrlo, fallar hará que la victima quede inconsciente 1d6 horas, para luego haciendo mas difícil la tarea sumando +2 ala tirada de voluntad de la victima",
           hechizos: []
         },
         {
           nombre: "Mente por el mundo",
-          descripcionGrimorio: "Percepción remota a través de otros.",
+          descripcionGrimorio: "Requisito: Erudito mental <br> Puedes conectarte a los ojos u oídos de solo a alguien que hayas marcado (solo se puede un druida por dia) en un radio de 2 km <br>tu bestia podrá hacer lo mismo con tu guía pero ella podrá conectarse a un bestia marcada o que este cerca del druida conectado <br> Se puede una vez por dia",
           novato: "Clarividencia",
           experto: "Clariaudiencia",
-          maestro: "Presencia mental en 2 objetivos",
+          maestro: "Hacerse presente en la mente de 2 victimas del lugar",
           hechizos: []
         },
         {
@@ -85,15 +85,15 @@ let MEDIADOR = {
         },
         {
           nombre: "Curar daño psíquico",
-          descripcionGrimorio: "Recuperación de daño mental.",
-          novato: "Eliminar 2 daño psíquico (1 nur)",
+          descripcionGrimorio: "Requisito: Erudito mental.",
+          novato: "puedes eliminar 2 de daño psíquico gastando 1 de nur si alguien cerca tuyo acaba de sacar un criticocon ese critico puedes hacer qe tome 2 sesiones al dia. <br> en la hoguera no causas daño aun si fallas",
           experto: "Eliminar 4 daño psíquico (3 nur)",
           maestro: "...",
           hechizos: []
         },
         {
           nombre: "Manejar los miedos",
-          descripcionGrimorio: "Control y resistencia al daño psíquico.",
+          descripcionGrimorio: "Requisito: Erudito mental <br> Reduce el daño psíquico a la mitad y puede elegir recibir el doble de daño psíquico para no recibir una herida psíquico",
           novato: "Causa 1D6 daño psíquico",
           experto: "Causa 2D6 daño psíquico",
           maestro: "Reduce daño recibido con tirada adicional",

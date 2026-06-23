@@ -148,7 +148,7 @@ let HECHICERO = {
         {
           nombreHechizo: "Silbido de rayo",
           nivelHechizo: "Novato",
-          descripcion: "Ataque que se encadena hasta 4 objetivos",
+          descripcion: "Observas a tu victima y lo atacas con un trueno, puedes encadenar tu ataque a otros objetivos hasta max 4 solo si los puedes ver y que estén cerca de min 2 metros unos de los otros, solo se lanza para acertar al primer objetivo, las cadenas son automáticas <br> El daño será de 2D6 de daño + inteligencia repartidos entre los objetivos",
           tipoHechizo: "Ataque",
           costoMana: "2",
           dificultad: "Inteligencia vs esquiva",
@@ -157,7 +157,7 @@ let HECHICERO = {
         {
           nombreHechizo: "Trueno aliado",
           nivelHechizo: "Novato",
-          descripcion: "Daño extra a armas aliadas por una ronda",
+          descripcion: "Todas las armas de los aliados tendrán 1D6 de daño en sus armas, solo por esta ronda",
           tipoHechizo: "Soporte",
           costoMana: "2",
           dificultad: "14",
@@ -166,7 +166,7 @@ let HECHICERO = {
         {
           nombreHechizo: "Rayo en el rostro",
           nivelHechizo: "Novato",
-          descripcion: "Ataque adicional de 4D6 tras otro ataque de rayo",
+          descripcion: "En vez de la proeza doble ataque puede usar este hechizo, luego de atacarlo con un hechizo de rayo tu objetivo debe estar a un metro para hacerlo ver al cielo donde caerá un rayo en su rostro haciéndole 4D6 +  inteligencia de daño ",
           tipoHechizo: "Ataque",
           costoMana: "...",
           dificultad: "...",
@@ -175,7 +175,7 @@ let HECHICERO = {
         {
           nombreHechizo: "Cadena de dos",
           nivelHechizo: "Experto",
-          descripcion: "Encadena ataque a otro objetivo",
+          descripcion: "Una vez ataques a un objetivo puedes encadenar tu ataque a otro objetivo solo si lo puedes ver y que esté cerca de min 8 metros de la primera victima, solo se lanza para acertar al primer objetivo, las cadenas son automáticas <br> El daño será de 4D6 de daño + inteligencia repartidos entre los objetivos",
           tipoHechizo: "Ataque",
           costoMana: "2",
           dificultad: "Inteligencia vs esquiva",
@@ -184,25 +184,25 @@ let HECHICERO = {
         {
           nombreHechizo: "Moverte como rayo",
           nivelHechizo: "Experto",
-          descripcion: "Te teletransportas usando ataques encadenados",
+          descripcion: "Una vez puedas encadenar un ataque hasta min 3 objetivos podrás teletransportarte con tu mismo ataque",
           tipoHechizo: "Ataque",
           costoMana: "2",
           dificultad: "12",
-          alcanceMaximo: "6"
+          alcanceMaximo: "-"
         },
         {
           nombreHechizo: "Pies de trueno",
           nivelHechizo: "Experto",
-          descripcion: "Triplica la velocidad por un turno",
+          descripcion: "Tu bestia y tu, una vez por dia. podrán malversen al triple de su velocidad en solo un turno excepto en el agua",
           tipoHechizo: "Soporte",
           costoMana: "2",
           dificultad: "12",
-          alcanceMaximo: "..."
+          alcanceMaximo: "-"
         }
       ]
     },
         {
-      nombre: "Grimorio de la tierra",
+      nombre: "Grimorio de la tierra ⛰️",
       descripcionGrimorio: "Requisitos: hechicero domador de la tierra)<br> Control de la tierra y hechizos para empujar y resistir daño. ",
       novato: "Aprendes 1 hechizo",
       experto: "Aprendes 2 hechizos novato o 1 experto",
@@ -218,31 +218,58 @@ let HECHICERO = {
           alcanceMaximo: "3"
         },
         {
-          nombreHechizo: "Cuerpo de agua",
+          nombreHechizo: "Brindar peso",
           nivelHechizo: "Novato",
-          descripcion: "Daño extra a armas aliadas por una ronda",
+          descripcion: "Reduce la velocidad a la mitad y la esquiva en un -1",
           tipoHechizo: "Soporte",
           costoMana: "2",
-          dificultad: "14",
+          dificultad: "inteligencia vs inteligencia",
           alcanceMaximo: "6"
         },
         {
-          nombreHechizo: "Esfera de mar eterno",
+          nombreHechizo: "Puños de golem de tierra",
           nivelHechizo: "Novato",
-          descripcion: "Ataque adicional de 4D6 tras otro ataque de rayo",
+          descripcion: "Ataque pelea, y daño de 3d6 mas fuerza",
           tipoHechizo: "Ataque",
-          costoMana: "...",
-          dificultad: "...",
+          costoMana: "1",
+          dificultad: "-",
           alcanceMaximo: "1"
         },
         {
-          nombreHechizo: "Control de lo vivo",
+          nombreHechizo: "Muro protector",
+          nivelHechizo: "Experto",
+          descripcion: "Cuando te ataquen, y falles la esquiva, puedes activar este hechizo para intentar detener un ataque haciendo una tirada de inteligencia vs el ataque del enemigo. si lo logras puedes usar la siguiente proeza: (4) -muro que atrapa- para poder contratacar al atacante, (3) -Polvo que oculta- Puedes moverte de acuerdo a tu velocidad e intentar esconderte con un +2 ",
+          tipoHechizo: "Hechizo de reaccion",
+          costoMana: "1",
+          dificultad: "-",
+          alcanceMaximo: "1"
+        },
+        {
+          nombreHechizo: "Vuelo",
+          nivelHechizo: "Experto",
+          descripcion: "Puedes liberar todo tu peso que llegas a volar hasta 3 metros de altura por 1d3 turnos, te mueves de acuerdo a tu velocidad",
+          tipoHechizo: "Especial",
+          costoMana: "2",
+          dificultad: "13",
+          alcanceMaximo: "-"
+        },
+        {
+          nombreHechizo: "Montaña naciente",
           nivelHechizo: "Experto",
           descripcion: "Encadena ataque a otro objetivo",
           tipoHechizo: "Ataque",
           costoMana: "2",
           dificultad: "Inteligencia vs esquiva",
-          alcanceMaximo: "..."
+          alcanceMaximo: "5"
+        },
+        {
+          nombreHechizo: "Armadura de piedra",
+          nivelHechizo: "Experto",
+          descripcion: "Encadena ataque a otro objetivo",
+          tipoHechizo: "Ataque",
+          costoMana: "2",
+          dificultad: "Inteligencia vs esquiva",
+          alcanceMaximo: "-"
         }
       ]
     },
@@ -365,7 +392,7 @@ let HECHICERO = {
         },
         {
         nombre: "Combinar elementos 🔮",
-        descripcionGrimorio: "Requisito: Hechicero elemental. Puedes combinar dos elementos  ",
+        descripcionGrimorio: "Requisito: Rango 5. Puedes combinar dos elementos. ",
         novato: "Puedes combinar tu elemento que dominas con otro, puedes crear un nuevo hechizo y elejir un nuevo hechizo de ese elemento",
         experto: "Puedes elegir otro hechizo o duplicar el efecto",
         maestro: "Eliges otro hechizo adicional",
