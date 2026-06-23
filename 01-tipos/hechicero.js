@@ -58,8 +58,8 @@ let HECHICERO = {
   titulo: "Técnicas",
   items: [
     {
-      nombre: "Grimorio del fuego",
-      descripcionGrimorio: "Manipulación de fuego ofensivo y potenciación de daño. Requisito: Hechicero elemental",
+      nombre: "Grimorio del fuego 🔥",
+      descripcionGrimorio: "Requisitos: hechicero domador del fuego)<br> Manipulación de fuego ofensivo y potenciación de daño. ",
       novato: "Aprendes 1 hechizo",
       experto: "Aprendes 2 hechizos novato o 1 experto",
       maestro: "Aprendes un hechizo experto o maestro",
@@ -139,8 +139,8 @@ let HECHICERO = {
       ]
     },
     {
-      nombre: "Grimorio del rayo",
-      descripcionGrimorio: "Control de electricidad y ataques encadenados. Requisito: Hechicero elemental",
+      nombre: "Grimorio del rayo ⚡",
+      descripcionGrimorio: "Requisitos: hechicero domador del rayo)<br> Control de electricidad y ataques encadenados. ",
       novato: "Aprendes 1 hechizo",
       experto: "Aprendes 2 hechizos novato o 1 experto",
       maestro: "...",
@@ -203,7 +203,7 @@ let HECHICERO = {
     },
         {
       nombre: "Grimorio de la tierra",
-      descripcionGrimorio: "Control de electricidad y ataques encadenados. Requisito: Hechicero elemental",
+      descripcionGrimorio: "Requisitos: hechicero domador de la tierra)<br> Control de la tierra y hechizos para empujar y resistir daño. ",
       novato: "Aprendes 1 hechizo",
       experto: "Aprendes 2 hechizos novato o 1 experto",
       maestro: "...",
@@ -247,8 +247,8 @@ let HECHICERO = {
       ]
     },
     {
-      nombre: "Grimorio del agua",
-      descripcionGrimorio: "Control de electricidad y ataques encadenados. Requisito: Hechicero elemental",
+      nombre: "Grimorio del agua 🌊",
+      descripcionGrimorio: "Requisitos: hechicero domador del agua)<br> Control de electricidad y ataques encadenados. Requisito: Hechicero elemental",
       novato: "Aprendes 1 hechizo",
       experto: "Aprendes 2 hechizos novato o 1 experto",
       maestro: "...",
@@ -292,8 +292,8 @@ let HECHICERO = {
       ]
     },
     {
-      nombre: "Grimorio del viento",
-      descripcionGrimorio: "Requisitos hechicero domar de viento)<br> .",
+      nombre: "Grimorio del viento 🌪️",
+      descripcionGrimorio: "Requisitos: hechicero domador del viento)<br> .",
       novato: "Aprendes dos hechizo de nivel novato",
       experto: "Aprendes un hechizo de nivel experto",
       maestro: "Aprendes un hechizo de nivel maestro",
