@@ -60,7 +60,7 @@ let ARTESANO = {
                 },
                 {                 
                     nombre: "Creaciones vivas",
-                    descripcionGrimorio: "Requisito: Creador (novato) y rango 7",
+                    descripcionGrimorio: "Requisitos: Creador (novato) rango 7 <br> Podrás crear mecanismos basados en criaturas vivas. que puedan funcionar con tareas muy simples, para hacerlas mas complejas requerirá ayuda de un ritualista",
                     novato: "Creaciones simples basadas en criaturas",
                     experto: "Creaciones complejas",
                     maestro: "Creaciones avanzadas",
