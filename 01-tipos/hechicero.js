@@ -85,9 +85,9 @@ let HECHICERO = {
         {
           nombreHechizo: "Pulmones de fuego",
           nivelHechizo: "Novato",
-          descripcion: "2D6 de daño + voluntad y el objetivo no puede hablar por 1D3 turnos",
+          descripcion: "1D6 de daño + voluntad y el objetivo no puede hablar por 1D3 turnos",
           tipoHechizo: "Ataque",
-          costoMana: "2",
+          costoMana: "4",
           dificultad: "Inteligencia vs esquiva",
           alcanceMaximo: "6"
         },
@@ -140,7 +140,7 @@ let HECHICERO = {
     },
     {
       nombre: "Grimorio del rayo ⚡",
-      descripcionGrimorio: "Requisitos: hechicero domador del rayo)<br> Control de electricidad y ataques encadenados. ",
+      descripcionGrimorio: "Requisitos: hechicero domador del rayo)<br> Control de electricidad y ataques encadenados. <br> El alcance del rayo puede aumentar 4 metros y agregar un objetivo mas gracias al agua ",
       novato: "Aprendes 1 hechizo",
       experto: "Aprendes 2 hechizos novato o 1 experto",
       maestro: "...",
@@ -173,6 +173,15 @@ let HECHICERO = {
           alcanceMaximo: "1"
         },
         {
+          nombreHechizo: "Amigo de rayo",
+          nivelHechizo: "Novato",
+          descripcion: "Puedes brindarle a un aliado tu electricidad por toda una escena. para ayudarte a encadenar ataques o negar el daño de los tuyos, el aliado puede gastar 1 de nur para eliminar este efecto en el. ",
+          tipoHechizo: "Estrategico",
+          costoMana: "2 - 0 para bestias",
+          dificultad: "12",
+          alcanceMaximo: "5"
+        },
+        {
           nombreHechizo: "Cadena de dos",
           nivelHechizo: "Experto",
           descripcion: "Una vez ataques a un objetivo puedes encadenar tu ataque a otro objetivo solo si lo puedes ver y que esté cerca de min 8 metros de la primera victima, solo se lanza para acertar al primer objetivo, las cadenas son automáticas <br> El daño será de 4D6 de daño + inteligencia repartidos entre los objetivos",
@@ -182,7 +191,7 @@ let HECHICERO = {
           alcanceMaximo: "..."
         },
         {
-          nombreHechizo: "Moverte como rayo",
+          nombreHechizo: "deslizarte en el rayo",
           nivelHechizo: "Experto",
           descripcion: "Una vez puedas encadenar un ataque hasta min 3 objetivos podrás teletransportarte con tu mismo ataque",
           tipoHechizo: "Ataque",
@@ -191,11 +200,47 @@ let HECHICERO = {
           alcanceMaximo: "-"
         },
         {
-          nombreHechizo: "Pies de trueno",
+          nombreHechizo: "Moverte como rayo",
+          nivelHechizo: "Experto",
+          descripcion: "En un radio de 7 metros puedes teletransportarteal instante. <br> gastando 5 de nur puedes activar este hechizo tan rapido que no contara como acción ",
+          tipoHechizo: "Ataque",
+          costoMana: "3 o 5",
+          dificultad: "12",
+          alcanceMaximo: "7"
+        },
+        {
+          nombreHechizo: "Pies de rayo",
           nivelHechizo: "Experto",
           descripcion: "Tu bestia y tu, una vez por dia. podrán malversen al triple de su velocidad en solo un turno excepto en el agua",
           tipoHechizo: "Soporte",
           costoMana: "2",
+          dificultad: "12",
+          alcanceMaximo: "-"
+        },
+        {
+          nombreHechizo: "area y rayo no se",
+          nivelHechizo: "Experto",
+          descripcion: "Puedes hacer un atauqe en area de 3 metros, todos recibiendo 1d6 de daño. si estas al lado de tu bestia podran hacer 3d6 de daño",
+          tipoHechizo: "Soporte",
+          costoMana: "2",
+          dificultad: "12",
+          alcanceMaximo: "-"
+        },
+        {
+          nombreHechizo: "Bestia y druida unidos",
+          nivelHechizo: "Experto",
+          descripcion: "Tu bestia y tu, podran teletransportarsen en el sitio del otro o intercambiar sus lugares <br> gastando 5 de nur puedes activar este hechizo tan rapido que no contara como acción ",
+          tipoHechizo: "Estrategico",
+          costoMana: "3 - 5",
+          dificultad: "12",
+          alcanceMaximo: "-"
+        },
+        {
+          nombreHechizo: "Zona de tormentas",
+          nivelHechizo: "Experto",
+          descripcion: "Una vez por dia, hasta 3 aliados tuyos y sus bestias vinculadas de forma voluntaria pueden intercambiar lugares de forma voluntaria ",
+          tipoHechizo: "Estrategico",
+          costoMana: "3",
           dificultad: "12",
           alcanceMaximo: "-"
         }
@@ -392,7 +437,7 @@ let HECHICERO = {
         },
         {
         nombre: "Combinar elementos 🔮",
-        descripcionGrimorio: "Requisito: Rango 5. Puedes combinar dos elementos. ",
+        descripcionGrimorio: "Requisito: Rango 5. Puedes combinar dos elementos. <br> Cada elemento tiene una ventaja y desventaja <br>Fuego Ventaja: Mucho daño. Desventaja: Menos area<br><br><br><br>",
         novato: "Puedes combinar tu elemento que dominas con otro, puedes crear un nuevo hechizo y elejir un nuevo hechizo de ese elemento",
         experto: "Puedes elegir otro hechizo o duplicar el efecto",
         maestro: "Eliges otro hechizo adicional",
