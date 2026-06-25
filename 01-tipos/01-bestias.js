@@ -259,9 +259,9 @@ let bestias = [
   tamaño: "5",
   armadura: "0",
   Destreza: "0", Precision: "2", pelea: "0", percepcion: "0", comunicacion: "0",
-  fuerza: "-1", voluntad: "1", constitucion: "-2", Instinto: "-1",
+  fuerza: "0", voluntad: "1", constitucion: "-2", Instinto: "-1",
   enfoques: "Lanzar, Excavar", 
-  Habilidades: "Explosion de puas (area 2m, 1d6 daño, dif 15)",
+  Habilidades: "Explosion de puas con fuerza +4 (area 2m, 1d6 daño, dif 13) las victimas pueden esquivar con dif 13, las puas pueden ir al subsuelo. Una vez por dia puede sin gastar accion y en cualquier momento hacer que su druida vinculado, le aparezcan puas por todo su cuerpo hiriendo a los que esten cerca con 2d6 y dandole una armadura temporal de 10 ",
   ataque: "+1", daño: "1D4", dureza: "3", alcance: "1"
 },
 
@@ -330,8 +330,8 @@ let bestias = [
     Destreza: "3", Precision: "-1", pelea: "4", percepcion: "0", comunicacion: "0",
     fuerza: "2", voluntad: "-1", constitucion: "1", Instinto: "-2",
     enfoques: "Artes marciales", 
-    Habilidades: "Puede repetir un ataque fallido una vez usando su cola",
-    ataque: "+1", daño: "1D4", dureza: "3", alcance: "1"
+    Habilidades: "Una vez al dia usando su cola puede repetir un ataque fallido y hacer un ataque extra con la misma.<br> Habilidad especial rango 7: Puños de nur, puede hacer daño magico, y gastando 2 de nur hacer que su golpe se extienda por 3 metros",
+    ataque: "puño +3", daño: "3d6", dureza: "3", alcance: "1"
   },
 
   { 
@@ -404,7 +404,7 @@ let bestias = [
     ataque: "+1", daño: "1D4", dureza: "6", alcance: "1"
   },
 
-  { 
+{ 
     nombre: "Cangrejo espinoso",
     bioma: "Costa",
     terreno: "Tierra",
@@ -426,9 +426,9 @@ let bestias = [
     tamaño: "5",
     armadura: "0",
     Destreza: "3", Precision: "-1", pelea: "-1", percepcion: "2", comunicacion: "1",
-    fuerza: "0", voluntad: "0", constitucion: "-2", Instinto: "4",
-    enfoques: "Orientarse, Espiritual, Forrajear", 
-    Habilidades: "Puede crear y reparar objetos en plano físico y espiritual (+2 artesanía)",
+    fuerza: "0", voluntad: "0", constitucion: "-2", Instinto: "5",
+    enfoques: "Orientarse, Artesania, Forrajear", 
+    Habilidades: "Puede crear y reparar objetos en plano físico y espiritual (+5 artesanía)",
     ataque: "+1", daño: "1D4", dureza: "3", alcance: "1"
   },
 
@@ -442,7 +442,7 @@ let bestias = [
     Destreza: "-1", Precision: "-1", pelea: "0", percepcion: "2", comunicacion: "-1",
     fuerza: "0", voluntad: "3", constitucion: "-2", Instinto: "4",
     enfoques: "Nadar, Rayo", 
-    Habilidades: "Ataque eléctrico a 10m, daño 2D6 + Instinto, coste -2 nur",
+    Habilidades: "Ataque eléctrico a 10m, daño 2D6 + Instinto, coste -2 nur El alcance del rayo puede aumentar 4 metros y agregar un objetivo mas gracias al agua",
     ataque: "+1", daño: "1D4", dureza: "2", alcance: "1"
   },
 { 
@@ -450,12 +450,12 @@ let bestias = [
     bioma: "Desierto",
     terreno: "Tierra",
     tipo: "Ataque",
-    tamaño: "13",
+    tamaño: "10",
     armadura: "15",
     Destreza: "4", Precision: "1", pelea: "2", percepcion: "-1", comunicacion: "-2",
     fuerza: "1", voluntad: "1", constitucion: "0", Instinto: "3",
     enfoques: "Iniciativa, Velocidad", 
-    Habilidades: "Puede lanzar un rayo 1D6 (dif 10, -3 nur) sin acción una vez por turno. Funciona como montura y transporte según tamaño",
+    Habilidades: "Puede lanzar un rayo en una distancia de 7 metros con daño de 1D6 -2 nur encadenando hasta 2 objetivos en 2 metros. sin acción una vez por turno.",
     ataque: "+3", daño: "1D4", dureza: "4", alcance: "1"
   },
 
@@ -480,11 +480,11 @@ let bestias = [
     tipo: "Sigilo",
     tamaño: "3",
     armadura: "5",
-    Destreza: "4", Precision: "0", pelea: "-1", percepcion: "2", comunicacion: "1",
-    fuerza: "0", voluntad: "1", constitucion: "-1", Instinto: "3",
+    Destreza: "4", Precision: "1", pelea: "-1", percepcion: "3", comunicacion: "1",
+    fuerza: "-1", voluntad: "1", constitucion: "-2", Instinto: "2",
     enfoques: "Sigilo, Juego de manos", 
-    Habilidades: "Invisible 1D6 turnos (dif 20 detectarlo). Puede hacerse invisible con su amo (1 vez/día)",
-    ataque: "+1", daño: "1D4", dureza: "2", alcance: "1"
+    Habilidades: "gastando 2 de nur se puede volver invisible 1D6 turnos (dif 20 detectarlo). Puede atacar con su lengua hasta 3 metros 1d6 de daño o agarrar objetos con ella. Habilidad especial <br>rango 7: Puede hacerse invisible con su amo (1 vez/día)",
+    ataque: "+1", daño: "1D6", dureza: "2", alcance: "1"
   },
 
   { 
@@ -538,8 +538,8 @@ let bestias = [
     armadura: "0",
     Destreza: "0", Precision: "-1", pelea: "2", percepcion: "1", comunicacion: "0",
     fuerza: "0", voluntad: "4", constitucion: "2", Instinto: "-2",
-    enfoques: "Lanzar", 
-    Habilidades: "Escupe veneno: 4D6 inicial + 1D6 continuo (1 vez por combate)",
+    enfoques: "Lanzar, Herbolaria", 
+    Habilidades: "Escupe veneno: 4D6 inicial + 1D6 continuo (1 vez por combate). Su estomago puede ser usado como caldero de espacio 3, cada vez que aumenta de tamaño aumenta su caldero en 2",
     ataque: "+1", daño: "1D4", dureza: "2", alcance: "1"
   },
 

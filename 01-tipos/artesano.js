@@ -105,7 +105,15 @@ let ARTESANO = {
                     experto: "...",
                     maestro: "...",
                     hechizos: []                   
-                }
+                },
+                {
+                    nombre: "Clones artesanos ",
+                    descripcionGrimorio: "Requisitos: (artesano rango 5) <br> puedes invocar dos clones de tu bestia y tuyo para que estos tengan la orden de seguir trabjando en lo de artesania, solo se puede pedir ordenes muy sencillas y no podran salir del sitio donde fueron invocados ",
+                    novato: "Puedes hacer clon de tu bestia",
+                    experto: "Puedes hacer clon de ti mismo",
+                    maestro: "...",
+                    hechizos: []
+                },
             ]
 
         }
