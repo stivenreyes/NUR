@@ -287,7 +287,7 @@ let armas = [
         alcance: "1",
         requisitos: "Fuerza 3",
         dureza: "3",
-        manos: "1",
+        manos: "2",
         
     },
     {

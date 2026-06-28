@@ -217,10 +217,10 @@ let bestias = [
   tamaño: "3",
   armadura: "0",
   Destreza: "3", Precision: "0", pelea: "2", percepcion: "4", comunicacion: "0",
-  fuerza: "-2", voluntad: "0", constitucion: "-1", Instinto: "0",
+  fuerza: "-2", voluntad: "1", constitucion: "-1", Instinto: "0",
   enfoques: "Sigilo, Oler, Huir", 
-  Habilidades: "Rastrear sangre (100m, hasta 2 tipos), poder: Sangre en el aire (300m, detecta heridos a 50m)",
-  ataque: "+3", daño: "1D4", dureza: "2", alcance: "1"
+  Habilidades: "Rastrear sangre (100m, hasta 2 tipos), poder: Sangre en el aire (300m, detecta heridos a 50m).<br> Gastando 3 de nur puede crear un clon, que podra moverse hasta maximo 5 metros antes de desahacerse",
+  ataque: "mordidas +3", daño: "1D6", dureza: "2", alcance: "1"
 },
 
 { 
@@ -272,11 +272,11 @@ let bestias = [
   tipo: "Exploracion",
   tamaño: "10",
   armadura: "0",
-  Destreza: "0", Precision: "-1", pelea: "3", percepcion: "2", comunicacion: "-1",
-  fuerza: "4", voluntad: "0", constitucion: "0", Instinto: "-2",
-  enfoques: "Nadar, Oler", 
-  Habilidades: "Detector de sangre (100m)",
-  ataque: "+1", daño: "1D6", dureza: "5", alcance: "1"
+  Destreza: "-1", Precision: "-1", pelea: "3", percepcion: "3", comunicacion: "-1",
+  fuerza: "4", voluntad: "1", constitucion: "0", Instinto: "-1",
+  enfoques: "Nadar x2, Oler", 
+  Habilidades: "Detector de sangre (100m). gastando 2 de nur puede aparecer al lado de su druida en aluna superficie de agua en hasta 1km. mas 5 para encontrar criaturas asustadas",
+  ataque: "mordida +1/ tope", daño: "2D6/3D6", dureza: "5", alcance: "1"
 },
 
 { 
@@ -342,10 +342,10 @@ let bestias = [
     tamaño: "5",
     armadura: "15",
     Destreza: "2", Precision: "4", pelea: "-1", percepcion: "3", comunicacion: "0",
-    fuerza: "0", voluntad: "1", constitucion: "-1", Instinto: "-2",
+    fuerza: "1", voluntad: "1", constitucion: "-1", Instinto: "-2",
     enfoques: "Oler", 
     Habilidades: "Puede lanzar su lengua por el suelo y atacar a alguien desde la tierra o el agua hasta una distancia de 5 metros, el ataque de la lengua será oculto destreza + 2 para evitar que se descubra, el oso hormiguero se podrá conectar a su amo, y transferir cualquier poder donde se use nur en su lengua <br> Lengua daño: 1d6",
-    ataque: "+1", daño: "1D6", dureza: "4", alcance: "1"
+    ataque: "Garras +1", daño: "2D6", dureza: "5", alcance: "1"
   },
 
   { 
@@ -365,15 +365,15 @@ let bestias = [
   { 
     nombre: "Escarabajo amarillo",
     bioma: "Costa",
-    terreno: "Tierra",
+    terreno: "Tierra y viento",
     tipo: "Rara",
-    tamaño: "5",
-    armadura: "10",
+    tamaño: "3",
+    armadura: "30",
     Destreza: "0", Precision: "-1", pelea: "-1", percepcion: "1", comunicacion: "0",
     fuerza: "2", voluntad: "4", constitucion: "3", Instinto: "-2",
     enfoques: "", 
-    Habilidades: "Infecta con hongos al contacto, daño 2D6, una vez por día, tipo veneno",
-    ataque: "+1", daño: "1D4", dureza: "5", alcance: "1"
+    Habilidades: "Infecta con hongos al contacto, daño 3D6 de forma inmediata, una vez por día, veneno rango 2. <br> gastando 5 de nur puede hacer una explosion de 1m haciendo 4d6 de daño dif 15 para esquivar ",
+    ataque: "+1", daño: "1D6", dureza: "5", alcance: "1"
   },
 
   { 
@@ -400,7 +400,7 @@ let bestias = [
     Destreza: "0", Precision: "-1", pelea: "1", percepcion: "1", comunicacion: "0",
     fuerza: "2", voluntad: "3", constitucion: "4", Instinto: "-2",
     enfoques: "", 
-    Habilidades: "Almacena objetos en su caparazón y puede duplicarlo como salida de emergencia",
+    Habilidades: "Caja fuerte portátil: El cangrejo llevara en su espalda un caparazón donde podrá guardarse cualquier objeto, asi mismo podrá duplicar su caparazón para tener una salida de emergencia si decide esconder el objeto que tenga en el otro caparazón <br> Reaccion acorazada: Gastando 5 de nur y sin contar como accion el cangrejo puede invocar y encerrar en un caparazon de tamaño 10, de 30 de vida de forma voluntaria a objetivos en 5 metros, ",
     ataque: "+1", daño: "1D4", dureza: "6", alcance: "1"
   },
 
@@ -413,7 +413,7 @@ let bestias = [
     armadura: "20",
     Destreza: "-1", Precision: "-2", pelea: "2", percepcion: "-1", comunicacion: "-1",
     fuerza: "4", voluntad: "2", constitucion: "4", Instinto: "-2",
-    enfoques: "Aguante, Respiración, Sumergirse", 
+    enfoques: "Aguante de carga, Respiración, Sumergirse", 
     Habilidades: "Sirve como montura, da oxígeno bajo el agua y transporta aliados según tamaño",
     ataque: "Tenazas +1", daño: "3D6", dureza: "6", alcance: "1"
   },
@@ -466,10 +466,10 @@ let bestias = [
     tipo: "Rara",
     tamaño: "5",
     armadura: "0",
-    Destreza: "-1", Precision: "0", pelea: "-1", percepcion: "1", comunicacion: "0",
-    fuerza: "2", voluntad: "3", constitucion: "4", Instinto: "-2",
+    Destreza: "-1", Precision: "0", pelea: "0", percepcion: "1", comunicacion: "0",
+    fuerza: "2", voluntad: "3", constitucion: "3", Instinto: "0",
     enfoques: "", 
-    Habilidades: "Aprisiona enemigos y los paraliza (3D6 min). Dificultad basada en fuerza (+6 menor rango, +4 igual, +3 mayor)",
+    Habilidades: "Aprisiona enemigos y los paraliza (3D6 min). Dificultad basada en fuerza (+6 menor rango, +4 igual, +3 mayor) <br> gastando 4 de nur puede sellar en su cuerpo un hechizo de alguna victima que atrape por un 1d3 turnos lanzando instinto vs voluntad de la victima <br> gastando 4 de nur puede sellar en su cuerpo una bestia de hasta maximo el tamaño de la bestia mas 5 por un 1d3 turnos lanzando instinto vs voluntad de la victima ",
     ataque: "+1", daño: "1D4", dureza: "4", alcance: "1"
   },
 
@@ -550,10 +550,10 @@ let bestias = [
     tipo: "Exploración",
     tamaño: "5",
     armadura: "0",
-    Destreza: "2", Precision: "-1", pelea: "0", percepcion: "1", comunicacion: "2",
+    Destreza: "2", Precision: "-1", pelea: "0", percepcion: "2", comunicacion: "2",
     fuerza: "0", voluntad: "-1", constitucion: "0", Instinto: "3",
     enfoques: "Sigilo, Volar", 
-    Habilidades: "De noche se vuelve invisible (1D3 horas). Detectarla requiere tirada enfrentada alta",
+    Habilidades: "De noche se vuelve invisible (1D3 horas). Detectarla requiere tirada dificultad 20 <br> Manto del silencio: puede colocar un manto sobre su druida vinculado para que la misma lechuza haga las tiradas de sigilo por el, la lechiza debe estar con el",
     ataque: "+1", daño: "1D4", dureza: "3", alcance: "1"
   }  
 

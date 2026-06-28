@@ -14,8 +14,8 @@ let CAOTICO = {
         },
         {
           nombre: "Roca del caos",
-          descripcionGrimorio: "Todo el daño mágico que recibes lo resistes y lo reduces a la mitad.",
-          novato: "Resistes daño mágico (mitad)",
+          descripcionGrimorio: "Todo el daño mágico que recibes lo resistes y lo reduces a la mitad. APrendes otro talento",
+          novato: "Resistes daño mágico (mitad) y lo transformas en nur con tu bestia",
           experto: "Puedes repartir daño mágico entre tú y tu bestia",
           maestro: "...",
           hechizos: []
@@ -150,31 +150,31 @@ let CAOTICO = {
           hechizos: []
         },
         {
-          nombre : "Cargar con nur", 
+          nombre : "Cargar con nur 🛡️", 
           descripcionGrimorio: "Requisito: Roca del caos (novato) <br> Puedes tomar del ambiente, objeto, druida o bestia y de forma involuntaria, teniendo una tirada de voluntad vs voluntad solo si el objetivo se resiste. <br> Si lo logras robaras nur, tanto como tu nivel de nur - 1D6<br>  Nur que debes expulsar si o si para evitar recibir esa cantidad x2 de daño <br>       Puedes expulsarla tocando a alguien para cargarlo y generar uno de estos efectos segun el nivel que tengas esta habilidad",
           novato: "La persona cargada podrá hacer daño mágico pero recibir la mitad de daño del ataque que haga, ya que el nur no esta del todo bien pulido<br> este efecto solo se puede hacer una vez al dia, y la carga debe expulsarla en máximo 1 turno o media minuto",
-          experto: "Otorga daño mágico sin penalización",
+          experto: "La persona cargada podrá hacer daño mágico <br> este efecto solo se puede hacer una vez al dia, y la carga debe expulsarla en máximo 1 turno o media minuto",
           maestro: "...",
           hechizos: []
         },
         {
-          nombre: "Reutilizar el nur",
+          nombre: "Reutilizar el nur 🛡️",
           descripcionGrimorio: "Requisito: Roca del caos (novato) <br> Las explosiones de un hechicero caótico/loco del caos, un druida muerto, una bestia muerta o un hechizo fallido dejan nur en el aire que con una acción se puede reutilizar ese nur depende del nivel que tengas esta habilidad",
           novato: "Sumar 1d3 de nur para tu bestia o para ti <br> Hacer que tu bestia sume 1D6 a cualquier tirada usando el nur que este en el aire, solo se puede hacer una vez por una fuente de nur <br> Si es una bestia o druida muerto que hagan una ultima acción con el nur que aun tienen, la acción solo puede ser física",
-          experto: "Mejoras adicionales y acciones extra",
+          experto: "Gastando 3 de nur puedes volver a invocar hechizos donde se deshicieron y movrlos hasta donde estes",
           maestro: "...",
           hechizos: []
         },
         {
-          nombre: "Transformar daño en nur",
+          nombre: "Transformar daño en nur 🛡️",
           descripcionGrimorio: "Requisito: Roca del caos (novato) <br> Convierte daño mágico en energía.",
-          novato: "Convierte daño en nur para aliados",
+          novato: "La mitad del daño magico que recibes lo puedes repartir entre mínimo dos aliados cercanos como nur",
           experto: "...",
           maestro: "...",
           hechizos: []
         },
         {
-          nombre: "Entrar en locura",
+          nombre: "Entrar en locura 🛡️",
           descripcionGrimorio: "Requisito: Roca del caos (novato) <br> Cambio temporal a loco del caos.",
           novato: "1 hechizo novato",
           experto: "2 hechizos de novato o 1 experto",
@@ -190,10 +190,18 @@ let CAOTICO = {
           hechizos: []
         },
         {
-          nombre: "Quitar nur o energía",
+          nombre: "Quitar nur o energía 🛡️",
           descripcionGrimorio: "Requisito: Roca del caos (novato) <br> Drena energía o vida del enemigo.",
           novato: "Una vez por ronda si algún hechizo te toca donde este en contacto con el hechicero puedes quitarle un 1d6 de nur y si recibes un golpe melé puedes quitarle energías a la victima y hacerle 2d6 de daño o quitarle -1d6 de nur y dándole un -1 a su siguiente acción física",
           experto: "...",
+          maestro: "...",
+          hechizos: []
+        },
+        {
+          nombre: "Iman de nur violento 🛡️",
+          descripcionGrimorio: "Requisito: Roca del caos (novato) <br> Drena energía o vida del enemigo.",
+          novato: "En un area de 3 metros puedes desviar ataques magicos hacia ti  gastando 2 de nur",
+          experto: "puedes desviar ataques magicos hacia otros en un area de 3 metros gastando 3 de nur, ese hechizo se dirije con una tirada de intelencia vs esquiva de la victima",
           maestro: "...",
           hechizos: []
         }

@@ -1260,3 +1260,9 @@ table {
 .contenedor-tablas table {
     width: 350px;
 }
+
+/* ================= ZOOM PARA LAS IMAGENES ================= */
+#imagenaaa {
+    width: 350px;
+    height: auto;
+}
