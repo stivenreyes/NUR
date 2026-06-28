@@ -429,7 +429,7 @@ let bestias = [
     fuerza: "0", voluntad: "0", constitucion: "-2", Instinto: "5",
     enfoques: "Orientarse, Artesania, Forrajear", 
     Habilidades: "Puede crear y reparar objetos en plano físico y espiritual (+5 artesanía)",
-    ataque: "+1", daño: "1D4", dureza: "3", alcance: "1"
+    ataque: "+1", daño: "1D6", dureza: "3", alcance: "1"
   },
 
   { 
@@ -443,7 +443,7 @@ let bestias = [
     fuerza: "0", voluntad: "3", constitucion: "-2", Instinto: "4",
     enfoques: "Nadar, Rayo", 
     Habilidades: "Ataque eléctrico a 10m, daño 2D6 + Instinto, coste -2 nur El alcance del rayo puede aumentar 4 metros y agregar un objetivo mas gracias al agua",
-    ataque: "+1", daño: "1D4", dureza: "2", alcance: "1"
+    ataque: "+1", daño: "1D6", dureza: "2", alcance: "1"
   },
 { 
     nombre: "Lagarto de trueno",
@@ -456,7 +456,7 @@ let bestias = [
     fuerza: "1", voluntad: "1", constitucion: "0", Instinto: "3",
     enfoques: "Iniciativa, Velocidad", 
     Habilidades: "Puede lanzar un rayo en una distancia de 7 metros con daño de 1D6 -2 nur encadenando hasta 2 objetivos en 2 metros. sin acción una vez por turno.",
-    ataque: "+3", daño: "1D4", dureza: "4", alcance: "1"
+    ataque: "+3", daño: "1D6", dureza: "4", alcance: "1"
   },
 
   { 
@@ -470,7 +470,7 @@ let bestias = [
     fuerza: "2", voluntad: "3", constitucion: "3", Instinto: "0",
     enfoques: "", 
     Habilidades: "Aprisiona enemigos y los paraliza (3D6 min). Dificultad basada en fuerza (+6 menor rango, +4 igual, +3 mayor) <br> gastando 4 de nur puede sellar en su cuerpo un hechizo de alguna victima que atrape por un 1d3 turnos lanzando instinto vs voluntad de la victima <br> gastando 4 de nur puede sellar en su cuerpo una bestia de hasta maximo el tamaño de la bestia mas 5 por un 1d3 turnos lanzando instinto vs voluntad de la victima ",
-    ataque: "+1", daño: "1D4", dureza: "4", alcance: "1"
+    ataque: "+1", daño: "1D6", dureza: "4", alcance: "1"
   },
 
   { 
@@ -492,7 +492,7 @@ let bestias = [
     bioma: "Desierto",
     terreno: "Viento",
     tipo: "Montura",
-    tamaño: "14",
+    tamaño: "15",
     armadura: "0",
     Destreza: "4", Precision: "0", pelea: "-1", percepcion: "3", comunicacion: "0",
     fuerza: "2", voluntad: "0", constitucion: "0", Instinto: "-1",
@@ -512,7 +512,7 @@ let bestias = [
     fuerza: "1", voluntad: "2", constitucion: "3", Instinto: "3",
     enfoques: "Rastrear, Clima, Nadar", 
     Habilidades: "Detecta clima futuro (5h). Hace inmune a clima por 1D6 turnos (1 vez/día)",
-    ataque: "-1", daño: "1D4", dureza: "2", alcance: "1"
+    ataque: "-1", daño: "1D6", dureza: "2", alcance: "1"
   },
 
   { 
@@ -526,7 +526,7 @@ let bestias = [
     fuerza: "2", voluntad: "3", constitucion: "4", Instinto: "-2",
     enfoques: "Excavar, Huir", 
     Habilidades: "Viaja bajo tierra, ataques sorpresa: +4D6 (desprevenido), +2D6 (alerta), +1D6 (guardia)",
-    ataque: "+1", daño: "1D4", dureza: "5", alcance: "1"
+    ataque: "+1", daño: "1D6", dureza: "5", alcance: "1"
   },
 
   { 
@@ -540,7 +540,7 @@ let bestias = [
     fuerza: "0", voluntad: "4", constitucion: "2", Instinto: "-2",
     enfoques: "Lanzar, Herbolaria", 
     Habilidades: "Escupe veneno: 4D6 inicial + 1D6 continuo (1 vez por combate). Su estomago puede ser usado como caldero de espacio 3, cada vez que aumenta de tamaño aumenta su caldero en 2",
-    ataque: "+1", daño: "1D4", dureza: "2", alcance: "1"
+    ataque: "+1", daño: "1D6", dureza: "2", alcance: "1"
   },
 
   { 
@@ -554,7 +554,7 @@ let bestias = [
     fuerza: "0", voluntad: "-1", constitucion: "0", Instinto: "3",
     enfoques: "Sigilo, Volar", 
     Habilidades: "De noche se vuelve invisible (1D3 horas). Detectarla requiere tirada dificultad 20 <br> Manto del silencio: puede colocar un manto sobre su druida vinculado para que la misma lechuza haga las tiradas de sigilo por el, la lechiza debe estar con el",
-    ataque: "+1", daño: "1D4", dureza: "3", alcance: "1"
+    ataque: "+1", daño: "1D6", dureza: "3", alcance: "1"
   }  
 
 ]
