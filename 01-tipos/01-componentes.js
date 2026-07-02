@@ -558,13 +558,19 @@ let paquetes = [
         nombre: "Paquete de explorador",
         precio: "40 L",
         tipo: "Exploración",
-        contenido: "Cuerda de fibras resistentes (10–15 m), Ganchos o garfios de hueso/piedra, Mapa hecho con corteza o tejido, Manta camuflada de hojas o piel teñida"
+        contenido: "Cuerda de fibras resistentes (10-15 m), Ganchos o garfios de hueso/piedra, Mapa hecho con corteza o tejido, Manta camuflada de hojas o piel teñida"
     },
     {
         nombre: "Paquete de cocinero",
         precio: "20 L",
         tipo: "Cocina",
         contenido: "Caldero para cocinar, Tabla para picar y cortar, Cuchillos y cucharas de varios tamaños, Trípode para el fuego, Set de cuencas para servir la comida"
+    },
+    {
+        nombre: "Kit de mantenimiento para bestias (reparación natural y armas naturales)",
+        precio: "20 L",
+        tipo: "mantenimiento",
+        contenido: "Vendas de fibra vegetal, agujas de hueso, hilo de tendón, ungüentos de hierbas cicatrizantes, resina selladora, piedra para afilar garras y colmillos, limas de roca volcánica para cuernos, cepillos de cerdas, pinzas de hueso para extraer espinas, aceites naturales para pelaje, escamas y plumas, mortero de piedra para preparar remedios y amuletos protectores para calmar a la bestia durante el tratamiento."
     }
 ];
 let armaduras = [

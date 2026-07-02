@@ -6,7 +6,7 @@ let EXPLORADOR = {
             items: [
                 {
                     nombre: "Asesino",
-                    descripcionGrimorio: "Especialista en ataques sigilosos y letales según el estado del objetivo (desprevenido, alerta o en combate).",
+                    descripcionGrimorio: "puedes acertar ataques muy mortales si tu victima no esta pendiente de tu ataque.<br> las dagas son las únicas armas para evitar hacer algún ruido una vez alguien es asesinado, un objetivo que es atacado en sigilo y no es asesinado se alertara del ataque y posiblemente alertara a los demás<br> Los objetivos desprevenidos son objetivos los cuales no creen que serán atacados <br> <br> objetivo desprevino: objetivo que esta caminando, paseando durmiendo viviendo su vida cotidiana tranquila <br> objetivo alerta: objetivo que caminando con sospecha o atento a si alguien llega, comúnmente en guardias de seguridad <br>objetivo guardia: objetivo que esta en medio de un combate ",
                     novato: "Desprevenido: 4d6 daño, Alerta: 2d6 daño, Guardia: 1d6 daño",
                     experto: "Desprevenido: 5d6 daño, Alerta: 3d6 daño, Guardia: 2d6 daño",
                     maestro: "Desprevenido: 6d6 daño, Alerta: 4d6 daño, Guardia: 3d6 daño",
@@ -23,7 +23,7 @@ let EXPLORADOR = {
             ]
         },
         {
-            titulo: "Técnicas",
+            titulo: "Talentos",
             items: [
                 {                 
                     nombre: "Exploración",

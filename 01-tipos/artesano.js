@@ -23,7 +23,7 @@ let ARTESANO = {
             ]
         },
         {
-            titulo: "Técnicas",
+            titulo: "Talentos",
             items: 
             [
                 {                 

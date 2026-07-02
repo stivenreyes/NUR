@@ -77,7 +77,7 @@ let MEDIADOR = {
         },
         {
           nombre: "¿Cuál es tu rol?",
-          descripcionGrimorio: "Bloqueo temporal de habilidades.",
+          descripcionGrimorio: "Con una acción puedes preguntarle a alguien de un rango mas bajo que el tuyo acerca de un poder que tenga para hacerle olvidar  del potencial que tiene y hacerle olvidar por unos minutos algo del conocimiento que tiene <br> Con una tirada de comunicación vs voluntad del objetivo<br> Se puede recordar matando o derrotando al mediador o su bestia, que alguien lo haga recordar de su potencial, deberá superar la tirada del mediador con comunicación ambos o el mismo con una tirada de inteligencia -4 <br>La victima es consiente del poder y su victimario <br>Solo se puede una vez al dia, alguien de nivel novato podrá hacerle olvidar 1 cosa, en nivel experto 2 cosas y en nivel maestro su especialidad y dos cosas mas ",
           novato: "Olvidar una proeza o enfoque",
           experto: "Olvidar arma, talento, hechizo o bonus",
           maestro: "Olvidar especialidad y más habilidades",

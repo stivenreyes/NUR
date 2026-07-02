@@ -23,7 +23,7 @@ let RITUALISTA = {
             ]
         },
         {
-            titulo: "Técnicas",
+            titulo: "Talentos",
             items: 
             [
                 {

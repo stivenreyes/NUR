@@ -22,6 +22,12 @@ function mostrarPaso() {
 
     progreso.style.width = porcentaje + "%";
 
+        /* ================= CONTADOR ================= */
+
+    let contador = document.getElementById("contador-paso");
+    contador.textContent = pasoActual + " de 7";
+
+
     /* ================= OCULTAR BOTON ================= */
 
     let btnSiguiente = document.getElementById("btn-siguiente");

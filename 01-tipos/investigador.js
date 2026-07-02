@@ -33,7 +33,7 @@ let INVESTIGADOR = {
             ]
         },
         {
-            titulo: "Técnicas",
+            titulo: "Talentos",
             items: 
             [
                 {                 

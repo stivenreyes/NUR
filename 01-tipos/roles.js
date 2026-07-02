@@ -103,7 +103,7 @@ let SECCIONES = {
         }
     ],
 
-    tecnicas: [
+    talentos: [
         {
             nombre: "Técnica de Corte Arcano",
             descripcionGrimorio: "Canaliza energía en un ataque preciso.",
@@ -159,7 +159,7 @@ let contenedorSecciones = document.getElementById("contenedor-secciones");
 if (contenedorSecciones) {
     contenedorSecciones.innerHTML = `
         ${crearSeccion("Especialidades", SECCIONES.especialidades)}
-        ${crearSeccion("Técnicas", SECCIONES.tecnicas)}
+        ${crearSeccion("Talentos", SECCIONES.talentos)}
     `;
 }
 

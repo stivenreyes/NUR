@@ -22,16 +22,16 @@ function buscarEspecialidades(texto) {
     return resultados;
 }
 
-/* ================= BUSCAR TÉCNICAS / TALENTOS ================= */
+/* ================= BUSCAR TALENTOS / TALENTOS ================= */
 
-function buscarTecnicas(texto) {
+function buscarTalentos(texto) {
     let resultados = [];
 
     TODAS_LAS_CLASES.forEach(clase => {
         clase.secciones.forEach(seccion => {
             let titulo = seccion.titulo.trim().toLowerCase();
 
-            if (titulo === "técnicas" || titulo === "tecnicas" || titulo === "talentos") {
+            if (titulo === "talentos" || titulo === "talentos" || titulo === "talentos") {
                 seccion.items.forEach(item => {
                     if (item.nombre && item.nombre.toLowerCase().includes(texto.trim().toLowerCase())) {
                         resultados.push({
@@ -62,7 +62,7 @@ function buscarHechizos(texto) {
                             resultados.push({
                                 clase: clase.nombreClase,
                                 seccion: seccion.titulo,
-                                tecnica: item.nombre,
+                                talento: item.nombre,
                                 hechizo: hechizo
                             });
                         }
@@ -106,11 +106,11 @@ function mostrarResultadosEspecialidades(resultados) {
     `).join("");
 }
 
-function mostrarResultadosTecnicas(resultados) {
-    let contenedor = document.getElementById("resultados-tecnicas");
+function mostrarResultadosTalentos(resultados) {
+    let contenedor = document.getElementById("resultados-talentos");
 
     if (resultados.length === 0) {
-        contenedor.innerHTML = "<p>No se encontraron técnicas o talentos.</p>";
+        contenedor.innerHTML = "<p>No se encontraron talentos o talentos.</p>";
         return;
     }
 
@@ -149,7 +149,7 @@ function mostrarResultadosHechizos(resultados) {
             <h3>${r.hechizo.nombreHechizo}</h3>
             <p><strong>Clase:</strong> ${r.clase}</p>
             <p><strong>Sección:</strong> ${r.seccion}</p>
-            <p><strong>Pertenece a:</strong> ${r.tecnica}</p>
+            <p><strong>Pertenece a:</strong> ${r.talento}</p>
 
             ${r.hechizo.nivelHechizo ? `<p><strong>Nivel:</strong> ${r.hechizo.nivelHechizo}</p>` : ""}
             ${r.hechizo.descripcion ? `<p><strong>Descripción:</strong> ${r.hechizo.descripcion}</p>` : ""}
@@ -169,10 +169,10 @@ document.getElementById("buscar-especialidad").addEventListener("input", functio
     mostrarResultadosEspecialidades(buscarEspecialidades(texto));
 });
 
-document.getElementById("buscar-tecnica").addEventListener("input", function () {
+document.getElementById("buscar-talento").addEventListener("input", function () {
     let texto = this.value.trim();
-    if (!texto) return document.getElementById("resultados-tecnicas").innerHTML = "";
-    mostrarResultadosTecnicas(buscarTecnicas(texto));
+    if (!texto) return document.getElementById("resultados-talentos").innerHTML = "";
+    mostrarResultadosTalentos(buscarTalentos(texto));
 });
 
 document.getElementById("buscar-hechizo").addEventListener("input", function () {

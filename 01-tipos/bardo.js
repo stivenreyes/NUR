@@ -43,7 +43,7 @@ let BARDO = {
         },
         {
           nombre: "Canción de muerte",
-          descripcionGrimorio: "Requisito: (Artistas del mundo)<br> Provoca daño psicológico tras una muerte.",
+          descripcionGrimorio: "Requisito: (Artistas del mundo)<br> Cuando un enemigo o aliado es derrotado, el bardo puede tocar su canción de mayor victoria o mas triste para que los aliados del fallecido se sientan peor o quieran tomar venganza. <br> Los aliados del bardo pueden hacer un ataque que será automático y los enemigos recibirán 1d6 de daño psicológico <br> la bestia vinculo podrá también atacar sin contarlo como acción <br> Este efecto no es acumulativo",
           novato: "Daño normal + 1d6 psíquico",
           experto: "Daño x2 + 1d6+3 psíquico",
           maestro: "Daño x3 + 2d6 psíquico",
@@ -83,7 +83,7 @@ let BARDO = {
         },
         {
           nombre: "Volumen",
-          descripcionGrimorio: "Requisito: (Artistas de las criaturas)<br> Aumenta el alcance de efectos sociales.",
+          descripcionGrimorio: "Requisito: (Artistas de las criaturas)<br> Este poder ayuda a expandir el rango de influencia de un bardo, que normalmente seria de unos 3 metros a la redonda a todos los sujetos, aliados y enemigos. <br>todos dentro de ese rango deberán lanzar voluntad vs destreza si es para distraer, llamar la atención y comunicación para una manipulación mas especifica y verbal para evitar el ataque social del bardo",
           novato: "Alcance 5 m",
           experto: "Alcance 10 m",
           maestro: "Alcance 20 m",

@@ -204,6 +204,14 @@ let CAOTICO = {
           experto: "puedes desviar ataques magicos hacia otros en un area de 3 metros gastando 3 de nur, ese hechizo se dirije con una tirada de intelencia vs esquiva de la victima",
           maestro: "...",
           hechizos: []
+        },
+        {
+          nombre: "Escudo de nur del caos 🛡️",
+          descripcionGrimorio: "Requisito: Roca del caos (novato) <br> Escudo que puedes invocar para intentar absorber y regresar el mismo ataque.",
+          novato: "gastando 3 de nur puedes invocar este escudo por una escena de combate con vida de 20, y que puede devolver el mismo ataque hasta en un metro al instante, haciendo un cuarto del daño",
+          experto: "puedes desviar ataques magicos hacia otros en un area de 3 metros gastando 3 de nur, ese hechizo se dirije con una tirada de intelencia vs esquiva de la victima",
+          maestro: "...",
+          hechizos: []
         }
       ]
     }

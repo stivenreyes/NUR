@@ -23,7 +23,7 @@ let GUERRERO = {
             ]
         },
         {
-            titulo: "Técnicas",
+            titulo: "Talentos",
             items: 
             [
                 

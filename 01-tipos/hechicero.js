@@ -55,7 +55,7 @@ let HECHICERO = {
   ]
 },
 {
-  titulo: "Técnicas",
+  titulo: "Talentos",
   items: [
     {
       nombre: "Grimorio del fuego 🔥",

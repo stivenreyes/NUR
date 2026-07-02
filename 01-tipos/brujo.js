@@ -301,54 +301,54 @@ let BRUJO = {
               nivelHechizo: "Novato",
               descripcion: "Lanza una rafaga en forma de flecha",
               tipoHechizo: "Ataque",
-              costoMana: 2,
+              costoMana: "2",
               dificultad:"Inteligencia vs esquiva del objetivo",
-              alcanceMaximo: "1 m"
+              alcanceMaximo: "8 m"
+            },
+            {
+              nombreHechizo: "Tunel de flechas",
+              nivelHechizo: "Novato",
+              descripcion: "Lanza un tunel de dos metros de diametro de aire que se transforman en flechas 2d6 de daño, maximo dos objetivos",
+              tipoHechizo: "Ataque",
+              costoMana: "3",
+              dificultad: "Inteligencia vs esquiva de los objetivos",
+              alcanceMaximo: "5"
             },
             {
               nombreHechizo: "Remolino guardian",
               nivelHechizo: "Novato",
-              descripcion: "Crea un remolino alrededor tuyo en 1m. que evita que cualquiera entre  ",
+              descripcion: "Crea un remolino alrededor tuyo en 1m gastando 2 de nur o de 2m gastando 6 de nur, este remolino no se mueve con el invocador, duracion del remolino 1d3 turnos. que evita que cualquiera entre y resiste ataques fisicos y magicos vida del remolino de 40. se puede atacar desde adentro ",
               tipoHechizo: "Soporte",
-              costoMana: 2,
-              dificultad: 12,
+              costoMana: "2 / 6",
+              dificultad: "12",
               alcanceMaximo: "0 m"
             },
             {
               nombreHechizo: "Remolino caza",
               nivelHechizo: "Novato",
-              descripcion: "Crea un remolino que dura 2 turnos con una altura de hasta de 10 metros, quien toque ese remolino sera empujado o un metro o a las craituras voladoras las hara caer al suelo",
-              tipoHechizo: "Ataque",
-              costoMana: 2,
-              dificultad: 12,
+              descripcion: "Crea un remolino que dura 2 turnos con una altura de hasta de 10 metros, quien toque ese remolino sera empujado o un metro o a las craituras voladoras las hara caer al suelo. puede moverse el remolino 3m en la fase de movimiento del invocador",
+              tipoHechizo: "Ataque y control aereo",
+              costoMana: "2",
+              dificultad: "12",
               alcanceMaximo: "1 m"
             },
             {
               nombreHechizo: "Rafaga de viento",
-              nivelHechizo: "Novato",
-              descripcion: "Lanzas una rafaga cortante que hace daño de 1d6+inteligencia en el area de un cono",
+              nivelHechizo: "Experto",
+              descripcion: "Lanzas una rafaga cortante que hace daño de 2d6+inteligencia en el area de un cono.",
               tipoHechizo: "Ataque",
-              costoMana: 2,
-              dificultad: 15,
+              costoMana: "4",
+              dificultad: "15 / 15 para esquivar",
               alcanceMaximo: "3 m"
             },
             {
               nombreHechizo: "Remolino prision",
-              nivelHechizo: "Novato",
-              descripcion: "Lanza una rafaga en forma de flecha",
-              tipoHechizo: "Curación",
-              costoMana: 2,
-              dificultad: 12,
-              alcanceMaximo: "1 m"
-            },
-            {
-              nombreHechizo: "Tunel de flechas",
-              nivelHechizo: "Novato",
-              descripcion: "Lanza una rafaga en forma de flecha",
-              tipoHechizo: "Curación",
-              costoMana: 2,
-              dificultad: 12,
-              alcanceMaximo: "1 m"
+              nivelHechizo: "Experto",
+              descripcion: "Crea un remolino alrededor de una victima en 1m gastando 4 de nur , este remolino no se mueve con la victima, duracion del remolino 1d3 turnos. que evita que la victima se mueva, pero aun podra esquivar entre y evita que la victima haga ataques fisicos y magicos hacia fuera del remolino. vida del remolino de 50. se puede atacar hacia adentro. si se falla aun queda el remolino ahi el cual encerrara a cualquiera que entre",
+              tipoHechizo: "Ataque",
+              costoMana: "4",
+              dificultad: "Inteligencia vs esquiva de la victima",
+              alcanceMaximo: "5 m"
             },
           ]
         },

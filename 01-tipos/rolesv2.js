@@ -83,6 +83,8 @@ function crearTarjeta(producto) {
     `;
 }
 
+/* ================= aca abajo en el h2 se define especialidad y talento ================= */
+
 function crearSeccion(titulo, listaProductos) {
     const claseGrid = titulo.toLowerCase() === "especialidades"
         ? "grid-tarjetas-especialidades"
@@ -90,7 +92,7 @@ function crearSeccion(titulo, listaProductos) {
 
     return `
         <section class="seccion-categoria">
-            <h1 class="titulo-seccion">${titulo}</h1>
+            <h2 class="titulo-seccion">${titulo}</h2>  
             <div class="${claseGrid}">
                 ${listaProductos.map(producto => crearTarjeta(producto)).join("")}
             </div>

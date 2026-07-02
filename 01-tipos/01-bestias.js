@@ -196,7 +196,7 @@ let bestias = [
 },
 
 { 
-  nombre: "Gran Rana Purpura",
+  nombre: "Rana Purpura",
   bioma: "Bosque",
   terreno: "Tierra",
   tipo: "Ataque",
@@ -238,7 +238,7 @@ let bestias = [
 },
 
 { 
-  nombre: "Garza de las Lenguas",
+  nombre: "Garza de 2 Lenguas",
   bioma: "Costa",
   terreno: "Viento",
   tipo: "Comunicacion",
@@ -359,7 +359,7 @@ let bestias = [
     fuerza: "0", voluntad: "-1", constitucion: "-2", Instinto: "4",
     enfoques: "Nadar, Curación, Huir", 
     Habilidades: "Cura 2D6 (amo) o 1D8 (aliado), bonus cirugía +6, puede almacenar y curar aliados en estómago",
-    ataque: "+1", daño: "1D4", dureza: "0", alcance: "1"
+    ataque: "+1", daño: "1D6", dureza: "0", alcance: "1"
   },
 
   { 
