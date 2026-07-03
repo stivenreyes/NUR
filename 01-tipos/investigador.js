@@ -147,7 +147,7 @@ let INVESTIGADOR = {
                 },    
                 {                 
                     nombre: "Clones del vinculo",
-                    descripcionGrimorio: "Puedes convertirte tu y otros druidas de pende del tipo de vinculo en su bestia. o viceversa con la bestia. por 1 d6 turnos o minutos, dif 12 -2 de nur",
+                    descripcionGrimorio: "Puedes convertirte tu y otros druidas depende del tipo de vinculo en su bestia. o viceversa con la bestia. por 1 d6 turnos o minutos, dif 12 -2 de nur",
                     novato: "Quienes tengan los vinculos: compañeros de juegos y compañeros estrategicos",
                     experto: "...",
                     maestro: "...",

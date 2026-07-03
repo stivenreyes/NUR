@@ -46,7 +46,7 @@ let GUERRERO = {
                 {                 
                     nombre: "Estilo desarmado",
                     descripcionGrimorio: "Requisitos (Golpeador)",
-                    novato: "+3 daño. Proeza: lanzar objetivo metros según dado especial +1d6, daño extra por obstáculos",
+                    novato: "+3 daño. Proeza 4: lanzar objetivo metros según dado especial +1d6, daño extra por obstáculos",
                     experto: "+1 daño. Relanza ataque y escoge el mejor resultado",
                     maestro: "+2 daño. Relanza daño y escoge el mejor resultado",
                     hechizos: []                   
@@ -62,7 +62,7 @@ let GUERRERO = {
                 {                 
                     nombre: "Combate montado bestias mejorado",
                     descripcionGrimorio: "Requisitos (Guía del combate)",
-                    novato: "Ataque normal +2d6 daño, +3 esquiva, -2 ataque. Proeza: empuja según dado especial + daño por obstáculos",
+                    novato: "Ataque normal +2d6 daño, +3 esquiva, -2 ataque. Proeza 4: empuja según dado especial + daño por obstáculos",
                     experto: "Si matas enemigo, la bestia ataca otro sin acción y gana +5 valentía",
                     maestro: "...",
                     hechizos: []                   
@@ -77,7 +77,7 @@ let GUERRERO = {
                 },
                 {                 
                     nombre: "Guardar golpe",
-                    descripcionGrimorio: "Requisitos (Golpeador)",
+                    descripcionGrimorio: "Requisitos (Golpeador) <br> Al preparar un golpe y pasar toda una ronda sin usar esa acción preparada, no podrás obtener mas bonus por la acción preparar golpe",
                     novato: "+3 a la acción",
                     experto: "+5 a la acción",
                     maestro: "+7 a la acción",
@@ -85,7 +85,7 @@ let GUERRERO = {
                 },
                 {                 
                     nombre: "Escudo de druida",
-                    descripcionGrimorio: "Uso de cuerpos como defensa.",
+                    descripcionGrimorio: "Tienes la habilidad de usar otros recursos vivos que encuentres cerca de forma muy rápida y cómoda,Usas a otro druida vivo o cadaver como escudo",
                     novato: "Usa cadáver (tamaño 10) como escudo vida 10, sin penalizador con arma 1 mano",
                     experto: "Cadáver tamaño 15 vida 20; con druida vivo puedes relanzar fuerza",
                     maestro: "...",
@@ -99,7 +99,7 @@ let GUERRERO = {
                     maestro: "...",
                     hechizos: []                   
                 },
-                                {                 
+                {                 
                     nombre: "Grito de gloria",
                     descripcionGrimorio: "Requisitos (Guía del combate) <br> Una vez por escena de combate, el guerrero hara un ataque muy fuerte acompañado de un grito de batalla y motivara a sus aliados para que su siguiente ataque sea igual de poderoso",
                     novato: "+5 en el ataque, mas 3d6 de daño y +2 para el siguiente ataque de un aliado",

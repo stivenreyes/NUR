@@ -191,9 +191,9 @@ let HECHICERO = {
           alcanceMaximo: "..."
         },
         {
-          nombreHechizo: "deslizarte en el rayo",
+          nombreHechizo: "Deslizarte en el rayo",
           nivelHechizo: "Experto",
-          descripcion: "Una vez puedas encadenar un ataque hasta min 3 objetivos podrás teletransportarte con tu mismo ataque",
+          descripcion: "Una vez puedas encadenar un ataque hasta min 3 objetivos podrás teletransportarte con tu mismo ataque, al lado de las victimas de ese ataque",
           tipoHechizo: "Ataque",
           costoMana: "2",
           dificultad: "12",
@@ -202,7 +202,7 @@ let HECHICERO = {
         {
           nombreHechizo: "Moverte como rayo",
           nivelHechizo: "Experto",
-          descripcion: "En un radio de 7 metros puedes teletransportarteal instante. <br> gastando 5 de nur puedes activar este hechizo tan rapido que no contara como acción ",
+          descripcion: "En un radio de 7 metros puedes moverte al instante. <br> gastando 5 de nur puedes activar este hechizo tan rapido que no contara como acción ",
           tipoHechizo: "Ataque",
           costoMana: "3 o 5",
           dificultad: "12",

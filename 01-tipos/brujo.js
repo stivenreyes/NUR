@@ -14,20 +14,20 @@ let BRUJO = {
             {
               nombreHechizo: "Daga de cirugias",
               nivelHechizo: "Experto",
-              descripcion: "Cura 15 + voluntad a un objetivo",
-              tipoHechizo: "Curación",
-              costoMana: 2,
-              dificultad: 12,
+              descripcion: "Ataque magico de daño 5d6, con el atributo pelea",
+              tipoHechizo: "Ataque",
+              costoMana: 4,
+              dificultad: "-",
               alcanceMaximo: "1 m"
             },
             {
               nombreHechizo: "Autorecuperación",
               nivelHechizo: "Experto",
-              descripcion: "Cura 15 + voluntad a un objetivo",
+              descripcion: "Automaticamente te curas 10 de vida y 5 de vida para tu bestia, sin contar como accion",
               tipoHechizo: "Curación",
-              costoMana: 2,
-              dificultad: 12,
-              alcanceMaximo: "1 m"
+              costoMana: "-",
+              dificultad: "-",
+              alcanceMaximo: "-"
             },
           ]
         },
@@ -103,7 +103,7 @@ let BRUJO = {
               tipoHechizo: "Curación",
               costoMana: 2,
               dificultad: 12,
-              alcanceMaximo: "1 m"
+              alcanceMaximo: "10 m"
             },  
           ]
         },
