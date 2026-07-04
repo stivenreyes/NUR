@@ -14,71 +14,79 @@ const CLASE_ACTUAL =
 function crearTarjeta(producto) {
     return `
         <div class="card">
-            <div class="card-roles">
-                <h2>${producto.nombre}</h2>
-                
-                ${producto.descripcionGrimorio ? `
-                    <p class="descripcion-principal">${producto.descripcionGrimorio}</p>
-                ` : ""}
-            </div>
 
-            <div class="card-body">
-                
-                ${producto.novato ? `
-                    <p><span class="label">Novato:</span> <span class="valor novato">${producto.novato}</span></p>
-                ` : ""}
+            <details class="acordeon-card" data-id="${CLASE_ACTUAL.nombreClase}-${producto.nombre}">
 
-                ${producto.experto ? `
-                    <p><span class="label">Experto:</span> <span class="valor experto">${producto.experto}</span></p>
-                ` : ""}
+                <summary class="card-roles">
+                    <h2>${producto.nombre}</h2>
 
-                ${producto.maestro ? `
-                    <p><span class="label">Maestro:</span> <span class="valor maestro">${producto.maestro}</span></p>
-                ` : ""}
+                    ${producto.descripcionGrimorio ? `
+                        <p class="descripcion-principal">${producto.descripcionGrimorio}</p>
+                    ` : ""}
+                </summary>
 
-                ${producto.legendario ? `
-                    <p><span class="label">Legendario:</span> <span class="valor legendario">${producto.legendario}</span></p>
-                ` : ""}
+                <div class="card-body">
 
-                ${producto.hechizos && producto.hechizos.length > 0 ? `
-                    <div class="grimorio-hechizos">
-                        <h3 class="subtitulo-hechizos">Hechizos</h3>
+                    ${producto.novato ? `
+                        <p><span class="label">Novato:</span> <span class="valor novato">${producto.novato}</span></p>
+                    ` : ""}
 
-                        ${producto.hechizos.map(hechizo => `
-                            <div class="subcard-hechizo">
+                    ${producto.experto ? `
+                        <p><span class="label">Experto:</span> <span class="valor experto">${producto.experto}</span></p>
+                    ` : ""}
 
-                                ${hechizo.nombreHechizo ? `
-                                    <h4 class="titulo-hechizo">${hechizo.nombreHechizo}</h4>
-                                ` : ""}
+                    ${producto.maestro ? `
+                        <p><span class="label">Maestro:</span> <span class="valor maestro">${producto.maestro}</span></p>
+                    ` : ""}
 
-                                ${hechizo.nivelHechizo ? `
-                                    <p><span class="label">Nivel:</span> <span class="valor">${hechizo.nivelHechizo}</span></p>
-                                ` : ""}
+                    ${producto.legendario ? `
+                        <p><span class="label">Legendario:</span> <span class="valor legendario">${producto.legendario}</span></p>
+                    ` : ""}
 
-                                ${hechizo.descripcion ? `
-                                    <p><span class="label">Descripción:</span> <span class="valor">${hechizo.descripcion}</span></p>
-                                ` : ""}
+                    ${producto.hechizos && producto.hechizos.length > 0 ? `
+                        <div class="grimorio-hechizos">
+                            <h3 class="subtitulo-hechizos">Hechizos</h3>
 
-                                ${hechizo.tipoHechizo ? `
-                                    <p><span class="label">Tipo:</span> <span class="valor">${hechizo.tipoHechizo}</span></p>
-                                ` : ""}
+                            ${producto.hechizos.map(hechizo => `
+                                <div class="subcard-hechizo">
 
-                                ${hechizo.costoMana ? `
-                                    <p><span class="label">Nur:</span> <span class="valor">${hechizo.costoMana}</span></p>
-                                ` : ""}
+                                    ${hechizo.nombreHechizo ? `
+                                        <h4 class="titulo-hechizo">${hechizo.nombreHechizo}</h4>
+                                    ` : ""}
 
-                                ${hechizo.dificultad ? `
-                                    <p><span class="label">Dificultad:</span> <span class="valor">${hechizo.dificultad}</span></p>
-                                ` : ""}
+                                    ${hechizo.nivelHechizo ? `
+                                        <p><span class="label">Nivel:</span> <span class="valor">${hechizo.nivelHechizo}</span></p>
+                                    ` : ""}
 
-                                ${hechizo.alcanceMaximo ? `
-                                    <p><span class="label">Alcance:</span> <span class="valor">${hechizo.alcanceMaximo}</span></p>
-                                ` : ""}
-                            </div>
-                        `).join("")}
-                    </div>
-                ` : ""}
-            </div>
+                                    ${hechizo.descripcion ? `
+                                        <p><span class="label">Descripción:</span> <span class="valor">${hechizo.descripcion}</span></p>
+                                    ` : ""}
+
+                                    ${hechizo.tipoHechizo ? `
+                                        <p><span class="label">Tipo:</span> <span class="valor">${hechizo.tipoHechizo}</span></p>
+                                    ` : ""}
+
+                                    ${hechizo.costoMana ? `
+                                        <p><span class="label">Nur:</span> <span class="valor">${hechizo.costoMana}</span></p>
+                                    ` : ""}
+
+                                    ${hechizo.dificultad ? `
+                                        <p><span class="label">Dificultad:</span> <span class="valor">${hechizo.dificultad}</span></p>
+                                    ` : ""}
+
+                                    ${hechizo.alcanceMaximo ? `
+                                        <p><span class="label">Alcance:</span> <span class="valor">${hechizo.alcanceMaximo}</span></p>
+                                    ` : ""}
+
+                                </div>
+                            `).join("")}
+                        </div>
+                    ` : ""}
+
+                </div>
+
+            </details>
+
         </div>
     `;
 }
@@ -92,7 +100,7 @@ function crearSeccion(titulo, listaProductos) {
 
     return `
         <section class="seccion-categoria">
-            <h2 class="titulo-seccion">${titulo}</h2>  
+            <h2 class="titulo-seccion">${titulo}</h2>
             <div class="${claseGrid}">
                 ${listaProductos.map(producto => crearTarjeta(producto)).join("")}
             </div>
@@ -124,6 +132,28 @@ function renderClase() {
 }
 
 renderClase();
+
+/* ================= RECORDAR ACORDEONES ABIERTOS ================= */
+
+document.querySelectorAll(".acordeon-card").forEach(detalle => {
+
+    const id = detalle.dataset.id;
+
+    // Restaurar estado
+    if (localStorage.getItem("acordeon_" + id) === "abierto") {
+        detalle.open = true;
+    }
+
+    // Guardar estado
+    detalle.addEventListener("toggle", () => {
+        if (detalle.open) {
+            localStorage.setItem("acordeon_" + id, "abierto");
+        } else {
+            localStorage.removeItem("acordeon_" + id);
+        }
+    });
+
+});
 
 /* ================= BOTON ================= */
 let btnArriba = document.getElementById("btn-arriba");
