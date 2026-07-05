@@ -115,22 +115,40 @@ let BRUJO = {
           maestro: "Aprendes un hechizo de nivel maestro",
           hechizos: [
             {
-              nombreHechizo: "Silbido sanador",
+              nombreHechizo: "Silbido sanador (Druida)",
               nivelHechizo: "Novato",
               descripcion: "Cura 8+1d6 + voluntad a hasta 3 druidas (decide como repartir el total de curación)",
+              tipoHechizo: "Curación",
+              costoMana: 2,
+              dificultad: 12,
+              alcanceMaximo: "3 m"
+            },
+            {
+              nombreHechizo: "Aullido sanador (Bestia)",
+              nivelHechizo: "Novato",
+              descripcion: "Cura 4+1d6 + voluntad a hasta 3 bestias (decide como repartir el total de curación)",
+              tipoHechizo: "Curación",
+              costoMana: 2,
+              dificultad: 12,
+              alcanceMaximo: "3 m"
+            },
+            {
+              nombreHechizo: "Respiracion sanadora ",
+              nivelHechizo: "Novato",
+              descripcion: "Cura 4+1d6 + voluntad a todos los aliados que esten alrededor del brujo en un radio de 1 metro (decide como repartir el total de curación)",
               tipoHechizo: "Curación",
               costoMana: 2,
               dificultad: 12,
               alcanceMaximo: "1 m"
             },
             {
-              nombreHechizo: "Aullido sanador",
+              nombreHechizo: "Bestia sanadora (Bestia)",
               nivelHechizo: "Novato",
-              descripcion: "Cura 4+1d6 + voluntad a hasta 3 bestias (decide como repartir el total de curación)",
+              descripcion: "Cura 4+1d6 + voluntad a todos las bestias que esten alrededor de tu bestia en un radio de 2 metros (decide como repartir el total de curación)",
               tipoHechizo: "Curación",
               costoMana: 2,
               dificultad: 12,
-              alcanceMaximo: "1 m"
+              alcanceMaximo: "2 m"
             },
             {
               nombreHechizo: "Gutural sanador",
@@ -196,7 +214,7 @@ let BRUJO = {
         {
           nombre: "Planta ",
           descripcionGrimorio: "Requisitos (Brujo botanico) <br> que tengan tipo de vinculo: compañero de sangre y compañero leal",
-          novato: "Puedes almacenar daño hecho por criaturas de rango de 1 a 5",
+          novato: "....",
           experto: "Tu bestia puede tener una tambien",
           maestro: "...",
           hechizos: []
@@ -212,8 +230,8 @@ let BRUJO = {
         {
           nombre: "Clones botanicos  ",
           descripcionGrimorio: "Requisitos: (Brujo botanico rango 5) <br> puedes invocar dos clones de tu bestia y tuyo para que estos tengan la orden de seguir trabjando creando pociones, solo se puede pedir ordenes muy sencillas y no podran salir del sitio donde fueron invocados ",
-          novato: "Puedes hacer clon de tu bestia",
-          experto: "Puedes hacer clon de ti mismo",
+          novato: "Puedes hacer clon de tu bestia -3 de nur",
+          experto: "Puedes hacer clon de ti mismo -3 de nur",
           maestro: "...",
           hechizos: []
         },

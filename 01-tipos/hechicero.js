@@ -258,7 +258,7 @@ let HECHICERO = {
           nivelHechizo: "Novato",
           descripcion: "Con este hechizo puedes hacer que tu atacante lance su fuerza contra tu inteligencia para evitar moverte.",
           tipoHechizo: "hechizo pasivo",
-          costoMana: "2",
+          costoMana: "3",
           dificultad: "Inteligencia vs esquiva",
           alcanceMaximo: "3"
         },
@@ -267,7 +267,7 @@ let HECHICERO = {
           nivelHechizo: "Novato",
           descripcion: "Reduce la velocidad a la mitad y la esquiva en un -1",
           tipoHechizo: "Soporte",
-          costoMana: "2",
+          costoMana: "3",
           dificultad: "inteligencia vs inteligencia",
           alcanceMaximo: "6"
         },
@@ -276,7 +276,7 @@ let HECHICERO = {
           nivelHechizo: "Novato",
           descripcion: "Ataque pelea, y daño de 3d6 mas fuerza",
           tipoHechizo: "Ataque",
-          costoMana: "1",
+          costoMana: "3",
           dificultad: "-",
           alcanceMaximo: "1"
         },
@@ -285,7 +285,7 @@ let HECHICERO = {
           nivelHechizo: "Experto",
           descripcion: "Cuando te ataquen, y falles la esquiva, puedes activar este hechizo para intentar detener un ataque haciendo una tirada de inteligencia vs el ataque del enemigo. si lo logras puedes usar la siguiente proeza: (4) -muro que atrapa- para poder contratacar al atacante, (3) -Polvo que oculta- Puedes moverte de acuerdo a tu velocidad e intentar esconderte con un +2 ",
           tipoHechizo: "Hechizo de reaccion",
-          costoMana: "1",
+          costoMana: "5",
           dificultad: "-",
           alcanceMaximo: "1"
         },
@@ -294,7 +294,7 @@ let HECHICERO = {
           nivelHechizo: "Experto",
           descripcion: "Puedes liberar todo tu peso que llegas a volar hasta 3 metros de altura por 1d3 turnos, te mueves de acuerdo a tu velocidad",
           tipoHechizo: "Especial",
-          costoMana: "2",
+          costoMana: "5",
           dificultad: "13",
           alcanceMaximo: "-"
         },
@@ -303,7 +303,7 @@ let HECHICERO = {
           nivelHechizo: "Experto",
           descripcion: "Encadena ataque a otro objetivo",
           tipoHechizo: "Ataque",
-          costoMana: "2",
+          costoMana: "5",
           dificultad: "Inteligencia vs esquiva",
           alcanceMaximo: "5"
         },
@@ -312,7 +312,7 @@ let HECHICERO = {
           nivelHechizo: "Experto",
           descripcion: "Encadena ataque a otro objetivo",
           tipoHechizo: "Ataque",
-          costoMana: "2",
+          costoMana: "5",
           dificultad: "Inteligencia vs esquiva",
           alcanceMaximo: "-"
         }
@@ -328,7 +328,7 @@ let HECHICERO = {
         {
           nombreHechizo: "Latigo de agua",
           nivelHechizo: "Novato",
-          descripcion: "Ataque de alcance 3 metros, para hacer 1d6 de daño",
+          descripcion: "Ataque de alcance 2 metros, para hacer 2d6 de daño",
           tipoHechizo: "Ataque",
           costoMana: "2",
           dificultad: "Inteligencia vs esquiva",
@@ -337,29 +337,29 @@ let HECHICERO = {
         {
           nombreHechizo: "Cuerpo de agua",
           nivelHechizo: "Novato",
-          descripcion: "Daño extra a armas aliadas por una ronda",
-          tipoHechizo: "Soporte",
+          descripcion: "puedes reducir el daño que te hagan en 2d6",
+          tipoHechizo: "Tanque",
           costoMana: "2",
-          dificultad: "14",
-          alcanceMaximo: "6"
+          dificultad: "-",
+          alcanceMaximo: "-"
         },
         {
           nombreHechizo: "Esfera de mar eterno",
           nivelHechizo: "Novato",
-          descripcion: "Ataque adicional de 4D6 tras otro ataque de rayo",
+          descripcion: "Puedes encerrar a alguien en una esfera de agua por un 1d6 turnos. pere este puede salir de ahi con una tirada de fuerza/nadar vs tu inteligencia",
           tipoHechizo: "Ataque",
-          costoMana: "...",
-          dificultad: "...",
+          costoMana: "3",
+          dificultad: "Inteligencia vs esquiva",
           alcanceMaximo: "1"
         },
         {
           nombreHechizo: "Control de lo vivo",
           nivelHechizo: "Experto",
-          descripcion: "Encadena ataque a otro objetivo",
+          descripcion: "Puedes mover hasta 2 metros a alguien si no es de forma volutaria debes hacer una tirada de fuerza vs tu inteligencia",
           tipoHechizo: "Ataque",
-          costoMana: "2",
-          dificultad: "Inteligencia vs esquiva",
-          alcanceMaximo: "..."
+          costoMana: "4",
+          dificultad: "Inteligencia vs fuerza",
+          alcanceMaximo: "2"
         }
       ]
     },
@@ -437,7 +437,7 @@ let HECHICERO = {
         },
         {
         nombre: "Combinar elementos 🔮",
-        descripcionGrimorio: "Requisito: Rango 5. Puedes combinar dos elementos. <br> Cada elemento tiene una ventaja y desventaja <br>Fuego Ventaja: Mucho daño. Desventaja: Menos area<br><br><br><br>",
+        descripcionGrimorio: "Requisito: Rango 5. <br> Puedes combinar dos elementos. <br> Cada elemento tiene una ventaja y desventaja <br>Fuego Ventaja: Mucho daño. Desventaja: Menos area<br> Aire Ventaja: Larga distancia. Desventaja: poco daño. <br>Rayo Ventaja: Varios objetivos Desventaja: poco daño. <br>Tierra Ventaja: resistente. Desventaja: Alto gasto de nur<br> Agua Ventaja: versatilidad y esquiva. Desventaja: bajo alcance",
         novato: "Puedes combinar tu elemento que dominas con otro, puedes crear un nuevo hechizo y elejir un nuevo hechizo de ese elemento",
         experto: "Puedes elegir otro hechizo o duplicar el efecto",
         maestro: "Eliges otro hechizo adicional",
@@ -445,15 +445,15 @@ let HECHICERO = {
         },
         {
         nombre: "Bestia vinculada elemental 🔮",
-        descripcionGrimorio: "Requisito: Hechicero elemental, tu bestia ahora podra lanzar un hechizo que elijas que ya uses, se puede solo elejir uno, se puede cambiar cada alba",
+        descripcionGrimorio: "Tu bestia ahora podra lanzar un hechizo que elijas que ya uses, se puede solo elejir uno, se puede cambiar cada alba",
         novato: "Puedes prestarle un hechizo del elemento que dominas",
         experto: "Puedes prestarle un hechizo de tu segundo elemento que usas o que tu bestia adquiera el un hechizo quel elemento que domines",
-        maestro: "Eliges otro hechizo adicional",
+        maestro: "Eliges otro hechizo adicional para tu bestia",
         hechizos: []
         },
         {
         nombre: "Tomar poder elemental del entorno 🔮",
-        descripcionGrimorio: "Requisito: Hechicero elemental Obtienes poder de elementos cercanos como fuego o tormentas, tiene que ser acorde al elemento principal que domines ",
+        descripcionGrimorio: "Obtienes poder de elementos cercanos como fuego o tormentas, tiene que ser acorde al elemento principal que domines ",
         novato: "+2 ataque o +3 daño",
         experto: "Puedes relanzar ataque o daño",
         maestro: "...",

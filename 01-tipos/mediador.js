@@ -43,7 +43,7 @@ let MEDIADOR = {
         },
         {
           nombre: "Psicología profunda",
-          descripcionGrimorio: "Manipulación de recuerdos y mente.",
+          descripcionGrimorio: "Requisito: Orador de la ____ (novato) <br> Manipulación de recuerdos y mente.",
           novato: "Leer mente a 1 metro",
           experto: "Implantar recuerdos simples",
           maestro: "Borrar recuerdos ligados a la bestia",
@@ -51,25 +51,15 @@ let MEDIADOR = {
         },
         {
           nombre: "Psicología oscura",
-          descripcionGrimorio: "Infligir daño psíquico mediante miedo.",
+          descripcionGrimorio: "Requisito: Orador de la ____ (novato) <br> Puedes hablar con alguien sin importar en que situación estas y añadir alguno de estos miedos: <br> miedo ala derrota <br> miedo a la soledad <br> miedo a perder el control <br> depende de lo que digas puedes tener una bonificación de +1 hasta +3 para una tirada enfrentada entre comunicación vs voluntad del objetivo, si lo logras haces daño depende de tu nivel <br> Este daño psíquico se puede curar, por si solo pero puede durar días, también puede demorar horas si la victima es tratada por su propia bestia, pero la bestia del mediador es el mejor antídoto a este daño, pues lo cura solo en minutos",
           novato: "2D6 daño psíquico",
           experto: "3D6 daño psíquico",
           maestro: "4D6 daño psíquico",
-          hechizos: [
-            {
-              nombreHechizo: "Inducir miedo",
-              nivelHechizo: "Novato",
-              descripcion: "Aplica miedo y causa daño psíquico",
-              tipoHechizo: "Psíquico",
-              costoMana: "...",
-              dificultad: "Comunicación vs voluntad",
-              alcanceMaximo: "Variable"
-            }
-          ]
+          hechizos: [      ]
         },
         {
           nombre: "Robar identidad",
-          descripcionGrimorio: "Imitación de voz, apariencia y forma.",
+          descripcionGrimorio: "Requisito: Orador de la ____ (novato) <br> Imitación de voz, apariencia y forma.",
           novato: "Imitar voz (hasta 3 personas)",
           experto: "Transformar ropa (3 nur, 1 hora)",
           maestro: "Transformación completa (sin copiar stats)",
@@ -77,7 +67,7 @@ let MEDIADOR = {
         },
         {
           nombre: "¿Cuál es tu rol?",
-          descripcionGrimorio: "Con una acción puedes preguntarle a alguien de un rango mas bajo que el tuyo acerca de un poder que tenga para hacerle olvidar  del potencial que tiene y hacerle olvidar por unos minutos algo del conocimiento que tiene <br> Con una tirada de comunicación vs voluntad del objetivo<br> Se puede recordar matando o derrotando al mediador o su bestia, que alguien lo haga recordar de su potencial, deberá superar la tirada del mediador con comunicación ambos o el mismo con una tirada de inteligencia -4 <br>La victima es consiente del poder y su victimario <br>Solo se puede una vez al dia, alguien de nivel novato podrá hacerle olvidar 1 cosa, en nivel experto 2 cosas y en nivel maestro su especialidad y dos cosas mas ",
+          descripcionGrimorio: "Requisito: Orador de la ____ (novato) <br> Con una acción puedes preguntarle a alguien de un rango mas bajo que el tuyo acerca de un poder que tenga para hacerle olvidar  del potencial que tiene y hacerle olvidar por unos minutos algo del conocimiento que tiene <br> Con una tirada de comunicación vs voluntad del objetivo<br> Se puede recordar matando o derrotando al mediador o su bestia, que alguien lo haga recordar de su potencial, deberá superar la tirada del mediador con comunicación ambos o el mismo con una tirada de inteligencia -4 <br>La victima es consiente del poder y su victimario <br>Solo se puede una vez al dia, alguien de nivel novato podrá hacerle olvidar 1 cosa, en nivel experto 2 cosas y en nivel maestro su especialidad y dos cosas mas ",
           novato: "Olvidar una proeza o enfoque",
           experto: "Olvidar arma, talento, hechizo o bonus",
           maestro: "Olvidar especialidad y más habilidades",

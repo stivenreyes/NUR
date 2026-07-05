@@ -52,8 +52,8 @@ let BARDO = {
         {
           nombre: "Solo de las tormentas de nur",
           descripcionGrimorio: "Requisito: (Artistas del mundo)<br> Resistencia mental y revelación de la verdad.",
-          novato: "Relanzar psicología/voluntad",
-          experto: "Revela la verdad a otro objetivo",
+          novato: "Relanzar coraje o caracter /voluntad",
+          experto: "Revela la verdad a otro objetivo. será automático si este no se resiste",
           maestro: "...",
           hechizos: []
         },
@@ -99,7 +99,7 @@ let BARDO = {
         },
         {
           nombre: "Instrumento musical",
-          descripcionGrimorio: "Efectos según tipo de instrumento.",
+          descripcionGrimorio: "Los druidas bardos y las bestias que tengan vinculo con este ultimo rol son los únicos en poder usar estos poderes al usar instrumentos <br> cuerdas: <br> cura daño psíquico, cura bestias, calma bestias  en 2 por (depende el nivel en el que tengas esta habilidad) <br> viento: <br> engaña, distrae + 3 por (depende el nivel en el que tengas esta habilidad) <br> Percusión: <br>relanzar 1 dado de todo el que use pelea y hechizos de caótico  tantas veces en un turno como nivel tenga en esta habilidad",
           novato: "Nivel 1 efectos",
           experto: "Nivel 2 efectos",
           maestro: "Nivel 3 efectos",
