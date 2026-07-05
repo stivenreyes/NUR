@@ -63,20 +63,20 @@ let BRUJO = {
             {
               nombreHechizo: "Viento sanador (Druida)",
               nivelHechizo: "Novato",
-              descripcion: "Cura 4+1d6 + voluntad a un objetivo",
+              descripcion: "Cura 5+1d6 + voluntad a un objetivo",
               tipoHechizo: "Curación",
               costoMana: 2,
               dificultad: 12,
-              alcanceMaximo: "5 m"
+              alcanceMaximo: "7 m"
             },
             {
               nombreHechizo: "Toque sanador (Bestia)",
               nivelHechizo: "Novato",
-              descripcion: "Cura 7+1d6 a un objetivo",
+              descripcion: "Cura 7+1d6 + voluntad a un objetivo",
               tipoHechizo: "Curación",
               costoMana: 2,
               dificultad: 12,
-              alcanceMaximo: "12 m"
+              alcanceMaximo: "1 m"
             },
             {
               nombreHechizo: "Proteger de herida",
@@ -85,7 +85,7 @@ let BRUJO = {
               tipoHechizo: "Defensa",
               costoMana: 5,
               dificultad: 12,
-              alcanceMaximo: "5 m"
+              alcanceMaximo: "8 m"
             },
             {
               nombreHechizo: "Clones sanadores",
@@ -117,7 +117,16 @@ let BRUJO = {
             {
               nombreHechizo: "Silbido sanador",
               nivelHechizo: "Novato",
-              descripcion: "Cura 10+1d6 a hasta 3 druidas",
+              descripcion: "Cura 8+1d6 + voluntad a hasta 3 druidas (decide como repartir el total de curación)",
+              tipoHechizo: "Curación",
+              costoMana: 2,
+              dificultad: 12,
+              alcanceMaximo: "1 m"
+            },
+            {
+              nombreHechizo: "Aullido sanador",
+              nivelHechizo: "Novato",
+              descripcion: "Cura 4+1d6 + voluntad a hasta 3 bestias (decide como repartir el total de curación)",
               tipoHechizo: "Curación",
               costoMana: 2,
               dificultad: 12,
@@ -126,28 +135,19 @@ let BRUJO = {
             {
               nombreHechizo: "Gutural sanador",
               nivelHechizo: "Experto",
-              descripcion: "Cura 7+1d6 repartido entre 6 objetivos. <br> si alguien cuenta con los vinculos: compañero de sangre o compañero leal se curara 1d6 adicionales",
+              descripcion: "Cura 7+1d6 + voluntad repartido entre 6 objetivos. (decide como repartir el total de curación) <br> si alguien cuenta con los vinculos: compañero de sangre o compañero leal se curara 1d6 adicionales",
               tipoHechizo: "Curación",
               costoMana: 2,
               dificultad: 12,
               alcanceMaximo: "5 m"
             },
             {
-              nombreHechizo: "Aullido sanador",
-              nivelHechizo: "Novato",
-              descripcion: "Cura 7+1d6 a hasta 3 bestias",
-              tipoHechizo: "Curación",
-              costoMana: 2,
-              dificultad: 12,
-              alcanceMaximo: "1 m"
-            },
-            {
               nombreHechizo: "Esfera de curacion",
               nivelHechizo: "Experto",
-              descripcion: "Cada turno puedes invocar una esfera d enur curativo alrededor de ti, que cura 3+1d6 a hasta 3 druidas, esta esfera durara 1d6 turnos, solamente al invocarla cuesta como accion",
+              descripcion: "Cada turno puedes invocar una esfera de nur curativo alrededor de ti, que cura 3+1d6 a hasta 3 druidas, esta esfera durara 1d6 turnos, solamente al invocarla cuesta como accion",
               tipoHechizo: "Curación",
-              costoMana: 2,
-              dificultad: 12,
+              costoMana: 4,
+              dificultad: 15,
               alcanceMaximo: "1 m"
             },            
             {
@@ -179,7 +179,7 @@ let BRUJO = {
         },
         {
           nombre: "Pociones de dones 🌿",
-          descripcionGrimorio: "Requisitos (Brujo botanico) <br> Puedes crear tomar una pocion que da bonus en algunos atributos <br> puedes vincular a otros druidas y su bestia vinculada que tengan tipo de vinculo: compañero de sangre y compañero leal para tener el mismo bonus a la mitad redondeado para arriba. esta pociones solo pueden ser almacenadas en un caldero, y ocupan completamente el mismo. <br> Gastas 3 de nur y lanzas inteligencia / herbolaria <br>0 - 8  No logras crear la pocion <br> 9 - 12  logras crear la pocion +1 al atributo elejido <br>13 - 16  logras crear la pocion +2 al atributo elejido <br>17 - 24 logras crear la pocion  +3 al atributo elejido <br> 25 - ... logras crear la pocion +4 al atributo elejido ",
+          descripcionGrimorio: "Requisitos (Brujo botanico) <br> Puedes crear tomar una pocion que da bonus en algunos atributos <br> puedes vincular a otros druidas y su bestia vinculada que tengan tipo de vinculo: compañero de sangre y compañero leal para tener el mismo bonus a la mitad redondeado para arriba. esta pociones solo pueden ser almacenadas en un caldero, y ocupan completamente el mismo. <br> Gastas 3 de nur, usas materiales de pociones o de nur y lanzas inteligencia / herbolaria <br>0 - 8  No logras crear la pocion <br> 9 - 12  logras crear la pocion +1 al atributo elejido <br>13 - 16  logras crear la pocion +2 al atributo elejido <br>17 - 24 logras crear la pocion  +3 al atributo elejido <br> 25 - ... logras crear la pocion +4 al atributo elejido ",
           novato: "Duración del efecto 1 turnos/minutos",
           experto: "Duración del efecto 2 turnos/minutos",
           maestro: "...",
@@ -244,8 +244,8 @@ let BRUJO = {
         {
           nombre: "Ritos de curación (Curandero)",
           descripcionGrimorio: "Requisitos (Brujo curandero)<br> Mejora en cirugía y soporte.",
-          novato: "+5 cirugía, +7 evitar muerte, bestia ayuda +3",
-          experto: "+2 voluntad al paciente",
+          novato: "+5 al hacer cirugía<br> +7 para no dejar morir al paciente en cirugía -3 de nur <br> Haces que tu bestia se convierta en la mejor ayudante para ti, ella podrá lanzar también instinto/curación +3 <br> Ella no podrá fallar",
+          experto: "Le da al paciente +2 de voluntad para evitar el daño psicológico si se despierta",
           maestro: "+10 vida extra y recuperación más rápida",
           hechizos: []
         },
@@ -299,11 +299,11 @@ let BRUJO = {
             {
               nombreHechizo: "Silbido flecha",
               nivelHechizo: "Novato",
-              descripcion: "Lanza una rafaga en forma de flecha",
+              descripcion: "Lanza una rafaga en forma de flecha. haciendo 1d6 de daño",
               tipoHechizo: "Ataque",
               costoMana: "2",
               dificultad:"Inteligencia vs esquiva del objetivo",
-              alcanceMaximo: "8 m"
+              alcanceMaximo: "10 m"
             },
             {
               nombreHechizo: "Tunel de flechas",

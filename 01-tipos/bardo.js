@@ -68,15 +68,15 @@ let BARDO = {
         {
           nombre: "El arte de amar",
           descripcionGrimorio: "Influencia social y emocional.",
-          novato: "Doble influencia al seducir",
+          novato: "+4 para generar ambientes de seducción, coqueteo en parejas con posibilidad de enamomrarsen. Doble influencia al seducir",
           experto: "Aumenta confianza con bestia",
           maestro: "Influencia grupal en ambiente romántico",
           hechizos: []
         },
         {
           nombre: "Dúo con la bestia",
-          descripcionGrimorio: "Canción especial con efectos únicos.",
-          novato: "+7 influencia por recuerdos",
+          descripcionGrimorio: "En Amara no hay muchas cosas poderosas entre ellas el vinculo de un druida y una bestia, y su combinación y enfoque en el arte musical puede generar un gran impacto en ellos y quien los oye,<br> Para este poder tanto el druida y la bestia deben tener ambos instrumentos (en cualquier caso un artesano podrá hacer algunos ajustes para que la bestia pueda usar cualquier instrumento)<br>El druida y la bestia podrán tocar varias canciones pero habrá una especial entre ellos dos, una que hará quien la oiga puede tener unos efectos poderosos <br>La canción especial debe sonar una vez máximo al dia, repetirla perderá su poder",
+          novato: "Un objetivo elegido al escuchar la canción puede traerle recuerdos de su vida, una tirada conjunta entre el druida y la bestia para ver hasta donde viaja el recuerdo.<br> haciendo que el objetivo gane influencia de +7",
           experto: "Composición del alma",
           maestro: "Composición de almas conectadas",
           hechizos: []
@@ -84,17 +84,17 @@ let BARDO = {
         {
           nombre: "Volumen",
           descripcionGrimorio: "Requisito: (Artistas de las criaturas)<br> Este poder ayuda a expandir el rango de influencia de un bardo, que normalmente seria de unos 3 metros a la redonda a todos los sujetos, aliados y enemigos. <br>todos dentro de ese rango deberán lanzar voluntad vs destreza si es para distraer, llamar la atención y comunicación para una manipulación mas especifica y verbal para evitar el ataque social del bardo",
-          novato: "Alcance 5 m",
-          experto: "Alcance 10 m",
+          novato: "Alcance 8 m",
+          experto: "Alcance 15 m",
           maestro: "Alcance 20 m",
           hechizos: []
         },
         {
           nombre: "Mezclas de canciones",
-          descripcionGrimorio: "Requisito: (Artistas del mundo)<br> Hipnosis y aumento de rango con apoyo de bestia.",
-          novato: "Hipnotiza objetivos de menor rango",
-          experto: "Mejora hipnosis",
-          maestro: "Hipnosis avanzada",
+          descripcionGrimorio: "Requisito: (Artistas del mundo)<br> Tu forma de mezclar tus canciones no solo hace que esa combinación hace que si tu bestia también te acompaña con un instrumento, pueda estar a un máximo de 5 metros pueda seguir la melodía <br>Si no que también tu rango aumenta con respecto al volumen que tengas a la mitad por ser ayudado de tu bestia. <br>Y además algunos de los presentes pueden quedar hipnotizados por tu música y la única forma de que rompas eso es que falles una tirada de destreza con tu bestia dif 15, que alguien haga un movimiento brusco o se termine la lista de música <br>Alguien hipnotizado dejara de reconocer aliados y atacara a todos lo que vea presente <br>Se podrá hipnotizar a alguien por 1d3 turnos solo una vez al dia. lanza comunicacion dif 10+rango de la victima mas poderosa",
+          novato: "Podrás hipnotizar a la gente de 3 rangos inferior al tuyo, mínimo rango 1",
+          experto: "Podrás hipnotizar a la gente de 2 rangos inferior al tuyo, mínimo rango 3",
+          maestro: "Podrás hipnotizar a la gente de 2 rangos inferior al tuyo, mínimo rango 5",
           hechizos: []
         },
         {
@@ -108,7 +108,7 @@ let BARDO = {
         {
           nombre: "Música para curar el alma",
           descripcionGrimorio: "Requisito: (Artistas de las criaturas)<br> Curación en hogueras y tras combates.",
-          novato: "+5 curación y recuperación psíquica",
+          novato: "+3 para curar en hogueras <br> cuando el grupo gane una victoria en batalla una canción ayudara que todos los druidas se recuperen 3 puntos de daño psíquico las bestia recuperan 6 puntos de daño. <br> cuando estén en hoguera y tratan a alguien este no recibirá herida por parte tuya aun si fallaras",
           experto: "...",
           maestro: "...",
           hechizos: []

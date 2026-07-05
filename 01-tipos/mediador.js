@@ -85,9 +85,9 @@ let MEDIADOR = {
         },
         {
           nombre: "Curar daño psíquico",
-          descripcionGrimorio: "Requisito: Erudito mental.",
-          novato: "puedes eliminar 2 de daño psíquico gastando 1 de nur si alguien cerca tuyo acaba de sacar un criticocon ese critico puedes hacer qe tome 2 sesiones al dia. <br> en la hoguera no causas daño aun si fallas",
-          experto: "Eliminar 4 daño psíquico (3 nur)",
+          descripcionGrimorio: "Requisito: Erudito mental.<br> Puedes enfocarte en el daño psicologico, y ayudar a hacer mas sesiones de terapia al dia",
+          novato: "+2 para tratar a alguien.<br>  Puedes eliminar 2 de daño psíquico gastando 1 de nur. <br> Proeza (4) avanzando con el trauma. Puedes hacer que tome 2 sesiones al dia (esta proeza la puede activar el paciente momentos antes del inicio de la terapia). <br> Reduces en 1d6 el daño psicologico en medio de una terapia que falles",
+          experto: "+4 para tratar a alguien.<br> Puedes eliminar 4 de daño psíquico gastando 1 de nur. <br> Proeza (3) avanzando con el trauma. Puedes hacer que tome 2 sesiones al dia (esta proeza la puede activar el paciente momentos antes del inicio de la terapia). <br> Reduces en 2d6 el daño psicologico en medio de una terapia que falles",
           maestro: "...",
           hechizos: []
         },
