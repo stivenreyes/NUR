@@ -1243,6 +1243,28 @@ table {
     touch-action: none;
 }
 
+#contenedoramara {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    touch-action: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#zoomarea {
+    touch-action: none;
+}
+
+#imagenamara {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
 /* ================= para el salto de pagina ================= */
 .descripcion {
   white-space: pre-line;
