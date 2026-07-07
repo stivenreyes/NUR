@@ -1238,6 +1238,11 @@ table {
   cursor: pointer;
 }
 
+#contenedoramara {
+    overflow: hidden;
+    touch-action: none;
+}
+
 /* ================= para el salto de pagina ================= */
 .descripcion {
   white-space: pre-line;

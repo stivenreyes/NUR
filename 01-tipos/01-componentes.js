@@ -243,7 +243,7 @@ let armas = [
         dano: "3d6",
         precio: "100L",
         alcance: "1",
-        requisitos: "Fuerza",
+        requisitos: "Fuerza +2",
         dureza: "2",
         manos: "2"
     },
@@ -965,3 +965,13 @@ if (buscadorGeneral && contenedorResultados) {
     });
 
 }
+
+
+/* ================= BOTON DE MUSICA ================= */
+const boton = document.getElementById("btn");
+const sonido = document.getElementById("sfx");
+
+boton.addEventListener("click", () => {
+    sonido.currentTime = 0; // Reinicia el sonido
+    sonido.play();
+});

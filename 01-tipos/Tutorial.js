@@ -14,6 +14,12 @@ function mostrarPaso() {
         pasoVisible.classList.add("activo");
     }
 
+     // Subir al inicio de la página
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
     /* ================= BARRA DE PROGRESO ================= */
 
     let progreso = document.getElementById("progreso");
