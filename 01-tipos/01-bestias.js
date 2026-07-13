@@ -341,7 +341,7 @@ let bestias = [
     nur que podra enviar a su druida o incrementar el daño de otra bestia en un 1d3 por dado ganado <br><br>
 
     <strong> Mirada felina </strong> <br>
-    Mas 3 para encantar con comunicación<br><br>
+    Mas 3 para agradar con comunicación<br><br>
     
     <strong> Rastreo nur</strong> <br>
     Puedes rastrear los restos de nur producidos por un hechizo, o talento o habilidad donde se uso nur
