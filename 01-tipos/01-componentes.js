@@ -431,7 +431,7 @@ let bebidas = [
         tradicion: "Para brindar por una derrota",
         potencia: "(# de tragos) x 5",
         efectos: "Violencia contra cualquiera cercano",
-        curiosidad: "Si la bestia está ebria retará a su amo",
+        curiosidad: "Si la bestia está ebria retará a su druida vinculado",
         dificultadIntoxicacion: "10",
         duracion: "1D3 horas"
     },

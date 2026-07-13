@@ -291,7 +291,7 @@ a:hover {
 
 .contenedor {
     display: flex;
-    gap: 20px;
+    gap: 5px;
 }
 
 /* ================= CONTENEDORES DE TARJETAS ================= */
@@ -455,7 +455,7 @@ a:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-
+/* este define el tamaño del contenedor de cada bestia */
 #contenedor-bestias .card {
     width: 380px;
     height: 800px;
@@ -466,7 +466,7 @@ a:hover {
 #contenedor-bestias .Habilidad {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 5px;
 }
 
 #contenedor-bestias .card-body p {
@@ -606,17 +606,17 @@ img {
 .cardCombate,
 .enfoques,
 .Habilidad {
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 0px;
 }
 
 .card-header h4 {
-    margin: 5px 0;
+    margin: 3px 0;
 }
 
 .card-body p,
 .card-header p {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .enfoques h5,
@@ -1289,8 +1289,6 @@ table {
 
 /* ================= ACORDEÓN ================= */
 
-/* ================= ACORDEÓN ================= */
-
 .acordeon-card {
     width: 100%;
 }
@@ -1351,4 +1349,13 @@ table {
 /* Al abrir */
 .acordeon-card[open] summary::after {
     transform: rotate(180deg);
+}
+
+/* ================= EL STRONG DE LA TARJETA DE BESTIAS Y QUIZAS OTROS ================= */
+
+strong {
+    font-weight: black;
+    font-size: large;
+    font-style: var(--color-primary-dark);
+    font-size: 20px;
 }

@@ -68,7 +68,7 @@ let BARDO = {
         {
           nombre: "El arte de amar",
           descripcionGrimorio: "Influencia social y emocional.",
-          novato: "+4 para generar ambientes de seducción, coqueteo en parejas con posibilidad de enamomrarsen. Doble influencia al seducir",
+          novato: "+4 para generar ambientes de seducción, coqueteo en parejas con posibilidad de enamorarsen. Doble influencia al seducir",
           experto: "Aumenta confianza con bestia",
           maestro: "Influencia grupal en ambiente romántico",
           hechizos: []
@@ -83,7 +83,12 @@ let BARDO = {
         },
         {
           nombre: "Volumen",
-          descripcionGrimorio: "Requisito: (Artistas de las criaturas)<br> Este poder ayuda a expandir el rango de influencia de un bardo, que normalmente seria de unos 3 metros a la redonda a todos los sujetos, aliados y enemigos. <br>todos dentro de ese rango deberán lanzar voluntad vs destreza si es para distraer, llamar la atención y comunicación para una manipulación mas especifica y verbal para evitar el ataque social del bardo",
+          descripcionGrimorio: `Requisito: (Artistas de las criaturas)<br> 
+          Este poder ayuda a expandir el rango de influencia de un bardo, que normalmente seria de unos 3 metros
+           a la redonda a todos los sujetos, aliados y enemigos. <br>
+          Todos dentro de ese rango deberán lanzar voluntad vs destreza si es para distraer, 
+           llamar la atención y comunicación para una manipulación mas especifica y verbal para evitar el 
+           ataque social del bardo`,
           novato: "Alcance 8 m",
           experto: "Alcance 15 m",
           maestro: "Alcance 20 m",
@@ -91,7 +96,17 @@ let BARDO = {
         },
         {
           nombre: "Mezclas de canciones",
-          descripcionGrimorio: "Requisito: (Artistas del mundo)<br> Tu forma de mezclar tus canciones no solo hace que esa combinación hace que si tu bestia también te acompaña con un instrumento, pueda estar a un máximo de 5 metros pueda seguir la melodía <br>Si no que también tu rango aumenta con respecto al volumen que tengas a la mitad por ser ayudado de tu bestia. <br>Y además algunos de los presentes pueden quedar hipnotizados por tu música y la única forma de que rompas eso es que falles una tirada de destreza con tu bestia dif 15, que alguien haga un movimiento brusco o se termine la lista de música <br>Alguien hipnotizado dejara de reconocer aliados y atacara a todos lo que vea presente <br>Se podrá hipnotizar a alguien por 1d3 turnos solo una vez al dia. lanza comunicacion dif 10+rango de la victima mas poderosa",
+          descripcionGrimorio: `Requisito: (Artistas del mundo)<br> 
+          Tu forma de mezclar tus canciones no solo hace que esa combinación hace que si tu bestia también te acompaña 
+          con un instrumento, pueda estar a un máximo de 5 metros pueda seguir la melodía <br>
+
+          Si no que también tu rango aumenta con respecto al volumen que tengas a la mitad por ser ayudado de tu bestia. <br>
+          Y además algunos de los presentes pueden quedar hipnotizados por tu música y la única forma de que rompas eso es 
+          que falles una tirada de destreza con tu bestia dif 15, que alguien haga un movimiento brusco o se termine la 
+          lista de música <br>Alguien hipnotizado dejara de reconocer aliados y atacara a todos lo que vea presente <br>
+          Se podrá hipnotizar a alguien por 1d3 turnos solo una vez al dia. lanza comunicacion dif 10+rango de la victima 
+          mas poderosa`,
+
           novato: "Podrás hipnotizar a la gente de 3 rangos inferior al tuyo, mínimo rango 1",
           experto: "Podrás hipnotizar a la gente de 2 rangos inferior al tuyo, mínimo rango 3",
           maestro: "Podrás hipnotizar a la gente de 2 rangos inferior al tuyo, mínimo rango 5",
