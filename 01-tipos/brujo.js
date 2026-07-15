@@ -197,7 +197,19 @@ let BRUJO = {
         },
         {
           nombre: "Pociones de dones 🌿",
-          descripcionGrimorio: "Requisitos (Brujo botanico) <br> Puedes crear tomar una pocion que da bonus en algunos atributos <br> puedes vincular a otros druidas y su bestia vinculada que tengan tipo de vinculo: compañero de sangre y compañero leal para tener el mismo bonus a la mitad redondeado para arriba. esta pociones solo pueden ser almacenadas en un caldero, y ocupan completamente el mismo. <br> Gastas 3 de nur, usas materiales de pociones o de nur y lanzas inteligencia / herbolaria <br>0 - 8  No logras crear la pocion <br> 9 - 12  logras crear la pocion +1 al atributo elejido <br>13 - 16  logras crear la pocion +2 al atributo elejido <br>17 - 24 logras crear la pocion  +3 al atributo elejido <br> 25 - ... logras crear la pocion +4 al atributo elejido ",
+          descripcionGrimorio: `Requisitos (Brujo botanico) <br> 
+          Puedes crear tomar una pocion que da bonus en algunos atributos <br> 
+          puedes vincular a otros druidas y su bestia vinculada que tengan tipo de vinculo: compañero de sangre
+          y compañero leal para tener el mismo bonus a la mitad redondeado para arriba. 
+
+          esta pociones solo pueden ser almacenadas en un caldero, y ocupan completamente el mismo. <br> 
+          Gastas 3 de nur, usas materiales de pociones o de nur y lanzas inteligencia / herbolaria <br>
+          0 - 8  No logras crear la pocion <br> 
+          9 - 12  logras crear la pocion +1 al atributo elejido <br>
+          13 - 16  logras crear la pocion +2 al atributo elejido <br>
+          17 - 24 logras crear la pocion  +3 al atributo elejido <br> 
+          25 - ... logras crear la pocion +4 al atributo elejido `,
+
           novato: "Duración del efecto 1 turnos/minutos",
           experto: "Duración del efecto 2 turnos/minutos",
           maestro: "...",
@@ -205,7 +217,19 @@ let BRUJO = {
         },
         {
           nombre: "Pociones de heridas pasadas 🌿",
-          descripcionGrimorio: "Requisitos (Brujo Botánico) <br> Gastando 3 de nur Puedes, a la hora de curar a alguien, tomar una parte del origen de esa herida y absorber la mitad del daño. Puedes almacenar hasta un máximo de 2 pociones de este tipo en cada caldero, o dentro de tu bestia hasta un máximo de una vez. <br>  También puede hacerse en bestias que tengan el tipo de vínculo: Compañero de Sangre o Compañero Leal, para obtener el mismo bonus reducido a la mitad, redondeado hacia arriba. <br> <br>  Usar una poción cuenta como 1 acción. Si además se llega a curar una herida, se hará más daño, siendo para herida leve +1d6, herida grave +2d6 y herida crítica +3d6 de daño. Cuando se toma esa poción o se activa en el caso de las bestias, el ataque solo puede activarse una vez, y será realizado por el Brujo o la Bestia usando el atributo correspondiente.",
+          descripcionGrimorio: `Requisitos (Brujo Botánico) <br> 
+          Gastando 3 de nur Puedes, a la hora de curar a alguien, tomar una parte del origen de esa herida y absorber 
+          la mitad del daño. Puedes almacenar hasta un máximo de 2 pociones de este tipo en cada caldero, o dentro 
+          de tu bestia hasta un máximo de una vez. <br>  
+
+          También puede hacerse en bestias que tengan el tipo de vínculo: Compañero de Sangre o Compañero Leal, 
+          para obtener el mismo bonus reducido a la mitad, redondeado hacia arriba. <br> <br>  
+
+          Usar una poción cuenta como 1 acción. Si además se llega a curar una herida, se 
+          hará más daño, siendo para herida leve +1d6, herida grave +2d6 y herida crítica +3d6 de daño. 
+          Cuando se toma esa poción o se activa en el caso de las bestias, el ataque solo puede activarse una vez, 
+          y será realizado por el Brujo o la Bestia usando el atributo correspondiente.`,
+          
           novato: "Puedes almacenar daño hecho por criaturas de rango de 1 a 5",
           experto: "Puedes almacenar daño hecho por criaturas  de rango de 6 a 10",
           maestro: "...",

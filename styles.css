@@ -188,24 +188,6 @@ a:hover {
 /* ================= 0000000000000000 ================= */
 /* ================= CONTENEDOR DE TARJETAS ================= */
 
-.contenedor {
-    display: flex;
-    justify-content: center; /* centra horizontalmente */
-    gap: 30px; /* espacio entre tarjetas */
-    margin-top: 40px;
-}
-
-.item-card {
-    width: 400px;
-    margin: 20px auto;
-    padding: 15px 20px;
-
-    background-color: #2c2c2c;
-    color: #f4e4c1;
-
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-}
 
 /* ================= PRIMERA FILA ================= */
 
@@ -267,32 +249,8 @@ a:hover {
     text-align: center;
 }
 /* ================= DETALLE DE LAS TARJETAS ================= */
-/* esta de abajo define el tamaño del contenedor */
 
-.card {
-    border: 1px solid #444;
-    padding: 15px;
-    width: 300px;
-}
 
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.card-header h2 {
-    margin: 0;
-}
-
-.precio {
-    font-weight: bold;
-}
-
-.contenedor {
-    display: flex;
-    gap: 5px;
-}
 
 /* ================= CONTENEDORES DE TARJETAS ================= */
 
@@ -450,30 +408,7 @@ a:hover {
 }
 /* ================= TARJETA DE LAS BESTIAS ================= */
 
-#contenedor-bestias {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-/* este define el tamaño del contenedor de cada bestia */
-#contenedor-bestias .card {
-    width: 380px;
-    height: 800px;
-}
 
-#contenedor-bestias .card-body,
-#contenedor-bestias .enfoques,
-#contenedor-bestias .Habilidad {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-
-#contenedor-bestias .card-body p {
-    display: flex;
-    gap: 3px;
-    padding: 1px;
-}
 
 /* ================= TUTORIAL ================= */
 
@@ -523,10 +458,6 @@ img {
 
 /* ================= BESTIA ATRIBUTOS ================= */
 
-.card-body2 {
-    flex-direction: column;
-    margin-bottom: 0;
-}
 
 /* ================= FILTROS ================= */
 
@@ -587,7 +518,129 @@ img {
     }
 }
 
-/* ================= distancia entre habilidad y su texto ================= */
+/* ============================================================
+   VARIABLES DE TAMAÑO
+   Cambiá estos valores para ajustar el ancho de las tarjetas
+   en escritorio. En mobile se ignoran (ver media query al final).
+   ============================================================ */
+:root {
+    --ancho-card: 300px;
+    --ancho-card-bestia: 380px;
+    --ancho-item-card: 400px;
+}
+
+
+/* ============================================================
+   ESTRUCTURA BASE DE LAS TARJETAS (.card)
+   Define tamaño, borde y relleno de cada tarjeta individual.
+   ============================================================ */
+.card {
+    width: var(--ancho-card);
+    padding: 15px;
+    border: 1px solid #444;
+}
+
+/* Encabezado de la tarjeta: título a la izquierda, precio a la derecha */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h2 {
+    margin: 0;
+}
+
+.card-header h4 {
+    margin: 3px 0;
+}
+
+/* Párrafos dentro del cuerpo y encabezado de la tarjeta */
+.card-body p,
+.card-header p {
+    margin: 5px 0;
+}
+
+
+/* ============================================================
+   CONTENEDOR GENERAL DE TARJETAS
+   Agrupa varias .card y las centra horizontalmente.
+   (Antes estaba declarado dos veces; se unificó en un solo bloque)
+   ============================================================ */
+.contenedor {
+    display: flex;
+    justify-content: center; /* centra las tarjetas horizontalmente */
+    gap: 30px;                /* espacio entre tarjetas */
+    margin-top: 40px;
+}
+
+
+/* ============================================================
+   VARIANTE DE TARJETA: item-card
+   Tarjeta individual con estilo "oscuro" (usada para objetos/items)
+   ============================================================ */
+.item-card {
+    width: var(--ancho-item-card);
+    margin: 20px auto;
+    padding: 15px 20px;
+    background-color: #2c2c2c;
+    color: #f4e4c1;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ============================================================
+   TEXTOS Y ETIQUETAS DENTRO DE LA TARJETA
+   ============================================================ */
+
+/* Precio en negrita */
+.precio {
+    font-weight: bold;
+}
+
+/* Texto "valor" en gris, usado en detalles de las tarjetas de bestia */
+.valor {
+    font-style: normal;
+    color: #888888;
+}
+
+/* Espaciado interno de etiquetas, combate, enfoques y habilidades */
+.cardEtiquetas,
+.cardCombate,
+.enfoques,
+.Habilidad {
+    margin: 5px 0;
+    padding: 0;
+}
+
+/* cardCombate: reutiliza la clase .card-header, pero acá necesita
+   un layout distinto (4 columnas, label arriba y valor abajo),
+   por eso se sobreescribe solo cuando .card-header está dentro
+   de .cardCombate (no afecta a los otros usos de .card-header). */
+.cardCombate .card-header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+    row-gap: 2px;
+    justify-content: normal; /* anula el space-between del .card-header general */
+}
+
+/* Cada <p> es una columna: label arriba, valor abajo */
+.cardCombate .card-header p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin: 0;
+    padding: 0;
+}
+
+.cardCombate .label {
+    font-weight: bold;
+}
+
+/* Distancia entre el título de la habilidad (h5) y su descripción (h6) */
 .Habilidad h5 {
     margin-bottom: 2px;
 }
@@ -595,35 +648,85 @@ img {
 .Habilidad h6 {
     margin-top: 2px;
 }
-/* ================= detalles de las tajetas de bestia con color gris ================= */
-.valor {
-    font-style: normal;
-    color: #888888;
-}
 
-/* ================= espacios dentro de las tajetas de bestia ================= */
-.cardEtiquetas,
-.cardCombate,
-.enfoques,
-.Habilidad {
-    margin: 5px 0;
-    padding: 0px;
-}
-
-.card-header h4 {
-    margin: 3px 0;
-}
-
-.card-body p,
-.card-header p {
-    margin: 5px 0;
-}
-
+/* Espaciado uniforme de subtítulos en enfoques y habilidades */
 .enfoques h5,
 .enfoques h6,
 .Habilidad h5,
 .Habilidad h6 {
     margin: 3px 0;
+}
+
+
+/* ============================================================
+   CONTENEDOR DE BESTIAS
+   Grilla que organiza las tarjetas de bestias en 3 columnas.
+   ============================================================ */
+#contenedor-bestias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: start; /* evita que el grid estire las tarjetas a la altura de la fila más alta */
+}
+
+/* Ancho fijo, pero la altura se ajusta al contenido (sin "height" fijo) */
+#contenedor-bestias .card {
+    width: var(--ancho-card-bestia);
+    /* si querés un mínimo pero que pueda crecer, descomentá la línea de abajo */
+    /* min-height: 800px; */
+}
+
+/* Los atributos (cuerpo, enfoques, habilidades) se acomodan en fila,
+   pasando a la siguiente línea si no caben (wrap) */
+#contenedor-bestias .card-body,
+#contenedor-bestias .enfoques,
+#contenedor-bestias .Habilidad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* Cada atributo dentro del cuerpo de la tarjeta */
+#contenedor-bestias .card-body p {
+    display: flex;
+    gap: 3px;
+    padding: 1px;
+}
+
+/* Variante de cuerpo en columna (para bloques de atributos que
+   necesitan apilarse verticalmente en vez de en fila) */
+.card-body2 {
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+
+/* ============================================================
+   RESPONSIVE: MOBILE
+   Por debajo de 768px, las tarjetas dejan de usar un ancho fijo
+   y pasan a ocupar el ancho disponible, calibrándose solas.
+   El contenedor de bestias pasa de 3 columnas a 1.
+   ============================================================ */
+@media (max-width: 768px) {
+    .card,
+    .item-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contenedor {
+        flex-direction: column; /* apila las tarjetas en vez de ponerlas en fila */
+        align-items: center;
+        gap: 15px;
+    }
+
+    #contenedor-bestias {
+        grid-template-columns: 1fr; /* una sola columna en mobile */
+    }
+
+    #contenedor-bestias .card {
+        width: 100%;
+    }
 }
 
 /* ================= BARRA DE NAVEGACIÓN ================= */

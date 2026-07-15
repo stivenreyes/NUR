@@ -91,7 +91,14 @@ let INVESTIGADOR = {
                 },
                 {                 
                     nombre: "Imitar bestias",
-                    descripcionGrimorio: "Requisitos (Investigador salvaje)<br>Cuando tomas la forma de una bestia, no quiere decir que podrás entender su lenguaje ya que solo estas cambiando tu físico no toda tu mentalidad para eso, eso si, tendrás +3 con especies similares a tu forma y +1 a especies diferentes con tirada de trato con animales/comunicación<br>y no tendrás mas vida que tu en estado druida, si llegas a tener en tu estado animal 0 de vida te destranformas restando la vida que perdiste, si también llegas a 0 tu personaje muere",
+                    descripcionGrimorio: `
+                    Requisitos (Investigador salvaje)<br>
+                    Cuando tomas la forma de una bestia, no quiere decir que podrás entender su lenguaje ya que 
+                    solo estas cambiando tu físico no toda tu mentalidad para eso, eso si, tendrás +3 con especies 
+                    similares a tu forma y +1 a especies diferentes con tirada de trato con animales/comunicación<br>
+                    y no tendrás mas vida que tu en estado druida, si llegas a tener en tu estado animal 0 de vida
+                    te destranformas restando la vida que perdiste, si también llegas a 0 tu personaje muere`,
+
                     novato: "Transformación tamaño 3-10 por 1d6 turnos (2 nur)",
                     experto: "Transformación tamaño 3-15 por 1d6 turnos (5 nur)",
                     maestro: "Transformación tamaño 3-20 por 1d6 turnos (8 nur)",
@@ -107,7 +114,16 @@ let INVESTIGADOR = {
                 },
                 {                 
                     nombre: "Hablar con bestias desconocidas",
-                    descripcionGrimorio: "Habilidad para hablar con las bestias mas facilmente de acuerdo a su tipo: <br> Mamiferos <br> Anfibios <br> Aves <br> Reptibles <br> Moluscos <br> Crustaceos <br> Peces <br> Cefalópodos",
+                    descripcionGrimorio: `
+                    Habilidad para hablar con las bestias mas facilmente de acuerdo a su tipo: 
+                    Mamiferos <br> 
+                    Anfibios <br> 
+                    Aves <br> 
+                    Reptibles <br> 
+                    Moluscos <br> 
+                    Crustaceos <br> 
+                    Peces <br> 
+                    Cefalópodos `,
                     novato: "+3 hablar con bestias y elije dos tipos",
                     experto: "+5 hablar con bestias y elije dos tipos",
                     maestro: "+7 hablar con bestias y elije dos tipos",
@@ -115,7 +131,16 @@ let INVESTIGADOR = {
                 },
                 {                 
                     nombre: "Entrenar bestias",
-                    descripcionGrimorio: "Entrenamiento y mejora de bestias vinculadas.",
+                    descripcionGrimorio: `
+                    Conoces rutas de entrenamiento y puedes entrenar a tu bestia vinculada o la de otro druida, para que esta sea mas fuerte, 
+                    para entrenar la bestia vinculada de otro druida, esta deberá estar con el druida vinculado<br>
+                    Al entrenar con una bestia lanzas comunicación/trato con animales <br><br>
+                    0 - 8  No logras enseñar a la bestia vinculada.<br>
+                    9 - 12  Le logras enseñar.<br>
+                    13 - 16  Le logras enseñar y además le das mas experiencia a la bestia tu rango x 1 <br>
+                    17 - 20 Le logras enseñar y además le das mas experiencia a la bestia tu rango x 3<br>
+                    21 - ... Le logras enseñar y además le das mas experiencia a la bestia tu rango x 5 y experiencia para el druida del vinculo tu rango x 3`,
+                    
                     novato: "Entrenas 1h, experiencia = rango x5 (bestias rango 1-4)",
                     experto: "Entrenas 2h, experiencia = rango x10 (rango 5-7)",
                     maestro: "Entrenas 3h, experiencia = rango x15 (rango 8-10)",
@@ -131,7 +156,14 @@ let INVESTIGADOR = {
                 },
                 {                 
                     nombre: "Mantenimiento y curación de bestias",
-                    descripcionGrimorio: "Requiere kit de mantenimiento a bestias <br> Reparación de su armadura natural y armas naturales <br> lanzas destreza / artesanía<br>0 - 8  No logras arreglar las armas naturales de una bestia<br>9 - 12  logras arreglar las armas naturales de una bestia en 1<br>13 - 16  logras arreglar las armas naturales de una bestia y ganas un bonus<br>17 - 20 logras arreglar las armas naturales de una bestia y ganas 2 bonus<br></br>21 - ... logras arreglar las armas naturales de una bestia y ganas 3 bonus",
+                    descripcionGrimorio: `Requiere kit de mantenimiento a bestias <br> 
+                    Reparación de su armadura natural y armas naturales <br> 
+                    lanzas destreza / artesanía<br><br> 
+                    0 - 8  No logras arreglar las armas naturales de una bestia<br>
+                    9 - 12  logras arreglar las armas naturales de una bestia en 1<br>
+                    13 - 16  logras arreglar las armas naturales de una bestia y ganas un bonus<br>
+                    17 - 20 logras arreglar las armas naturales de una bestia y ganas 2 bonus<br>
+                    21 - ... logras arreglar las armas naturales de una bestia y ganas 3 bonus`,
                     novato: "Curación +2 daño psíquico. Mejora armas naturales y bonus básicos",
                     experto: "Curación +3 daño psíquico. Mejora superior y más bonus",
                     maestro: "Curación +5 daño psíquico. Mejora máxima y mayores bonus",
@@ -140,7 +172,9 @@ let INVESTIGADOR = {
                 {                 
                     nombre: "Calmar e inspirar bestias",
                     descripcionGrimorio: "Puedes inspirar y calmar a tu bestia u otras bestias.<br> algunas bestias hambrientas o asustadas pueden perder el control",
-                    novato: "+4 para calmar a tu bestia, +2 para calmar otras bestias vinculadas y +1 para calmar otras bestias.<br> <br>bonus por inspirarlas: +3 a tu bestia, +2 a bestias vinculadas y +1 a otras bestias",
+                    novato: `+4 para calmar a tu bestia, +2 para calmar otras bestias vinculadas y +1 para calmar otras bestias.<br> <br>
+                    bonus por inspirarlas: +3 a tu bestia, +2 a bestias vinculadas y +1 a otras bestias`,
+                    
                     experto: "...",
                     maestro: "...",
                     hechizos: []                   

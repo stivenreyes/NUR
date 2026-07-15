@@ -4,7 +4,7 @@ function crearTarjeta(producto) {
 
         <div class="card-header">
             <h2>${producto.nombre}</h2>
-            <span class="precio">Rango 2</span>
+            <span class="rango">R. 2</span>
         </div>
 
         <div class="cardEtiquetas">
@@ -255,11 +255,12 @@ let bestias = [
 
     <strong> Distracion coordinada </strong> <br>
     Una vez por dia los dos cuervos pueden coordinarsen de una forma tan excepcional que
-    pueden distraer con mas 3 en comunicacion a alguien para generar hasta un -3 en su proxima accion, ya sea accion de reaccion <br><br>
+    pueden distraer con mas 3 en comunicacion a alguien para generar hasta un -3 en su proxima accion, 
+    ya sea accion de reaccion <br><br>
     
     
-        <strong> Plumas benditas </strong> <br>
-        En el alba pueden dar 2 Plumas +3 a las tiradas`,
+    <strong> Plumas benditas </strong> <br>
+    En el alba pueden dar 2 Plumas +3 a las tiradas`,
     ataque: "Picotazo +1", daño: "1D6", dureza: "2", alcance: "1"
 },
 
@@ -307,7 +308,13 @@ let bestias = [
     Destreza: "-1", Precision: "-1", pelea: "3", percepcion: "3", comunicacion: "-1",
     fuerza: "4", voluntad: "1", constitucion: "0", Instinto: "-1",
     enfoques: "Nadar x2, Oler", 
-    Habilidades: `Detector de sangre (100m). gastando 2 de nur puede aparecer al lado de su druida en aluna superficie de agua en hasta 1km. mas 5 para encontrar criaturas asustadas`,
+    Habilidades: `
+    <strong>Detector de sangre </strong> <br>
+    (100m). gastando 2 de nur puede aparecer al lado de su druida en aluna superficie de agua en hasta 1km. <br><br>
+
+    <strong>Miedo y culpa </strong> <br>
+    mas 5 para encontrar criaturas asustadas`
+    ,
     ataque: "mordida +1/ tope", daño: "2D6/3D6", dureza: "5", alcance: "1"
 },
 
@@ -475,14 +482,17 @@ let bestias = [
     Destreza: "0", Precision: "-1", pelea: "1", percepcion: "1", comunicacion: "0",
     fuerza: "2", voluntad: "3", constitucion: "4", Instinto: "-2",
     enfoques: "Aguante de carga (constitución) Coraje (Voluntad)", 
-    Habilidades: `<strong> Caja fuerte portátil </strong> <br> El cangrejo llevara en su espalda un caparazón donde podrá guardarse cualquier objeto, 
+    Habilidades: `
+    <strong> Caja fuerte portátil </strong> <br> El cangrejo llevara en su espalda un caparazón donde podrá guardarse cualquier objeto, 
     asi mismo podrá duplicar su caparazón para tener una salida de emergencia si decide esconder el objeto que tenga en el otro caparazón <br> <br> 
-    <strong> Reaccion acorazada </strong> <br> Gastando 5 de nur y sin contar como accion el cangrejo puede invocar y encerrar en un caparazon de tamaño 10, de 30 de vida de forma voluntaria a objetivos en 5 metros`,
+
+    <strong> Reaccion acorazada </strong> <br> Gastando 5 de nur y sin contar como accion el cangrejo puede invocar y encerrar en un caparazon de 
+    tamaño 10, de 30 de vida de forma voluntaria a objetivos en 5 metros`,
 
     ataque: "+1", daño: "1D6", dureza: "6", alcance: "1"
   },
 
-{ 
+  {
     nombre: "Cangrejo espinoso",
     bioma: "Costa",
     terreno: "Tierra",
