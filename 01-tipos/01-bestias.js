@@ -274,7 +274,16 @@ let bestias = [
     Destreza: "4", Precision: "0", pelea: "-1", percepcion: "3", comunicacion: "4",
     fuerza: "0", voluntad: "1", constitucion: "-1", Instinto: "1",
     enfoques: "Distraer, Huir, Nadar", 
-    Habilidades: `<strong>Comunicacion </strong> a distancia (5km), daño psicologico 1d6, mensaje global 200m`,
+    Habilidades: `
+    <strong>Mensajes lejanos</strong><br> 
+    Se puede comunicar a la distancia a 1km con su amo y otra  bestia elegida (se puede cambiar cada dia)
+    las bestias voladoras pueden devolver la comunicación <br><br> 
+
+    <strong>Cantos de terror</strong><br>
+    Daño psicologico 1d6, comunicacion vs voluntad de la victima<br><br>
+
+    <strong>Mensajes a Amara</strong><br>
+    Una vez por dia puedes enviar un mensaje global para todas las bestias en 20 km`,
     ataque: "Picotazo +1", daño: "1D6", dureza: "3", alcance: "1"
 },
 
@@ -414,7 +423,8 @@ let bestias = [
     fuerza: "1", voluntad: "1", constitucion: "-1", Instinto: "-2",
     enfoques: "Oler", 
     Habilidades: `
-    <strong> Lengua excavadora </strong> <br> Puede lanzar su lengua por el suelo y atacar a alguien desde la tierra o el agua hasta una distancia de 5 metros, 
+    <strong> Lengua excavadora </strong> <br> 
+    Puede lanzar su lengua por el suelo y atacar a alguien desde la tierra o el agua hasta una distancia de 5 metros, 
     el ataque de la lengua será oculto destreza + 2 para evitar que se descubra, <br><br>
 
     <strong> Lengua de nur </strong> <br>
@@ -432,29 +442,41 @@ let bestias = [
     tamaño: "5",
     armadura: "0",
     Destreza: "3", Precision: "0", pelea: "1", percepcion: "2", comunicacion: "1",
-    fuerza: "0", voluntad: "-1", constitucion: "-2", Instinto: "4",
+    fuerza: "0", voluntad: "2", constitucion: "-2", Instinto: "4",
     enfoques: "Nadar, Curación, Huir", 
     Habilidades: `
-    Puedes absorber el nur. Voluntad vs voluntad y recargarse
-     de nur con un 1d6.
-    El nur podrá enviarse a su druida o incrementar el daño de otra bestia
-    en un 1d3 por dado ganado.
-  `,
+    <strong> Lengua sanadora </strong> <br> 
+    Cura 2D6 (amo) o 1D6+ 2 (aliado) distancia: 5 metros -3 de nur<br> <br> 
+     
+    <strong> Experta en cirugias</strong> <br>
+    bonus cirugía +6 y podra relanzar el dado especial si primero obtiene exito<br> <br> 
+    
+    <strong> Estomago sanador</strong> <br> 
+    puede almacenar criaturas de su tamaño menos 5 y curar aliados en estómago por 5d6 por turno`,
     ataque: "+1", daño: "1D6", dureza: "0", alcance: "1"
   },
 
   { 
     nombre: "Escarabajo amarillo",
     bioma: "Costa",
-    terreno: "Tierra y viento",
+    terreno: "Viento",
     tipo: "Rara",
     tamaño: "3",
     armadura: "30",
-    Destreza: "0", Precision: "-1", pelea: "-1", percepcion: "1", comunicacion: "0",
+    Destreza: "0", Precision: "-1", pelea: "-1", percepcion: "1", comunicacion: "-1",
     fuerza: "2", voluntad: "4", constitucion: "3", Instinto: "-2",
-    enfoques: "", 
-    Habilidades: `Infecta con hongos al contacto, daño 3D6 de forma inmediata, una vez por día, veneno rango 2. <br> 
-    Gastando 5 de nur puede hacer una explosion de 1m haciendo 4d6 de daño dif 15 para esquivar`,
+    enfoques: "orientarse (percep), volar (destreza) ", 
+    Habilidades: `
+    <strong> Coraza envenenada </strong> <br>
+    Infecta con hongos al contacto, daño 3D6 de forma inmediata, una vez por día, veneno rango 2. <br> <br> 
+
+    <strong> Bombardero </strong> <br>
+    Gastando 5 de nur puede hacer una explosion de 1m haciendo 4d6 de daño dif 15 para esquivar<br> <br>
+    
+    <strong> Mirar a las estrella </strong> <br>
+    el escarabajo de noche puede ayudar a su druida vinculado a orientarse y a buscar recursos con un mas 3 
+    en percepcion`,
+
     ataque: "+1", daño: "1D6", dureza: "5", alcance: "1"
   },
 
@@ -468,7 +490,13 @@ let bestias = [
     Destreza: "0", Precision: "0", pelea: "-1", percepcion: "2", comunicacion: "1",
     fuerza: "1", voluntad: "3", constitucion: "-1", Instinto: "4",
     enfoques: "Conocimiento espiritual, Nadar, Sumergirse", 
-    Habilidades: `Puede restaurar una poción una vez (pierde efecto original)`,
+    Habilidades: `
+    <strong> Revivir poción </strong> <br>
+    Puede restaurar una poción una sola vez. <br> <br>
+    
+    <strong> multiples cerebros </strong> <br>
+    Puede ayudar a su druida vinculado a resolver algun problema, o tratando de entender o 
+    recordar algo con mas 2 a inteligencia (no funciona para lanzar hechizos).`,
     ataque: "Latigo +1", daño: "1D6", dureza: "4", alcance: "1"
   },
 
@@ -483,7 +511,8 @@ let bestias = [
     fuerza: "2", voluntad: "3", constitucion: "4", Instinto: "-2",
     enfoques: "Aguante de carga (constitución) Coraje (Voluntad)", 
     Habilidades: `
-    <strong> Caja fuerte portátil </strong> <br> El cangrejo llevara en su espalda un caparazón donde podrá guardarse cualquier objeto, 
+    <strong> Caja fuerte portátil </strong> <br> 
+    El cangrejo llevara en su espalda un caparazón donde podrá guardarse cualquier objeto, 
     asi mismo podrá duplicar su caparazón para tener una salida de emergencia si decide esconder el objeto que tenga en el otro caparazón <br> <br> 
 
     <strong> Reaccion acorazada </strong> <br> Gastando 5 de nur y sin contar como accion el cangrejo puede invocar y encerrar en un caparazon de 
@@ -520,8 +549,19 @@ let bestias = [
     armadura: "0",
     Destreza: "3", Precision: "-1", pelea: "-1", percepcion: "2", comunicacion: "1",
     fuerza: "0", voluntad: "0", constitucion: "-2", Instinto: "5",
-    enfoques: "Orientarse, Artesania, Forrajear", 
-    Habilidades: `Puede crear y reparar objetos en plano físico y espiritual (+5 artesanía)`,
+    enfoques: "Orientarse, Artesania (elije entre instinto, destreza, precision, fuerza), Forrajear", 
+    Habilidades: `
+    <strong> Artesania </strong> <br>
+    Mas 5 en instinto, precision y detreza para artesania.<br><br>
+
+    <strong> Mejora de artesano </strong> <br>
+    Armaduras +5d6 vida<br>
+    Armas +1d3 de dureza <br>
+    Armas +1 dado de daño <br><br>
+
+    <strong> Arma temporalmente bendecida </strong> <br>
+    En dos turnos en medio de un combate un arma se puede volver mas fuerte mas 2d6 de daño
+    se requiere 2 de nur y un material de armas, la mejora solo dura 2 turnos o 2 minutos.<br><br>`,
     ataque: "+1", daño: "1D6", dureza: "3", alcance: "1"
   },
 
@@ -535,7 +575,9 @@ let bestias = [
     Destreza: "-1", Precision: "-1", pelea: "0", percepcion: "2", comunicacion: "-1",
     fuerza: "0", voluntad: "3", constitucion: "-2", Instinto: "4",
     enfoques: "Nadar, Rayo", 
-    Habilidades: `Ataque eléctrico a 10m, daño 2D6 + Instinto, coste -2 nur El alcance del 
+    Habilidades: `
+    <strong> chispazo </strong> <br>
+    Ataque eléctrico a 10m, daño 2D6 + Instinto, coste -2 nur El alcance del 
     rayo puede aumentar 4 metros y agregar un objetivo mas gracias al agua`,
     ataque: "+1", daño: "1D6", dureza: "2", alcance: "1"
   },

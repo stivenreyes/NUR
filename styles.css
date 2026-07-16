@@ -676,9 +676,22 @@ img {
     /* min-height: 800px; */
 }
 
-/* Los atributos (cuerpo, enfoques, habilidades) se acomodan en fila,
-   pasando a la siguiente línea si no caben (wrap) */
-#contenedor-bestias .card-body,
+/* .card-body: acomoda las 3 columnas de atributos (.card-body2).
+   justify-content: space-between reparte el espacio disponible así:
+   - la primera columna queda pegada a la izquierda
+   - la última columna queda pegada a la derecha
+   - la columna del medio queda centrada entre las dos
+   Al ser flex, si el ancho del contenedor cambia (por ejemplo en
+   mobile), las columnas se reacomodan solas, sin tocar nada más. */
+#contenedor-bestias .card-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* Enfoques y Habilidad no necesitan ese reparto, solo envolver
+   el contenido si no entra en una sola línea */
 #contenedor-bestias .enfoques,
 #contenedor-bestias .Habilidad {
     display: flex;
@@ -693,9 +706,14 @@ img {
     padding: 1px;
 }
 
-/* Variante de cuerpo en columna (para bloques de atributos que
-   necesitan apilarse verticalmente en vez de en fila) */
+/* .card-body2: cada una de las 3 columnas dentro de .card-body.
+   flex-direction: column apila verticalmente los <p> que tiene
+   adentro (Precision, Destreza, Percep., etc). No se le define un
+   ancho fijo a propósito: cada columna mide lo que su contenido
+   necesita, y es .card-body (con space-between) quien decide
+   dónde queda ubicada cada una. */
 .card-body2 {
+    display: flex;
     flex-direction: column;
     margin-bottom: 0;
 }
