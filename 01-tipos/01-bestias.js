@@ -4,7 +4,7 @@ function crearTarjeta(producto) {
 
         <div class="card-header">
             <h2>${producto.nombre}</h2>
-            <span class="rango">R. 2</span>
+            <span class="rango">Rango 2</span>
         </div>
 
         <div class="cardEtiquetas">
@@ -261,7 +261,7 @@ let bestias = [
     
     <strong> Plumas benditas </strong> <br>
     En el alba pueden dar 2 Plumas +3 a las tiradas`,
-    ataque: "Picotazo +1", daño: "1D6", dureza: "2", alcance: "1"
+    ataque: "Picotazo +1 <br> garras", daño: "1D6 <br> 1d3", dureza: "2 <br> 2", alcance: "1 <br> 1"
 },
 
 { 
@@ -322,9 +322,9 @@ let bestias = [
     (100m). gastando 2 de nur puede aparecer al lado de su druida en aluna superficie de agua en hasta 1km. <br><br>
 
     <strong>Miedo y culpa </strong> <br>
-    mas 5 para encontrar criaturas asustadas`
+    Mas 5 para encontrar criaturas asustadas`
     ,
-    ataque: "mordida +1/ tope", daño: "2D6/3D6", dureza: "5", alcance: "1"
+    ataque: "mordida +1 <br> tope", daño: "2D6 <br> 3D6", dureza: "5<br> 5", alcance: "1 <br> 1"
 },
 
 { 
@@ -363,7 +363,7 @@ let bestias = [
     Puedes rastrear los restos de nur producidos por un hechizo, o talento o habilidad donde se uso nur
     hasta en tirada de percepcion/magica x metros 
         `,
-    ataque: "Garras +4", daño: "1D6", dureza: "3", alcance: "1"
+    ataque: "Garras +4 <br> Mordida +1 ", daño: "1D6 <br> 1D6 ", dureza: "3 <br> 2", alcance: "1 <br> 1"
 },
 
 { 
@@ -391,7 +391,7 @@ let bestias = [
     inconscientes y huir o simplemente llevarlos por 20 minutos, sin importar que superen su aguante, 
     pero luego de eso el oso necesitara media hora para descansar`,
 
-    ataque: "Garras", daño: "2D6", dureza: "5", alcance: "1"
+    ataque: "Garras <br> Mordidas +1 ", daño: "2D6 <br> 1D6", dureza: "5 <br> 3", alcance: "1 <br> 1"
 },
 { 
     nombre: "Mono albino",
@@ -431,7 +431,7 @@ let bestias = [
     el oso hormiguero se podrá conectar a su druida vinculado, 
     y transferir  en su lengua cualquier hechizo donde se use nur`,
 
-    ataque: "Garras +1 / lengua", daño: "2D6 / 1D6", dureza: "5/2", alcance: "1/5"
+    ataque: "Garras +1 <br> lengua", daño: "2D6 <br> 1D6", dureza: "5<br>2", alcance: "1<br>5"
   },
 
   { 
@@ -474,8 +474,8 @@ let bestias = [
     Gastando 5 de nur puede hacer una explosion de 1m haciendo 4d6 de daño dif 15 para esquivar<br> <br>
     
     <strong> Mirar a las estrella </strong> <br>
-    el escarabajo de noche puede ayudar a su druida vinculado a orientarse y a buscar recursos con un mas 3 
-    en percepcion`,
+    Describe como el escarabajo de noche puede ayudar a su druida vinculado a orientarse y a buscar recursos 
+    con un mas 3 en percepcion`,
 
     ataque: "+1", daño: "1D6", dureza: "5", alcance: "1"
   },
@@ -495,7 +495,7 @@ let bestias = [
     Puede restaurar una poción una sola vez. <br> <br>
     
     <strong> multiples cerebros </strong> <br>
-    Puede ayudar a su druida vinculado a resolver algun problema, o tratando de entender o 
+    Describe como puede ayudar a su druida vinculado a resolver algun problema, o tratando de entender o 
     recordar algo con mas 2 a inteligencia (no funciona para lanzar hechizos).`,
     ataque: "Latigo +1", daño: "1D6", dureza: "4", alcance: "1"
   },
@@ -579,7 +579,7 @@ let bestias = [
     <strong> chispazo </strong> <br>
     Ataque eléctrico a 10m, daño 2D6 + Instinto, coste -2 nur El alcance del 
     rayo puede aumentar 4 metros y agregar un objetivo mas gracias al agua`,
-    ataque: "+1", daño: "1D6", dureza: "2", alcance: "1"
+    ataque: "Latigazo +1", daño: "1D6", dureza: "2", alcance: "1"
   },
 { 
     nombre: "Lagarto de trueno",
@@ -653,13 +653,13 @@ let bestias = [
     <strong> Montura aérea. </strong> <br> Tamaño 15. <br><br>
 
     <strong> Alas de gloria </strong> <br> 
-    El condor con sus alas puede generar un aura a su druida vinculado que le ayudara en tiradas sociales 
+    Describe como el condor con sus alas puede generar un aura a su druida vinculado que le ayudara en tiradas sociales 
     con ambitos persuasivos con un mas 3 en comunicación.<br><br>
 
     <strong>Anticaidas</strong> Rango 7 <br> 
     Antes de caer al suelo desde grandes alturas la bestia podrá detenerse en el aire y aterrizar sin importar si esta inconsciente o no. 
     si cae en el agua flotara por unos minutos, si cae en la lava o algún lugar peligroso será invulnerable a ese daño por 2 minutos/ 3 turnos`,
-    ataque: "Garras +1", daño: "1D6", dureza: "3", alcance: "1"
+    ataque: "Garras +1 <br> Picotazo", daño: "1D6 <br> 2D6", dureza: "3 <br> 2", alcance: "1 <br> 1"
   },
 
   { 
@@ -691,6 +691,31 @@ let bestias = [
   },
 
   { 
+    nombre: "Pez arquero verde",
+    bioma: "Costa",
+    terreno: "Agua",
+    tipo: "Ataque",
+    tamaño: "5",
+    armadura: "0",
+    Destreza: "1", Precision: "2", pelea: "-2", percepcion: "1", comunicacion: "1",
+    fuerza: "-1", voluntad: "3", constitucion: "0", Instinto: "5",
+    enfoques: "Canto (Comunicación), Nadar (Destreza)", 
+    Habilidades: ` 
+    <strong> Flecha de agua </strong> <br> 
+    Gastando 2 de nur puede lanzar una flecha de agua a 5 metros haciendo 2d6 de daño.
+    debe lanzar instinto vs esquiva de la victima <br> <br> 
+
+    <strong> Prision de agua </strong> <br> 
+    Puede hacer crecer su esfera de agua gastando 4 de nur y encerrar a una victima de tu mismo tamaño o menos en la misma 1d6 turnos. 
+    la cual  no podra salir de ahi,  puede salir de ahi con una tirada de fuerza/nadar vs tu instinto, cada 
+    turno ahi la victima si no es de agua recibe 1d6 de daño<br> <br> 
+
+    <strong> Maestro de la punteria </strong> <br> 
+    Describe como este pez puede ayudar a su druida a lanzar con precision con un mas 3 `,
+    ataque: "Mordidas", daño: "1D6", dureza: "1", alcance: "1"
+  },
+
+  { 
     nombre: "Salamandra de dos colas",
     bioma: "Montaña",
     terreno: "Tierra",
@@ -703,6 +728,29 @@ let bestias = [
     Habilidades: `Escupe veneno: 4D6 inicial + 1D6 continuo (1 vez por combate). 
     Su estomago puede ser usado como caldero de espacio 3, cada vez que aumenta de tamaño aumenta su caldero en 2`,
     ataque: "+1", daño: "1D6", dureza: "2", alcance: "1"
+  },
+
+  { 
+    nombre: "Delfin nariz de flauta",
+    bioma: "Costa",
+    terreno: "Agua",
+    tipo: "Bardo",
+    tamaño: "5",
+    armadura: "0",
+    Destreza: "2", Precision: "-1", pelea: "-2", percepcion: "2", comunicacion: "5",
+    fuerza: "-1", voluntad: "-1", constitucion: "0", Instinto: "5",
+    enfoques: "Canto (Comunicación), Nadar (Destreza)", 
+    Habilidades: ` 
+    <strong> Canticos sanadores </strong> <br> 
+    Mas 4 para curar daño psicologico, y cura 5 de daño adicional <br> <br> 
+
+    <strong> Canticos de guerra </strong> <br> 
+    Puede inspirar a su druida vinculado y a un druida con su bestia, para que en combate hagan 1d6 de daño adicional<br> <br> 
+
+    <strong> Canticos romanticos </strong> <br> 
+    Describe como el delfin da mas 4 a su druida vinculado o mas 2 a algun druida o bestia por medio de canticos
+    para escenas de seducción `,
+    ataque: "Mordidas", daño: "1D6", dureza: "2", alcance: "1"
   },
 
   { 
@@ -720,13 +768,13 @@ let bestias = [
     De noche se vuelve invisible (1D3 horas). Detectarla requiere tirada dificultad 20 <br> <br> 
 
     <strong> Mirada de vigia </strong> <br> 
-    LA bestia le puede ayudar a su druida vinculado a detectar si alguien miente o conocer sus intensiones
+    Decribe como la bestia le puede ayudar a su druida vinculado a detectar si alguien miente o conocer sus intensiones
     con +3 a percepción <br> <br> 
 
     <strong> Manto del silencio </strong> <br> 
     puede colocar un manto sobre su druida vinculado para que la misma lechuza haga 
     las tiradas de sigilo por el, la lechiza debe estar con el`,
-    ataque: "Garras +1", daño: "1D6", dureza: "2", alcance: "1"
+    ataque: "Garras +1 <br> Picotazo", daño: "1D6 <br> 1D6", dureza: "2 <br> 2", alcance: "1 <br> 1"
   }  
 
 ]

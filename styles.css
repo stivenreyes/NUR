@@ -519,6 +519,32 @@ img {
 }
 
 /* ============================================================
+   RESET BÁSICO
+   box-sizing: border-box hace que el padding y el borde se
+   cuenten DENTRO del width/height declarado, en vez de sumarse
+   aparte. Sin esto, en pantallas muy angostas (ej: 520px de
+   ancho) el padding puede empujar el contenido fuera del
+   contenedor visible y parecer "recortado".
+   ============================================================ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Si en algún lugar del sitio hay "overflow: hidden" o una altura
+   fija en html/body, el contenido que no entra en pantallas bajas
+   (ej: 346px de alto) queda cortado sin poder hacer scroll.
+   Esto obliga a que siempre se pueda scrollear verticalmente. */
+html,
+body {
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+}
+
+
+/* ============================================================
    VARIABLES DE TAMAÑO
    Cambiá estos valores para ajustar el ancho de las tarjetas
    en escritorio. En mobile se ignoran (ver media query al final).
@@ -540,9 +566,14 @@ img {
     border: 1px solid #444;
 }
 
-/* Encabezado de la tarjeta: título a la izquierda, precio a la derecha */
+/* Encabezado de la tarjeta: título a la izquierda, precio a la derecha.
+   flex-wrap: wrap evita que, en pantallas angostas, el contenido
+   sea empujado fuera de la tarjeta si no entra en una sola fila
+   (mismo problema de overflow explicado en .cardCombate, pero
+   para flex en vez de grid). */
 .card-header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -617,10 +648,21 @@ img {
 /* cardCombate: reutiliza la clase .card-header, pero acá necesita
    un layout distinto (4 columnas, label arriba y valor abajo),
    por eso se sobreescribe solo cuando .card-header está dentro
-   de .cardCombate (no afecta a los otros usos de .card-header). */
+   de .cardCombate (no afecta a los otros usos de .card-header).
+   Se usa minmax(0, 1fr) en vez de 1fr: por defecto, cada columna
+   de un grid tiene un ancho mínimo invisible igual al de su
+   contenido (ej: el texto "garras +1"), y si no entra, EMPUJA el
+   grid entero más ancho que la pantalla en vez de achicarse. Eso
+   es lo que causaba el recorte en pantallas angostas (ej: 520px).
+   minmax(0, 1fr) le permite a la columna encogerse por debajo del
+   tamaño de su contenido, y el texto se envuelve en vez de
+   desbordar. */
 .cardCombate .card-header {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* la primera columna (Ataque) es más ancha (1.5 partes) que
+       las otras tres (1 parte cada una); minmax(0, ...) en todas
+       para que sigan pudiendo achicarse sin desbordar */
+    grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 1fr));
     column-gap: 15px;
     row-gap: 2px;
     justify-content: normal; /* anula el space-between del .card-header general */
@@ -664,7 +706,7 @@ img {
    ============================================================ */
 #contenedor-bestias {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* minmax(0, 1fr): mismo motivo que en .cardCombate, evita que una tarjeta con contenido ancho empuje el grid fuera de la pantalla */
     gap: 20px;
     align-items: start; /* evita que el grid estire las tarjetas a la altura de la fila más alta */
 }
@@ -715,6 +757,7 @@ img {
 .card-body2 {
     display: flex;
     flex-direction: column;
+    min-width: 0; /* permite que la columna se achique en vez de desbordar (mismo motivo que minmax(0,1fr) en los grids) */
     margin-bottom: 0;
 }
 
@@ -744,6 +787,31 @@ img {
 
     #contenedor-bestias .card {
         width: 100%;
+    }
+}
+
+
+/* ============================================================
+   RESPONSIVE: PANTALLAS DE ALTURA MUY BAJA (ej: 520x346)
+   No cambiamos el ancho acá (eso ya lo resuelve el media query
+   de arriba), solo reducimos padding y espacios para que las
+   tarjetas "alargadas" ocupen menos de más, y el contenido se
+   pueda alcanzar deslizando hacia abajo (scroll) en vez de
+   quedar tapado por falta de altura de pantalla.
+   ============================================================ */
+@media (max-height: 400px) {
+    .card,
+    .item-card {
+        padding: 8px;
+    }
+
+    .contenedor {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    #contenedor-bestias {
+        gap: 10px;
     }
 }
 

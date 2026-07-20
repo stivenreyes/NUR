@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="../styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lutear</title>
+</head>
+<body>
+       <div id="navbar-container"></div>
+
+<h1> Sistema de comunicación</h1>
+
+<!-- ================= COMUNICACION ================= -->
+
+<h2>Comunicarse druida con su bestia vinculada</h2>
+
+<p>
+Ambos pueden hacer una tirada conjunta para comunicarse. La dificultad depende del
+nivel de entendimiento. En la tirada conjunta se toma el resultado más alto, el cual
+también puede activar proezas de entendimiento.
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Entendimiento</th>
+            <th>Dificultad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>-2</td><td>22</td></tr>
+        <tr><td>-1</td><td>20</td></tr>
+        <tr><td>0</td><td>18</td></tr>
+        <tr><td>1</td><td>16</td></tr>
+        <tr><td>2</td><td>14</td></tr>
+        <tr><td>3</td><td>12</td></tr>
+        <tr><td>4</td><td>10</td></tr>
+        <tr><td>5</td><td>8</td></tr>
+    </tbody>
+</table>
+
+<h2>Druida hablando con otra especie</h2>
+
+<p>
+Cuando un druida intenta comunicarse con una especie distinta a su bestia vinculada,
+la dificultad base es:
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Interacción</th>
+            <th>Dificultad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Druida → otra especie</td>
+            <td>22</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Comunicación entre bestias</h2>
+
+<p>
+La dificultad depende del grupo biológico al que pertenece la bestia con la que se
+intenta comunicar.
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Tipo de especie</th>
+            <th>Dificultad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Misma especie</td><td>7/0</td></tr>
+        <tr><td>Mamíferos</td><td>12</td></tr>
+        <tr><td>Aves</td><td>13</td></tr>
+        <tr><td>Anfibios</td><td>13</td></tr>
+        <tr><td>Reptiles</td><td>14</td></tr>
+        <tr><td>Peces</td><td>15</td></tr>
+        <tr><td>Crustáceos</td><td>18</td></tr>
+        <tr><td>Moluscos</td><td>18</td></tr>
+    </tbody>
+</table>
+
+
+
+
+<button id="btn-arriba">↑</button>
+
+<a href="#" class="btn" onclick="history.back()">Volver</a>
+
+
+<script src="../01-tipos/navbar.js"></script>
+ <script src="../01-tipos/01-componentes.js"></script>  
+</body>
+</html>
