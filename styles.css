@@ -25,6 +25,15 @@
     --font-size-2xl: 2rem;
     --font-size-3xl: 3rem;
     --font-size-4xl: 4rem;
+
+    /* Anchos de tarjetas (unificados acá desde un :root duplicado) */
+    --ancho-card: 300px;
+    --ancho-card-bestia: 380px;
+    --ancho-item-card: 400px;
+
+    /* Antes se usaba sin definir en #btn-siguiente/anterior:hover;
+       se define acá con el mismo color que usan los demás hovers */
+    --hover-color: var(--color-secondary-light);
 }
 
 body {
@@ -183,6 +192,7 @@ a:hover {
     border-radius: 5px;
     text-decoration: none;
     margin-top: 10px;
+    margin-bottom: 40px; /* unificado desde una regla .btn duplicada más abajo, para que no quede pegado al fondo */
 }
 
 /* ================= 0000000000000000 ================= */
@@ -290,12 +300,16 @@ a:hover {
     color: rgb(196, 0, 186);
 }
 
-.valor {
-    font-style: normal;
-}
-
-/* ================= CABECERA DE TARJETA ================= */
-
+/* ================= CABECERA DE TARJETA (tienda general) ================= */
+/* ⚠️ AVISO: ".card-header" está definido 3 VECES en este archivo
+   (acá, en la sección de bestias, y en "PAGINAS DE CADA ROL" más
+   abajo). Como no está scopeado con un ID de contenedor, las 3
+   reglas se aplican a TODOS los ".card-header" del sitio a la vez
+   -- por eso las tarjetas de bestias también reciben este
+   font-size:25px/color blanco/gap:10px, aunque hayan sido pensadas
+   para otra página. No lo separé porque no sé qué página usa cada
+   una; si me confirmás cuál .card-header pertenece a qué página,
+   te dejo cada uno bien scopeado (ej: "#contenedor-armas .card-header"). */
 .card-header {
     display: flex;
     align-items: center;
@@ -519,44 +533,6 @@ img {
 }
 
 /* ============================================================
-   RESET BÁSICO
-   box-sizing: border-box hace que el padding y el borde se
-   cuenten DENTRO del width/height declarado, en vez de sumarse
-   aparte. Sin esto, en pantallas muy angostas (ej: 520px de
-   ancho) el padding puede empujar el contenido fuera del
-   contenedor visible y parecer "recortado".
-   ============================================================ */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* Si en algún lugar del sitio hay "overflow: hidden" o una altura
-   fija en html/body, el contenido que no entra en pantallas bajas
-   (ej: 346px de alto) queda cortado sin poder hacer scroll.
-   Esto obliga a que siempre se pueda scrollear verticalmente. */
-html,
-body {
-    height: auto;
-    min-height: 100%;
-    overflow-y: auto;
-}
-
-
-/* ============================================================
-   VARIABLES DE TAMAÑO
-   Cambiá estos valores para ajustar el ancho de las tarjetas
-   en escritorio. En mobile se ignoran (ver media query al final).
-   ============================================================ */
-:root {
-    --ancho-card: 300px;
-    --ancho-card-bestia: 380px;
-    --ancho-item-card: 400px;
-}
-
-
-/* ============================================================
    ESTRUCTURA BASE DE LAS TARJETAS (.card)
    Define tamaño, borde y relleno de cada tarjeta individual.
    ============================================================ */
@@ -566,11 +542,14 @@ body {
     border: 1px solid #444;
 }
 
-/* Encabezado de la tarjeta: título a la izquierda, precio a la derecha.
-   flex-wrap: wrap evita que, en pantallas angostas, el contenido
-   sea empujado fuera de la tarjeta si no entra en una sola fila
-   (mismo problema de overflow explicado en .cardCombate, pero
-   para flex en vez de grid). */
+/* .card-header (3/3, bestias): ver aviso en "CABECERA DE TARJETA
+   (tienda general)" más arriba en el archivo -- esta regla se
+   combina con las otras 2 sobre el mismo selector.
+   Encabezado de la tarjeta: título a la izquierda, precio a la
+   derecha. flex-wrap: wrap evita que, en pantallas angostas, el
+   contenido sea empujado fuera de la tarjeta si no entra en una
+   sola fila (mismo problema de overflow explicado en .cardCombate,
+   pero para flex en vez de grid). */
 .card-header {
     display: flex;
     flex-wrap: wrap;
@@ -815,8 +794,19 @@ body {
     }
 }
 
-/* ================= BARRA DE NAVEGACIÓN ================= */
-
+/* ================= BARRA DE NAVEGACIÓN (posible versión vieja / landing) ================= */
+/* ⚠️ AVISO: hay DOS sistemas de navbar completos en este archivo.
+   Este de acá (.navbar/.logo/.nav-links/.dropdown + la sección
+   HERO de más abajo) usa variables que NO existen en tu :root
+   (--primary-color, --text-color, --accent-color, --text-muted),
+   así que ahora mismo se está renderizando roto/sin esos colores.
+   Más abajo hay OTRO ".navbar"/".logo" (sección "NAVBAR" cerca del
+   final) con menú hamburguesa (.menu-toggle, .desktop-menu,
+   .mobile-menu) que sí usa tus variables reales (--color-primary,
+   etc.) y coincide con las clases que arma navbar.js.
+   No borré este bloque por las dudas de que pertenezca a una
+   landing page (index.html) que no me pasaste -- pero si no la
+   usás, se puede eliminar todo este bloque + la sección HERO. */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -1024,7 +1014,8 @@ body {
 }
 
 /* ================= PAGINAS DE CADA ROL ================= */
-
+/* .card-header (2/3): ver aviso arriba, en "CABECERA DE TARJETA
+   (tienda general)" -- esta regla se suma a las otras 2. */
 .card-header {
     margin-bottom: 15px;
 }
@@ -1128,7 +1119,12 @@ body {
     padding: 10px;
 }
 
-.card {
+/* OJO: esto antes era ".card" a secas (sin ".grid-tarjetas" delante),
+   lo cual pisaba el "width" de CUALQUIER .card del sitio (armas,
+   bestias, items), no solo el de esta sección tipo Pinterest.
+   Se agregó el scope ".grid-tarjetas" para que solo afecte a las
+   tarjetas que están dentro de este layout específico. */
+.grid-tarjetas .card {
     display: inline-block;
     width: 100%;
     margin-bottom: 20px;
@@ -1152,18 +1148,25 @@ body {
     }
 }
 
-/* Celular */
-@media (max-width: 600px) {
-    .grid-tarjetas {
-        column-count: 1;
-    }
-}
-
 /* ================= NAVBAR ================= */
 /* ================= NAVBAR ================= */
 /* ================= NAVBAR ================= */
 
-* {
+/* ============================================================
+   RESET BÁSICO (unificado — antes estaba repartido en 2 bloques)
+   - box-sizing: border-box: el padding y el borde se cuentan
+     DENTRO del width/height declarado, no se suman aparte. Sin
+     esto, en pantallas angostas el padding puede empujar el
+     contenido fuera del contenedor visible ("recortado").
+   - overflow-x: hidden evita scroll horizontal accidental.
+   - overflow-y: auto + height: auto asegura que SIEMPRE se pueda
+     scrollear verticalmente, incluso en pantallas muy bajas de
+     altura (ej: 520x346), donde el contenido no debe quedar
+     inalcanzable.
+   ============================================================ */
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -1171,7 +1174,10 @@ html,
 body {
     margin: 0;
     padding: 0;
+    height: auto;
+    min-height: 100%;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 body {
@@ -1337,57 +1343,39 @@ table {
 
 
 
-/* ================= BOTON VOLVER QUE NO SE QUEDE PEGADO ABAJO ================= */
-.btn {
-    display: inline-block;
-    margin-bottom: 40px;
-}
-
 /* ================= CARRUSEL ================= */
+/* Había 4 bloques de .carrusel / .carrusel img reescritos uno
+   encima del otro. OJO: esto no es 100% igual a como se veía
+   antes -- el bloque viejo tenía "height: 300px" Y "aspect-ratio:
+   5/3" a la vez, y como ambas dimensiones quedaban fijas por el
+   height, el aspect-ratio quedaba anulado (sin efecto real). Acá
+   se sacó el height fijo para que el aspect-ratio SÍ funcione,
+   que es lo que decía el comentario original ("mantiene
+   proporción"). Si preferís el tamaño fijo de antes, avisame. */
 .carrusel {
-  width: 500px;
-  height: 300px;
-  margin: auto;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.carrusel img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.carrusel {
-  width: 90%;              /* se adapta al ancho de pantalla */
-  max-width: 500px;        /* no crece demasiado en PC */
-  aspect-ratio: 5 / 3;     /* mantiene proporción */
+  width: 90%;             /* se adapta al ancho de pantalla */
+  max-width: 500px;       /* no crece demasiado en PC */
+  aspect-ratio: 5 / 3;    /* mantiene proporción (por eso ya no lleva un height fijo) */
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
 }
 
+/* opacity: 0 por defecto: se asume que el JS del carrusel pone
+   la imagen activa en opacity: 1 (o similar) para el crossfade.
+   Si el carrusel no se ve NUNCA, revisar ese JS primero. */
 .carrusel img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.carrusel img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity 0.5s ease-in-out;
-  opacity: 1;
-}
-
-.carrusel img {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
 
 /* ================= MAPA AMARA ================= */
+/* #contenedoramara e #imagenamara estaban cada uno repetidos varias
+   veces con las mismas propiedades (o subconjuntos); se unificaron
+   en una sola regla por elemento sin cambiar el resultado final. */
 #contenedoramara {
   width: 100vw;
   height: 100vh;
@@ -1398,12 +1386,18 @@ table {
   align-items: center;
 }
 
-/* IMAGEN */
 #imagenamara {
   max-width: 100%;
   max-height: 100%;
+  display: block;
   object-fit: contain;
   touch-action: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#zoomarea {
+    touch-action: none;
 }
 
 /* BOTONES */
@@ -1425,33 +1419,6 @@ table {
   background: #333;
   color: white;
   cursor: pointer;
-}
-
-#contenedoramara {
-    overflow: hidden;
-    touch-action: none;
-}
-
-#contenedoramara {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    touch-action: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#zoomarea {
-    touch-action: none;
-}
-
-#imagenamara {
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    user-select: none;
-    -webkit-user-drag: none;
 }
 
 /* ================= para el salto de pagina ================= */
@@ -1542,9 +1509,105 @@ table {
 
 /* ================= EL STRONG DE LA TARJETA DE BESTIAS Y QUIZAS OTROS ================= */
 
+/* 3 bugs acá: "font-weight: black" no es un valor válido de CSS
+   (se ignoraba); "font-size" estaba declarado 2 veces (ganaba la
+   última, 20px, la de "large" no servía para nada); y "font-style"
+   no acepta un color como valor (probablemente la intención era
+   "color"). Corregido: */
 strong {
-    font-weight: black;
-    font-size: large;
-    font-style: var(--color-primary-dark);
+    font-weight: 900;
     font-size: 20px;
+    
+}
+
+
+/* ================= TARJETAS DE NACIONES ================= */
+
+.cardNacion{
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+.cardNacion-header{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.cardNacion-header h2{
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.cardNacion-header h3{
+    margin-top: 8px;
+    font-size: 1.3rem;
+    font-weight: normal;
+    opacity: .85;
+}
+
+.cardNacion-contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.cardNacion-contenido p{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin: 0;
+    padding: 16px 20px;
+
+    border-radius: 12px;
+}
+
+.cardNacion-label{
+    font-size: .85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cardNacion-valor{
+    font-size: 1.05rem;
+    line-height: 1.7;
+    white-space: pre-wrap;
+}
+
+/* Espacio extra para textos largos */
+
+.cardNacion-valor br{
+    margin-bottom: 8px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px){
+
+    .cardNacion{
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .cardNacion-header h2{
+        font-size: 2.2rem;
+    }
+
+    .cardNacion-header h3{
+        font-size: 1.1rem;
+    }
+
+    .cardNacion-contenido p{
+        padding: 14px;
+    }
+
+    .cardNacion-valor{
+        font-size: 1rem;
+    }
+
 }

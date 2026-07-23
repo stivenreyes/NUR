@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="../styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenamiento</title>
+</head>
+<body>
+       <div id="navbar-container"></div>
+
+
+
+ <h1>Sistema de Entrenamiento</h1>
+
+ <hr>
+
+<!-- ====================================================== -->
+<section>
+    <h2>Druida o bestia entrenando por su cuenta</h2>
+
+    <h3>Reglas</h3>
+    <ul>
+        <li>Solo puedes entrenar por tu cuenta <strong>una vez cada dos días</strong>.</li>
+        <li>El entrenamiento debe durar como mínimo <strong>1 hora</strong>.</li>
+        <li>El Master decidirá qué atributo utilizar según la habilidad que se desea aprender.</li>
+        <li>A discreción del Master, la dificultad puede recibir un modificador según la complejidad de la habilidad.</li>
+    </ul>
+
+    <h3>Bonificador según la dificultad de la habilidad</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tipo de habilidad</th>
+                <th>Bonificador</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Habilidad muy normal</td>
+                <td>×1</td>
+            </tr>
+            <tr>
+                <td>Habilidad común</td>
+                <td>×5</td>
+            </tr>
+            <tr>
+                <td>Habilidad rara</td>
+                <td>×10</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Tirada</h3>
+    <p>
+        Lanza el atributo indicado por el Master + <strong>3D6</strong>.
+    </p>
+
+    <h3>Resultado</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tirada</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0 - 8</td>
+                <td>No logras aprender.</td>
+            </tr>
+            <tr>
+                <td>9 - 12</td>
+                <td>Logras aprender. Obtienes <strong>2 EXP</strong>.</td>
+            </tr>
+            <tr>
+                <td>13 - 16</td>
+                <td>Logras aprender. Obtienes <strong>5 EXP</strong>.</td>
+            </tr>
+            <tr>
+                <td>17 - 20</td>
+                <td>Logras aprender. Obtienes <strong>10 EXP</strong>.</td>
+            </tr>
+            <tr>
+                <td>21 o más</td>
+                <td>Logras aprender. Obtienes <strong>15 EXP</strong>.</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <!-- ====================================================== -->
+    <section>
+        <h2>Druida entrenando a otro druida</h2>
+
+        <h3>Requisitos</h3>
+        <ul>
+            <li>Comunicación <strong>1 o más</strong>.</li>
+            <li>Solo puedes enseñar a druidas con un rango de hasta <strong>2 niveles inferior</strong> al tuyo.</li>
+            <li>Solo puedes entrenar <strong>una vez por semana</strong>.</li>
+        </ul>
+
+        <h3>Tirada</h3>
+        <p>
+            Lanza el atributo indicado por el Master + <strong>3D6</strong>.
+        </p>
+
+        <h3>Restricciones</h3>
+        <ul>
+            <li>No puedes enseñar técnicas o especialidades a druidas de otros roles.</li>
+            <li>Aunque no sea posible enseñar la técnica, el aprendiz siempre ganará la experiencia correspondiente.</li>
+        </ul>
+
+        <h3>Resultado</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tirada</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0 - 8</td>
+                    <td>No logras enseñar.</td>
+                </tr>
+                <tr>
+                    <td>9 - 12</td>
+                    <td>Le logras enseñar. Otorgas <strong>10 EXP</strong>.</td>
+                </tr>
+                <tr>
+                    <td>13 - 16</td>
+                    <td>Le logras enseñar. Otorgas <strong>50 EXP</strong>.</td>
+                </tr>
+                <tr>
+                    <td>17 - 20</td>
+                    <td>Le logras enseñar. Otorgas <strong>100 EXP</strong>.</td>
+                </tr>
+                <tr>
+                    <td>21 o más</td>
+                    <td>Le logras enseñar. Otorgas <strong>200 EXP</strong>.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- ====================================================== -->
+    <section>
+        <h2>Druida entrenando a su bestia vinculada</h2>
+
+        <h3>Requisitos</h3>
+        <ul>
+            <li>Entendimiento <strong>1 o más</strong>.</li>
+            <li>Solo puedes entrenar <strong>una vez por semana</strong>.</li>
+        </ul>
+
+        <h3>Tirada</h3>
+        <p>
+            Lanza el atributo indicado por el Master + <strong>3D6</strong>.
+        </p>
+
+        <h3>Restricciones</h3>
+        <ul>
+            <li>No puedes enseñar técnicas o especialidades si la bestia no posee habilidades similares.</li>
+            <li>Aun así, la bestia siempre recibirá la experiencia correspondiente.</li>
+        </ul>
+
+        <h3>Resultado</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tirada</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0 - 8</td>
+                    <td>No logras enseñar.</td>
+                </tr>
+                <tr>
+                    <td>9 - 12</td>
+                    <td>Le logras enseñar. Otorgas <strong>10 EXP</strong>.</td>
+                </tr>
+                <tr>
+                    <td>13 - 16</td>
+                    <td>Le logras enseñar. Otorgas <strong>50 EXP</strong>.</td>
+                </tr>
+                <tr>
+                    <td>17 - 20</td>
+                    <td>Le logras enseñar. Otorgas <strong>100 EXP</strong>.</td>
+                </tr>
+                <tr>
+                    <td>21 o más</td>
+                    <td>Le logras enseñar. Otorgas <strong>200 EXP</strong>.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- ====================================================== -->
+    <section>
+        <h2>Bestia vinculada entrenando a su druida</h2>
+
+        <h3>Requisitos</h3>
+        <ul>
+            <li>Entendimiento <strong>1 o más</strong>.</li>
+            <li>Solo puedes entrenar <strong>una vez por semana</strong>.</li>
+        </ul>
+
+        <h3>Tirada</h3>
+        <p>
+            Lanza el atributo indicado por el Master + <strong>3D6</strong>.
+        </p>
+
+        <h3>Restricciones</h3>
+        <ul>
+            <li>No puedes enseñar habilidades al druida si este no posee habilidades similares.</li>
+            <li>El druida siempre recibirá la experiencia correspondiente.</li>
+        </ul>
+
+        <h3>Resultado</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tirada</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0 - 8</td>
+                    <td>No logras enseñar.</td>
+                </tr>
+                <tr>
+                    <td>9 - 12</td>
+                    <td>Le logras enseñar. Otorgas <strong>10 EXP</strong>.</td>
+                </tr>
+                <tr>
+                    <td>13 - 16</td>
+                    <td>Le logras enseñar. Otorgas <strong>50 EXP</strong>.</td>
+                </tr>
+                <tr>
+                    <td>17 - 20</td>
+                    <td>Le logras enseñar. Otorgas <strong>100 EXP</strong>.</td>
+                </tr>
+                <tr>
+                    <td>21 o más</td>
+                    <td>Le logras enseñar. Otorgas <strong>200 EXP</strong>.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- ====================================================== -->
+    <section>
+        <h2>Bestia vinculada entrenando a otra bestia vinculada</h2>
+
+        <h3>Tirada para entenderse</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de especie</th>
+                    <th>Dificultad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Misma especie</td>
+                    <td>7 / 0</td>
+                </tr>
+                <tr>
+                    <td>Mamíferos</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Aves</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>Anfibios</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>Reptiles</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>Peces</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Crustáceos</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Moluscos</td>
+                    <td>18</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Tirada de entrenamiento</h3>
+        <p>
+            Lanza el atributo indicado por el Master + <strong>3D6</strong>.
+        </p>
+
+        <h3>Restricciones</h3>
+        <ul>
+            <li>No puedes enseñar habilidades a una bestia que no pueda utilizarlas.</li>
+            <li>La bestia entrenada siempre recibirá la experiencia correspondiente.</li>
+            <li>Solo puedes enseñar a bestias con hasta <strong>2 rangos inferiores</strong> al tuyo.</li>
+            <li>Solo puedes entrenar <strong>una vez por semana</strong>.</li>
+        </ul>
+
+        <h3>Resultado</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tirada</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0 - 8</td>
+                    <td>No logras enseñar.</td>
+                </tr>
+                <tr>
+                    <td>9 - 12</td>
+                    <td>Le logras enseñar. Otorgas <strong>10 EXP</strong>.</td>
+                </tr>
+                <tr>
+                    <td>13 - 16</td>
+                    <td>Le logras enseñar. Otorgas <strong>50 EXP</strong>.</td>
+                </tr>
+                <tr>
+                    <td>17 - 20</td>
+                    <td>Le logras enseñar. Otorgas <strong>100 EXP</strong>.</td>
+                </tr>
+                <tr>
+                    <td>21 o más</td>
+                    <td>Le logras enseñar. Otorgas <strong>200 EXP</strong>.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <hr>
+
+<!-- ====================================================== -->
+<section>
+    <h2>Druida entrenando a una bestia vinculada</h2>
+
+    <h3>Requisitos</h3>
+    <ul>
+        <li>Superar una dificultad de <strong>22</strong> usando <strong>Comunicación / Trato con animales</strong>.</li>
+        <li>Solo puedes entrenar <strong>una vez por semana</strong>.</li>
+    </ul>
+
+    <h3>Tirada</h3>
+    <p>
+        Lanza el atributo indicado por el Master + <strong>3D6</strong>.
+    </p>
+
+    <h3>Restricciones</h3>
+    <ul>
+        <li>No puedes enseñar técnicas o especialidades si la bestia no posee habilidades similares.</li>
+        <li>Aunque no pueda aprender la técnica, siempre recibirá la experiencia correspondiente.</li>
+    </ul>
+
+    <h3>Resultado</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Tirada</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0 - 8</td>
+                <td>No logras enseñar.</td>
+            </tr>
+            <tr>
+                <td>9 - 12</td>
+                <td>Le logras enseñar. Otorgas <strong>10 EXP</strong>.</td>
+            </tr>
+            <tr>
+                <td>13 - 16</td>
+                <td>Le logras enseñar. Otorgas <strong>50 EXP</strong>.</td>
+            </tr>
+            <tr>
+                <td>17 - 20</td>
+                <td>Le logras enseñar. Otorgas <strong>100 EXP</strong>.</td>
+            </tr>
+            <tr>
+                <td>21 o más</td>
+                <td>Le logras enseñar. Otorgas <strong>200 EXP</strong>.</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<hr>
+
+<!-- ====================================================== -->
+<section>
+    <h2>Investigador entrenando a una bestia vinculada</h2>
+
+    <h3>Requisito</h3>
+    <ul>
+        <li>Tener aprendido el talento <strong>Entrenar Bestias</strong>.</li>
+    </ul>
+
+    <h3>Talento: Entrenar Bestias</h3>
+
+    <p>
+        Conoces rutas de entrenamiento y puedes entrenar a tu bestia vinculada
+        o la de otro druida para hacerla más fuerte.
+    </p>
+
+    <p>
+        Si entrenas la bestia vinculada de otro druida, este deberá estar
+        presente durante el entrenamiento.
+    </p>
+
+    <ul>
+        <li>La tirada se realiza con <strong>Comunicación / Trato con animales + 3D6</strong>.</li>
+        <li>Puedes entrenar a una bestia <strong>una vez por semana</strong>.</li>
+        <li>Obtiene un entrenamiento adicional únicamente cuando alcanza <strong>Rango 5</strong> o <strong>Rango 8</strong>.</li>
+    </ul>
+
+    <h3>Resultado</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tirada</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0 - 8</td>
+                <td>No logras enseñar a la bestia vinculada.</td>
+            </tr>
+            <tr>
+                <td>9 - 12</td>
+                <td>Le logras enseñar.</td>
+            </tr>
+            <tr>
+                <td>13 - 16</td>
+                <td>
+                    Le logras enseñar y la bestia gana experiencia adicional:
+                    <strong>Rango ×1</strong>.
+                </td>
+            </tr>
+            <tr>
+                <td>17 - 20</td>
+                <td>
+                    Le logras enseñar y la bestia gana experiencia adicional:
+                    <strong>Rango ×3</strong>.
+                </td>
+            </tr>
+            <tr>
+                <td>21 o más</td>
+                <td>
+                    Le logras enseñar, la bestia gana
+                    <strong>Rango ×5</strong> de experiencia y el druida
+                    vinculado gana <strong>Rango ×3</strong> de experiencia.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Tiempo de entrenamiento</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nivel del talento</th>
+                <th>Duración</th>
+                <th>Efecto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Novato</td>
+                <td>1 hora</td>
+                <td>Experiencia = <strong>Rango ×5</strong> (Bestias de rango 1-4).</td>
+            </tr>
+            <tr>
+                <td>Experto</td>
+                <td>2 horas</td>
+                <td>Experiencia = <strong>Rango ×10</strong> (Bestias de rango 5-7).</td>
+            </tr>
+            <tr>
+                <td>Maestro</td>
+                <td>3 horas</td>
+                <td>Experiencia = <strong>Rango ×15</strong> (Bestias de rango 8-10).</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<hr>
+
+<!-- ====================================================== -->
+    <section>
+        <h2>Guia de combate entrenando a otro druida</h2>
+
+        <h3>Requisitos</h3>
+        <ul>
+            <li>Comunicación <strong>1 o más</strong>.</li>
+            <li>Solo puedes enseñar a druidas con un rango de hasta <strong>2 niveles inferior</strong> al tuyo.</li>
+            <li>Solo puedes entrenar <strong>una vez por semana</strong>.</li>
+        </ul>
+
+        <h3>Tirada</h3>
+        <p>
+            Lanza el atributo indicado por el Master + <strong>3D6</strong>.
+        </p>
+
+        <h3>Restricciones</h3>
+        <ul>
+            <li>No puedes enseñar técnicas o especialidades a druidas de otros roles.</li>
+            <li>Aunque no sea posible enseñar la técnica, el aprendiz siempre ganará la experiencia correspondiente.</li>
+        </ul>
+
+        <h3>Resultado</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tirada</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0 - 8</td>
+                    <td>No logras enseñar.</td>
+                </tr>
+                <tr>
+                    <td>9 - 12</td>
+                    <td>Le logras enseñar. Otorgas <strong>20 EXP</strong>.</td>
+                </tr>
+                <tr>
+                    <td>13 - 16</td>
+                    <td>Le logras enseñar. Otorgas <strong>70 EXP</strong>.</td>
+                </tr>
+                <tr>
+                    <td>17 - 20</td>
+                    <td>Le logras enseñar. Otorgas <strong>150 EXP</strong>.</td>
+                </tr>
+                <tr>
+                    <td>21 o más</td>
+                    <td>Le logras enseñar. Otorgas <strong>250 EXP</strong>.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+<button id="btn-arriba">↑</button>
+
+<a href="#" class="btn" onclick="history.back()">Volver</a>
+
+
+<script src="../01-tipos/navbar.js"></script>
+ <script src="../01-tipos/01-componentes.js"></script>  
+</body>
+</html>

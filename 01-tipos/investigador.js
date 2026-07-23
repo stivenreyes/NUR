@@ -135,6 +135,7 @@ let INVESTIGADOR = {
                     Conoces rutas de entrenamiento y puedes entrenar a tu bestia vinculada o la de otro druida, para que esta sea mas fuerte, 
                     para entrenar la bestia vinculada de otro druida, esta deberá estar con el druida vinculado<br>
                     Al entrenar con una bestia lanzas comunicación/trato con animales <br><br>
+                    Puedes entrenar a las bestias una vez por semana, o solo una vez adicional si llega a rango 5 o 8.<br><br>
                     0 - 8  No logras enseñar a la bestia vinculada.<br>
                     9 - 12  Le logras enseñar.<br>
                     13 - 16  Le logras enseñar y además le das mas experiencia a la bestia tu rango x 1 <br>
