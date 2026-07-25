@@ -27,7 +27,7 @@
     --font-size-4xl: 4rem;
 
     /* Anchos de tarjetas (unificados acá desde un :root duplicado) */
-    --ancho-card: 300px;
+    --ancho-card: 400px;
     --ancho-card-bestia: 380px;
     --ancho-item-card: 400px;
 
