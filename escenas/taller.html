@@ -307,11 +307,11 @@
 <h3>Dificultad</h3>
 <table>
     <tr><th>Nivel</th><th>Puntuación</th></tr>
-    <tr><td>Sencillo</td><td>2</td></tr>
-    <tr><td>Normal</td><td>4</td></tr>
-    <tr><td>Difícil</td><td>6</td></tr>
-    <tr><td>Muy difícil</td><td>9</td></tr>
-    <tr><td>Legendario</td><td>12</td></tr>
+    <tr><td>Sencillo</td><td>4</td></tr>
+    <tr><td>Normal</td><td>6</td></tr>
+    <tr><td>Difícil</td><td>7</td></tr>
+    <tr><td>Muy difícil</td><td>8</td></tr>
+    <tr><td>Legendario</td><td>14</td></tr>
 </table>
 
 <h2>Dificultad de la tirada</h2>
@@ -410,6 +410,166 @@
 <tr><td>16 - 20</td><td>Obtienes tres mejoras</td></tr>
 <tr><td>21+</td><td>Obtienes cuatro mejoras</td></tr>
 </table>
+
+```html
+<h2>⚒️ Mejoras de equipo</h2>
+
+<p>
+    Las mejoras permiten aumentar las capacidades de armas, armaduras y otros
+    objetos. Cada mejora tiene un costo en <strong>Mejoras</strong> y puede
+    incrementar los requisitos necesarios para utilizar el objeto.
+</p>
+
+<h2>🗡️ Armas</h2>
+
+<p>
+    Existen dos categorías de armas: <strong>armas largas</strong> y
+    <strong>armas cortas</strong>. Cada una posee mejoras diferentes.
+</p>
+
+<h3>Armas largas</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Mejora</th>
+            <th>Costo</th>
+            <th>Beneficio</th>
+            <th>Límite</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Alcance</td>
+            <td>1 Mejora</td>
+            <td>+2 metros de alcance.</td>
+            <td>Sin límite.</td>
+        </tr>
+        <tr>
+            <td>Daño</td>
+            <td>2 Mejoras</td>
+            <td>+1d6 de daño.</td>
+            <td>Máximo 2 veces.</td>
+        </tr>
+        <tr>
+            <td>Facilidad de uso</td>
+            <td>1 Mejora</td>
+            <td>+1 a las tiradas para usar el arma con precisión.</td>
+            <td>Sin límite.</td>
+        </tr>
+        <tr>
+            <td>Dureza</td>
+            <td>2 Mejoras</td>
+            <td>+2 de Dureza.</td>
+            <td>Sin límite.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Armas cortas</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Mejora</th>
+            <th>Costo</th>
+            <th>Beneficio</th>
+            <th>Límite</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Alcance</td>
+            <td>2 Mejoras</td>
+            <td>+1 metro de alcance.</td>
+            <td>Sin límite.</td>
+        </tr>
+        <tr>
+            <td>Daño</td>
+            <td>1 Mejora</td>
+            <td>+2d6 de daño.</td>
+            <td>Máximo 2 veces.</td>
+        </tr>
+        <tr>
+            <td>Facilidad de uso</td>
+            <td>2 Mejoras</td>
+            <td>+1 a las tiradas para usar el arma con Pelea.</td>
+            <td>Sin límite.</td>
+        </tr>
+        <tr>
+            <td>Dureza</td>
+            <td>1 Mejora</td>
+            <td>+3 de Dureza.</td>
+            <td>Sin límite.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Reglas para mejorar armas</h3>
+
+<ul>
+    <li>Un arma puede recibir hasta <strong>2 sesiones de mejoras</strong> con normalidad.</li>
+    <li>
+        A partir de la tercera sesión, el costo de las mejoras y su dificultad
+        se duplican.
+    </li>
+    <li>
+        Cada mejora aplicada aumenta en <strong>+1</strong> el requisito de
+        <strong>Fuerza</strong> para utilizar el arma.
+    </li>
+</ul>
+
+<hr>
+
+<h2>🛡️ Armaduras</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Mejora</th>
+            <th>Costo</th>
+            <th>Beneficio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Protección ligera</td>
+            <td>1 Mejora</td>
+            <td>+2d6 + 2 de Protección.</td>
+        </tr>
+        <tr>
+            <td>Protección pesada</td>
+            <td>2 Mejoras</td>
+            <td>+5d6 de Protección.</td>
+        </tr>
+        <tr>
+            <td>Aligerar</td>
+            <td>1 Mejora</td>
+            <td>Reduce en 2 el requisito de Constitución.</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<h2>📦 Otros objetos</h2>
+
+<ul>
+    <li>
+        Los objetos distintos de armas y armaduras pueden requerir
+        <strong>+1 de Constitución</strong> por cada mejora aplicada,
+        si el Director de Juego lo considera apropiado.
+    </li>
+    <li>
+        El Director de Juego puede usar las reglas anteriores como referencia
+        para crear mejoras personalizadas, asignando costos, bonificaciones y
+        requisitos según el tipo de objeto.
+    </li>
+</ul>
+```
+
+Hay una cosa que sí corregiría de diseño: **las armaduras están desbalanceadas**. Actualmente una mejora de **1** da **+2d6+2** de Protección (promedio **9**) y una mejora de **2** da **+5d6** (promedio **17,5**). Por solo una mejora adicional casi se duplica la protección, así que quizá convenga ajustar esos valores antes de publicar el reglamento.
+
 
 
 

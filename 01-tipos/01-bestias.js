@@ -555,9 +555,8 @@ let bestias = [
     Mas 5 en instinto, precision y detreza para artesania.<br><br>
 
     <strong> Mejora de artesano </strong> <br>
-    Armaduras +5d6 vida<br>
-    Armas +1d3 de dureza <br>
-    Armas +1 dado de daño <br><br>
+    Mas 4 a las tiradas y dificultades para mejorar creaciones <br>
+    <div><a href="escenas/taller.html" class="btn">Ir a taller</a></div> 
 
     <strong> Arma temporalmente bendecida </strong> <br>
     En dos turnos en medio de un combate un arma se puede volver mas fuerte mas 2d6 de daño

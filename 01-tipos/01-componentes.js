@@ -228,6 +228,16 @@ let armas = [
         manos: "1"
     },
     {
+        nombre: "Lanza corta",
+        tipo: "Arma compleja (pelea / fuerza) o (precision / percepcion) al ser lanzada",
+        dano: "1d6",
+        precio: "70L",
+        alcance: "2 o 5",
+        requisitos: "Fuerza 1",
+        dureza: "2",
+        manos: "2"
+    },
+    {
         nombre: "Arco corto",
         tipo: "Arma larga (precisión / percepción)",
         dano: "1d6",
@@ -256,7 +266,6 @@ let armas = [
         requisitos: "Ninguno",
         dureza: "1",
         manos: "1",
-        
     },
     {
         nombre: "Arco largo",
