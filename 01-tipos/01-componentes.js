@@ -179,6 +179,12 @@ function crearTarjeta(producto) {
                         <span class="valor requisitoTamano">${producto.requisitoTamano}</span>
                     </p>` : ""}
 
+                ${producto.descripcion ? `
+                    <p>
+                        <span class="label">Descripción:</span>
+                        <span class="valor descripcion">${producto.descripcion}</span>
+                    </p>` : ""}
+
 
                 ${producto.requisitoTipo ? `
                     <p>
@@ -786,6 +792,23 @@ let armadurasbestia = [
     }
 
 ];
+let miscelanea = [
+    {
+        nombre: "1 Material para artesania",
+        precio: "20 L",
+        tipo: "Normal",
+        descripcion: "Material para construir, mmejorar y reparar objetos",
+        contenido: "Huesos de bestias, pieles de criaturas..."
+    },
+    {
+        nombre: "1 Material para herbolaria",
+        precio: "20 L",
+        tipo: "Normal",
+        descripcion: "Material para crear pociones, venenos y antidotos",
+        contenido: "plantas, frutas secas, flores secas..."
+    },
+
+];
 
 /* ================= BOTON ================= */
 const btnArriba = document.getElementById("btn-arriba");
@@ -811,7 +834,7 @@ if (btnArriba) {
 
 /* ================= BUSCADOR GENERAL DE LA TIENDA ================= */
 
-let todosLosProductos = [...armas, ...pociones, ...bebidas, ...pergaminos, ...paquetes, ...armaduras, ...armadurasbestia];
+let todosLosProductos = [...armas, ...pociones, ...bebidas, ...pergaminos, ...paquetes, ...armaduras, ...armadurasbestia, ...miscelanea];
 
 /* ================= RENDER ================= */
 
@@ -822,6 +845,7 @@ let contenedorPergaminos = document.getElementById("contenedor-pergaminos");
 let contenedorPaquetes = document.getElementById("contenedor-paquetes");
 let contenedorArmaduras = document.getElementById("contenedor-armaduras");
 let contenedorArmadurasBestia = document.getElementById("contenedor-armadurasBestia");
+let contenedorMiscelaneas = document.getElementById("contenedor-miscelanea");
 
 if (contenedorArmas) {
     for (let arma of armas) {
@@ -863,6 +887,12 @@ if (contenedorArmaduras) {
 if (contenedorArmadurasBestia) {
     for (let armadurabestia of armadurasbestia) {
         contenedorArmadurasBestia.innerHTML += crearTarjeta(armadurabestia);
+    }
+}
+
+if (contenedorMiscelaneas) {
+    for (let item of miscelanea) {
+        contenedorMiscelaneas.innerHTML += crearTarjeta(item);
     }
 }
 
