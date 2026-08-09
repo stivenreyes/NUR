@@ -196,6 +196,16 @@ let BRUJO = {
           hechizos: []
         },
         {
+          nombre: "Nido de plantas 🌿",
+          descripcionGrimorio: "En los costados de los calderos nacen algunas plantas que sirven como materiales para el botanico .",
+          novato: " 1d6+ 1 (por dia) materiales de pociones de curación",
+          experto:  `1d6+ 1 (por dia) materiales de pociones de curación o 1d3+ 1 (por dia) materiales de venenos. <br> <br> 
+          totem recolector: puedes dejar un totem que recolecte materiales de pociones,empezara a tener efecto luego de media dia en un sector
+          2d6+ 1 (por dia) materiales de pociones de curación`,
+          maestro: "...",
+          hechizos: []
+        },
+        {
           nombre: "Pociones de dones 🌿",
           descripcionGrimorio: `Requisitos (Brujo botanico) <br> 
           Puedes crear tomar una pocion que da bonus en algunos atributos <br> 
