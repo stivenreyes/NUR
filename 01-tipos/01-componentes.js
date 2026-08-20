@@ -668,7 +668,7 @@ let armadurasbestia = [
     {
         nombre: "Casco de calabaza",
         precio: "40L",
-        proteccion: "5",
+        proteccion: "15",
         requisitos: "Tamaño 0 a 5, Bestia terrestre",
         tipoProteccion: "Normal",
         rango: "1"
@@ -677,7 +677,7 @@ let armadurasbestia = [
     {
         nombre: "Capa de hojas gruesas encantadas",
         precio: "50L",
-        proteccion: "15",
+        proteccion: "25",
         requisitos: "Tamaño 0 a 5, Bestia terrestre",
         tipoProteccion: "Mágica",
         rango: "1"
@@ -686,7 +686,7 @@ let armadurasbestia = [
     {
         nombre: "Mini casquito de calabaza",
         precio: "60L",
-        proteccion: "5",
+        proteccion: "15",
         requisitos: "Tamaño 0 a 5, Bestia aérea",
         tipoProteccion: "Normal",
         rango: "1"
@@ -695,7 +695,7 @@ let armadurasbestia = [
     {
         nombre: "Mini pechera ligera de piel encantada",
         precio: "70L",
-        proteccion: "15",
+        proteccion: "25",
         requisitos: "Tamaño 0 a 5, Bestia aérea",
         tipoProteccion: "Mágica",
         rango: "1"
@@ -704,8 +704,17 @@ let armadurasbestia = [
     {
         nombre: "Casco de corteza de árbol",
         precio: "60L",
-        proteccion: "10",
+        proteccion: "20",
         requisitos: "Tamaño 6 a 10, Bestia terrestre",
+        tipoProteccion: "Normal",
+        rango: "2"
+    },
+
+    {
+        nombre: "Casco de coral",
+        precio: "70L",
+        proteccion: "20",
+        requisitos: "Tamaño 6 a 10, Bestia acuatica",
         tipoProteccion: "Normal",
         rango: "2"
     },
@@ -722,7 +731,7 @@ let armadurasbestia = [
     {
         nombre: "Casco espinoso liviano",
         precio: "80L",
-        proteccion: "10",
+        proteccion: "20",
         requisitos: "Tamaño 6 a 10, Bestia aérea",
         tipoProteccion: "Normal",
         rango: "2"
@@ -731,7 +740,7 @@ let armadurasbestia = [
     {
         nombre: "Pechera de cucaracha encantada",
         precio: "90L",
-        proteccion: "15",
+        proteccion: "25",
         requisitos: "Tamaño 6 a 10, Bestia aérea",
         tipoProteccion: "Mágica",
         rango: "2"
@@ -740,7 +749,7 @@ let armadurasbestia = [
     {
         nombre: "Pechera de cuero de armadillo",
         precio: "80L",
-        proteccion: "15",
+        proteccion: "25",
         requisitos: "Tamaño 11 a 15, Bestia aérea",
         tipoProteccion: "Normal",
         rango: "3"
@@ -749,7 +758,7 @@ let armadurasbestia = [
     {
         nombre: "Casco espinoso encantado",
         precio: "90L",
-        proteccion: "20",
+        proteccion: "30",
         requisitos: "Tamaño 11 a 15, Bestia aérea",
         tipoProteccion: "Mágica",
         rango: "3"
@@ -758,7 +767,7 @@ let armadurasbestia = [
     {
         nombre: "Pechera de cuero de rino pesada",
         precio: "100L",
-        proteccion: "15",
+        proteccion: "25",
         requisitos: "Tamaño 11 a 15, Bestia terrestre",
         tipoProteccion: "Normal",
         rango: "3"
@@ -767,7 +776,7 @@ let armadurasbestia = [
     {
         nombre: "Gran casco de hueso encantado",
         precio: "110L",
-        proteccion: "20",
+        proteccion: "30",
         requisitos: "Tamaño 11 a 15, Bestia terrestre",
         tipoProteccion: "Mágica",
         rango: "3"
@@ -776,7 +785,7 @@ let armadurasbestia = [
     {
         nombre: "Gran casco de hueso",
         precio: "100L",
-        proteccion: "20",
+        proteccion: "30",
         requisitos: "Tamaño 16 a 20, Bestia terrestre",
         tipoProteccion: "Normal",
         rango: "4"
@@ -785,7 +794,7 @@ let armadurasbestia = [
     {
         nombre: "Gran casco de hueso aéreo",
         precio: "110L",
-        proteccion: "20",
+        proteccion: "30",
         requisitos: "Tamaño 16 a 20, Bestia aérea",
         tipoProteccion: "Normal",
         rango: "4"
@@ -808,6 +817,70 @@ let miscelanea = [
         contenido: "plantas, frutas secas, flores secas..."
     },
 
+];
+let comida = [
+    {
+        nombre: "Pan del abuelo",
+        precio: "20 L",
+        tipo: "Para druidas",
+        efectos: "+3 de aguante",
+        ingredientes: "2 materiales de comida",
+        requisitos: "Inteligencia/cocina dif 16",
+    },
+
+    {
+        nombre: "Brochetas de piel",
+        precio: "40 L",
+        tipo: "Para druidas",
+        efectos: "+10 de vida",
+        ingredientes: "4 materiales de comida",
+        requisitos: "Inteligencia/cocina dif 18",
+    },
+
+    {
+        nombre: "Frutas Salteadas al vapor",
+        precio: "50 L",
+        tipo: "Para druidas",
+        efectos: "+1 de esquiva",
+        ingredientes: "5 materiales de comida",
+        requisitos: "Inteligencia/cocina dif 18",
+    },
+
+    {
+        nombre: "Raiz de viento",
+        precio: "50 L",
+        tipo: "Para druidas",
+        efectos: "+2 de velocidad",
+        ingredientes: "5 materiales de comida",
+        requisitos: "Inteligencia/cocina dif 18",
+    },
+
+    {
+        nombre: "Crema de mocos de cerdo violeta con hongos cocidos",
+        precio: "50 L",
+        tipo: "Para bestias",
+        efectos: "+2 de esquiva y 2 unidades de confianza",
+        ingredientes: "5 materiales de comida",
+        requisitos: "Inteligencia/cocina dif 18",
+    },
+
+    {
+        nombre: "Puré de papa con ojos de sapos",
+        precio: "50 L",
+        tipo: "Para bestias",
+        efectos: "+20 de vida y 2 unidades de confianza",
+        ingredientes: "5 materiales de comida",
+        requisitos: "Inteligencia/cocina dif 18",
+    },
+
+    {
+        nombre: "Caldo de moscas verdes",
+        precio: "50 L",
+        tipo: "Para bestias",
+        efectos: "+2 de velocidad y 2 unidades de confianza",
+        ingredientes: "5 materiales de comida",
+        requisitos: "Inteligencia/cocina dif 18",
+    },
 ];
 
 /* ================= BOTON ================= */
@@ -834,7 +907,7 @@ if (btnArriba) {
 
 /* ================= BUSCADOR GENERAL DE LA TIENDA ================= */
 
-let todosLosProductos = [...armas, ...pociones, ...bebidas, ...pergaminos, ...paquetes, ...armaduras, ...armadurasbestia, ...miscelanea];
+let todosLosProductos = [...armas, ...pociones, ...bebidas, ...pergaminos, ...paquetes, ...armaduras, ...armadurasbestia, ...miscelanea, ...comida];
 
 /* ================= RENDER ================= */
 
@@ -846,6 +919,7 @@ let contenedorPaquetes = document.getElementById("contenedor-paquetes");
 let contenedorArmaduras = document.getElementById("contenedor-armaduras");
 let contenedorArmadurasBestia = document.getElementById("contenedor-armadurasBestia");
 let contenedorMiscelaneas = document.getElementById("contenedor-miscelanea");
+let contenedorComidas = document.getElementById("contenedor-comida");
 
 if (contenedorArmas) {
     for (let arma of armas) {
@@ -883,7 +957,6 @@ if (contenedorArmaduras) {
     }
 }
 
-
 if (contenedorArmadurasBestia) {
     for (let armadurabestia of armadurasbestia) {
         contenedorArmadurasBestia.innerHTML += crearTarjeta(armadurabestia);
@@ -893,6 +966,12 @@ if (contenedorArmadurasBestia) {
 if (contenedorMiscelaneas) {
     for (let item of miscelanea) {
         contenedorMiscelaneas.innerHTML += crearTarjeta(item);
+    }
+}
+
+if (contenedorComidas) {
+    for (let item of comida) {
+        contenedorComidas.innerHTML += crearTarjeta(item);
     }
 }
 
@@ -970,6 +1049,15 @@ if (buscador) {
             });
 
             renderProductos(resultado, contenedorArmadurasBestia);
+        }
+
+        if (contenedorComidas) {
+
+             let resultado = comida.filter(function(item) {
+                return comida.nombre.toLowerCase().includes(texto);
+            });
+
+            renderProductos(resultado, contenedorComidas);
         }
 
     });
