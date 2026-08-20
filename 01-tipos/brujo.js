@@ -198,7 +198,7 @@ let BRUJO = {
         {
           nombre: "Nido de plantas 🌿",
           descripcionGrimorio: "En los costados de los calderos nacen algunas plantas que sirven como materiales para el botanico .",
-          novato: " 1d6+ 1 (por dia) materiales de pociones de curación",
+          novato: " 1d3 (por cada 2 horas) materiales de pociones de curación, maximo 10 materiales",
           experto:  `1d6+ 1 (por dia) materiales de pociones de curación o 1d3+ 1 (por dia) materiales de venenos. <br> <br> 
           totem recolector: puedes dejar un totem que recolecte materiales de pociones,empezara a tener efecto luego de media dia en un sector
           2d6+ 1 (por dia) materiales de pociones de curación`,
@@ -212,8 +212,8 @@ let BRUJO = {
           puedes vincular a otros druidas y su bestia vinculada que tengan tipo de vinculo: compañero de sangre
           y compañero leal para tener el mismo bonus a la mitad redondeado para arriba. 
 
-          esta pociones solo pueden ser almacenadas en un caldero, y ocupan completamente el mismo. <br> 
-          Gastas 3 de nur, usas materiales de pociones o de nur y lanzas inteligencia / herbolaria <br>
+          Esta pociones solo pueden ser almacenadas en un caldero, y ocupan completamente el mismo, pero puede compartir espacio con una pocion de heridas pasadas. <br> 
+          Gastas 3 de nur, usas 2 materiales de pociones o de nur y lanzas inteligencia / herbolaria <br>
           0 - 8  No logras crear la pocion <br> 
           9 - 12  logras crear la pocion +1 al atributo elejido <br>
           13 - 16  logras crear la pocion +2 al atributo elejido <br>
@@ -240,8 +240,8 @@ let BRUJO = {
           Cuando se toma esa poción o se activa en el caso de las bestias, el ataque solo puede activarse una vez, 
           y será realizado por el Brujo o la Bestia usando el atributo correspondiente.`,
           
-          novato: "Puedes almacenar daño hecho por criaturas de rango de 1 a 5",
-          experto: "Puedes almacenar daño hecho por criaturas  de rango de 6 a 10",
+          novato: "Puedes almacenar daño hecho por criaturas de rango de 1 a 5 mas 2d6 al daño",
+          experto: "Puedes almacenar daño hecho por criaturas  de rango de 6 a 10 mas 4d6 al daño",
           maestro: "...",
           hechizos: []
         },
