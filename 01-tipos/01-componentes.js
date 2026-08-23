@@ -881,6 +881,15 @@ let comida = [
         ingredientes: "5 materiales de comida",
         requisitos: "Inteligencia/cocina dif 18",
     },
+
+    {
+        nombre: "Trenzas de orugas guerreras fritas",
+        precio: "50 L",
+        tipo: "Para bestias",
+        efectos: "+2 de pelea y 2 unidades de confianza",
+        ingredientes: "5 materiales de comida",
+        requisitos: "Inteligencia/cocina dif 18",
+    },
 ];
 
 /* ================= BOTON ================= */
