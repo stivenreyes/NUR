@@ -8,7 +8,13 @@ let CAOTICO = {
           nombre: "Loco del caos",
           descripcionGrimorio: "Especialista en destrucción mágica caótica y manipulación del nur.",
           novato: "Todo el daño que haces es mágico ",
-          experto: "Tus explosiones de nur ya no afectaran no solo a tu bestia sino hasta dos bestias vinculadas de tu elección<br> aprendes 2 hechizos uno novato y otro experto del grimorio loco del caos y si no tienes aprendida el talento, lo adquieres <br> Tus hechizos evolucionaran en: <br>Daño: +1d6 al daño <br> Distancia: +2 de distancia <br> Objetivos: +2 objetivos <br> Solo puedes elegir 1. ",
+          experto: `Tus explosiones de nur ya no afectaran no solo a tu bestia sino hasta dos bestias vinculadas de tu elección<br> <br> 
+          Aprendes 2 hechizos uno novato y otro experto del grimorio loco del caos y si no tienes aprendida el talento, lo adquieres <br> <br> 
+          Tus hechizos evolucionaran en: 
+          <br>Daño: +1d6 al daño 
+          <br> Distancia: +2 de distancia 
+          <br> Objetivos: +2 objetivos 
+          <br> Solo puedes elegir 1.`,
           maestro: "Mejora avanzada de control de explosiones (eliges un efecto)",
           hechizos: []
         },
@@ -35,10 +41,10 @@ let CAOTICO = {
             {
               nombreHechizo: "Explosión de nur",
               nivelHechizo: "Novato",
-              descripcion: "Explosión que afecta 3 objetivos en área",
+              descripcion: "Explosión que afecta 3 objetivos en área. haces 1d6 de daño mas inteligencia",
               tipoHechizo: "Ataque",
               costoMana: 2,
-              dificultad: 16,
+              dificultad: `16, 14 para esquivar `,
               alcanceMaximo: "8 m"
             },
             {

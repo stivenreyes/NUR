@@ -16,7 +16,8 @@ let GUERRERO = {
                     nombre: "Guía del combate",
                     descripcionGrimorio: "Coordinación táctica con aliados en combate.",
                     novato: "Tú y un aliado obtienen +1D6 daño; el bonus puede cambiar cada turno",
-                    experto: "Tú y un aliado obtienen +2D6 daño; puedes cambiar el bonus cada turno. Acción extra: detener enemigo, lanzar daño 2 veces y elegir el mejor",
+                    experto: `Tú y un aliado obtienen +2D6 daño, puedes cambiar el bonus cada turno.<br><br>
+                     Acción extra: detienes un  enemigo que este a minimo 1m de forma automatica, otro aliado de tu eleccion cuando ataque, la vitima tendra -2 a esquiva. y el daño se podra relanzar 2 veces y elegir el mejor. despues del ataque la victima se soltara`,
                     maestro: "Tú y un aliado obtienen +3D6 daño; puedes cambiar el bonus cada turno. Acción extra igual. Aliado puede repetir hasta 2 ataques fallidos",
                     hechizos: []
                 }
