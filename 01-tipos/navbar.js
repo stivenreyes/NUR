@@ -17,13 +17,18 @@ const base =
 
     navbarContainer.innerHTML = `
         <nav class="navbar solid-nav">
+<div class="navbar-top">
+    <div class="logo">
+        <a href="${base}index.html">
+            <img 
+                src="${base}otrasimagenes/NUR%20logo%202%20enero%202025%203.png"
+                class="logo-img"
+                alt="Logo NUR"
+            >
+        </a>
+    </div>
+</div>
 
-            <div class="navbar-top">
-                <div class="logo">
-                    <a href="${base}index.html">
-                        <img src="${base}otrasimagenes/Nur logo 2 enero 2025 3.png" class="logo-img">
-                    </a>
-                </div>
 
                 <button class="menu-toggle" id="menu-toggle">☰</button>
             </div>
