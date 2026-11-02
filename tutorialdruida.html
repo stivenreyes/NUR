@@ -4,13 +4,13 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial druida</title>
+    <title>Tutorial Nurkano</title>
 </head>
 <body>
 
         <div id="navbar-container"></div>
 
-<h1>Crear un personaje</h1>
+<h1>Crear un Nurkano</h1>
 
 
 
@@ -29,18 +29,18 @@
     <p>Detalles iniciales</p>
     
 <section>
-    <h2>Elige tu Rol</h2>
+    <h2>Elige tu Senda</h2>
 
     <p>
-        Selecciona uno de los roles disponibles para tu personaje y escribe su nombre
+        Selecciona uno de las sendas disponibles para tu Druida y escribe su nombre
         en la hoja de personaje.
     </p>
 
     <p>
-        Si necesitas más información sobre cada rol, puedes consultar la lista de roles
+        Si necesitas más información sobre cada Senda, puedes consultar la lista de sendas
         mediante el botón disponible más abajo.
     </p>
-    <button id="btn-anterior" onclick="window.location.href='roles.html'">Lista de roles</button>
+    <button id="btn-anterior" onclick="window.location.href='roles.html'">Lista de sendas</button>
 
 <button onclick="window.location.href='flujo.html'">
     Ver flujo de creación de personaje
@@ -50,16 +50,16 @@
 
 
 <section>
-    <h2>Elige tu especialidad y un talento relacionado con tu rol</h2>
+    <h2>Elige tu especialidad y un talento relacionado con tu Senda</h2>
 
     <p>
-        Selecciona una de las dos especializaciones disponibles dentro del rol que hayas elegido,
+        Selecciona una de las dos especializaciones disponibles dentro del Senda que hayas elegido,
         y escoge también un talento. Ten en cuenta que algunos talentos requieren pertenecer a una
         especialidad específica.
     </p>
 
     <p>
-        Puedes regresar al rol que elegiste utilizando los botones disponibles a continuación.
+        Puedes regresar al Senda que elegiste utilizando los botones disponibles a continuación.
     </p>
 
     <!-- BOTONES DE ROLES -->
@@ -78,6 +78,8 @@
 
     </div>
 </section>
+
+
 
 
 
@@ -163,7 +165,7 @@
 
     <p>
         Reparte los siguientes 9 valores entre los 9 atributos de tu personaje.
-        Ten en cuenta cuáles serán los atributos más utilizados según el rol que hayas elegido.
+        Ten en cuenta cuáles serán los atributos más utilizados según el Senda que hayas elegido.
     </p>
 
     <ul>
@@ -241,7 +243,7 @@
         </p>
 
         <p>
-            Para todos los roles excepto el <strong>Hechicero Caótico</strong>,
+            Para todos los sendas excepto el <strong>Hechicero Caótico</strong>,
             este atributo se utiliza para activar hechizos.
         </p>
 
@@ -295,7 +297,7 @@
         </p>
 
         <p>
-            Para todos los roles excepto el <strong>Hechicero Caótico</strong>,
+            Para todos los sendas excepto el <strong>Hechicero Caótico</strong>,
             la Voluntad determina la capacidad de enfocar el Nur.
             En el caso del Hechicero Caótico, este atributo se utiliza para activar los hechizos.
         </p>
@@ -303,12 +305,12 @@
 </section>
 
 <section>
-    <h2>Atributos recomendados según el rol</h2>
+    <h2>Atributos recomendados según el Senda</h2>
 
     <table>
         <thead>
             <tr>
-                <th>Rol</th>
+                <th>Senda</th>
                 <th>Atributos recomendados</th>
                 <th>Atributo prioritario</th>
             </tr>
@@ -426,7 +428,7 @@
     <p>
         Orgullosos y resistentes, consideran la inminente congelación una prueba más que deben superar.
         Para ellos, abandonar su tierra es una deshonra; solo quienes permanecen y resisten tienen
-        derecho a llamarse verdaderos druidas.
+        derecho a llamarse verdaderos Nuritas.
     </p>
 
     <blockquote>
@@ -541,7 +543,7 @@
     </div>
 
     <p>
-        Los druidas de la nación <strong>Naka-sha</strong> habitan en troncos huecos o entre las ramas de árboles
+        Los Nuritas de la nación <strong>Naka-sha</strong> habitan en troncos huecos o entre las ramas de árboles
         ancestrales. Su nación es tan diversa como la fauna que protege, y criaturas de toda clase
         conviven en un delicado equilibrio.
     </p>
@@ -588,7 +590,7 @@
             en hojas, musgos y ramas.
         </li>
         <li>
-            <strong>Nombres compartidos:</strong> En ocasiones, un druida y su bestia comparten el mismo
+            <strong>Nombres compartidos:</strong> En ocasiones, un Nurkano y su bestia comparten el mismo
             nombre, símbolo de un vínculo espiritual excepcional.
         </li>
     </ol>
@@ -727,15 +729,6 @@
 
     <h2>Paso 5</h2>
     <p>Detalles adicionales</p>
-    <!-- ================= ATRIBUTOS ================= -->
-
-<h2>⚙️ Sistema de Atributos</h2>
-
-<ul>
-    <li>Habilidades 0–5: 1 avance</li>
-    <li>Habilidades 6–8: 2 avances</li>
-    <li>Habilidades 9+: 3 avances</li>
-</ul>
 
 <h3>❤️ Vida (Constitución)</h3>
 
@@ -838,20 +831,238 @@
 
 
 
-</div>
 
+
+    <h2>Elige tu equipo inicial depende de tu Senda</h2>
+
+
+
+<button id="btn1">Guerrero</button>
+<button id="btn2">Explorador</button>
+<button id="btn3">Hechicero elemental</button>
+<button id="btn4">Investigador</button>
+<button id="btn5">Mediador</button>
+<button id="btn6">Brujo</button>
+<button id="btn7">Bardo</button>
+<button id="btn8">Ritualista</button>
+<button id="btn9">Artesano</button>
+<button id="btn10">Hechicero caótico</button>
+
+<div id="info"></div>
+
+</div>
 
 <div id="paso6" class="paso">
 
-<p id="texto-paso">Paso 6 de 7</p> 
+    <p id="texto-paso">Paso 6 de 7</p>
 
     <h2>Paso 6</h2>
+
+    <section>
+        <h2>Trasfondo</h2>
+
+        <p>
+            El trasfondo representa el pasado de tu personaje: de dónde viene,
+            quiénes fueron importantes para él y qué acontecimientos lo llevaron
+            hasta el momento actual.
+        </p>
+
+        <p>
+            No es necesario responder todas las preguntas. Elige las que más te
+            interesen y utiliza tus respuestas para construir una historia que
+            encaje con el mundo de la campaña.
+        </p>
+
+        <h3>¿De dónde viene?</h3>
+
+        <p>
+            Elige una de las siguientes opciones o lanza un dado para decidirlo al azar:
+        </p>
+
+        <ul>
+            <li>Una aldea destruida.</li>
+            <li>Una comunidad donde fue esclavo.</li>
+            <li>Una aldea nueva, llena de esperanza.</li>
+            <li>La aldea con más honor de la nación.</li>
+            <li>Una aldea llena de profecías.</li>
+            <li>La aldea de los mejores.</li>
+            <li>Una aldea que tiene un favor o pacto con la Gran Alianza.</li>
+            <li>Una aldea pequeña y subestimada.</li>
+        </ul>
+
+        <p>
+            Puedes darle más profundidad a este punto leyendo sobre la nación
+            a la que pertenece tu personaje y pensando en cómo su cultura
+            influyó en su forma de ser.
+        </p>
+        
+  <button class="tab-btn" onclick="window.location.href='naciones.html'">
+  Naciones
+</button>
+
+        <h3>Personas importantes</h3>
+
+        <p>
+            Elige <strong>2 NPC principales</strong> de su pasado, o
+            <strong>1 NPC principal y 2 secundarios</strong>.
+        </p>
+
+        <ul>
+            <li>Un familiar.</li>
+            <li>Un amigo.</li>
+            <li>Un maestro o mentor.</li>
+            <li>Un rival.</li>
+            <li>Un enemigo.</li>
+        </ul>
+
+        <h3>Enemigos y conflictos</h3>
+
+        <p>
+            ¿Tu personaje tiene algún enemigo? Piensa por qué se convirtieron
+            en enemigos y qué quiere conseguir cada uno.
+        </p>
+
+        <p>
+            Este enemigo puede estar relacionado con la campaña actual.
+            Si quieres que tenga un papel importante en la historia,
+            <strong>consúltalo con tu Director de Juego</strong>.
+        </p>
+
+        <h3>Lugares importantes</h3>
+
+        <p>
+            Elige hasta <strong>3 lugares especiales</strong> de su pasado.
+            Pueden ser su antigua aldea, un bosque sagrado, un templo,
+            el lugar donde ocurrió una tragedia o cualquier sitio que
+            haya marcado su vida.
+        </p>
+
+        <h3>Algo sin resolver</h3>
+
+        <p>
+            Piensa en algo que tu personaje dejó pendiente:
+            una promesa, una deuda, una persona desaparecida, una traición
+            o un misterio que todavía no ha podido resolver.
+        </p>
+
+        <p>
+            También puedes dejar algún secreto que tu personaje desconozca
+            y permitir que el <strong>Director de Juego</strong> decida la verdad
+            y la revele durante la campaña.
+        </p>
+
+        <h3>Objetivo</h3>
+
+        <p>
+            ¿Qué quiere conseguir tu personaje ahora?
+            Puede ser algo personal, algo relacionado con su familia,
+            su aldea, su nación o incluso algo que todavía no comprende.
+        </p>
+
+  <h3>Temporada 4: Nur en los pasos</h3>
+
+  <h3>Premisa</h3>
+  <p>Hace días, un mensaje de Nahomenur-Lua, el ciervo legendario de Naka-Sha, recorrió la nación de los bosques. Llegó a Nuritas y bestias vinculadas por igual, y no era una orden, era una petición:</p>
+
+  <blockquote>
+    <p>La rana Shapelarkuva-Lua salió rumbo a la isla de hielo. Debía curar una aldea enferma y un ecosistema que se apaga. Pasaron los días y ningún bosque, río ni bestia ha sabido de ella. Sigan su rastro por toda Naka-Sha. Los espero en la aldea de Ken.</p>
+  </blockquote>
+
+  <p>Que una bestia legendaria pida ayuda en vez de mandar ya es una señal de que algo anda mal. Quien responde sabe que la recompensa es grande, pero también que la rana no desaparece sin motivo.</p>
+</section>
+
+<hr>
+
+  <h3>Motivos para tomar la misión</h3>
+  <p>Elige el motivo que mejor encaje con tu personaje, o propón uno propio.</p>
+
+  <ol>
+    <li>Has cometido una falta y tu líder o una bestia guardiana te ordenó cumplir esta misión como penitencia.</li>
+    <li>Tu bestia necesita obedecer a la bestia legendaria de Naka-Sha y esta es la oportunidad de hacerlo.</li>
+    <li>Eres de las aldeas del sur de Amara, o alguien que quieres vive allá, y la rana tiene que llegar hasta ellos.</li>
+    <li>Necesitas una aventura importante que te dé renombre y haga que te recuerden en tu aldea o en tu nación.</li>
+    <li>Quieres encontrar a la rana y pedirle que cure a un familiar o conocido.</li>
+    <li>Escuchaste el rumor de que un Nurkano, planta o bestia poderosa la secuestró y quieres cazar al responsable.</li>
+    <li>Debes completar esta misión para que una pareja te acepte.</li>
+    <li>Buscas honor para tu clan, tu familia o tu nación.</li>
+    <li>Quieres explorar Naka-Sha desde una misión importante y con respaldo de una bestia legendaria.</li>
+    <li>Quieres lujos a cambio: las recompensas son bastantes y sabes lo que puedes pedir.</li>
+    <li>Otra: coméntasela al máster.</li>
+  </ol>
+</section>
+
+        <h3>Un momento que lo marcó</h3>
+
+        <p>
+            Elige un acontecimiento importante que haya cambiado la forma
+            de ser de tu personaje. Puede haber sido una tragedia,
+            una victoria, una traición, el descubrimiento de sus poderes
+            o el encuentro con alguien especial.
+        </p>
+
+        <h3>Algo especial</h3>
+
+        <p>
+            Puedes darle una característica única que lo conecte con el mundo:
+            un vínculo con un animal, un familiar poderoso, una marca misteriosa,
+            un objeto heredado o una conexión con una criatura o espíritu.
+        </p>
+
+        <p>
+            Si esta característica puede darle una ventaja importante,
+            <strong>consúltalo con tu Director de Juego</strong>.
+        </p>
+
+        <h3>¿Qué podría ocurrir en el futuro?</h3>
+
+        <p>
+            Puedes dejar preparado un evento que el Director de Juego pueda
+            utilizar durante la campaña: el regreso de un enemigo, una profecía
+            que comienza a cumplirse, la aparición de alguien de su pasado
+            o un problema relacionado con su antigua aldea.
+        </p>
+
+        <h3>Facciones</h3>
+
+        <p>
+            Finalmente, puedes elegir una facción relacionada con el pasado
+            de tu personaje. Puede haber sido miembro, aliado, enemigo,
+            antiguo miembro o simplemente tener una deuda con ella.
+        </p>
+
+        <p>
+            Recuerda que algunas facciones pueden tener requisitos especiales,
+            como pertenecer a una nación o especie determinada.
+            Si tienes dudas, consulta con tu Director de Juego.
+        </p>
+
+        <p>
+            <strong>No necesitas crear una historia enorme.</strong>
+            Con un lugar de origen, algunas personas importantes, un objetivo
+            y algo que haya quedado sin resolver, ya tienes una buena base
+            para comenzar la campaña.
+        </p>
+  <button class="tab-btn" onclick="window.location.href='facciones.html'">
+  Facciones
+</button>
+
+
+    </section>
+
+</div>
+
+
+<div id="paso7" class="paso">
+
+<p id="texto-paso">Paso 7 de 8</p> 
+
+    <h2>Paso 7</h2>
 <section>
-<h2>Nombra tu druida</h2>
+<h2>Nombra tu Nurkano</h2>
 
 
 
-<p>Cada nación tiene raíces propias del Léxico Tribal. El nombre de tu druida no es solo un sonido: se arma combinando una raíz de nación/género con una o dos raíces elegidas libremente, y termina con la raíz de familia de tu nación separada por un guion. El resultado siempre tiene un significado real que puedes buscar en el Abecedario Léxico.</p>
+<p>Cada nación tiene raíces propias del Léxico Tribal. El nombre de tu Nurkano no es solo un sonido: se arma combinando una raíz de nación/género con una o dos raíces elegidas libremente, y termina con la raíz de familia de tu nación separada por un guion. El resultado siempre tiene un significado real que puedes buscar en el Abecedario Léxico.</p>
 
 <p><strong>Fórmula del nombre:</strong></p>
 <p>[Raíz de Nación y Género] + [Raíz elegida] + [Raíz opcional] - [Familia]</p>
@@ -897,6 +1108,10 @@
 <li>Kafur-Tel — "Río Feroz, de la Enseñanza"</li>
 <li>Shabor-Ivar — "Calor Rojo, del Camino"</li>
 <li>Naveraki-Dek — "Árbol Salvaje de Poder, del Baile"</li>
+<li>Namora-Ivar — "Árbol Paciente, del Camino"</li>
+<li>Kasuta-Ivar — "Río Sigiloso, del Camino"</li>
+<li>Kabarki-Dek — "Río Oscuro de Poder, del Baile"</li>
+<li>Shayarnor-Dek — "Calor de Luz del Cielo, del Baile"</li>
 </ul>
 </section>
 
@@ -924,8 +1139,12 @@
 <ul>
 <li>Tasil-Mor — "Mar Plateado, de Agua"</li>
 <li>Ralir-Vela — "Isla Leal, del Amor"</li>
-<li>Sabir-Tir — "Sol Blanco, del Trueno"</li>
-<li>Tamorala-Vela — "Mar de Agua Salvaje, del Amor"</li>
+<li>Sayen-Tir — "Sol Blanco, del Trueno"</li>
+<li>Tamorvera-Vela — "Mar de Agua Salvaje, del Amor"</li>
+<li>Talun-Mor — "Mar de Luna, del Agua"</li>
+<li>Rahur-Kor — "Isla Agresiva, de la Bestia"</li>
+<li>Rasuta-Tir — "Isla Sigilosa, del Trueno"</li>
+<li>Sazhur-Vela — "Sol de Tormenta, del Amor"</li>
 </ul>
 </section>
 
@@ -953,8 +1172,14 @@
 <ul>
 <li>Drakbara-Gar — "Frío Territorial, de la Roca"</li>
 <li>Gorhur-Dor — "Cueva Agresiva, del Juramento"</li>
-<li>Krakla-Thar — "Cresta de Garras, Druida"</li>
+<li>Kraspa-Thar — "Cresta de Espinas, Druida"</li>
 <li>Drakskar-Ro — "Frío con Cicatriz, del Guerrero"</li>
+<li>Draklir-Ro — "Frío Leal, del Guerrero"</li>
+<li>Gorbarki-Dor — "Cueva Oscura de Poder, del Juramento"</li>
+<li>Krawir-Dor — "Cresta Inteligente, del Juramento"</li>
+<li>Drakagro-Gar — "Frío de Montaña, de la Roca"</li>
+<li>Goragro-Dor — "Cueva de Montaña, del Juramento"</li>
+<li>Kraagro-Thar — "Cresta de Montaña, Druida"</li>
 </ul>
 </section>
 
@@ -981,9 +1206,13 @@
 <p><strong>Ejemplos de nombres completos:</strong></p>
 <ul>
 <li>Zasuta-San — "Viento Sigiloso, de la Sed"</li>
-<li>Hakuva-Vak — "Arena Curiosa, de Fuego"</li>
+<li>Hawir-Vak — "Arena Inteligente, del Fuego"</li>
 <li>Shamora-En — "Calor Paciente, de la Búsqueda"</li>
 <li>Zayarash-Ivar — "Viento Amarillo Ceniza, del Camino"</li>
+<li>Zaluma-En — "Viento de la Noche, de la Búsqueda"</li>
+<li>Haborki-Ivar — "Arena Roja de Poder, del Camino"</li>
+<li>Shagol-Vak — "Calor Dorado, del Fuego"</li>
+<li>Hahur-Vak — "Arena Agresiva, del Fuego"</li>
 </ul>
 </section>
 
@@ -993,9 +1222,9 @@
     <p>
         Los segundos nombres son otorgados por druidas o bestias poderosas de Amara.
         Representan crecimiento espiritual y conexión con el mundo.
-        Normalmente nadie tiene un segundo nombre (Nisiquiera la primera silaba) hasta ser minimo ser un druida experto (rango 5) 
+        Normalmente nadie tiene un segundo nombre (Nisiquiera la primera silaba) hasta ser minimo ser un Nurkano experto (rango 5) 
 
-        Y este nombre solo es mencionado es cosas muy importante, mencionarlo en cualquier momento hace perder su importante y pierde respeto y reconocimiento hacia el druida
+        Y este nombre solo es mencionado es cosas muy importante, mencionarlo en cualquier momento hace perder su importante y pierde respeto y reconocimiento hacia el Nurkano
     </p>
 </section>
 
@@ -1014,7 +1243,7 @@
 
 <section>
     <h2>Núcleos</h2>
-    <p>ru, ma, lo, kei, thu, sha, ven, rai, kor, nur, zi, dra</p>
+    <p>ru, ma, lo, kei, thu, sha, ven, rai, kor, Nur, zi, dra</p>
 </section>
 
 <section>
@@ -1029,7 +1258,7 @@
     <p>Rra-ma-k → Rramak, Kro-rai-n → Krorain, Dru-thu-r → Druthur, Gha-kor-th → Ghakorth, Zek-ven-l → Zekvenl</p>
 
     <h3>Mujeres</h3>
-    <p>Yak-lo-r → Yaklor, Nya-ma-th → Nyamath, Shae-rai-m → Shaeraim, Tsi-ven-k → Tsivenk, Mya-nur-l → Myanurl</p>
+    <p>Yak-lo-r → Yaklor, Nya-ma-th → Nyamath, Shae-rai-m → Shaeraim, Tsi-ven-k → Tsivenk, Mya-Nur-l → Myanurl</p>
 
     <h3>Neutros</h3>
     <p>Cry-zi-r → Cryzir, Xae-ma-th → Xaemath, Qri-kor-m → Qrikorm, Yth-ven-l → Ythvenl, Vhy-dra-k → Vhydrak</p>
@@ -1045,18 +1274,18 @@
 </div>
 
 <!-- ================= PASO 7 ================= -->
- <div id="paso7" class="paso">
+ <div id="paso8" class="paso">
 
-<p id="texto-paso">Paso 7 de 7</p> 
+<p id="texto-paso">Paso 8 de 8</p> 
 
-    <h2>Paso 7</h2>
+    <h2>Paso 8</h2>
 
     <h2>Final</h2>
 
     <section>
 
         <p>
-            ¡Felicidades tu druida esta listo para la aventura!</p> 
+            ¡Felicidades tu Nurkano esta listo para la aventura!</p> 
         
                 <p>Continua ahora con la creación de tu bestia</p> 
                <div><a href="tutorialbestia.html" class="btn">Crear bestia</a></div>
@@ -1077,6 +1306,9 @@
 <div><a href="tutorialdruidabestia.html" class="btn">Salir del tutorial</a></div>
 
 
+
+<script src="equipo.js"></script>
+<script src="01-tipos/equipofuncion.js"></script>
 <script src="01-tipos/navbar.js"></script>
 <script src="01-tipos/Tutorial.js"></script>
     

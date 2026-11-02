@@ -52,7 +52,7 @@ let EXPLORADOR = {
                 {                 
                     nombre: "Estilo arco",
                     descripcionGrimorio: "Requisitos (Explorador guía del silencio)",
-                    novato: "+2 ataque con arcos. Flechas con hilo (10m) gastando nur para activar bomba",
+                    novato: "+2 ataque con arcos. Flechas con hilo (10m) gastando Nur para activar bomba",
                     experto: "+4 ataque. Dispara 2 flechas (+3 daño), no combinar tipos",
                     maestro: "...",
                     hechizos: []                   
@@ -86,23 +86,23 @@ let EXPLORADOR = {
                     descripcionGrimorio: "Manipulación del tiempo en combate.",
                     novato: "1 vez/día acción extra",
                     experto: "Puedes salvar a alguien en el último momento",
-                    maestro: "Evitas fuego amigo gastando 5 nur",
+                    maestro: "Evitas fuego amigo gastando 5 Nur",
                     hechizos: []                   
                 },
                 {                 
                     nombre: "Nur en los pies",
-                    descripcionGrimorio: "Movilidad mejorada con energía nur.",
-                    novato: "Caminar sobre agua (1d6 turnos) o evitar caídas gastando nur",
+                    descripcionGrimorio: "Movilidad mejorada con energía Nur.",
+                    novato: "Caminar sobre agua (1d6 turnos) o evitar caídas gastando Nur",
                     experto: "Saltar hasta 3 veces tu tamaño",
-                    maestro: "Evitar empujones (-1 nur). Caídas sin daño (-7 nur o -12 con aliado)",
+                    maestro: "Evitar empujones (-1 Nur). Caídas sin daño (-7 Nur o -12 con aliado)",
                     hechizos: []                   
                 },
                 {                 
-                    nombre: "Brazo de arquero de nur",
+                    nombre: "Brazo de arquero de Nur",
                     descripcionGrimorio: "Requisitos (Explorador guía del silencio)",
                     novato: "Flechas mágicas +2, daño 2d6 + precisión, alcance 10m",
                     experto: "Alcance hasta 100m, daño 3d6 + precisión, +3 ataque, bestia puede canalizar habilidades",
-                    maestro: "Hace daño y quema nur del objetivo (máx 10)",
+                    maestro: "Hace daño y quema Nur del objetivo (máx 10)",
                     hechizos: []                   
                 },
                 {                 

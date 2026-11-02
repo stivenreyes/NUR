@@ -21,7 +21,7 @@ const base =
             <div class="navbar-top">
                 <div class="logo">
                     <a href="${base}index.html">
-                        <img src="${base}otrasimagenes/NUR logo 2 enero 2025 2.png" class="logo-img">
+                        <img src="${base}otrasimagenes/Nur logo 2 enero 2025 3.png" class="logo-img">
                     </a>
                 </div>
 
@@ -29,21 +29,22 @@ const base =
             </div>
 
             <ul class="desktop-menu">
-                <li><a href="${base}roles.html">Roles</a></li>
+                <li><a href="${base}roles.html">Sendas</a></li>
                 <li><a href="${base}bestias.html">Bestias</a></li>
-                <li><a href="${base}tutorialdruidabestia.html">Crear PJ/BE</a></li>
+                <li><a href="${base}tutorialdruidabestia.html">Crear PJ/BJ</a></li>
                 <li><a href="${base}tienda.html">Tienda</a></li>
                 <li><a href="${base}exp.html">Exp</a></li>
                 <li><a href="${base}enfoques.html">Enfoques</a></li>
                 <li><a href="${base}escenas.html">Escenas</a></li>
                 <li><a href="${base}lore.html">Lore</a></li>
                 <li><a href="${base}reglas.html">Reglas</a></li>
+                <li><a href="${base}rolear.html">Rolear</a></li>
             </ul>
 
             <ul class="mobile-menu" id="mobile-menu">
-                <li><a href="${base}roles.html">Roles</a></li>
+                <li><a href="${base}roles.html">Sendas</a></li>
                 <li><a href="${base}bestias.html">Bestias</a></li>
-                <li><a href="${base}tutorialdruidabestia.html">Crear PJ/BE</a></li>
+                <li><a href="${base}tutorialdruidabestia.html">Crear PJ/BJ</a></li>
                 <li><a href="${base}tienda.html">Tienda</a></li>
                 <li><a href="${base}exp.html">Exp</a></li>
                 <li><a href="${base}enfoques.html">Enfoques</a></li>

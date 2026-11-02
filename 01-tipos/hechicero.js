@@ -175,7 +175,7 @@ let HECHICERO = {
         {
           nombreHechizo: "Amigo de rayo",
           nivelHechizo: "Novato",
-          descripcion: "Puedes brindarle a un aliado tu electricidad por toda una escena. para ayudarte a encadenar ataques o negar el daño de los tuyos, el aliado puede gastar 1 de nur para eliminar este efecto en el. ",
+          descripcion: "Puedes brindarle a un aliado tu electricidad por toda una escena. para ayudarte a encadenar ataques o negar el daño de los tuyos, el aliado puede gastar 1 de Nur para eliminar este efecto en el. ",
           tipoHechizo: "Estrategico",
           costoMana: "2 - 0 para bestias",
           dificultad: "12",
@@ -202,7 +202,7 @@ let HECHICERO = {
         {
           nombreHechizo: "Moverte como rayo",
           nivelHechizo: "Experto",
-          descripcion: "En un radio de 7 metros puedes moverte al instante. <br> gastando 5 de nur puedes activar este hechizo tan rapido que no contara como acción ",
+          descripcion: "En un radio de 7 metros puedes moverte al instante. <br> gastando 5 de Nur puedes activar este hechizo tan rapido que no contara como acción ",
           tipoHechizo: "Ataque",
           costoMana: "3 o 5",
           dificultad: "12",
@@ -229,7 +229,7 @@ let HECHICERO = {
         {
           nombreHechizo: "Bestia y druida unidos",
           nivelHechizo: "Experto",
-          descripcion: "Tu bestia y tu, podran teletransportarsen en el sitio del otro o intercambiar sus lugares <br> gastando 5 de nur puedes activar este hechizo tan rapido que no contara como acción ",
+          descripcion: "Tu bestia y tu, podran teletransportarsen en el sitio del otro o intercambiar sus lugares <br> gastando 5 de Nur puedes activar este hechizo tan rapido que no contara como acción ",
           tipoHechizo: "Estrategico",
           costoMana: "3 - 5",
           dificultad: "12",
@@ -437,7 +437,7 @@ let HECHICERO = {
         },
         {
         nombre: "Combinar elementos 🔮",
-        descripcionGrimorio: "Requisito: Rango 5. <br> Puedes combinar dos elementos. <br> Cada elemento tiene una ventaja y desventaja <br>Fuego Ventaja: Mucho daño. Desventaja: Menos area<br> Aire Ventaja: Larga distancia. Desventaja: poco daño. <br>Rayo Ventaja: Varios objetivos Desventaja: poco daño. <br>Tierra Ventaja: resistente. Desventaja: Alto gasto de nur<br> Agua Ventaja: versatilidad y esquiva. Desventaja: bajo alcance",
+        descripcionGrimorio: "Requisito: Rango 5. <br> Puedes combinar dos elementos. <br> Cada elemento tiene una ventaja y desventaja <br>Fuego Ventaja: Mucho daño. Desventaja: Menos area<br> Aire Ventaja: Larga distancia. Desventaja: poco daño. <br>Rayo Ventaja: Varios objetivos Desventaja: poco daño. <br>Tierra Ventaja: resistente. Desventaja: Alto gasto de Nur<br> Agua Ventaja: versatilidad y esquiva. Desventaja: bajo alcance",
         novato: "Puedes combinar tu elemento que dominas con otro, puedes crear un nuevo hechizo y elejir un nuevo hechizo de ese elemento",
         experto: "Puedes elegir otro hechizo o duplicar el efecto",
         maestro: "Eliges otro hechizo adicional",

@@ -38,7 +38,7 @@ let RITUALISTA = {
                             nivelHechizo: "...",
                             descripcion: "El daño se convierte en edad. Si llega a 1-8 queda inconsciente; a 0 muere",
                             tipoHechizo: "Soporte",
-                            costoMana: "2 nur",
+                            costoMana: "2 Nur",
                             dificultad: "12",
                             alcanceMaximo: "12"
                         },
@@ -47,7 +47,7 @@ let RITUALISTA = {
                             nivelHechizo: "...",
                             descripcion: "Transforma arma en 2 guardianes que bloquean enemigos",
                             tipoHechizo: "Soporte",
-                            costoMana: "2 nur",
+                            costoMana: "2 Nur",
                             dificultad: "12",
                             alcanceMaximo: "..."
                         },
@@ -56,7 +56,7 @@ let RITUALISTA = {
                             nivelHechizo: "...",
                             descripcion: "Convierte extremidad en 30 de vida para bestia o intercambia vida",
                             tipoHechizo: "Soporte",
-                            costoMana: "2 nur",
+                            costoMana: "2 Nur",
                             dificultad: "12",
                             alcanceMaximo: "12"
                         },
@@ -65,7 +65,7 @@ let RITUALISTA = {
                             nivelHechizo: "...",
                             descripcion: "...",
                             tipoHechizo: "Ataque",
-                            costoMana: "2 nur",
+                            costoMana: "2 Nur",
                             dificultad: "12",
                             alcanceMaximo: "12"
                         },
@@ -74,7 +74,7 @@ let RITUALISTA = {
                             nivelHechizo: "...",
                             descripcion: "Convierte objetivo en bestia, gana 40 vida, luego queda inconsciente",
                             tipoHechizo: "Soporte",
-                            costoMana: "2 nur",
+                            costoMana: "2 Nur",
                             dificultad: "12",
                             alcanceMaximo: "12"
                         },
@@ -83,7 +83,7 @@ let RITUALISTA = {
                             nivelHechizo: "...",
                             descripcion: "Evita daño guardando bestia como tatuaje por 1d6 horas",
                             tipoHechizo: "Soporte",
-                            costoMana: "2 nur",
+                            costoMana: "2 Nur",
                             dificultad: "12",
                             alcanceMaximo: "12"
                         },
@@ -92,7 +92,7 @@ let RITUALISTA = {
                             nivelHechizo: "...",
                             descripcion: "Teletransporta a una bestia aleatoria, huida automática",
                             tipoHechizo: "Soporte",
-                            costoMana: "2 nur",
+                            costoMana: "2 Nur",
                             dificultad: "12",
                             alcanceMaximo: "12"
                         }
@@ -110,7 +110,7 @@ let RITUALISTA = {
                             nivelHechizo: "...",
                             descripcion: "Encierra objetivo en esfera; daño psíquico mientras esté dentro",
                             tipoHechizo: "Ataque",
-                            costoMana: "2 nur",
+                            costoMana: "2 Nur",
                             dificultad: "Int vs Voluntad",
                             alcanceMaximo: "12"
                         },
@@ -119,16 +119,16 @@ let RITUALISTA = {
                             nivelHechizo: "...",
                             descripcion: "Encierra objetivo en esfera tipo estómago; daño normal",
                             tipoHechizo: "Ataque",
-                            costoMana: "2 nur",
+                            costoMana: "2 Nur",
                             dificultad: "Int vs Fuerza",
                             alcanceMaximo: "12"
                         },
                         {
-                            nombreHechizo: "Traer bestia por nur",
+                            nombreHechizo: "Traer bestia por Nur",
                             nivelHechizo: "...",
-                            descripcion: "Invoca ataque de bestia según nur acumulado (hasta 10d6)",
+                            descripcion: "Invoca ataque de bestia según Nur acumulado (hasta 10d6)",
                             tipoHechizo: "Ataque",
-                            costoMana: "2 nur",
+                            costoMana: "2 Nur",
                             dificultad: "12",
                             alcanceMaximo: "12"
                         }
@@ -146,7 +146,7 @@ let RITUALISTA = {
                             nivelHechizo: "...",
                             descripcion: "Robas vida en forma de runas para evitar muerte",
                             tipoHechizo: "Ataque",
-                            costoMana: "2 nur",
+                            costoMana: "2 Nur",
                             dificultad: "...",
                             alcanceMaximo: "12"
                         },
@@ -155,7 +155,7 @@ let RITUALISTA = {
                             nivelHechizo: "...",
                             descripcion: "Sella una extremidad afectando habilidades",
                             tipoHechizo: "Soporte",
-                            costoMana: "2 nur",
+                            costoMana: "2 Nur",
                             dificultad: "Int vs Voluntad",
                             alcanceMaximo: "12"
                         },
@@ -164,7 +164,7 @@ let RITUALISTA = {
                             nivelHechizo: "...",
                             descripcion: "Guarda bestias dentro del cuerpo (2 espacios)",
                             tipoHechizo: "Ataque",
-                            costoMana: "2 nur",
+                            costoMana: "2 Nur",
                             dificultad: "12",
                             alcanceMaximo: "12"
                         }
@@ -196,7 +196,7 @@ let RITUALISTA = {
                 },
                 {
                     nombre: "Sangre maldita",
-                    descripcionGrimorio: "Requisito: Ritualista pactador <br> Una sola vez por dia, te haces daño y la sangre la usas en una ceremonia para bañar sobre un arma, tus manos o las de alguien, este daño se reflejara como daño maldito depende de cuanta vida pierdes haciendo este ritual y este daño adicional se podra aplicar solo una vez <br> Dif 13 -5 de nur",
+                    descripcionGrimorio: "Requisito: Ritualista pactador <br> Una sola vez por dia, te haces daño y la sangre la usas en una ceremonia para bañar sobre un arma, tus manos o las de alguien, este daño se reflejara como daño maldito depende de cuanta vida pierdes haciendo este ritual y este daño adicional se podra aplicar solo una vez <br> Dif 13 -5 de Nur",
                     novato: "Lanzas 4d6 de daño para ti y tambien es el daño maldito que hara tu sangre. Podras hacer hasta dos ceremonias",
                     experto: "Lanzas 6d6 de daño para ti y tambien es el daño maldito que hara tu sangre. Podras hacer hasta dos ceremonias",
                     maestro: "Todo daño se vuelve maldito",

@@ -8,6 +8,7 @@ let TODAS_LAS_CLASES = [
     BRUJO,
     MEDIADOR,
     BARDO,
-    CAOTICO
+    CAOTICO,
+    GENERAL
 
 ];

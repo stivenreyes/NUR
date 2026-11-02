@@ -55,9 +55,9 @@ let GUERRERO = {
                 {                 
                     nombre: "Golpe Nur",
                     descripcionGrimorio: "Requisitos (Golpeador)",
-                    novato: "Daño desarmado + (nur/2). Alcance 2m, +1m por punto de nur",
-                    experto: "Hace daño mágico gastando 3 nur",
-                    maestro: "Absorbe nur: 10d6 en 2 turnos, 1 vez por día",
+                    novato: "Daño desarmado + (Nur/2). Alcance 2m, +1m por punto de Nur",
+                    experto: "Hace daño mágico gastando 3 Nur",
+                    maestro: "Absorbe Nur: 10d6 en 2 turnos, 1 vez por día",
                     hechizos: []                   
                 },
                 {                 
@@ -69,7 +69,7 @@ let GUERRERO = {
                     hechizos: []                   
                 },
                 {                 
-                    nombre: "Extremidad de nur",
+                    nombre: "Extremidad de Nur",
                     descripcionGrimorio: "Requisitos (Golpeador)",
                     novato: "Sacrificas brazo para proteger automáticamente; se regenera en la siguiente escena",
                     experto: "Sacrificas brazo para lanzar enemigo hasta 10m causando daño por impacto",
@@ -93,7 +93,7 @@ let GUERRERO = {
                     hechizos: []                   
                 },
                 {                 
-                    nombre: "Portador de armas de nur",
+                    nombre: "Portador de armas de Nur",
                     descripcionGrimorio: "Requisitos (Golpeador)",
                     novato: "Armas no se destruyen totalmente; se reparan o regresan a la bestia",
                     experto: "Puede usar dos armas de 1 mano o +2 ataque",

@@ -24,21 +24,21 @@ function mostrarPaso() {
 
     let progreso = document.getElementById("progreso");
 
-    let porcentaje = (pasoActual / 7) * 100;
+    let porcentaje = (pasoActual / 8) * 100;
 
     progreso.style.width = porcentaje + "%";
 
         /* ================= CONTADOR ================= */
 
     let contador = document.getElementById("contador-paso");
-    contador.textContent = pasoActual + " de 7";
+    contador.textContent = pasoActual + " de 8";
 
 
     /* ================= OCULTAR BOTON ================= */
 
     let btnSiguiente = document.getElementById("btn-siguiente");
 
-    if (pasoActual === 7) {
+    if (pasoActual === 8) {
         btnSiguiente.style.display = "none";
     } else {
         btnSiguiente.style.display = "inline-block";
@@ -48,7 +48,7 @@ function mostrarPaso() {
 
 function siguiente() {
 
-    if (pasoActual < 7) {
+    if (pasoActual < 8) {
         pasoActual++;
         mostrarPaso();
     }

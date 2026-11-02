@@ -6,7 +6,7 @@ let ARTESANO = {
             items: [
                 {
                     nombre: "Creador",
-                    descripcionGrimorio: "Especialista en trampas y mecanismos imbuidos con nur.",
+                    descripcionGrimorio: "Especialista en trampas y mecanismos imbuidos con Nur.",
                     novato: "Puedes crear trampas básicas y una trampa especial segura para tu bestia",
                     experto: "Puedes crear trampas complejas y añadir trampas complejas a tu bestia",
                     maestro: "...",
@@ -14,7 +14,7 @@ let ARTESANO = {
                 },
                 {
                     nombre: "Roca",
-                    descripcionGrimorio: "Uso de armaduras resistentes potenciadas con nur.",
+                    descripcionGrimorio: "Uso de armaduras resistentes potenciadas con Nur.",
                     novato: "Puedes equipar armaduras ligeras de artesano roca. Aprendes un talento",
                     experto: "Puedes equipar armaduras fuertes de artesano roca",
                     maestro: "...",
@@ -76,7 +76,7 @@ let ARTESANO = {
                 },
                 {                 
                     nombre: "Mejorar creaciones",
-                    descripcionGrimorio: "Mejoras permanentes a equipo usando nur.",
+                    descripcionGrimorio: "Mejoras permanentes a equipo usando Nur.",
                     novato: "Armaduras +5d6 vida, armas +1d3 vida o +1 dado daño, carrozas +4d6 vida",
                     experto: "...",
                     maestro: "...",

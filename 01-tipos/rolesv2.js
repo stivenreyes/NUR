@@ -9,6 +9,7 @@ const CLASE_ACTUAL =
     typeof MEDIADOR !== "undefined" ? MEDIADOR :
     typeof BARDO !== "undefined" ? BARDO :
     typeof CAOTICO !== "undefined" ? CAOTICO :
+        typeof GENERAL !== "undefined" ? GENERAL :
     null;
 
 function crearTarjeta(producto) {

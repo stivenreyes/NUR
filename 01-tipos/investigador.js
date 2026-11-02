@@ -16,7 +16,7 @@ let INVESTIGADOR = {
         nivelHechizo: "Experto",
         descripcion: "Cada dia al alba, puedes dibujar una runa de bestia en alguna extremidad, podras transformar una parte de esa extremidad por una extremidad de una bestia y tomar una habilidad correspondiente. tendras esa modificacion por un 1d6 turnos o minutos ",
         tipoHechizo: "Ataque",
-        costoMana: "4 nur",
+        costoMana: "4 Nur",
         dificultad: "14",
         alcanceMaximo: "1"
     },
@@ -64,7 +64,7 @@ let INVESTIGADOR = {
         nivelHechizo: "...",
         descripcion: "Cura 15 a un objetivo",
         tipoHechizo: "Ataque",
-        costoMana: "2 nur",
+        costoMana: "2 Nur",
         dificultad: "12",
         alcanceMaximo: "12"
     },
@@ -73,7 +73,7 @@ let INVESTIGADOR = {
         nivelHechizo: "...",
         descripcion: "Cura 7 a un objetivo hasta 5 metros",
         tipoHechizo: "Ataque",
-        costoMana: "2 nur",
+        costoMana: "2 Nur",
         dificultad: "12",
         alcanceMaximo: "12"
     },
@@ -82,7 +82,7 @@ let INVESTIGADOR = {
         nivelHechizo: "...",
         descripcion: "Cura 10 a un objetivo, hasta 3 bestias a 1 metro",
         tipoHechizo: "Ataque",
-        costoMana: "2 nur",
+        costoMana: "2 Nur",
         dificultad: "12",
         alcanceMaximo: "12"
     },
@@ -99,9 +99,9 @@ let INVESTIGADOR = {
                     y no tendrás mas vida que tu en estado druida, si llegas a tener en tu estado animal 0 de vida
                     te destranformas restando la vida que perdiste, si también llegas a 0 tu personaje muere`,
 
-                    novato: "Transformación tamaño 3-10 por 1d6 turnos (2 nur)",
-                    experto: "Transformación tamaño 3-15 por 1d6 turnos (5 nur)",
-                    maestro: "Transformación tamaño 3-20 por 1d6 turnos (8 nur)",
+                    novato: "Transformación tamaño 3-10 por 1d6 turnos (2 Nur)",
+                    experto: "Transformación tamaño 3-15 por 1d6 turnos (5 Nur)",
+                    maestro: "Transformación tamaño 3-20 por 1d6 turnos (8 Nur)",
                     hechizos: []                   
                 },
                 {                 
@@ -182,7 +182,7 @@ let INVESTIGADOR = {
                 },    
                 {                 
                     nombre: "Clones del vinculo",
-                    descripcionGrimorio: "Puedes convertirte tu y otros druidas depende del tipo de vinculo en su bestia. o viceversa con la bestia. por 1 d6 turnos o minutos, dif 12 -2 de nur",
+                    descripcionGrimorio: "Puedes convertirte tu y otros druidas depende del tipo de vinculo en su bestia. o viceversa con la bestia. por 1 d6 turnos o minutos, dif 12 -2 de Nur",
                     novato: "Quienes tengan los vinculos: compañeros de juegos y compañeros estrategicos",
                     experto: "...",
                     maestro: "...",

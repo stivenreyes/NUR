@@ -321,7 +321,7 @@ let armas = [
         dano: "5d6",
         precio: "150L",
         alcance: "1",
-        requisitos: "Fuerza 3 + Talento Portador de armas NUR (novato)",
+        requisitos: "Fuerza 3 + Talento Portador de armas Nur (novato)",
         dureza: "6",
         manos: "2",
     },
@@ -405,14 +405,14 @@ let pociones = [
         tipoObjetivos: "Bestias" 
     },
     { 
-        nombre: "Poción de nur básica", 
+        nombre: "Poción de Nur básica", 
         precio: "25L", 
         restablecimiento: "1D6+4", 
         objetivos: "1", 
         tipoObjetivos: "Druidas" 
     },
     { 
-        nombre: "Poción de nur mejorada", 
+        nombre: "Poción de Nur mejorada", 
         precio: "30L", 
         restablecimiento: "2D6", 
         objetivos: "1", 

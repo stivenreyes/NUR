@@ -61,12 +61,12 @@ let MEDIADOR = {
           nombre: "Robar identidad",
           descripcionGrimorio: "Requisito: Orador de la ____ (novato) <br> Imitación de voz, apariencia y forma.",
           novato: "Imitar voz (hasta 3 personas)",
-          experto: "Transformar ropa (3 nur, 1 hora)",
+          experto: "Transformar ropa (3 Nur, 1 hora)",
           maestro: "Transformación completa (sin copiar stats)",
           hechizos: []
         },
         {
-          nombre: "¿Cuál es tu rol?",
+          nombre: "¿Cuál es tu senda?",
           descripcionGrimorio: "Requisito: Orador de la ____ (novato) <br> Con una acción puedes preguntarle a alguien de un rango mas bajo que el tuyo acerca de un poder que tenga para hacerle olvidar  del potencial que tiene y hacerle olvidar por unos minutos algo del conocimiento que tiene <br> Con una tirada de comunicación vs voluntad del objetivo<br> Se puede recordar matando o derrotando al mediador o su bestia, que alguien lo haga recordar de su potencial, deberá superar la tirada del mediador con comunicación ambos o el mismo con una tirada de inteligencia -4 <br>La victima es consiente del poder y su victimario <br>Solo se puede una vez al dia, alguien de nivel novato podrá hacerle olvidar 1 cosa, en nivel experto 2 cosas y en nivel maestro su especialidad y dos cosas mas ",
           novato: "Olvidar una proeza o enfoque",
           experto: "Olvidar arma, talento, hechizo o bonus",
@@ -76,8 +76,8 @@ let MEDIADOR = {
         {
           nombre: "Curar daño psíquico",
           descripcionGrimorio: "Requisito: Erudito mental.<br> Puedes enfocarte en el daño psicologico, y ayudar a hacer mas sesiones de terapia al dia",
-          novato: "+2 para tratar a alguien.<br>  Puedes eliminar 2 de daño psíquico gastando 1 de nur. <br> Proeza (4) avanzando con el trauma. Puedes hacer que tome 2 sesiones al dia (esta proeza la puede activar el paciente momentos antes del inicio de la terapia). <br> Reduces en 1d6 el daño psicologico en medio de una terapia que falles",
-          experto: "+4 para tratar a alguien.<br> Puedes eliminar 4 de daño psíquico gastando 1 de nur. <br> Proeza (3) avanzando con el trauma. Puedes hacer que tome 2 sesiones al dia (esta proeza la puede activar el paciente momentos antes del inicio de la terapia). <br> Reduces en 2d6 el daño psicologico en medio de una terapia que falles",
+          novato: "+2 para tratar a alguien.<br>  Puedes eliminar 2 de daño psíquico gastando 1 de Nur. <br> Proeza (4) avanzando con el trauma. Puedes hacer que tome 2 sesiones al dia (esta proeza la puede activar el paciente momentos antes del inicio de la terapia). <br> Reduces en 1d6 el daño psicologico en medio de una terapia que falles",
+          experto: "+4 para tratar a alguien.<br> Puedes eliminar 4 de daño psíquico gastando 1 de Nur. <br> Proeza (3) avanzando con el trauma. Puedes hacer que tome 2 sesiones al dia (esta proeza la puede activar el paciente momentos antes del inicio de la terapia). <br> Reduces en 2d6 el daño psicologico en medio de una terapia que falles",
           maestro: "...",
           hechizos: []
         },

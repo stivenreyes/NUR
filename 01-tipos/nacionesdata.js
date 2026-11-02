@@ -343,7 +343,7 @@ Finalmente descansan.
 
 4. El Gran Mordur es visto como una isla viviente que nunca deja de moverse ni de celebrar.
 
-5. El Gran Mordur Doble está dividido en dos: su cuerpo recorre el mar mientras su nur permanece en las profundidades.
+5. El Gran Mordur Doble está dividido en dos: su cuerpo recorre el mar mientras su Nur permanece en las profundidades.
 
 6. En sus playas suelen aparecer restos de antiguas tribus y civilizaciones arrastrados por el océano, convirtiéndose en un lugar muy apreciado por exploradores e historiadores.
 `,
@@ -433,7 +433,7 @@ Expediciones.
 `,
 
     mitoLeyendaLocal: `
-La profecía del Gran Mordur Doble anuncia que cuando el cuerpo y el nur del gran cangrejo vuelvan a unirse llegará una inmensa ola capaz de cubrir hasta las dos lunas.
+La profecía del Gran Mordur Doble anuncia que cuando el cuerpo y el Nur del gran cangrejo vuelvan a unirse llegará una inmensa ola capaz de cubrir hasta las dos lunas.
 
 Entonces surgirán criaturas ancestrales del océano para hundir Amara bajo el mar.
 `,
@@ -471,7 +471,7 @@ Los mayores avances del continente en exploración de aguas profundas.
 
 Embarcaciones capaces de resistir enormes presiones.
 
-Investigaciones para dominar el nur de los remolinos marinos.
+Investigaciones para dominar el Nur de los remolinos marinos.
 `,
 
     guerraActual: `

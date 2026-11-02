@@ -88,7 +88,7 @@ function mostrarResultadosEspecialidades(resultados) {
     contenedor.innerHTML = resultados.map(r => `
         <div class="resultado-card">
             <h3>${r.item.nombre}</h3>
-            <p><strong>Clase:</strong> ${r.clase}</p>
+            <p><strong>Senda:</strong> ${r.clase}</p>
 
             ${r.item.descripcionGrimorio ? `<p><strong>Descripción:</strong> ${r.item.descripcionGrimorio}</p>` : ""}
             ${r.item.novato ? `<p><strong>Novato:</strong> ${r.item.novato}</p>` : ""}
@@ -117,7 +117,7 @@ function mostrarResultadosTalentos(resultados) {
     contenedor.innerHTML = resultados.map(r => `
         <div class="resultado-card">
             <h3>${r.item.nombre}</h3>
-            <p><strong>Clase:</strong> ${r.clase}</p>
+            <p><strong>Senda:</strong> ${r.clase}</p>
             <p><strong>Sección:</strong> ${r.seccion}</p>
 
             ${r.item.descripcionGrimorio ? `<p><strong>Descripción:</strong> ${r.item.descripcionGrimorio}</p>` : ""}
@@ -147,7 +147,7 @@ function mostrarResultadosHechizos(resultados) {
     contenedor.innerHTML = resultados.map(r => `
         <div class="resultado-card">
             <h3>${r.hechizo.nombreHechizo}</h3>
-            <p><strong>Clase:</strong> ${r.clase}</p>
+            <p><strong>Senda:</strong> ${r.clase}</p>
             <p><strong>Sección:</strong> ${r.seccion}</p>
             <p><strong>Pertenece a:</strong> ${r.talento}</p>
 
