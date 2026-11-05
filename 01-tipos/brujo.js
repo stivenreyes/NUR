@@ -153,7 +153,7 @@ let BRUJO = {
             {
               nombreHechizo: "Gutural sanador",
               nivelHechizo: "Experto",
-              descripcion: "Cura 7+1d6 + voluntad repartido entre 6 objetivos. (decide como repartir el total de curación) <br> si alguien cuenta con los vinculos: compañero de sangre o compañero leal se curara 1d6 adicionales",
+              descripcion: "Cura 7+1d6 + voluntad repartido entre 6 objetivos. (decide como repartir el total de curación) <br> si alguien cuenta con los vínculos: compañero de sangre o compañero leal se curara 1d6 adicionales",
               tipoHechizo: "Curación",
               costoMana: 2,
               dificultad: 12,
@@ -169,9 +169,9 @@ let BRUJO = {
               alcanceMaximo: "1 m"
             },            
             {
-              nombreHechizo: "Vinculo curativo",
+              nombreHechizo: "vínculo curativo",
               nivelHechizo: "Experto",
-              descripcion: "Tu y tu bestia deben estar cerca y activar este hechizo, que se activa gracias a los vinculos que tu elijas en un rango de hasta 20 metros, tanto bestias como druidas se curan el nivel de vinculo que tienen mas 1d6. <br> si alguien cuenta con los vinculos: compañero de sangre o compañero leal se curara 2d6 adicionales",
+              descripcion: "Tu y tu bestia deben estar cerca y activar este hechizo, que se activa gracias a los vínculos que tu elijas en un rango de hasta 20 metros, tanto bestias como druidas se curan el nivel de vínculo que tienen mas 1d6. <br> si alguien cuenta con los vínculos: compañero de sangre o compañero leal se curara 2d6 adicionales",
               tipoHechizo: "Curación",
               costoMana: 4,
               dificultad: 15,
@@ -209,7 +209,7 @@ let BRUJO = {
           nombre: "Pociones de dones 🌿",
           descripcionGrimorio: `Requisitos (Brujo botanico) <br> 
           Puedes crear tomar una pocion que da bonus en algunos atributos <br> 
-          puedes vincular a otros druidas y su bestia vinculada que tengan tipo de vinculo: compañero de sangre
+          puedes vincular a otros druidas y su bestia vinculada que tengan tipo de vínculo: compañero de sangre
           y compañero leal para tener el mismo bonus a la mitad redondeado para arriba. 
 
           Esta pociones solo pueden ser almacenadas en un caldero, y ocupan completamente el mismo, pero puede compartir espacio con una pocion de heridas pasadas. <br> 
@@ -247,7 +247,7 @@ let BRUJO = {
         },
         {
           nombre: "Planta ",
-          descripcionGrimorio: "Requisitos (Brujo botanico) <br> que tengan tipo de vinculo: compañero de sangre y compañero leal",
+          descripcionGrimorio: "Requisitos (Brujo botanico) <br> que tengan tipo de vínculo: compañero de sangre y compañero leal",
           novato: "....",
           experto: "Tu bestia puede tener una tambien",
           maestro: "...",
@@ -279,7 +279,7 @@ let BRUJO = {
         },        
         {
           nombre: "Pociones bestiales",
-          descripcionGrimorio: "Requisitos (Brujo botanico) <br> que tengan tipo de vinculo: compañero de sangre y compañero leal",
+          descripcionGrimorio: "Requisitos (Brujo botanico) <br> que tengan tipo de vínculo: compañero de sangre y compañero leal",
           novato: "Puedes ganar una mutacion por unos instantes, debes darle un calmante de lo contrario entrara en modo bestia",
           experto: "Puedes almacenar daño hecho por criaturas  de rango de 6 a 10",
           maestro: "...",
@@ -287,10 +287,10 @@ let BRUJO = {
         },
         {
           nombre: "Caldero para bestia vinculada",
-          descripcionGrimorio: "Requisitos (Brujo botanico) <br> Tu bestia puede adquirir un caldero (u otro adicional) para hacer pociones  que tengan tipo de vinculo: compañero de sangre y compañero leal ",
+          descripcionGrimorio: "Requisitos (Brujo botanico) <br> Tu bestia puede adquirir un caldero (u otro adicional) para hacer pociones  que tengan tipo de vínculo: compañero de sangre y compañero leal ",
           novato: "Ella puede aprende el talento de: pociones de heridas pasadas o pociones de dones o vinculacion grupal de pocion",
           experto: "Ella puede obtener otro caldero",
-          maestro: "Requisitos (Brujo botanico) <br> que tengan tipo de vinculo: compañero de sangre y compañero leal",
+          maestro: "Requisitos (Brujo botanico) <br> que tengan tipo de vínculo: compañero de sangre y compañero leal",
           hechizos: []
         },
         {

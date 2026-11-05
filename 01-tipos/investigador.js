@@ -140,7 +140,7 @@ let INVESTIGADOR = {
                     9 - 12  Le logras enseñar.<br>
                     13 - 16  Le logras enseñar y además le das mas experiencia a la bestia tu rango x 1 <br>
                     17 - 20 Le logras enseñar y además le das mas experiencia a la bestia tu rango x 3<br>
-                    21 - ... Le logras enseñar y además le das mas experiencia a la bestia tu rango x 5 y experiencia para el druida del vinculo tu rango x 3`,
+                    21 - ... Le logras enseñar y además le das mas experiencia a la bestia tu rango x 5 y experiencia para el druida del vínculo tu rango x 3`,
                     
                     novato: "Entrenas 1h, experiencia = rango x5 (bestias rango 1-4)",
                     experto: "Entrenas 2h, experiencia = rango x10 (rango 5-7)",
@@ -181,9 +181,9 @@ let INVESTIGADOR = {
                     hechizos: []                   
                 },    
                 {                 
-                    nombre: "Clones del vinculo",
-                    descripcionGrimorio: "Puedes convertirte tu y otros druidas depende del tipo de vinculo en su bestia. o viceversa con la bestia. por 1 d6 turnos o minutos, dif 12 -2 de Nur",
-                    novato: "Quienes tengan los vinculos: compañeros de juegos y compañeros estrategicos",
+                    nombre: "Clones del vínculo",
+                    descripcionGrimorio: "Puedes convertirte tu y otros druidas depende del tipo de vínculo en su bestia. o viceversa con la bestia. por 1 d6 turnos o minutos, dif 12 -2 de Nur",
+                    novato: "Quienes tengan los vínculos: compañeros de juegos y compañeros estrategicos",
                     experto: "...",
                     maestro: "...",
                     hechizos: []                   

@@ -9,7 +9,7 @@ let GUERRERO = {
                     descripcionGrimorio: "Especialista en combate directo y contundente.",
                     novato: "Relanzar y quedar con el otro resultado al atacar, +2 de ataque con armas cortas",
                     experto: "+4 de ataque",
-                    maestro: "Nueva proeza: Noquear (6 puntos). Tirada enfrentada de ataque vs constitución; si gana, noquea 1d3 turnos. <br> Puedes entrar una vez por dia en modo Berserker, donde tener una accion adicional de combate para ti y tu bestia, pero solo podras activar la proeza doble ataque una vez, despues de eso debes descansar un turno.",
+                    maestro: "Nueva proeza: Noquear (6 puntos). Tirada enfrentada de ataque vs constitución; si gana, noquea 1d3 turnos. <br> Puedes entrar una vez por escena en modo Berserker, donde tener una accion adicional de combate para ti y tu bestia, pero solo podras activar la proeza doble ataque una vez, despues de eso debes descansar un turno.",
                     hechizos: []
                 },
                 {

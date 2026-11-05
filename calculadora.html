@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de vínculo</title>
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+
+        <h1>Calculadora de vínculo</h1>
+
+<label>Entendimiento:</label>
+<input type="number" id="entendimiento">
+
+<br>
+
+<label>Confianza:</label>
+<input type="number" id="confianza">
+
+<br>
+
+<label>Valentía:</label>
+<input type="number" id="valentia">
+
+<br><br>
+
+<button onclick="calcular()">Calcular</button>
+
+<h3>Resultados:</h3>
+
+<p>Diferencia de entendimiento: <span id="difEntendimiento"></span></p>
+<p>Diferencia de confianza: <span id="difConfianza"></span></p>
+<p>Diferencia de valentía: <span id="difValentia"></span></p>
+
+<hr>
+
+<p>Desvinculación: <span id="desvinculacion"></span></p>
+
+<h4>Vínculo: <span id="vinculo"></span></h4>
+
+<script>
+function calcular() {
+    let entendimiento = Number(document.getElementById("entendimiento").value);
+    let confianza = Number(document.getElementById("confianza").value);
+    let valentia = Number(document.getElementById("valentia").value);
+
+    // Diferencias
+    let diferenciaEntendimiento = entendimiento - 5;
+    let diferenciaConfianza = confianza - 5;
+    let diferenciaValentia = valentia - 5;
+
+    // Desvinculación en positivo
+    let desvinculacion = Math.abs(
+        diferenciaEntendimiento +
+        diferenciaConfianza +
+        diferenciaValentia
+    );
+
+    // Vinculación
+    let vinculo = 10 - desvinculacion;
+
+    // Mostrar resultados
+    document.getElementById("difEntendimiento").textContent = diferenciaEntendimiento;
+    document.getElementById("difConfianza").textContent = diferenciaConfianza;
+    document.getElementById("difValentia").textContent = diferenciaValentia;
+
+    document.getElementById("desvinculacion").textContent = desvinculacion;
+    document.getElementById("vinculo").textContent = vinculo;
+}
+</script>
+
+
+
+<a href="#" class="btn" onclick="history.back()">Volver</a>
+
+<button id="btn-arriba">↑</button>
+
+
+<script src="01-tipos/navbar.js"></script>
+<script src="01-tipos/nacionesd2332ata.js"></script>
+ <script src="01-tipos/01-componentes.js"></script>  
+    
+</body>
+</html>

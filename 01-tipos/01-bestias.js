@@ -895,7 +895,7 @@ let bestias = [
     tipo: "...",
     tamaño: "5",
     armadura: "10",
-    Destreza: "0", Precision: "1", pelea: "0", percepcion: "0", comunicacion: "1",
+    Destreza: "0", Precision: "1", pelea: "-2", percepcion: "0", comunicacion: "1",
     fuerza: "7", voluntad: "1", constitucion: "0", Instinto: "1",
     enfoques: "Empujar (fuerza)",
     Habilidades: `
@@ -909,7 +909,7 @@ let bestias = [
     <strong> Hormiguita o Hormiga de imperio (Elije una) </strong> <br> 
     +2 para encantar con comunicacion o +2 para intimidar con fuerza
     `,
-    ataque: "Mordida <br> ...", daño: "5d6 <br> ..", dureza: "3 <br> ..", alcance: "1 <br> .."
+    ataque: "Mordida <br> ...", daño: "3d6 <br> ..", dureza: "3 <br> ..", alcance: "1 <br> .."
 
 },
     {
@@ -935,7 +935,7 @@ let bestias = [
                     9 - 12  Le logras enseñar.<br>
                     13 - 16  Le logras enseñar y además le das mas experiencia a la bestia tu rango x 1 <br>
                     17 - 20 Le logras enseñar y además le das mas experiencia a la bestia tu rango x 3<br>
-                    21 - ... Le logras enseñar y además le das mas experiencia a la bestia tu rango x 5 y experiencia para el druida del vinculo tu rango x 3 <br><br>
+                    21 - ... Le logras enseñar y además le das mas experiencia a la bestia tu rango x 5 y experiencia para el druida del vínculo tu rango x 3 <br><br>
 
     <strong> ... </strong> Rango .. <br> 
     ...

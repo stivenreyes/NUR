@@ -84,7 +84,7 @@ let EXPLORADOR = {
                 {                 
                     nombre: "Ir en contra del tiempo",
                     descripcionGrimorio: "Manipulación del tiempo en combate.",
-                    novato: "1 vez/día acción extra",
+                    novato: "1 vez por escena tienes una acción extra",
                     experto: "Puedes salvar a alguien en el último momento",
                     maestro: "Evitas fuego amigo gastando 5 Nur",
                     hechizos: []                   

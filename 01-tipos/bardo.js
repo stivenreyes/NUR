@@ -43,7 +43,7 @@ let BARDO = {
         },
         {
           nombre: "Canción de muerte",
-          descripcionGrimorio: "Requisito: (Artistas del mundo)<br> Cuando un enemigo o aliado es derrotado, el bardo puede tocar su canción de mayor victoria o mas triste para que los aliados del fallecido se sientan peor o quieran tomar venganza. <br> Los aliados del bardo pueden hacer un ataque que será automático y los enemigos recibirán 1d6 de daño psicológico <br> la bestia vinculo podrá también atacar sin contarlo como acción <br> Este efecto no es acumulativo",
+          descripcionGrimorio: "Requisito: (Artistas del mundo)<br> Cuando un enemigo o aliado es derrotado, el bardo puede tocar su canción de mayor victoria o mas triste para que los aliados del fallecido se sientan peor o quieran tomar venganza. <br> Los aliados del bardo pueden hacer un ataque que será automático y los enemigos recibirán 1d6 de daño psicológico <br> la bestia vínculo podrá también atacar sin contarlo como acción <br> Este efecto no es acumulativo",
           novato: "Daño normal + 1d6 psíquico",
           experto: "Daño x2 + 1d6+3 psíquico",
           maestro: "Daño x3 + 2d6 psíquico",
@@ -75,7 +75,7 @@ let BARDO = {
         },
         {
           nombre: "Dúo con la bestia",
-          descripcionGrimorio: "En Amara no hay muchas cosas poderosas entre ellas el vinculo de un druida y una bestia, y su combinación y enfoque en el arte musical puede generar un gran impacto en ellos y quien los oye,<br> Para este poder tanto el druida y la bestia deben tener ambos instrumentos (en cualquier caso un artesano podrá hacer algunos ajustes para que la bestia pueda usar cualquier instrumento)<br>El druida y la bestia podrán tocar varias canciones pero habrá una especial entre ellos dos, una que hará quien la oiga puede tener unos efectos poderosos <br>La canción especial debe sonar una vez máximo al dia, repetirla perderá su poder",
+          descripcionGrimorio: "En Amara no hay muchas cosas poderosas entre ellas el vínculo de un druida y una bestia, y su combinación y enfoque en el arte musical puede generar un gran impacto en ellos y quien los oye,<br> Para este poder tanto el druida y la bestia deben tener ambos instrumentos (en cualquier caso un artesano podrá hacer algunos ajustes para que la bestia pueda usar cualquier instrumento)<br>El druida y la bestia podrán tocar varias canciones pero habrá una especial entre ellos dos, una que hará quien la oiga puede tener unos efectos poderosos <br>La canción especial debe sonar una vez máximo al dia, repetirla perderá su poder",
           novato: "Un objetivo elegido al escuchar la canción puede traerle recuerdos de su vida, una tirada conjunta entre el druida y la bestia para ver hasta donde viaja el recuerdo.<br> haciendo que el objetivo gane influencia de +7",
           experto: "Composición del alma",
           maestro: "Composición de almas conectadas",
@@ -114,7 +114,7 @@ let BARDO = {
         },
         {
           nombre: "Instrumento musical",
-          descripcionGrimorio: "Los druidas bardos y las bestias que tengan vinculo con esa ultima senda son los únicos en poder usar estos poderes al usar instrumentos <br> cuerdas: <br> cura daño psíquico, cura bestias, calma bestias  en 2 por (depende el nivel en el que tengas esta habilidad) <br> viento: <br> engaña, distrae + 3 por (depende el nivel en el que tengas esta habilidad) <br> Percusión: <br>relanzar 1 dado de todo el que use pelea y hechizos de caótico  tantas veces en un turno como nivel tenga en esta habilidad",
+          descripcionGrimorio: "Los druidas bardos y las bestias que tengan vínculo con esa ultima senda son los únicos en poder usar estos poderes al usar instrumentos <br> cuerdas: <br> cura daño psíquico, cura bestias, calma bestias  en 2 por (depende el nivel en el que tengas esta habilidad) <br> viento: <br> engaña, distrae + 3 por (depende el nivel en el que tengas esta habilidad) <br> Percusión: <br>relanzar 1 dado de todo el que use pelea y hechizos de caótico  tantas veces en un turno como nivel tenga en esta habilidad",
           novato: "Nivel 1 efectos",
           experto: "Nivel 2 efectos",
           maestro: "Nivel 3 efectos",

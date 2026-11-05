@@ -244,6 +244,16 @@ let armas = [
         manos: "2"
     },
     {
+        nombre: "Kathana",
+        tipo: "Arma compleja (pelea / fuerza) Cuando se desenvaina para atacar al instante se duplica su daño, envainar el arma gasta 1 accion",
+        dano: "1d6",
+        precio: "70L",
+        alcance: "1",
+        requisitos: "pelea +1",
+        dureza: "2",
+        manos: "1"
+    },
+    {
         nombre: "Arco corto",
         tipo: "Arma larga (precisión / percepción)",
         dano: "1d6",
