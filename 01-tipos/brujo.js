@@ -394,7 +394,7 @@ let BRUJO = {
               alcanceMaximo: "3 m"
             },
             {
-              nombreHechizo: "Remolino prision",
+              nombreHechizo: "Remolino prisión",
               nivelHechizo: "Experto",
               descripcion: "Crea un remolino alrededor de una victima en 1m gastando 4 de Nur , este remolino no se mueve con la victima, duracion del remolino 1d3 turnos. que evita que la victima se mueva, pero aun podra esquivar entre y evita que la victima haga ataques fisicos y magicos hacia fuera del remolino. vida del remolino de 50. se puede atacar hacia adentro. si se falla aun queda el remolino ahi el cual encerrara a cualquiera que entre",
               tipoHechizo: "Ataque",

@@ -184,12 +184,12 @@ let bestias = [
     tipo: "Soporte",
     tamaño: "5",
     armadura: "0",
-    Destreza: "1",Precision: "2",pelea: "0",percepcion: "2",comunicacion: "1",
+    Destreza: "1",Precision: "2",pelea: "0",percepcion: "0",comunicacion: "1",
     fuerza: "-1",voluntad: "3",constitucion: "-2",Instinto: "4",
     enfoques: "Curación, Trepar",
     Habilidades: `
     <strong> Hechizo baba sanadora </strong> <br>
-    Puede curar a su druida vinculado 2D6 o a un aliado 1D6 + voluntad.Dificultad 12. <br><br>
+    Puede curar a su Nurkano vinculado 2D6 o a un aliado 1D6 + voluntad.Dificultad 12. -2 de nur<br><br>
 
     <strong> Baba para cirugias </strong> <br>
     En cirugía la babosa plateada tiene +6 a la tirada de curación. <br><br>
@@ -206,7 +206,7 @@ let bestias = [
     tipo: "Ataque",
     tamaño: "5",
     armadura: "0",
-    Destreza: "2", Precision: "5", pelea: "-1", percepcion: "3", comunicacion: "0",
+    Destreza: "2", Precision: "3", pelea: "-1", percepcion: "3", comunicacion: "0",
     fuerza: "2", voluntad: "0", constitucion: "1", Instinto: "-2",
     enfoques: "Saltar, Esquiva", 
     Habilidades: `
@@ -245,8 +245,8 @@ let bestias = [
     tipo: "Exploracion",
     tamaño: "3",
     armadura: "0",
-    Destreza: "2", Precision: "0", pelea: "-2", percepcion: "4", comunicacion: "3",
-    fuerza: "0", voluntad: "0", constitucion: "-1", Instinto: "4",
+    Destreza: "2", Precision: "0", pelea: "-2", percepcion: "3", comunicacion: "3",
+    fuerza: "-1", voluntad: "0", constitucion: "-1", Instinto: "4",
     enfoques: "Volar, Distraer", 
     Habilidades: `
     <strong> Pareja unida </strong> <br> 
@@ -270,12 +270,12 @@ let bestias = [
     tipo: "Comunicacion",
     tamaño: "5",
     armadura: "0",
-    Destreza: "4", Precision: "0", pelea: "-1", percepcion: "3", comunicacion: "4",
-    fuerza: "0", voluntad: "1", constitucion: "-1", Instinto: "1",
+    Destreza: "3", Precision: "0", pelea: "-1", percepcion: "2", comunicacion: "4",
+    fuerza: "-2", voluntad: "0", constitucion: "-1", Instinto: "1",
     enfoques: "Distraer, Huir, Nadar", 
     Habilidades: `
     <strong>Mensajes lejanos</strong><br> 
-    Se puede comunicar a la distancia a 1km con su amo y otra  bestia elegida (se puede cambiar cada dia)
+    Se puede comunicar a la distancia a 1km con su Veltar y otra  bestia elegida (se puede cambiar cada dia)
     las bestias voladoras pueden devolver la comunicación <br><br> 
 
     <strong>Cantos de terror</strong><br>
@@ -293,15 +293,15 @@ let bestias = [
     tipo: "Ataque",
     tamaño: "5",
     armadura: "0",
-    Destreza: "0", Precision: "2", pelea: "0", percepcion: "0", comunicacion: "0",
-    fuerza: "0", voluntad: "1", constitucion: "-2", Instinto: "-1",
+    Destreza: "3", Precision: "2", pelea: "1", percepcion: "1", comunicacion: "1",
+    fuerza: "0", voluntad: "1", constitucion: "-2", Instinto: "1",
     enfoques: "Lanzar, Excavar", 
     Habilidades: `
     <strong> Explosión de puas </strong> <br>
     Explosion con fuerza +4 (area 2m, 1d6 daño, dif 13) las victimas pueden esquivar con dif 13, las puas pueden ir al subsuelo. <br><br>
 
     <strong> Amigo espinoso </strong> <br>
-    Una vez por dia puede sin gastar accion y en cualquier momento hacer que su druida vinculado, le aparezcan puas por todo 
+    Una vez por dia puede sin gastar accion y en cualquier momento hacer que su Nurkano vinculado, le aparezcan puas por todo 
     su cuerpo hiriendo a los que esten cerca de 1 metro con 2d6 y dandole una armadura temporal de 10 `,
     ataque: "Mordida +1", daño: "1D6", dureza: "3", alcance: "1"
 },
@@ -318,7 +318,7 @@ let bestias = [
     enfoques: "Nadar x2, Oler", 
     Habilidades: `
     <strong>Detector de sangre </strong> <br>
-    (100m). gastando 2 de Nur puede aparecer al lado de su druida en aluna superficie de agua en hasta 1km. <br><br>
+    (100m). gastando 2 de Nur puede aparecer al lado de su Nurkano en aluna superficie de agua en hasta 1km. <br><br>
 
     <strong>Miedo y culpa </strong> <br>
     Mas 5 para encontrar criaturas asustadas`
@@ -333,15 +333,15 @@ let bestias = [
     tipo: "Ataque",
     tamaño: "10",
     armadura: "10",
-    Destreza: "2", Precision: "0", pelea: "3", percepcion: "0", comunicacion: "-1",
-    fuerza: "2", voluntad: "-2", constitucion: "1", Instinto: "-1",
+    Destreza: "2", Precision: "0", pelea: "3", percepcion: "1", comunicacion: "-1",
+    fuerza: "2", voluntad: "-1", constitucion: "1", Instinto: "-1",
     enfoques: "Arte marcial, Escapismo", 
     Habilidades: `
         <strong> Guia de combate </strong> <br> 
-    Gastando accion puede relanzar ataques del druida vinculado<br><br>
+    Gastando accion puede relanzar ataques del Nurkano vinculado<br><br>
 
         <strong> Escondite serpentino </strong> <br> 
-    Puede esconder voluntariamente a druidas o bestias del mismo tamaño del druida<br><br>
+    Puede esconder voluntariamente a Nurkanos o bestias del mismo tamaño del Nurkano<br><br>
 
         <strong> Mirada directa </strong> <br> 
     Mas 3 para intimidar con pelea <br><br>`,
@@ -355,13 +355,13 @@ let bestias = [
     tipo: "Exploracion",
     tamaño: "7",
     armadura: "5",
-    Destreza: "0", Precision: "0", pelea: "1", percepcion: "5", comunicacion: "-2",
-    fuerza: "2", voluntad: "2", constitucion: "-1", Instinto: "3",
+    Destreza: "0", Precision: "-1", pelea: "1", percepcion: "5", comunicacion: "-2",
+    fuerza: "1", voluntad: "2", constitucion: "-1", Instinto: "3",
     enfoques: "Ver, Alerta, magica (percep.) ", 
     Habilidades: `
     <strong> Robar Nur </strong> <br>
     Puedes absorber el Nur. voluntad vs voluntad y recargarse de Nur con un 1d6, 
-    Nur que podra enviar a su druida o incrementar el daño de otra bestia en un 1d3 por dado ganado <br><br>
+    Nur que podra enviar a su Nurkano o incrementar el daño de otra bestia en un 1d3 por dado ganado <br><br>
 
     <strong> Mirada felina </strong> <br>
     Mas 3 para agradar con comunicación<br><br>
@@ -423,7 +423,7 @@ let bestias = [
     nombre: "Oso hormiguero verde",
     bioma: "Bosque",
     terreno: "Tierra",
-    tipo: "Rara",
+    tipo: "Especial",
     tamaño: "5",
     armadura: "15",
     Destreza: "2", Precision: "4", pelea: "-1", percepcion: "3", comunicacion: "0",
@@ -435,7 +435,7 @@ let bestias = [
     el ataque de la lengua será oculto destreza + 2 para evitar que se descubra, <br><br>
 
     <strong> Lengua de Nur </strong> <br>
-    el oso hormiguero se podrá conectar a su druida vinculado, 
+    el oso hormiguero se podrá conectar a su Nurkano vinculado, 
     y transferir  en su lengua cualquier hechizo donde se use Nur`,
 
     ataque: "Garras +1 <br> lengua", daño: "2D6 <br> 1D6", dureza: "5<br>2", alcance: "1<br>5"
@@ -445,21 +445,21 @@ let bestias = [
     nombre: "Rana dorada",
     bioma: "Costa",
     terreno: "Agua",
-    tipo: "Curandera",
+    tipo: "Soporte",
     tamaño: "5",
     armadura: "0",
-    Destreza: "3", Precision: "0", pelea: "1", percepcion: "2", comunicacion: "1",
-    fuerza: "0", voluntad: "2", constitucion: "-2", Instinto: "4",
+    Destreza: "2", Precision: "0", pelea: "0", percepcion: "1", comunicacion: "1",
+    fuerza: "-2", voluntad: "2", constitucion: "-2", Instinto: "4",
     enfoques: "Nadar, Curación, Huir", 
     Habilidades: `
     <strong> Lengua sanadora </strong> <br> 
-    Cura 2D6 (amo) o 1D6+ 2 (aliado) distancia: 5 metros -3 de Nur<br> <br> 
+    Cura 2D6 (Veltar) o 1D6+ 2 (aliado) distancia: 5 metros -3 de Nur<br> <br> 
      
     <strong> Experta en cirugias</strong> <br>
     bonus cirugía +6 y podra relanzar el dado especial si primero obtiene exito<br> <br> 
     
     <strong> Estomago sanador</strong> <br> 
-    puede almacenar criaturas de su tamaño menos 5 y curar aliados en estómago por 5d6 por turno`,
+    puede almacenar criaturas de su tamaño menos 5 (minimo bestias de 5 a 1)y curar aliados en estómago por 5d6 por turno`,
     ataque: "+1", daño: "1D6", dureza: "0", alcance: "1"
   },
 
@@ -467,7 +467,7 @@ let bestias = [
     nombre: "Escarabajo amarillo",
     bioma: "Costa",
     terreno: "Viento",
-    tipo: "Rara",
+    tipo: "Especial",
     tamaño: "3",
     armadura: "30",
     Destreza: "0", Precision: "-1", pelea: "-1", percepcion: "1", comunicacion: "-1",
@@ -481,7 +481,7 @@ let bestias = [
     Gastando 5 de Nur puede hacer una explosion de 1m haciendo 4d6 de daño dif 15 para esquivar<br> <br>
     
     <strong> Mirar a las estrella </strong> <br>
-    Describe como el escarabajo de noche puede ayudar a su druida vinculado a orientarse y a buscar recursos 
+    Describe como el escarabajo de noche puede ayudar a su Nurkano vinculado a orientarse y a buscar recursos 
     con un mas 3 en percepcion`,
 
     ataque: "+1", daño: "1D6", dureza: "5", alcance: "1"
@@ -491,7 +491,7 @@ let bestias = [
     nombre: "Pulpo cíclope",
     bioma: "Costa",
     terreno: "Agua",
-    tipo: "Estratégico",
+    tipo: "Especial",
     tamaño: "3",
     armadura: "0",
     Destreza: "0", Precision: "0", pelea: "-1", percepcion: "2", comunicacion: "1",
@@ -502,7 +502,7 @@ let bestias = [
     Puede restaurar una poción una sola vez. <br> <br>
     
     <strong> multiples cerebros </strong> <br>
-    Describe como puede ayudar a su druida vinculado a resolver algun problema, o tratando de entender o 
+    Describe como puede ayudar a su Nurkano vinculado a resolver algun problema, o tratando de entender o 
     recordar algo con mas 2 a inteligencia (no funciona para lanzar hechizos).`,
     ataque: "Latigo +1", daño: "1D6", dureza: "4", alcance: "1"
   },
@@ -511,7 +511,7 @@ let bestias = [
     nombre: "Cangrejo jaula",
     bioma: "Costa",
     terreno: "Tierra",
-    tipo: "Rara",
+    tipo: "Especial",
     tamaño: "5",
     armadura: "10",
     Destreza: "0", Precision: "-1", pelea: "1", percepcion: "1", comunicacion: "0",
@@ -559,7 +559,7 @@ let bestias = [
     enfoques: "Orientarse, Artesania (elije entre instinto, destreza, precision, fuerza), Forrajear", 
     Habilidades: `
     <strong> Artesania morada </strong> <br>
-    Mas 5 en instinto, precision y detreza para artesania.<br><br>
+    Mas 5 en instinto, precision y destreza para artesania.<br><br>
 
     <strong> Mejora de artesano </strong> <br>
     Mas 4 a las tiradas y dificultades para mejorar creaciones <br>
@@ -567,7 +567,7 @@ let bestias = [
 
     <strong> Arma temporalmente bendecida </strong> <br>
     En dos turnos en medio de un combate un arma se puede volver mas fuerte mas 2d6 de daño
-    se requiere 2 de Nur y un material de armas, la mejora solo dura 2 turnos o 2 minutos.<br><br>`,
+    se requiere 2 de Nur y un material de artesano, la mejora solo dura 2 turnos o 2 minutos.<br><br>`,
     ataque: "+1", daño: "1D6", dureza: "3", alcance: "1"
   },
 
@@ -578,7 +578,7 @@ let bestias = [
     tipo: "Ataque",
     tamaño: "3",
     armadura: "0",
-    Destreza: "-1", Precision: "-1", pelea: "0", percepcion: "2", comunicacion: "-1",
+    Destreza: "0", Precision: "-1", pelea: "1", percepcion: "2", comunicacion: "-1",
     fuerza: "0", voluntad: "3", constitucion: "-2", Instinto: "4",
     enfoques: "Nadar, Rayo", 
     Habilidades: `
@@ -589,7 +589,7 @@ let bestias = [
         <strong> Lengua electrica </strong> <br> 
     Describe como tu bestia te dara un +2 para engañar con comunicacion <br><br>
     `,
-    ataque: "Latigazo +1", daño: "1D6", dureza: "2", alcance: "1"
+    ataque: "Latigazo +1", daño: "1D6", dureza: "2", alcance: "2"
   },
 { 
     nombre: "Lagarto de trueno",
@@ -614,22 +614,22 @@ let bestias = [
     nombre: "Boa espinosa",
     bioma: "Desierto",
     terreno: "Tierra",
-    tipo: "Rara",
+    tipo: "Especial",
     tamaño: "5",
     armadura: "0",
-    Destreza: "-1", Precision: "0", pelea: "0", percepcion: "1", comunicacion: "0",
-    fuerza: "2", voluntad: "3", constitucion: "3", Instinto: "0",
-    enfoques: "", 
+    Destreza: "-1", Precision: "0", pelea: "0", percepcion: "0", comunicacion: "0",
+    fuerza: "2", voluntad: "3", constitucion: "3", Instinto: "2",
+    enfoques: "Hechizos de sello (instinto) ", 
     Habilidades: `
-    <strong> prision serpentina </strong> <br>
+    <strong> Prisión serpentina </strong> <br>
     Aprisiona enemigos y los paraliza (3D6 min). Dificultad basada en fuerza (+6 menor rango, +4 igual, +3 mayor) <br><br> 
     
-    <strong> prision de hechizos </strong> <br>
+    <strong> Prisión de hechizos </strong> <br>
     Gastando 4 de Nur puede sellar en su cuerpo un hechizo de alguna victima que atrape por un 1d3 turnos lanzando instinto vs voluntad de la victima <br><br> 
 
-    <strong> prision de bestias </strong> <br>
+    <strong> Prisión de bestias </strong> <br>
     Gastando 4 de Nur puede sellar en su cuerpo una bestia de hasta maximo el tamaño de la bestia mas 5 por un 1d3 turnos lanzando instinto vs voluntad de la victima `,
-    ataque: "+1", daño: "1D6", dureza: "4", alcance: "1"
+    ataque: "Mordida+1", daño: "1D6", dureza: "3", alcance: "1"
   },
 
   { 
@@ -650,7 +650,7 @@ let bestias = [
     Puede atacar con su lengua hasta 3 metros 1d6 de daño o agarrar objetos con ella.<br><br>
 
     <strong> Amigo invisible </strong>  Rango 7<br>
-    Puede hacerse invisible con su druida vinculado (1 vez/día)`,
+    Puede hacerse invisible con su Nurkano vinculado (1 vez/día)`,
     ataque: "+1", daño: "1D6", dureza: "2", alcance: "1"
   },
 
@@ -668,7 +668,7 @@ let bestias = [
     <strong> Montura aérea. </strong> <br> Tamaño 15. <br><br>
 
     <strong> Alas de gloria </strong> <br> 
-    Describe como el condor con sus alas puede generar un aura a su druida vinculado que le ayudara en tiradas sociales 
+    Describe como el condor con sus alas puede generar un aura a su Nurkano vinculado que le ayudara en tiradas sociales 
     con ambitos persuasivos con un mas 3 en comunicación.<br><br>
 
     <strong>Anticaidas</strong> Rango 7 <br> 
@@ -681,13 +681,13 @@ let bestias = [
     nombre: "Rana blanca",
     bioma: "Montaña",
     terreno: "Tierra",
-    tipo: "Clima",
+    tipo: "Especial",
     tamaño: "3",
     armadura: "0",
     Destreza: "1", Precision: "0", pelea: "-2", percepcion: "4", comunicacion: "-1",
-    fuerza: "1", voluntad: "2", constitucion: "3", Instinto: "3",
+    fuerza: "-2", voluntad: "2", constitucion: "0", Instinto: "2",
     enfoques: "Rastrear, Clima, Nadar", 
-    Habilidades: `Sensor climaticoDetecta clima futuro (5h). Hace inmune a clima por 1D6 turnos (1 vez/día)`,
+    Habilidades: `Sensor climatico Detecta clima futuro (5h). Hace inmune a clima por 1D6 turnos (1 vez/día)`,
     ataque: "-1", daño: "1D6", dureza: "2", alcance: "1"
   },
 
@@ -695,7 +695,7 @@ let bestias = [
     nombre: "Topo de 4 brazos",
     bioma: "Montaña",
     terreno: "Tierra",
-    tipo: "Rara",
+    tipo: "Especial",
     tamaño: "3",
     armadura: "0",
     Destreza: "-1", Precision: "0", pelea: "-1", percepcion: "1", comunicacion: "0",
@@ -719,12 +719,12 @@ let bestias = [
     tipo: "Ataque",
     tamaño: "5",
     armadura: "0",
-    Destreza: "1", Precision: "2", pelea: "-2", percepcion: "1", comunicacion: "1",
-    fuerza: "-1", voluntad: "3", constitucion: "0", Instinto: "5",
+    Destreza: "1", Precision: "2", pelea: "-2", percepcion: "1", comunicacion: "-1",
+    fuerza: "-1", voluntad: "2", constitucion: "0", Instinto: "5",
     enfoques: "Canto (Comunicación), Nadar (Destreza)", 
     Habilidades: ` 
     <strong> Flecha de agua </strong> <br> 
-    Gastando 2 de Nur puede lanzar una flecha de agua a 5 metros haciendo 2d6 de daño.
+    Gastando 2 de Nur puede lanzar una flecha de agua a 5 metros haciendo 2d6 de daño mas percepción.
     debe lanzar instinto vs esquiva de la victima <br> <br> 
 
     <strong> Prision de agua </strong> <br> 
@@ -733,7 +733,7 @@ let bestias = [
     turno ahi la victima si no es de agua recibe 1d6 de daño<br> <br> 
 
     <strong> Maestro de la punteria </strong> <br> 
-    Describe como este pez puede ayudar a su druida a lanzar con precision con un mas 3 `,
+    Describe como este pez puede ayudar a su Nurkano a lanzar con precision con un mas 3 `,
     ataque: "Mordidas", daño: "1D6", dureza: "1", alcance: "1"
   },
 
@@ -741,7 +741,7 @@ let bestias = [
     nombre: "Salamandra de dos colas",
     bioma: "Montaña",
     terreno: "Tierra",
-    tipo: "Rara",
+    tipo: "Soporte",
     tamaño: "5",
     armadura: "0",
     Destreza: "0", Precision: "-1", pelea: "2", percepcion: "1", comunicacion: "0",
@@ -761,7 +761,7 @@ let bestias = [
     nombre: "Delfin nariz de flauta",
     bioma: "Costa",
     terreno: "Agua",
-    tipo: "Bardo",
+    tipo: "Soporte",
     tamaño: "5",
     armadura: "0",
     Destreza: "2", Precision: "-1", pelea: "-2", percepcion: "2", comunicacion: "5",
@@ -772,10 +772,10 @@ let bestias = [
     Mas 4 para curar daño psicologico, y cura 5 de daño adicional <br> <br> 
 
     <strong> Canticos de guerra </strong> <br> 
-    Puede inspirar a su druida vinculado y a un druida con su bestia, para que en combate hagan 1d6 de daño adicional<br> <br> 
+    Puede inspirar a su Nurkano vinculado y a un Nurkano con su bestia, para que en combate hagan 1d6 de daño adicional<br> <br> 
 
     <strong> Canticos romanticos </strong> <br> 
-    Describe como el delfin da mas 4 a su druida vinculado o mas 2 a algun druida o bestia por medio de canticos
+    Describe como el delfin da mas 4 a su Nurkano vinculado o mas 2 a algun Nurkano o bestia por medio de canticos
     para escenas de seducción `,
     ataque: "Mordidas", daño: "1D6", dureza: "2", alcance: "1"
   },
@@ -795,35 +795,31 @@ let bestias = [
     De noche se vuelve invisible (1D3 horas). Detectarla requiere tirada dificultad 20 <br> <br> 
 
     <strong> Mirada de vigia </strong> <br> 
-    Decribe como la bestia le puede ayudar a su druida vinculado a detectar si alguien miente o conocer sus intensiones
+    Describe como la bestia le puede ayudar a su Nurkano vinculado a detectar si alguien miente o conocer sus intensiones
     con +3 a percepción <br> <br> 
 
     <strong> Manto del silencio </strong> <br> 
-    puede colocar un manto sobre su druida vinculado para que la misma lechuza haga 
-    las tiradas de sigilo por el, la lechiza debe estar con el`,
+    puede colocar un manto sobre su Nurkano vinculado para que la misma lechuza haga 
+    las tiradas de sigilo por el, la lechuza debe estar con el`,
     ataque: "Garras +1 <br> Picotazo", daño: "1D6 <br> 1D6", dureza: "2 <br> 2", alcance: "1 <br> 1"
   },
   
   {
     nombre: "Pug azul",
     bioma: "Bosque",
-    terreno: "Bosque",
-    tipo: "Trampero",
+    terreno: "Tierra",
+    tipo: "Especial",
     tamaño: "5",
     armadura: "0",
-    Destreza: "1", Precision: "—", pelea: "3", percepcion: "4", comunicacion: "2",
+    Destreza: "1", Precision: "-1", pelea: "2", percepcion: "4", comunicacion: "2",
     fuerza: "-1", voluntad: "1", constitucion: "-2", Instinto: "1",
 
     enfoques: "Oler, Nadar",
 
     Habilidades: `
     <strong>Baba trampa</strong><br>
-    Hechizo: -2 de nur para producir una baba tipo trampa que puede detener a alguien y reducir su esquiva en -2 durante el combate. Se realiza con una tirada de Inteligencia con dificultad 12. El dado especial representa cuántos metros de baba deja.<br>
-    Para liberarse de la baba, la víctima debe superar una tirada enfrentada de Fuerza contra la resistencia de la baba, determinada por la primera tirada.<br><br>
-
-    <strong>Comportamiento particular</strong><br>
-    A veces querrá que su amo lo cargue en brazos. En ocasiones será por cansancio y otras veces simplemente querrá estar en sus brazos.
-    `,
+    Hechizo: -2 de nur para producir una baba tipo trampa que puede detener a alguien y reducir su esquiva en -2 durante el combate. Se realiza con una tirada de Instinto con dificultad 12. El dado especial representa cuántos metros de baba deja.<br>
+    Para liberarse de la baba, la víctima debe superar una tirada enfrentada de Fuerza contra la resistencia de la baba, determinada por la primera tirada.<br><br>`,
 
     ataque: "Mordidas +5",
     daño: "1D6",
@@ -838,14 +834,14 @@ let bestias = [
     tipo: "Social",
     tamaño: "3",
     armadura: "0",
-    Destreza: "1", Precision: "—", pelea: "—", percepcion: "1", comunicacion: "4",
+    Destreza: "1", Precision: "0", pelea: "0", percepcion: "1", comunicacion: "4",
     fuerza: "-2", voluntad: "2", constitucion: "-1", Instinto: "+3",
 
-    enfoques: "—",
+    enfoques: "Engañar, Persuadir, Trato con Nurkanos, intimidar o seducción (elije dos)",
 
     Habilidades: `
     <strong>Bestia social</strong><br>
-    Puede utilizar las habilidades de Seducción, Intimidar y Distraer. Puede volver a lanzar todas las acciones sociales que realice su dueño, siempre que el pavo real pueda actuar.<br><br>
+    Puede utilizar las habilidades de engañar, Persuadir, Trato con Nurkanos, trato con bestias, intimidar o seducción y Distraer (Elije 3) Puede volver a lanzar todas las acciones sociales que realice su Veltar, siempre que el pavo real pueda actuar.<br><br>
 
     <strong>Vida adicional</strong><br>
     El pavo real obtiene +1 de vida. cada vez que sube de rango max 3<br><br>
@@ -854,7 +850,7 @@ let bestias = [
     Reduce su daño psíquico a la mitad.<br><br>
 
     <strong>Resistencia psíquica x2</strong> Rango 7<br>
-    El pavo real puede duplicarse, quedando una cabeza en cada cuerpo, hasta un máximo de dos cuerpos. También puede ayudar a un druida que le permita colocarse sobre su hombro, reduciendo todo el daño psíquico a la mitad. Esta habilidad solo puede utilizarse una vez al día y dura una hora.<br><br>
+    El pavo real puede duplicarse, quedando una cabeza en cada cuerpo, hasta un máximo de dos cuerpos. También puede ayudar a un Nurkano que le permita colocarse sobre su hombro, reduciendo todo el daño psíquico a la mitad. Esta habilidad solo puede utilizarse una vez al día y dura una hora.<br><br>
 
     `,
 
@@ -868,11 +864,11 @@ let bestias = [
     nombre: "Cernícalo rayado",
     bioma: "Desierto",
     terreno: "Viento",
-    tipo: "Rara",
+    tipo: "Especial",
     tamaño: "5",
     armadura: "17M",
-    Destreza: "—", Precision: "—", pelea: "4", percepcion: "1", comunicacion: "0",
-    fuerza: "—", voluntad: "-1", constitucion: "2", Instinto: "-2",
+    Destreza: "1", Precision: "0", pelea: "4", percepcion: "1", comunicacion: "0",
+    fuerza: "0", voluntad: "-1", constitucion: "2", Instinto: "-2",
 
     enfoques: "Volar, Aletazos",
 
@@ -884,7 +880,7 @@ let bestias = [
     `,
 
     ataque: "Garrazos +1",
-    daño: "1D4",
+    daño: "1D6",
     dureza: "3",
     alcance: "1"
   },
@@ -892,15 +888,15 @@ let bestias = [
     nombre: "Hormiga lanza",
     bioma: "Bosque",
     terreno: "Tierra",
-    tipo: "...",
+    tipo: "Ataque",
     tamaño: "5",
     armadura: "10",
-    Destreza: "0", Precision: "1", pelea: "-2", percepcion: "0", comunicacion: "1",
-    fuerza: "7", voluntad: "1", constitucion: "0", Instinto: "1",
+    Destreza: "1", Precision: "-1", pelea: "0", percepcion: "0", comunicacion: "0",
+    fuerza: "7", voluntad: "0", constitucion: "-1", Instinto: "1",
     enfoques: "Empujar (fuerza)",
     Habilidades: `
     <strong> Mandibulas titanicas </strong> <br> 
-    Con sus manibulas pueden cargar hasta 15 de tamaño <br><br>
+    Con sus mandibulas pueden cargar hasta 15 de tamaño <br><br>
 
     <strong> Sacrificio valido </strong> <br> 
     La hormiga explota en un radio de 1 metro causando 7d6 de daño, a su nurkano le aparecera
@@ -916,11 +912,11 @@ let bestias = [
     nombre: "Elefante de dos trompas",
     bioma: "Bosque",
     terreno: "Tierra",
-    tipo: "Investigadora",
+    tipo: "Soporte",
     tamaño: "10",
     armadura: "20",
-    Destreza: "-2", Precision: "..", pelea: "..", percepcion: "..", comunicacion: "..",
-    fuerza: "..", voluntad: "..", constitucion: "..", Instinto: "..",
+    Destreza: "-2", Precision: "-2", pelea: "-1", percepcion: "-1", comunicacion: "3",
+    fuerza: "4", voluntad: "1", constitucion: "2", Instinto: "2",
     enfoques: "primeros auxilios (Instinto)",
     Habilidades: `
     <strong> Soplo sanador para bestias </strong> <br> 
@@ -935,7 +931,11 @@ let bestias = [
                     9 - 12  Le logras enseñar.<br>
                     13 - 16  Le logras enseñar y además le das mas experiencia a la bestia tu rango x 1 <br>
                     17 - 20 Le logras enseñar y además le das mas experiencia a la bestia tu rango x 3<br>
-                    21 - ... Le logras enseñar y además le das mas experiencia a la bestia tu rango x 5 y experiencia para el druida del vínculo tu rango x 3 <br><br>
+                    21 - ... Le logras enseñar y además le das mas experiencia a la bestia tu rango x 5 y experiencia para el Nurkano del vínculo tu rango x 3 <br><br>
+
+    <strong> Presencia confiable </strong> <br> 
+    Explica como el elefante ayuda a su veltar dandole un +2 en persuacion/comunicación <br><br>
+
 
     <strong> ... </strong> Rango .. <br> 
     ...
@@ -943,11 +943,13 @@ let bestias = [
     ataque: "Trompazo <br> ...", daño: "3d6 <br> ..", dureza: "4 <br> ..", alcance: "2 <br> .."
 
 },
+
+
     {
-    nombre: "Murcielago carmesi",
+    nombre: "Murciélago carmesi",
     bioma: "Montaña",
     terreno: "Aire",
-    tipo: "...",
+    tipo: "Soporte",
     tamaño: "10",
     armadura: "..",
     Destreza: "0", Precision: "0", pelea: "0", percepcion: "2", comunicacion: "0",
@@ -973,13 +975,13 @@ let bestias = [
     {
     nombre: "Dragon de kodomo de 6 patas",
     bioma: "Desierto",
-    terreno: "...",
-    tipo: "...",
+    terreno: "Tierra",
+    tipo: "Ataque",
     tamaño: "5",
     armadura: "20",
-    Destreza: "1", Precision: ".0", pelea: "0", percepcion: "0", comunicacion: "0",
-    fuerza: "2", voluntad: "3", constitucion: "..", Instinto: "3",
-    enfoques: "Hechiso elemental (instinto), Garras (pelea)",
+    Destreza: "1", Precision: "-1", pelea: "0", percepcion: "0", comunicacion: "0",
+    fuerza: "1", voluntad: "3", constitucion: "1", Instinto: "3",
+    enfoques: "Hechizo elemental (instinto), Garras (pelea)",
     Habilidades: `
     <strong> lanza de fuego </strong> <br> 
     2d6 2 metros -2 de nur <br><br>
@@ -1002,8 +1004,8 @@ let bestias = [
     tipo: "Artesana",
     tamaño: "5",
     armadura: "0",
-    Destreza: "3", Precision: "-1", pelea: "..", percepcion: "0", comunicacion: "1",
-    fuerza: "2", voluntad: "0", constitucion: "0", Instinto: "5",
+    Destreza: "3", Precision: "-1", pelea: "-1", percepcion: "0", comunicacion: "1",
+    fuerza: "2", voluntad: "0", constitucion: "-1", Instinto: "5",
     enfoques: "Nadar (Fuerza), Artesania (elije entre instinto, destreza, precision, fuerza), Forrajear",
     Habilidades: `
     <strong> Artesania naranja</strong> <br>
@@ -1014,8 +1016,8 @@ let bestias = [
     <div><a href="escenas/taller.html" class="btn">Ir a taller</a></div> 
 
     <strong> Armadura temporalmente bendecida </strong> <br>
-    En dos turnos en medio de un combate una armadura se puede volver mas resistente mas 2d6 de daño
-    se requiere 2 de Nur y un material de armas, la mejora solo dura 2 turnos o 2 minutos.<br><br>
+    En dos turnos en medio de un combate una armadura se puede volver mas resistente mas 3d6 de resistencia del arma
+    se requiere 2 de Nur y un material de artesano, la mejora solo dura 2 turnos o 2 minutos.<br><br>
     `,
     ataque: "Mordida <br> ...", daño: "2d6 <br> ..", dureza: "3 <br> ..", alcance: "1 <br> .."
 

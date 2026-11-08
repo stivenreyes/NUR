@@ -157,7 +157,7 @@ let CAOTICO = {
         },
         {
           nombre : "Cargar con Nur 🛡️", 
-          descripcionGrimorio: "Requisito: Roca del caos (novato) <br> Puedes tomar del ambiente, objeto, druida o bestia y de forma involuntaria, teniendo una tirada de voluntad vs voluntad solo si el objetivo se resiste. <br> Si lo logras robaras Nur, tanto como tu nivel de Nur - 1D6<br>  Nur que debes expulsar si o si para evitar recibir esa cantidad x2 de daño <br>       Puedes expulsarla tocando a alguien para cargarlo y generar uno de estos efectos segun el nivel que tengas esta habilidad",
+          descripcionGrimorio: "Requisito: Roca del caos (novato) <br> Puedes tomar del ambiente, objeto, Nurita o bestia y de forma involuntaria, teniendo una tirada de voluntad vs voluntad solo si el objetivo se resiste. <br> Si lo logras robaras Nur, tanto como tu nivel de Nur - 1D6<br>  Nur que debes expulsar si o si para evitar recibir esa cantidad x2 de daño <br>       Puedes expulsarla tocando a alguien para cargarlo y generar uno de estos efectos segun el nivel que tengas esta habilidad",
           novato: "La persona cargada podrá hacer daño mágico pero recibir la mitad de daño del ataque que haga, ya que el Nur no esta del todo bien pulido<br> este efecto solo se puede hacer una vez al dia, y la carga debe expulsarla en máximo 1 turno o media minuto",
           experto: "La persona cargada podrá hacer daño mágico <br> este efecto solo se puede hacer una vez al dia, y la carga debe expulsarla en máximo 1 turno o media minuto",
           maestro: "...",

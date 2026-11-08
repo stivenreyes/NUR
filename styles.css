@@ -1440,7 +1440,7 @@ table {
   font-size: 24px;
   border: none;
   border-radius: 10px;
-  background: #333;
+  background: var(--color-primary);
   color: white;
   cursor: pointer;
 }

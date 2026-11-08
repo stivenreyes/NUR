@@ -23,7 +23,7 @@ let EXPLORADOR = {
                 {
                     nombre: "Guía del silencio",
                     descripcionGrimorio: "Dominio del sigilo en grupo y movilidad.",
-                    novato: "Relanza ataque con arco (1 vez por turno), +1 velocidad, puedes llevar 1 druida y su bestia en sigilo",
+                    novato: "Relanza ataque con arco (1 vez por turno), +1 velocidad, puedes llevar 1 Nurita y su bestia en sigilo",
                     experto: "Puedes llevar hasta 2 druidas y bestias, +2 velocidad",
                     maestro: "Puedes llevar hasta 4 druidas y bestias, +4 velocidad",
                     hechizos: []

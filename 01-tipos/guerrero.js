@@ -10,6 +10,7 @@ let GUERRERO = {
                     novato: "Relanzar y quedar con el otro resultado al atacar, +2 de ataque con armas cortas",
                     experto: "+4 de ataque",
                     maestro: "Nueva proeza: Noquear (6 puntos). Tirada enfrentada de ataque vs constitución; si gana, noquea 1d3 turnos. <br> Puedes entrar una vez por escena en modo Berserker, donde tener una accion adicional de combate para ti y tu bestia, pero solo podras activar la proeza doble ataque una vez, despues de eso debes descansar un turno.",
+                    legendario: "En proceso...",
                     hechizos: []
                 },
                 {
@@ -19,6 +20,7 @@ let GUERRERO = {
                     experto: `Tú y un aliado obtienen +2D6 daño, puedes cambiar el bonus cada turno.<br><br>
                      Acción extra: detienes un  enemigo que este a minimo 1m de forma automatica, otro aliado de tu eleccion cuando ataque, la vitima tendra -2 a esquiva. y el daño se podra relanzar 2 veces y elegir el mejor. despues del ataque la victima se soltara`,
                     maestro: "Tú y un aliado obtienen +3D6 daño; puedes cambiar el bonus cada turno. Acción extra igual. Aliado puede repetir hasta 2 ataques fallidos",
+                    legendario: "En proceso...",
                     hechizos: []
                 }
             ]
@@ -85,7 +87,7 @@ let GUERRERO = {
                     hechizos: []                   
                 },
                 {                 
-                    nombre: "Escudo de druida",
+                    nombre: "Escudo de Nurita",
                     descripcionGrimorio: "Tienes la habilidad de usar otros recursos vivos que encuentres cerca de forma muy rápida y cómoda,Usas a otro druida vivo o cadaver como escudo",
                     novato: "Usa cadáver (tamaño 10) como escudo vida 10, sin penalizador con arma 1 mano",
                     experto: "Cadáver tamaño 15 vida 20; con druida vivo puedes relanzar fuerza",

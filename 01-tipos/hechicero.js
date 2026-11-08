@@ -11,7 +11,7 @@ let HECHICERO = {
       experto: "Eliges un nuevo grimorio de otro elemento y aprendes un hechizo experto de fuego o creas uno nuevo de nivel experto (consultar con el master).",
       maestro: "Eliges un nuevo grimorio de otro elemento y aprendes un hechizo maestro de fuego o creas uno nuevo de nivel maestro (consultar con el master).",
       hechizos: [         {
-          nombreHechizo: "Fenix de fuego legendarios",
+          nombreHechizo: "Fenix legendarios de fuego",
           nivelHechizo: "Legendario",
           descripcion: "Una vez por dia, puedes encender una llama interna con tu bestia, sin gastar accion. luego de usar 3 hechizos de fuego, podras por una accion tu y tu bestia convertirsen en dos grandes fenix de fuego (30 de tamaño), quien toque cada uno de esos fenix puede recibir 7d6+ inteligencia o instinto de curación o daño magico. dura solo un turno",
           tipoHechizo: "Ataque",
@@ -218,7 +218,7 @@ let HECHICERO = {
           alcanceMaximo: "-"
         },
         {
-          nombreHechizo: "area y rayo no se",
+          nombreHechizo: "area de tormenta",
           nivelHechizo: "Experto",
           descripcion: "Puedes hacer un atauqe en area de 3 metros, todos recibiendo 1d6 de daño. si estas al lado de tu bestia podran hacer 3d6 de daño",
           tipoHechizo: "Soporte",
@@ -227,7 +227,7 @@ let HECHICERO = {
           alcanceMaximo: "-"
         },
         {
-          nombreHechizo: "Bestia y druida unidos",
+          nombreHechizo: "Velkor y Veltar unidos",
           nivelHechizo: "Experto",
           descripcion: "Tu bestia y tu, podran teletransportarsen en el sitio del otro o intercambiar sus lugares <br> gastando 5 de Nur puedes activar este hechizo tan rapido que no contara como acción ",
           tipoHechizo: "Estrategico",
@@ -407,7 +407,7 @@ let HECHICERO = {
           alcanceMaximo: "3 m"
         },
         {
-          nombreHechizo: "Remolino prision",
+          nombreHechizo: "Remolino prisión",
           nivelHechizo: "Novato",
           descripcion: "Lanza una rafaga en forma de flecha",
           tipoHechizo: "Curación",

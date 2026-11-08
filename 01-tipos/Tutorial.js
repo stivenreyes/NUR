@@ -1,4 +1,13 @@
-let pasoActual = 1;
+
+/* ================= RECUPERAR DATOS ================= */
+
+let pasoActual = Number(localStorage.getItem("pasoTutorialNurkano")) || 1;
+
+// Recuperar el scroll guardado
+let scrollGuardado = Number(localStorage.getItem("scrollTutorialNurkano")) || 0;
+
+
+/* ================= MOSTRAR PASO ================= */
 
 function mostrarPaso() {
 
@@ -14,11 +23,9 @@ function mostrarPaso() {
         pasoVisible.classList.add("activo");
     }
 
-     // Subir al inicio de la página
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+    // Guardar el paso actual
+    localStorage.setItem("pasoTutorialNurkano", pasoActual);
+
 
     /* ================= BARRA DE PROGRESO ================= */
 
@@ -28,42 +35,91 @@ function mostrarPaso() {
 
     progreso.style.width = porcentaje + "%";
 
-        /* ================= CONTADOR ================= */
+
+    /* ================= CONTADOR ================= */
 
     let contador = document.getElementById("contador-paso");
-    contador.textContent = pasoActual + " de 8";
+
+    if (contador) {
+        contador.textContent = pasoActual + " de 8";
+    }
 
 
     /* ================= OCULTAR BOTON ================= */
 
     let btnSiguiente = document.getElementById("btn-siguiente");
 
-    if (pasoActual === 8) {
-        btnSiguiente.style.display = "none";
-    } else {
-        btnSiguiente.style.display = "inline-block";
+    if (btnSiguiente) {
+        btnSiguiente.style.display = pasoActual === 8 ? "none" : "inline-block";
     }
 
 }
+
+
+/* ================= GUARDAR SCROLL ================= */
+
+window.addEventListener("scroll", function() {
+
+    localStorage.setItem("scrollTutorialNurkano", window.scrollY);
+
+});
+
+
+/* ================= SIGUIENTE ================= */
 
 function siguiente() {
 
     if (pasoActual < 8) {
+
         pasoActual++;
+
+        localStorage.setItem("scrollTutorialNurkano", 0);
+
         mostrarPaso();
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
     }
 
 }
+
+
+/* ================= ANTERIOR ================= */
 
 function anterior() {
 
     if (pasoActual > 1) {
+
         pasoActual--;
+
+        localStorage.setItem("scrollTutorialNurkano", 0);
+
         mostrarPaso();
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
     }
 
 }
 
-/* iniciar */
+
+/* ================= INICIAR ================= */
 
 mostrarPaso();
+
+
+// Recuperar posición al cargar la página
+window.addEventListener("load", function() {
+
+    window.scrollTo({
+        top: scrollGuardado,
+        behavior: "instant"
+    });
+
+});

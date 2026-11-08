@@ -96,7 +96,7 @@ let INVESTIGADOR = {
                     Cuando tomas la forma de una bestia, no quiere decir que podrás entender su lenguaje ya que 
                     solo estas cambiando tu físico no toda tu mentalidad para eso, eso si, tendrás +3 con especies 
                     similares a tu forma y +1 a especies diferentes con tirada de trato con animales/comunicación<br>
-                    y no tendrás mas vida que tu en estado druida, si llegas a tener en tu estado animal 0 de vida
+                    y no tendrás mas vida que tu en estado Nurkano, si llegas a tener en tu estado animal 0 de vida
                     te destranformas restando la vida que perdiste, si también llegas a 0 tu personaje muere`,
 
                     novato: "Transformación tamaño 3-10 por 1d6 turnos (2 Nur)",

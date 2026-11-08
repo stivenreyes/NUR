@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<link rel="stylesheet" href="../styles.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Encontrar Bestias en Amara</title>
+
+<link rel="icon" type="image/png" href="../otrasimagenes/NUR%20logo%202%20enero%202025%203.png">
+
+
+</head>
+
+<body>
+<div id="navbar-container"></div>
+
+<h1>Encontrar Bestias en Amara</h1>
+
+
+<h2>¿Cómo encontrar una especie?</h2>
+
+<p>
+    ¿Hay una especie en este bioma? Para descubrirlo, comienza con una
+    probabilidad base de <strong>10 puntos</strong>.
+</p>
+
+<p>
+    Ve restando o sumando puntos según las condiciones del entorno
+    y las características de la especie que estás buscando.
+</p>
+
+<h3>Modificadores de probabilidad</h3>
+
+<h4>Factores negativos</h4>
+
+<ul>
+    <li>La especie no pertenece a este bioma: <strong>-2</strong></li>
+    <li>Su bioma está lejos: <strong>-3</strong></li>
+    <li>No es una especie migratoria: <strong>-1</strong></li>
+    <li>Su depredador natural está cerca: <strong>-2</strong></li>
+</ul>
+
+<h4>Factores positivos</h4>
+
+<ul>
+    <li>Hay alimento o presas disponibles para ella: <strong>+2</strong></li>
+    <li>Hay una hembra o un macho en etapa de reproducción: <strong>+2</strong></li>
+</ul>
+
+<h3>Apoyo de investigadores</h3>
+
+<p>
+    ¿Eres investigador o tienes investigadores en tu mesa?
+    Si la tarea resulta demasiado complicada, puedes pedir su apoyo.
+</p>
+
+<h3>Un poco de suerte</h3>
+
+<p>
+    Si quieres probar tu suerte, lanza <strong>1d6</strong> y suma
+    el resultado a tu probabilidad actual.
+</p>
+
+<h3>Comprobación final</h3>
+
+<ol>
+    <li>Calcula tu probabilidad final.</li>
+    <li>Lanza <strong>1d10</strong>.</li>
+    <li>Si el resultado del dado es menor que tu probabilidad final,
+        ¡has encontrado la especie!</li>
+    <li>Si el resultado es igual o mayor, no has conseguido encontrarla.</li>
+</ol>
+
+<button id="btn-arriba">↑</button>
+
+<a href="#" class="btn" onclick="history.back()">Volver</a>
+
+<script src="../01-tipos/navbar.js"></script>
+<script src="../01-tipos/01-componentes.js"></script>
+
+
+</body>
+</html>

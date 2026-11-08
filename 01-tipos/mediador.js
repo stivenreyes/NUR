@@ -88,6 +88,14 @@ let MEDIADOR = {
           experto: "Causa 2D6 daño psíquico",
           maestro: "Reduce daño recibido con tirada adicional",
           hechizos: []
+        },
+        {
+          nombre: "Belleza superficial",
+          descripcionGrimorio: "...",
+          novato: "Por cada 2 de nur que se gasten mas 1 a apariencia, puedes gastar nur para hacerlo lucir tu vstuario mas acorde a cualquier escenario o ceremonia",
+          experto: "...",
+          maestro: "...",
+          hechizos: []
         }
       ]
     }
