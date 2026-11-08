@@ -298,7 +298,7 @@ let bestias = [
     enfoques: "Lanzar, Excavar", 
     Habilidades: `
     <strong> Explosión de puas </strong> <br>
-    Explosion con fuerza +4 (area 2m, 1d6 daño, dif 13) las victimas pueden esquivar con dif 13, las puas pueden ir al subsuelo. <br><br>
+    Explosión con voluntad +3 (area 2m, 1d6 daño, dif 13) las victimas pueden esquivar con dif 13, las puas pueden ir al subsuelo. <br><br>
 
     <strong> Amigo espinoso </strong> <br>
     Una vez por dia puede sin gastar accion y en cualquier momento hacer que su Nurkano vinculado, le aparezcan puas por todo 
@@ -318,7 +318,7 @@ let bestias = [
     enfoques: "Nadar x2, Oler", 
     Habilidades: `
     <strong>Detector de sangre </strong> <br>
-    (100m). gastando 2 de Nur puede aparecer al lado de su Nurkano en aluna superficie de agua en hasta 1km. <br><br>
+    Puede detectar sangre en agua a (100m). gastando 2 de Nur puede aparecer al lado de su Nurkano en aluna superficie de agua en hasta 1km. <br><br>
 
     <strong>Miedo y culpa </strong> <br>
     Mas 5 para encontrar criaturas asustadas`
@@ -408,7 +408,7 @@ let bestias = [
     tamaño: "5",
     armadura: "0",
     Destreza: "3", Precision: "-1", pelea: "4", percepcion: "0", comunicacion: "0",
-    fuerza: "2", voluntad: "-1", constitucion: "1", Instinto: "-2",
+    fuerza: "2", voluntad: "1", constitucion: "1", Instinto: "-2",
     enfoques: "Artes marciales", 
     Habilidades: `
     <strong> Cola de mono </strong> <br>
@@ -470,8 +470,8 @@ let bestias = [
     tipo: "Especial",
     tamaño: "3",
     armadura: "30",
-    Destreza: "0", Precision: "-1", pelea: "-1", percepcion: "1", comunicacion: "-1",
-    fuerza: "2", voluntad: "4", constitucion: "3", Instinto: "-2",
+    Destreza: "1", Precision: "-1", pelea: "-1", percepcion: "1", comunicacion: "-1",
+    fuerza: "2", voluntad: "4", constitucion: "3", Instinto: "-1",
     enfoques: "orientarse (percep), volar (destreza) ", 
     Habilidades: `
     <strong> Coraza envenenada </strong> <br>
@@ -536,7 +536,7 @@ let bestias = [
     tamaño: "15",
     armadura: "20",
     Destreza: "-1", Precision: "-2", pelea: "2", percepcion: "-1", comunicacion: "-1",
-    fuerza: "4", voluntad: "2", constitucion: "4", Instinto: "-2",
+    fuerza: "5", voluntad: "2", constitucion: "4", Instinto: "-2",
     enfoques: "Aguante de carga, Respiración, Sumergirse", 
     Habilidades: `
     <strong> Montura </strong> <br> 
@@ -555,7 +555,7 @@ let bestias = [
     tamaño: "5",
     armadura: "0",
     Destreza: "3", Precision: "-1", pelea: "-1", percepcion: "2", comunicacion: "1",
-    fuerza: "0", voluntad: "0", constitucion: "-2", Instinto: "5",
+    fuerza: "0", voluntad: "1", constitucion: "-2", Instinto: "5",
     enfoques: "Orientarse, Artesania (elije entre instinto, destreza, precision, fuerza), Forrajear", 
     Habilidades: `
     <strong> Artesania morada </strong> <br>
@@ -568,9 +568,8 @@ let bestias = [
     <strong> Arma temporalmente bendecida </strong> <br>
     En dos turnos en medio de un combate un arma se puede volver mas fuerte mas 2d6 de daño
     se requiere 2 de Nur y un material de artesano, la mejora solo dura 2 turnos o 2 minutos.<br><br>`,
-    ataque: "+1", daño: "1D6", dureza: "3", alcance: "1"
+    ataque: "Picotazo +1", daño: "1D6", dureza: "3", alcance: "1"
   },
-
   { 
     nombre: "Medusa eléctrica",
     bioma: "Costa",
@@ -607,7 +606,7 @@ let bestias = [
         <strong> Mente electrica </strong> <br> 
     Describe como tu bestia por medio de electricidad te dara un +2 en inteligencia cuando quieras entender algo <br><br>
     `,
-    ataque: "+3", daño: "1D6", dureza: "4", alcance: "1"
+    ataque: "Mordida +3", daño: "1D6", dureza: "4", alcance: "1"
   },
 
   { 
@@ -629,7 +628,8 @@ let bestias = [
 
     <strong> Prisión de bestias </strong> <br>
     Gastando 4 de Nur puede sellar en su cuerpo una bestia de hasta maximo el tamaño de la bestia mas 5 por un 1d3 turnos lanzando instinto vs voluntad de la victima `,
-    ataque: "Mordida+1", daño: "1D6", dureza: "3", alcance: "1"
+    
+    ataque: "Mordida +1", daño: "1D6", dureza: "3", alcance: "1"
   },
 
   { 
@@ -651,6 +651,7 @@ let bestias = [
 
     <strong> Amigo invisible </strong>  Rango 7<br>
     Puede hacerse invisible con su Nurkano vinculado (1 vez/día)`,
+
     ataque: "+1", daño: "1D6", dureza: "2", alcance: "1"
   },
 
@@ -674,6 +675,7 @@ let bestias = [
     <strong>Anticaidas</strong> Rango 7 <br> 
     Antes de caer al suelo desde grandes alturas la bestia podrá detenerse en el aire y aterrizar sin importar si esta inconsciente o no. 
     si cae en el agua flotara por unos minutos, si cae en la lava o algún lugar peligroso será invulnerable a ese daño por 2 minutos/ 3 turnos`,
+
     ataque: "Garras +1 <br> Picotazo", daño: "1D6 <br> 2D6", dureza: "3 <br> 2", alcance: "1 <br> 1"
   },
 
@@ -685,9 +687,10 @@ let bestias = [
     tamaño: "3",
     armadura: "0",
     Destreza: "1", Precision: "0", pelea: "-2", percepcion: "4", comunicacion: "-1",
-    fuerza: "-2", voluntad: "2", constitucion: "0", Instinto: "2",
+    fuerza: "-2", voluntad: "3", constitucion: "0", Instinto: "3",
     enfoques: "Rastrear, Clima, Nadar", 
     Habilidades: `Sensor climatico Detecta clima futuro (5h). Hace inmune a clima por 1D6 turnos (1 vez/día)`,
+
     ataque: "-1", daño: "1D6", dureza: "2", alcance: "1"
   },
 
@@ -867,22 +870,19 @@ let bestias = [
     tipo: "Especial",
     tamaño: "5",
     armadura: "17M",
-    Destreza: "1", Precision: "0", pelea: "4", percepcion: "1", comunicacion: "0",
-    fuerza: "0", voluntad: "-1", constitucion: "2", Instinto: "-2",
+    Destreza: "1", Precision: "0", pelea: "2", percepcion: "1", comunicacion: "0",
+    fuerza: "0", voluntad: "1", constitucion: "2", Instinto: "0",
 
     enfoques: "Volar, Aletazos",
 
     Habilidades: `
     <strong>Ataque de parásitos</strong><br>
-    Cuando el cernícalo ataca a alguien con sus alas, le transmite unos parásitos que transporta en ellas. Estos afectan a la víctima con 2D6 de daño cada ronda, ignorando la armadura.<br>
+    Cuando el cernícalo ataca a alguien con sus alas, gastando 2 de nur le transmite unos parásitos que transporta en ellas. Estos afectan a la víctima con 2D6 de daño cada ronda, ignorando la armadura.<br>
     Para deshacerse de los parásitos, la víctima debe utilizar agua o sacudirse con fuerza la ropa y todo lo que lleve puesto.<br><br>
 
     `,
 
-    ataque: "Garrazos +1",
-    daño: "1D6",
-    dureza: "3",
-    alcance: "1"
+    ataque: "Garrazo <br> Aletazo", daño: "1d6 <br> 1d6", dureza: "2 <br> 2", alcance: "1 <br> 1"
   },
   {
     nombre: "Hormiga lanza",
@@ -973,7 +973,7 @@ let bestias = [
 
 },
     {
-    nombre: "Dragon de kodomo de 6 patas",
+    nombre: "Dragon de komodo de 6 patas",
     bioma: "Desierto",
     terreno: "Tierra",
     tipo: "Ataque",
@@ -1005,7 +1005,7 @@ let bestias = [
     tamaño: "5",
     armadura: "0",
     Destreza: "3", Precision: "-1", pelea: "-1", percepcion: "0", comunicacion: "1",
-    fuerza: "2", voluntad: "0", constitucion: "-1", Instinto: "5",
+    fuerza: "2", voluntad: "1", constitucion: "-1", Instinto: "5",
     enfoques: "Nadar (Fuerza), Artesania (elije entre instinto, destreza, precision, fuerza), Forrajear",
     Habilidades: `
     <strong> Artesania naranja</strong> <br>
