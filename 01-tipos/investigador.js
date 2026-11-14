@@ -46,10 +46,13 @@ let INVESTIGADOR = {
                 },
                 {                 
                     nombre: "Rastreo y estudio de huellas",
-                    descripcionGrimorio: "Puedes encontrar y seguir huellas, descubrir informacion con ellas.",
-                    novato: "+3 percepcion para rastrear huellas frescas (de hace horas) y un rastreo hasta 1 zona. <br> +3 con inteligencia/zoologia para descubrir hasta una informacion de la bestia.",
+                    descripcionGrimorio: "Puedes encontrar y seguir huellas, descubrir información con ellas.",
+                    novato: "+3 percepcion para rastrear huellas frescas (de hace horas) y un rastreo hasta 1 zona. <br> +3 con inteligencia/zoologia para descubrir hasta una información de la bestia.",
+
                     experto: "+5 percepcion para rastrear huellas (de hace dias) y un rastreo hasta 2 zonas, o eventos <br> +5 con inteligencia/zoologia para descubrir hasta dos informaciones de la bestia.",
+
                     maestro: "+7 percepcion para rastrear huellas antiguas (de hace semanas) y un rastreo hasta 3 zonas o eventos <br> +7 con inteligencia/zoologia para descubrir hasta tres informaciones de la bestia.",
+                    
                     hechizos: []                   
                 },
                 {                 
@@ -115,11 +118,11 @@ let INVESTIGADOR = {
                 {                 
                     nombre: "Hablar con bestias desconocidas",
                     descripcionGrimorio: `
-                    Habilidad para hablar con las bestias mas facilmente de acuerdo a su tipo: 
+                    Habilidad para hablar con las bestias mas fácilmente de acuerdo a su tipo: 
                     Mamiferos <br> 
                     Anfibios <br> 
                     Aves <br> 
-                    Reptibles <br> 
+                    Reptiles <br> 
                     Moluscos <br> 
                     Crustaceos <br> 
                     Peces <br> 
@@ -183,7 +186,7 @@ let INVESTIGADOR = {
                 {                 
                     nombre: "Clones del vínculo",
                     descripcionGrimorio: "Puedes convertirte tu y otros druidas depende del tipo de vínculo en su bestia. o viceversa con la bestia. por 1 d6 turnos o minutos, dif 12 -2 de Nur",
-                    novato: "Quienes tengan los vínculos: compañeros de juegos y compañeros estrategicos",
+                    novato: "Quienes tengan los vínculos: compañeros de juegos y compañeros estratégicos",
                     experto: "...",
                     maestro: "...",
                     hechizos: []                   

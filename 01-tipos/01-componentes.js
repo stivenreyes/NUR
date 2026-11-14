@@ -245,7 +245,7 @@ let armas = [
     },
     {
         nombre: "Kathana",
-        tipo: "Arma compleja (pelea / fuerza) Cuando se desenvaina para atacar al instante se duplica su daño, envainar el arma gasta 1 accion",
+        tipo: "Arma compleja (pelea / fuerza) Cuando se desenvaina para atacar al instante se duplica su daño, envainar el arma gasta 1 acción",
         dano: "1d6",
         precio: "70L",
         alcance: "1",
@@ -813,7 +813,7 @@ let armadurasbestia = [
 ];
 let miscelanea = [
     {
-        nombre: "1 Material para artesania",
+        nombre: "1 Material para artesanía",
         precio: "20 L",
         tipo: "Normal",
         descripcion: "Material para construir, mmejorar y reparar objetos",

@@ -145,7 +145,7 @@ button:hover,
 
 
 /*-------------------------------------*/
-/*------------- BOTÓN VOLVER ----------*/
+/*------------- BOTÓN <i class="fa-solid fa-circle-chevron-left"></i> volver ----------*/
 /*-------------------------------------*/
 
 .btn {
@@ -368,6 +368,16 @@ button:hover,
     -webkit-tap-highlight-color: transparent;
 }
 
+#btn-arriba {
+    font-weight: 990;
+}
+#btn-arriba {
+    font-weight: normal;
+    text-shadow:
+        0.7px 0 currentColor,
+        -0.7px 0 currentColor;
+}
+
 
 /* ================= HOVER ================= */
 
@@ -417,11 +427,26 @@ button:hover,
 
 /* ================= BUSCADOR ================= */
 
+.buscador-container {
+    position: relative;
+    width: 260px;
+    margin: 0 auto 20px auto;
+}
+
+.buscador-container i {
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-muted);
+    pointer-events: none;
+}
+
 #buscador,
 #buscador-general {
-    width: 260px;
-    padding: 12px;
-    margin-bottom: 20px;
+    width: 100%;
+    padding: 12px 12px 12px 38px;
+    box-sizing: border-box;
 
     border: 2px solid var(--color-primary);
     border-radius: 10px;
@@ -445,6 +470,8 @@ button:hover,
     border-color: var(--color-primary);
     box-shadow: 0 0 5px var(--color-primary);
 }
+
+
 /* ================= TARJETA DE LAS BESTIAS ================= */
 
 
@@ -738,7 +765,7 @@ img {
     gap: 5px;
 }
 
-/* Enfoques y Habilidad no necesitan ese reparto, solo envolver
+/* Enfoques y Habilidad no necesitan ese reparto, solo en<i class="fa-solid fa-circle-chevron-left"></i> volver
    el contenido si no entra en una sola línea */
 #contenedor-bestias .enfoques,
 #contenedor-bestias .Habilidad {
@@ -821,172 +848,6 @@ img {
     }
 }
 
-/* ================= BARRA DE NAVEGACIÓN (posible versión vieja / landing) ================= */
-/* ⚠️ AVISO: hay DOS sistemas de navbar completos en este archivo.
-   Este de acá (.navbar/.logo/.nav-links/.dropdown + la sección
-   HERO de más abajo) usa variables que NO existen en tu :root
-   (--primary-color, --text-color, --accent-color, --text-muted),
-   así que ahora mismo se está renderizando roto/sin esos colores.
-   Más abajo hay OTRO ".navbar"/".logo" (sección "NAVBAR" cerca del
-   final) con menú hamburguesa (.menu-toggle, .desktop-menu,
-   .mobile-menu) que sí usa tus variables reales (--color-primary,
-   etc.) y coincide con las clases que arma navbar.js.
-   No borré este bloque por las dudas de que pertenezca a una
-   landing page (index.html) que no me pasaste -- pero si no la
-   usás, se puede eliminar todo este bloque + la sección HERO. */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 5%;
-    background: rgba(206, 209, 218, 0.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    position: fixed;
-    top: 0;
-    width: 1200px;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(225, 9, 9, 0.903);
-}
-
-.logo {
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--primary-color);
-    letter-spacing: 2px;
-    cursor: pointer;
-    transition: text-shadow 0.3s ease;
-}
-
-.logo:hover {
-    text-shadow: 0 0 15px rgba(241, 196, 15, 0.6);
-}
-
-.nav-links {
-    display: flex;
-    gap: 2.5rem;
-    list-style: none;
-}
-
-.nav-links a {
-    position: relative;
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 400;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0;
-    height: 2px;
-    background-color: var(--accent-color);
-    transition: width 0.3s ease;
-}
-
-.nav-links a:hover,
-.nav-links .active {
-    color: var(--accent-color);
-}
-
-.nav-links a:hover::after,
-.nav-links .active::after {
-    width: 100%;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 20px;
-    margin-bottom: -20px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    min-width: 180px;
-    transform: translateX(-50%);
-    background-color: rgba(5, 42, 128, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1000;
-}
-
-.dropdown-content a {
-    display: block;
-    padding: 12px 16px;
-    color: var(--text-color);
-    text-decoration: none;
-    font-family: 'Cinzel', serif;
-    transition: background-color 0.2s;
-}
-
-.dropdown-content a::after {
-    display: none;
-}
-
-.dropdown-content a:hover {
-    background-color: rgba(212, 8, 134, 0.863);
-    color: var(--primary-color);
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    opacity: 1;
-}
-
-.solid-nav {
-    background: #0f172a;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* ================= HERO ================= */
-
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    text-align: center;
-    padding: 0 20px;
-    margin-top: 80px;
-    z-index: 10;
-}
-
-.hero-content h1 {
-    margin-bottom: 1.5rem;
-    font-size: 5rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, #fff 0%, var(--accent-color) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0;
-    transform: translateY(40px);
-    animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.3s;
-}
-
-.hero-content p {
-    max-width: 600px;
-    margin-bottom: 2.5rem;
-    font-size: 1.25rem;
-    color: var(--text-muted);
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.5s;
-}
 
 /* ================= EFECTOS ================= */
 
@@ -1179,157 +1040,7 @@ img {
 /* ================= NAVBAR ================= */
 /* ================= NAVBAR ================= */
 
-/* ============================================================
-   RESET BÁSICO (unificado — antes estaba repartido en 2 bloques)
-   - box-sizing: border-box: el padding y el borde se cuentan
-     DENTRO del width/height declarado, no se suman aparte. Sin
-     esto, en pantallas angostas el padding puede empujar el
-     contenido fuera del contenedor visible ("recortado").
-   - overflow-x: hidden evita scroll horizontal accidental.
-   - overflow-y: auto + height: auto asegura que SIEMPRE se pueda
-     scrollear verticalmente, incluso en pantallas muy bajas de
-     altura (ej: 520x346), donde el contenido no debe quedar
-     inalcanzable.
-   ============================================================ */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    height: auto;
-    min-height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-body {
-    padding-top: 80px;
-}
-
-/* NAVBAR GENERAL */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px 25px;
-    background: var(--color-background-2);
-    color: #1d1a1a;
-    border-bottom: 2px solid var(--color-primary);
-    z-index: 9999;
-}
-
-/* FILA SUPERIOR */
-.navbar-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-/* LOGO */
-.logo {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: rgb(5, 139, 0);
-    white-space: nowrap;
-}
-
-.logo-link {
-    display: flex;
-    align-items: center;
-    color: inherit;
-    text-decoration: none;
-}
-
-.logo-img {
-    height: 45px;
-    width: auto;
-    display: block;
-    object-fit: contain;
-}
-
-/* BOTÓN HAMBURGUESA */
-.menu-toggle {
-    display: none;
-    margin-left: auto;
-    padding: 0;
-    border: none;
-    background: none;
-    color: var(--color-primary);
-    font-size: 28px;
-
-    cursor: pointer;
-}
-
-
-/* MENÚ DESKTOP */
-.desktop-menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: nowrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.desktop-menu li {
-    margin: 0;
-    padding: 0;
-}
-
-.desktop-menu a,
-.mobile-menu a {
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.desktop-menu a {
-    display: block;
-    padding: 8px 10px;
-    color: #1a1d1c;
-    font-size: 16px;
-}
-
-.desktop-menu a:hover,
-.desktop-menu a.active,
-.mobile-menu a:hover,
-.mobile-menu a.active {
-    color: var(--color-secondary);
-    font-weight: bold;
-}
-
-
-/* MENÚ MÓVIL */
-.mobile-menu {
-    display: none;
-    width: 100%;
-    margin: 12px 0 0;
-    padding: 0;
-    list-style: none;
-    border-top: 1px solid var(--color-primary);
-}
-
-.mobile-menu li {
-    width: 100%;
-}
-
-.mobile-menu a {
-    display: block;
-    width: 100%;
-    padding: 14px 0;
-    color: #070707;
-    border-bottom: 1px solid #ffffff0f;
-}
 
 /* ================= RESPONSIVE ================= */
 
@@ -1678,3 +1389,243 @@ input[type="number"] {
     text-align: center;
     margin-bottom: 15px;
 }
+
+
+/* ================= NAVBAR ================= */
+/* ================= NAVBAR ================= */
+/* ================= NAVBAR ================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 75px;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: var(--color-background-2);
+    color: var(--color-text);
+    border-bottom: 2px solid var(--color-primary);
+    z-index: 9999;
+    box-sizing: border-box;
+}
+
+.solid-nav {
+    background: var(--color-background);
+    border-bottom: 1px solid var(--color-primary);
+}
+
+/* LOGO */
+
+.navbar-top {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 45px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* MENÚ ESCRITORIO */
+
+.desktop-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-menu a {
+    display: block;
+    padding: 10px 2px;
+    color: var(--color-text);;
+    text-decoration: none;
+    font-size: 15px;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.desktop-menu a:hover,
+.desktop-menu a.active {
+    color: var(--color-secondary);
+    font-weight: 950;
+}
+
+
+/* BOTÓN HAMBURGUESA */
+
+.menu-toggle {
+    display: none;
+    margin-left: auto;
+    margin-right: 5px;
+    flex-shrink: 0;
+    padding: 5px 8px;
+    border: none;
+    background: transparent;
+    color: var(--color-primary);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* MENÚ MÓVIL */
+
+.mobile-menu {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--color-primary);
+}
+
+.mobile-menu li {
+    width: 100%;
+}
+
+.mobile-menu a {
+    display: block;
+    position: relative;
+    padding: 14px 10px;
+    color: var(--color-text);
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.mobile-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+    width: 70%;
+    height: 0.5px;
+    background: var(--color-primary);
+}
+
+.mobile-menu a:hover,
+.mobile-menu a.active {
+    color: var(--color-secondary);
+    font-weight: 950;
+}
+
+/* ================= RESPONSIVE ================= */
+
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        width: 100%;
+        max-width: 100vw;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px 15px;
+        box-sizing: border-box;
+    }
+
+    .navbar-top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    /* Ocultar menú de escritorio */
+    .desktop-menu {
+        display: none;
+    }
+
+    /* Mostrar hamburguesa */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Mostrar menú móvil al pulsar */
+    .mobile-menu.active {
+        display: block;
+    }
+}
+body {
+    padding-top: 85px;
+}
+
+
+
+
+/* ================= BUSCADORES MÚLTIPLES ================= */
+
+.buscadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0 auto 20px auto;
+}
+
+.buscadores .buscador-container {
+    position: relative;
+    width: 260px;
+    margin: 0;
+}
+
+.buscadores .buscador-container i {
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-muted);
+    pointer-events: none;
+}
+
+.buscadores input {
+    width: 100%;
+    padding: 12px 12px 12px 38px;
+    box-sizing: border-box;
+
+    border: 2px solid var(--color-primary);
+    border-radius: 10px;
+
+    background-color: var(--color-background);
+    color: var(--color-primary);
+
+    font-size: var(--font-size-md);
+    transition: .3s;
+}
+
+.buscadores input::placeholder {
+    color: var(--color-text-muted);
+}
+
+.buscadores input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 5px var(--color-primary);
+}
+

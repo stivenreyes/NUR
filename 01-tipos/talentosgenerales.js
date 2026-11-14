@@ -9,7 +9,7 @@ let GENERAL = {
                 
                 {                 
                     nombre: "Primeros auxilios",
-                    descripcionGrimorio: "Curas a tus aliados Nuritas y bestias, solo se puede hacer una vez primeros auxilios a alguien antes de volver a recibir daño.",
+                    descripcionGrimorio: "Curas a tus aliados Nuritas y bestias, solo se puede hacer una vez primeros auxilios a alguien antes de <i class="fa-solid fa-circle-chevron-left"></i> volver a recibir daño.",
                     novato: "+2 curas (Si fallas la tirada no causas daño)",
                     experto: "+2 a la tirada de inteligencia/primeros auxilios y curas mas 5 ",
                     maestro: "...",

@@ -75,9 +75,9 @@ let MEDIADOR = {
         },
         {
           nombre: "Curar daño psíquico",
-          descripcionGrimorio: "Requisito: Erudito mental.<br> Puedes enfocarte en el daño psicologico, y ayudar a hacer mas sesiones de terapia al dia",
-          novato: "+2 para tratar a alguien.<br>  Puedes eliminar 2 de daño psíquico gastando 1 de Nur. <br> Proeza (4) avanzando con el trauma. Puedes hacer que tome 2 sesiones al dia (esta proeza la puede activar el paciente momentos antes del inicio de la terapia). <br> Reduces en 1d6 el daño psicologico en medio de una terapia que falles",
-          experto: "+4 para tratar a alguien.<br> Puedes eliminar 4 de daño psíquico gastando 1 de Nur. <br> Proeza (3) avanzando con el trauma. Puedes hacer que tome 2 sesiones al dia (esta proeza la puede activar el paciente momentos antes del inicio de la terapia). <br> Reduces en 2d6 el daño psicologico en medio de una terapia que falles",
+          descripcionGrimorio: "Requisito: Erudito mental.<br> Puedes enfocarte en el daño psicológico, y ayudar a hacer mas sesiones de terapia al dia",
+          novato: "+2 para tratar a alguien.<br>  Puedes eliminar 2 de daño psíquico gastando 1 de Nur. <br> Proeza (4) avanzando con el trauma. Puedes hacer que tome 2 sesiones al dia (esta proeza la puede activar el paciente momentos antes del inicio de la terapia). <br> Reduces en 1d6 el daño psicológico en medio de una terapia que falles",
+          experto: "+4 para tratar a alguien.<br> Puedes eliminar 4 de daño psíquico gastando 1 de Nur. <br> Proeza (3) avanzando con el trauma. Puedes hacer que tome 2 sesiones al dia (esta proeza la puede activar el paciente momentos antes del inicio de la terapia). <br> Reduces en 2d6 el daño psicológico en medio de una terapia que falles",
           maestro: "...",
           hechizos: []
         },
@@ -92,7 +92,7 @@ let MEDIADOR = {
         {
           nombre: "Belleza superficial",
           descripcionGrimorio: "...",
-          novato: "Por cada 2 de nur que se gasten mas 1 a apariencia, puedes gastar nur para hacerlo lucir tu vstuario mas acorde a cualquier escenario o ceremonia",
+          novato: "Por cada 2 de Nur que se gasten mas 1 a apariencia, puedes gastar Nur para hacerlo lucir tu vstuario mas acorde a cualquier escenario o ceremonia",
           experto: "...",
           maestro: "...",
           hechizos: []

@@ -11,9 +11,9 @@ let HECHICERO = {
       experto: "Eliges un nuevo grimorio de otro elemento y aprendes un hechizo experto de fuego o creas uno nuevo de nivel experto (consultar con el master).",
       maestro: "Eliges un nuevo grimorio de otro elemento y aprendes un hechizo maestro de fuego o creas uno nuevo de nivel maestro (consultar con el master).",
       hechizos: [         {
-          nombreHechizo: "Fenix legendarios de fuego",
+          nombreHechizo: "fénix legendarios de fuego",
           nivelHechizo: "Legendario",
-          descripcion: "Una vez por dia, puedes encender una llama interna con tu bestia, sin gastar accion. luego de usar 3 hechizos de fuego, podras por una accion tu y tu bestia convertirsen en dos grandes fenix de fuego (30 de tamaño), quien toque cada uno de esos fenix puede recibir 7d6+ inteligencia o instinto de curación o daño magico. dura solo un turno",
+          descripcion: "Una vez por dia, puedes encender una llama interna con tu bestia, sin gastar acción. luego de usar 3 hechizos de fuego, podras por una acción tu y tu bestia convertirsen en dos grandes fénix de fuego (30 de tamaño), quien toque cada uno de esos fénix puede recibir 7d6+ inteligencia o instinto de curación o daño magico. dura solo un turno",
           tipoHechizo: "Ataque",
           costoMana: "0",
           dificultad: "Inteligencia + 5 vs esquiva",
@@ -220,7 +220,7 @@ let HECHICERO = {
         {
           nombreHechizo: "area de tormenta",
           nivelHechizo: "Experto",
-          descripcion: "Puedes hacer un atauqe en area de 3 metros, todos recibiendo 1d6 de daño. si estas al lado de tu bestia podran hacer 3d6 de daño",
+          descripcion: "Puedes hacer un ataque en area de 3 metros, todos recibiendo 1d6 de daño. si estas al lado de tu bestia podran hacer 3d6 de daño",
           tipoHechizo: "Soporte",
           costoMana: "2",
           dificultad: "12",
@@ -391,7 +391,7 @@ let HECHICERO = {
         {
           nombreHechizo: "Remolino caza",
           nivelHechizo: "Novato",
-          descripcion: "Crea un remolino que dura 2 turnos con una altura de hasta de 10 metros, quien toque ese remolino sera empujado o un metro o a las craituras voladoras las hara caer al suelo",
+          descripcion: "Crea un remolino que dura 2 turnos con una altura de hasta de 10 metros, quien toque ese remolino sera empujado o un metro o a las craituras voladoras las hará caer al suelo",
           tipoHechizo: "Ataque",
           costoMana: 2,
           dificultad: 12,
@@ -445,7 +445,7 @@ let HECHICERO = {
         },
         {
         nombre: "Bestia vinculada elemental 🔮",
-        descripcionGrimorio: "Tu bestia ahora podra lanzar un hechizo que elijas que ya uses, se puede solo elejir uno, se puede cambiar cada alba",
+        descripcionGrimorio: "Tu bestia ahora podrá lanzar un hechizo que elijas que ya uses, se puede solo elejir uno, se puede cambiar cada alba",
         novato: "Puedes prestarle un hechizo del elemento que dominas",
         experto: "Puedes prestarle un hechizo de tu segundo elemento que usas o que tu bestia adquiera el un hechizo quel elemento que domines",
         maestro: "Eliges otro hechizo adicional para tu bestia",

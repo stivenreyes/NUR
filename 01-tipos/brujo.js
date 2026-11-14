@@ -23,7 +23,7 @@ let BRUJO = {
             {
               nombreHechizo: "Autorecuperación",
               nivelHechizo: "Experto",
-              descripcion: "Automaticamente te curas 10 de vida y 5 de vida para tu bestia, sin contar como accion",
+              descripcion: "Automaticamente te curas 10 de vida y 5 de vida para tu bestia, sin contar como acción",
               tipoHechizo: "Curación",
               costoMana: "-",
               dificultad: "-",
@@ -33,8 +33,8 @@ let BRUJO = {
         },
         {
           nombre: "Botánico",
-          descripcionGrimorio: "Dominio de pociones y conexión con el entorno natural.<br> el botanico puede consumir pociones con solo tocarlas, haciendo que no cuente como acción. <br> Puedes crear pociones en situaciones tensas, en medio de un combate.. podras hacerlas es segundos, pero tendran la mitad del efecto (excluyendo proezas)",
-          novato: "Puedes conectarte a 1 caldero y péndulo. Aprendes un talento adicional. una vez por dia puedes crear una pocion improvisada de curación usando el propio Nur del botanico, de su bestia vinculada, pocion que cura 1d6+Nur gastado",
+          descripcionGrimorio: "Dominio de pociones y conexión con el entorno natural.<br> el Botánico puede consumir pociones con solo tocarlas, haciendo que no cuente como acción. <br> Puedes crear pociones en situaciones tensas, en medio de un combate.. podras hacerlas es segundos, pero tendran la mitad del efecto (excluyendo proezas)",
+          novato: "Puedes conectarte a 1 caldero y péndulo. Aprendes un talento adicional. una vez por dia puedes crear una pocion improvisada de curación usando el propio Nur del Botánico, de su bestia vinculada, pocion que cura 1d6+Nur gastado",
           experto: "Puedes conectarte a 2 calderos y aprendes un nuevo talento",
           maestro: "Conexión avanzada con el Nur del entorno mediante péndulo",
           hechizos: []
@@ -99,7 +99,7 @@ let BRUJO = {
             {
               nombreHechizo: "Circulo de sanación",
               nivelHechizo: "Experto",
-              descripcion: "Puedes hacer hasta 2 circulos y lanzarlos a algun lugar visible en un rango de 10 metros, criatura no hostil que toque alguno de esos circulos se curara con 10+1d6, despues de eso el circulo se deshace",
+              descripcion: "Puedes hacer hasta 2 circulos y lanzarlos a algún lugar visible en un rango de 10 metros, criatura no hostil que toque alguno de esos circulos se curara con 10+1d6, despues de eso el circulo se deshace",
               tipoHechizo: "Curación",
               costoMana: 2,
               dificultad: 12,
@@ -135,7 +135,7 @@ let BRUJO = {
             {
               nombreHechizo: "Respiracion sanadora ",
               nivelHechizo: "Novato",
-              descripcion: "Cura 4+1d6 + voluntad a todos los aliados que esten alrededor del brujo en un radio de 1 metro (decide como repartir el total de curación)",
+              descripcion: "Cura 4+1d6 + voluntad a todos los aliados que estén alrededor del brujo en un radio de 1 metro (decide como repartir el total de curación)",
               tipoHechizo: "Curación",
               costoMana: 2,
               dificultad: 12,
@@ -144,7 +144,7 @@ let BRUJO = {
             {
               nombreHechizo: "Bestia sanadora (Bestia)",
               nivelHechizo: "Novato",
-              descripcion: "Cura 4+1d6 + voluntad a todos las bestias que esten alrededor de tu bestia en un radio de 2 metros (decide como repartir el total de curación)",
+              descripcion: "Cura 4+1d6 + voluntad a todos las bestias que estén alrededor de tu bestia en un radio de 2 metros (decide como repartir el total de curación)",
               tipoHechizo: "Curación",
               costoMana: 2,
               dificultad: 12,
@@ -162,7 +162,7 @@ let BRUJO = {
             {
               nombreHechizo: "Esfera de curacion",
               nivelHechizo: "Experto",
-              descripcion: "Cada turno puedes invocar una esfera de Nur curativo alrededor de ti, que cura 3+1d6 a hasta 3 druidas, esta esfera durara 1d6 turnos, solamente al invocarla cuesta como accion",
+              descripcion: "Cada turno puedes invocar una esfera de Nur curativo alrededor de ti, que cura 3+1d6 a hasta 3 druidas, esta esfera durara 1d6 turnos, solamente al invocarla cuesta como acción",
               tipoHechizo: "Curación",
               costoMana: 4,
               dificultad: 15,
@@ -181,7 +181,7 @@ let BRUJO = {
         },
         {
           nombre: "Vinculación grupal de poción 🌿",
-          descripcionGrimorio: "Requisitos (Brujo botanico) <br> Activas pociones con pensamiento. <br> Gastando 3 de Nur un caldero puede almacenar hasta una -pocion tribu- esta pocion cuando se activa afecta a todos los aliados enuna distancia de acuerdo al nivel de este talento <br> <br>",
+          descripcionGrimorio: "Requisitos (Brujo Botánico) <br> Activas pociones con pensamiento. <br> Gastando 3 de Nur un caldero puede almacenar hasta una -pocion tribu- esta pocion cuando se activa afecta a todos los aliados enuna distancia de acuerdo al nivel de este talento <br> <br>",
           novato: " Poción hasta 5 m. se puede hacer el ritual de pocion de tribu una vez al dia",
           experto: " Pociones hasta 10 m <br> y mas 2d6 a la curacion",
           maestro: "...",
@@ -197,8 +197,8 @@ let BRUJO = {
         },
         {
           nombre: "Nido de plantas 🌿",
-          descripcionGrimorio: "En los costados de los calderos nacen algunas plantas que sirven como materiales para el botanico .",
-          novato: " 1d3 (por cada 2 horas) materiales de pociones de curación, maximo 10 materiales",
+          descripcionGrimorio: "En los costados de los calderos nacen algunas plantas que sirven como materiales para el Botánico .",
+          novato: " 1d3 (por cada 2 horas) materiales de pociones de curación, máximo 10 materiales",
           experto:  `1d6+ 1 (por dia) materiales de pociones de curación o 1d3+ 1 (por dia) materiales de venenos. <br> <br> 
           totem recolector: puedes dejar un totem que recolecte materiales de pociones,empezara a tener efecto luego de media dia en un sector
           2d6+ 1 (por dia) materiales de pociones de curación`,
@@ -207,7 +207,7 @@ let BRUJO = {
         },
         {
           nombre: "Pociones de dones 🌿",
-          descripcionGrimorio: `Requisitos (Brujo botanico) <br> 
+          descripcionGrimorio: `Requisitos (Brujo Botánico) <br> 
           Puedes crear tomar una pocion que da bonus en algunos atributos <br> 
           puedes vincular a otros druidas y su bestia vinculada que tengan tipo de vínculo: compañero de sangre
           y compañero leal para tener el mismo bonus a la mitad redondeado para arriba. 
@@ -247,15 +247,15 @@ let BRUJO = {
         },
         {
           nombre: "Planta ",
-          descripcionGrimorio: "Requisitos (Brujo botanico) <br> que tengan tipo de vínculo: compañero de sangre y compañero leal",
+          descripcionGrimorio: "Requisitos (Brujo Botánico) <br> que tengan tipo de vínculo: compañero de sangre y compañero leal",
           novato: "....",
-          experto: "Tu bestia puede tener una tambien",
+          experto: "Tu bestia puede tener una tambíen",
           maestro: "...",
           hechizos: []
         },
         {
           nombre: "Reliquia organica 🌿 falta gasto de Nur, tiradas, necesita ritualistas y la bestia",
-          descripcionGrimorio: "Requisitos (Brujo botanico) <br> con solo una parte del cuerpo de otro ser, puedes guardar una habilidad que este tenia e invocarlo",
+          descripcionGrimorio: "Requisitos (Brujo Botánico) <br> con solo una parte del cuerpo de otro ser, puedes guardar una habilidad que este tenia e invocarlo",
           novato: "Puedes almacenar daño hecho por criaturas de rango de 1 a 5. Una vez lo actives el recipiente y su contenido se daña",
           experto: "puedes activarlo 2 veces si el recipiente lo has mantenido por 1 mes",
           maestro: "...",
@@ -263,7 +263,7 @@ let BRUJO = {
         },
         {
           nombre: "Clones botanicos  ",
-          descripcionGrimorio: "Requisitos: (Brujo botanico rango 5) <br> puedes invocar dos clones de tu bestia y tuyo para que estos tengan la orden de seguir trabjando creando pociones, solo se puede pedir ordenes muy sencillas y no podran salir del sitio donde fueron invocados ",
+          descripcionGrimorio: "Requisitos: (Brujo Botánico rango 5) <br> puedes invocar dos clones de tu bestia y tuyo para que estos tengan la orden de seguir trabjando creando pociones, solo se puede pedir ordenes muy sencillas y no podran salir del sitio donde fueron invocados ",
           novato: "Puedes hacer clon de tu bestia -3 de Nur",
           experto: "Puedes hacer clon de ti mismo -3 de Nur",
           maestro: "...",
@@ -271,15 +271,15 @@ let BRUJO = {
         },
         {
           nombre: "Pocion de guerra",
-          descripcionGrimorio: "Requisitos: (Brujo botanico rango 5) <br> puedes crear una pocion de rango 3 muy poderosa que requerira tiempo y preparacion para alcanzar su punto maximo, empezara como una simple pocion, requerira horas y dias de trabajo arduo ",
-          novato: "Tu bestia podra almacenar otra pocion asi (adicional si ya cuenta con una pocion asi)",
+          descripcionGrimorio: "Requisitos: (Brujo Botánico rango 5) <br> puedes crear una pocion de rango 3 muy poderosa que requerirá tiempo y preparacion para alcanzar su punto máximo, empezara como una simple pocion, requerirá horas y dias de trabajo arduo ",
+          novato: "Tu bestia podrá almacenar otra pocion asi (adicional si ya cuenta con una pocion asi)",
           experto: "...",
           maestro: "...",
           hechizos: []
         },        
         {
           nombre: "Pociones bestiales",
-          descripcionGrimorio: "Requisitos (Brujo botanico) <br> que tengan tipo de vínculo: compañero de sangre y compañero leal",
+          descripcionGrimorio: "Requisitos (Brujo Botánico) <br> que tengan tipo de vínculo: compañero de sangre y compañero leal",
           novato: "Puedes ganar una mutacion por unos instantes, debes darle un calmante de lo contrario entrara en modo bestia",
           experto: "Puedes almacenar daño hecho por criaturas  de rango de 6 a 10",
           maestro: "...",
@@ -287,10 +287,10 @@ let BRUJO = {
         },
         {
           nombre: "Caldero para bestia vinculada",
-          descripcionGrimorio: "Requisitos (Brujo botanico) <br> Tu bestia puede adquirir un caldero (u otro adicional) para hacer pociones  que tengan tipo de vínculo: compañero de sangre y compañero leal ",
+          descripcionGrimorio: "Requisitos (Brujo Botánico) <br> Tu bestia puede adquirir un caldero (u otro adicional) para hacer pociones  que tengan tipo de vínculo: compañero de sangre y compañero leal ",
           novato: "Ella puede aprende el talento de: pociones de heridas pasadas o pociones de dones o vinculacion grupal de pocion",
           experto: "Ella puede obtener otro caldero",
-          maestro: "Requisitos (Brujo botanico) <br> que tengan tipo de vínculo: compañero de sangre y compañero leal",
+          maestro: "Requisitos (Brujo Botánico) <br> que tengan tipo de vínculo: compañero de sangre y compañero leal",
           hechizos: []
         },
         {
@@ -327,7 +327,7 @@ let BRUJO = {
         },
         {
           nombre: "Puesto médico en batalla",
-          descripcionGrimorio: "La bestia del brujo podrá tocar a cualquiera y de forma voluntaria llevarlo a un puesto medico que haga el brujo el cual le tomara un turno en armar en medio del combate, solo el druida se teletransportara y quedara inconsciente por 1d6 turnos <br> la bestia puede lanzar destreza dif 14 si quiere hacer esto y que no cuente como accion y en cualquier momento. <br> El objetivo debe tener menos de la mitad de vida disponible.",
+          descripcionGrimorio: "La bestia del brujo podrá tocar a cualquiera y de forma voluntaria llevarlo a un puesto medico que haga el brujo el cual le tomara un turno en armar en medio del combate, solo el druida se teletransportara y quedara inconsciente por 1d6 turnos <br> la bestia puede lanzar destreza dif 14 si quiere hacer esto y que no cuente como acción y en cualquier momento. <br> El objetivo debe tener menos de la mitad de vida disponible.",
           novato: "Alcance 10 m",
           experto: "Alcance 100 m",
           maestro: "Alcance 1 km",
@@ -360,7 +360,7 @@ let BRUJO = {
             {
               nombreHechizo: "Tunel de flechas",
               nivelHechizo: "Novato",
-              descripcion: "Lanza un tunel de dos metros de diametro de aire que se transforman en flechas 2d6 de daño, maximo dos objetivos",
+              descripcion: "Lanza un tunel de dos metros de diametro de aire que se transforman en flechas 2d6 de daño, máximo dos objetivos",
               tipoHechizo: "Ataque",
               costoMana: "3",
               dificultad: "Inteligencia vs esquiva de los objetivos",
@@ -378,7 +378,7 @@ let BRUJO = {
             {
               nombreHechizo: "Remolino caza",
               nivelHechizo: "Novato",
-              descripcion: "Crea un remolino que dura 2 turnos con una altura de hasta de 10 metros, quien toque ese remolino sera empujado o un metro o a las craituras voladoras las hara caer al suelo. puede moverse el remolino 3m en la fase de movimiento del invocador",
+              descripcion: "Crea un remolino que dura 2 turnos con una altura de hasta de 10 metros, quien toque ese remolino sera empujado o un metro o a las craituras voladoras las hará caer al suelo. puede moverse el remolino 3m en la fase de movimiento del invocador",
               tipoHechizo: "Ataque y control aereo",
               costoMana: "2",
               dificultad: "12",
@@ -396,7 +396,7 @@ let BRUJO = {
             {
               nombreHechizo: "Remolino prisión",
               nivelHechizo: "Experto",
-              descripcion: "Crea un remolino alrededor de una victima en 1m gastando 4 de Nur , este remolino no se mueve con la victima, duracion del remolino 1d3 turnos. que evita que la victima se mueva, pero aun podra esquivar entre y evita que la victima haga ataques fisicos y magicos hacia fuera del remolino. vida del remolino de 50. se puede atacar hacia adentro. si se falla aun queda el remolino ahi el cual encerrara a cualquiera que entre",
+              descripcion: "Crea un remolino alrededor de una victima en 1m gastando 4 de Nur , este remolino no se mueve con la victima, duracion del remolino 1d3 turnos. que evita que la victima se mueva, pero aun podrá esquivar entre y evita que la victima haga ataques fisicos y magicos hacia fuera del remolino. vida del remolino de 50. se puede atacar hacia adentro. si se falla aun queda el remolino ahi el cual encerrara a cualquiera que entre",
               tipoHechizo: "Ataque",
               costoMana: "4",
               dificultad: "Inteligencia vs esquiva de la victima",

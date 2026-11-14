@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Tutorial bestia</title>
@@ -21,8 +22,8 @@
 </div>
 
 <!-- BOTONES -->
-<button onclick="anterior()">Anterior</button>
-<button onclick="siguiente()">Siguiente</button>
+<button onclick="anterior()"><i class="fa-solid fa-caret-left"></i> Anterior</button>
+<button onclick="siguiente()">Siguiente <i class="fa-solid fa-caret-right"></i> </button>
 
 
 <!-- ================= PASO 1 ================= -->
@@ -652,7 +653,7 @@ El bonus se aplica al mismo atributo en ambos (Nurkano y bestia), según el tipo
         ¿Quieres calcularlo tu o pides ayuda a la calculadora?:
     </p>
 
-    <button id="btn-anterior" onclick="window.location.href='calculadora.html'">Pide ayuda a la calculadora</button>
+    <button id="btn-anterior" onclick="window.location.href='calculadora.html'">Pide ayuda a la calculadora <i class="fa-solid fa-calculator"></i></button>
 
     <p>
         Cada aspecto social tiene una puntuación actual, un valor máximo y una diferencia.
@@ -1303,8 +1304,8 @@ El bonus se aplica al mismo atributo en ambos (Nurkano y bestia), según el tipo
 
 
 
-<button id="btn-anterior"onclick="anterior()">Anterior</button>
-<button id="btn-siguiente" onclick="siguiente()">Siguiente</button>
+<button id="btn-anterior"onclick="anterior()"><i class="fa-solid fa-caret-left"></i> Anterior</button>
+<button id="btn-siguiente" onclick="siguiente()">Siguiente <i class="fa-solid fa-caret-right"></i> </button>
 
 <div><a href="tutorialdruidabestia.html" class="btn">Salir del tutorial</a></div>
 
@@ -1314,7 +1315,7 @@ El bonus se aplica al mismo atributo en ambos (Nurkano y bestia), según el tipo
 
 <button id="btn-arriba">↑</button>
 
-<a href="#" class="btn" onclick="history.back()">Volver</a>
+<a href="#" class="btn" onclick="history.back()"><i class="fa-solid fa-circle-chevron-left"></i> volver</a>
 
 <!-- ================= SCRIPTS ================= -->
 

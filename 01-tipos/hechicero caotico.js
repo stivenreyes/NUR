@@ -122,7 +122,7 @@ let CAOTICO = {
             {
               nombreHechizo: "Mata hechiceros",
               nivelHechizo: "Maestro",
-              descripcion: "Todo el daño mágico que recibes de un hechicero puedes guardarlo gastando dos turnos puedes devolver un hechizo de ese mismo hechicero pero con el daño que te ah hecho multiplicado por 2",
+              descripcion: "Todo el daño mágico que recibes de un hechicero puedes guardarlo gastando dos turnos puedes de<i class="fa-solid fa-circle-chevron-left"></i> volver un hechizo de ese mismo hechicero pero con el daño que te ah hecho multiplicado por 2",
               tipoHechizo: "Ataque",
               costoMana: "6",
               dificultad: "18",
@@ -167,7 +167,7 @@ let CAOTICO = {
           nombre: "Reutilizar el Nur 🛡️",
           descripcionGrimorio: "Requisito: Roca del caos (novato) <br> Las explosiones de un hechicero caótico/loco del caos, un druida muerto, una bestia muerta o un hechizo fallido dejan Nur en el aire que con una acción se puede reutilizar ese Nur depende del nivel que tengas esta habilidad",
           novato: "Sumar 1d3 de Nur para tu bestia o para ti <br> Hacer que tu bestia sume 1D6 a cualquier tirada usando el Nur que este en el aire, solo se puede hacer una vez por una fuente de Nur <br> Si es una bestia o druida muerto que hagan una ultima acción con el Nur que aun tienen, la acción solo puede ser física",
-          experto: "Gastando 3 de Nur puedes volver a invocar hechizos donde se deshicieron y movrlos hasta donde estes",
+          experto: "Gastando 3 de Nur puedes <i class="fa-solid fa-circle-chevron-left"></i> volver a invocar hechizos donde se deshicieron y movrlos hasta donde estes",
           maestro: "...",
           hechizos: []
         },
@@ -214,7 +214,7 @@ let CAOTICO = {
         {
           nombre: "Escudo de Nur del caos 🛡️",
           descripcionGrimorio: "Requisito: Roca del caos (novato) <br> Escudo que puedes invocar para intentar absorber y regresar el mismo ataque.",
-          novato: "gastando 3 de Nur puedes invocar este escudo por una escena de combate con vida de 20, y que puede devolver el mismo ataque hasta en un metro al instante, haciendo un cuarto del daño",
+          novato: "gastando 3 de Nur puedes invocar este escudo por una escena de combate con vida de 20, y que puede de<i class="fa-solid fa-circle-chevron-left"></i> volver el mismo ataque hasta en un metro al instante, haciendo un cuarto del daño",
           experto: "puedes desviar ataques magicos hacia otros en un area de 3 metros gastando 3 de Nur, ese hechizo se dirije con una tirada de intelencia vs esquiva de la victima",
           maestro: "...",
           hechizos: []

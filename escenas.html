@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Escenas</title>
@@ -21,10 +22,25 @@
 <h4>Buscadores de sendas</h4>
 
 <div class="buscadores">
-    <input type="text" id="buscar-especialidad" placeholder="Buscar especialidad...">
-    <input type="text" id="buscar-talento" placeholder="Buscar talento o talento...">
-    <input type="text" id="buscar-hechizo" placeholder="Buscar hechizo...">
+
+    <div class="buscador-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="buscar-especialidad" placeholder="Buscar especialidad...">
+    </div>
+
+    <div class="buscador-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="buscar-talento" placeholder="Buscar talento...">
+    </div>
+
+    <div class="buscador-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="buscar-hechizo" placeholder="Buscar hechizo...">
+    </div>
+
 </div>
+
+
 
 <div id="resultados-especialidades" class="resultados-busqueda"></div>
 <div id="resultados-talentos" class="resultados-busqueda"></div>
@@ -33,11 +49,14 @@
 <!-- 🔥 BUSCADOR DE BESTIAS (SIN FILTROS) -->
 <h4>Buscar bestias</h4>
 
-<input 
-    type="text" 
-    id="buscador" 
-    placeholder="Buscar bestia..."
->
+<div class="buscador-container">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input 
+        type="text" 
+        id="buscador" 
+        placeholder="Buscar bestia..."
+    >
+</div>
 
 <!-- 🔥 CONTENEDOR DONDE APARECEN -->
 <div id="contenedor-bestias"></div>
@@ -51,7 +70,7 @@
     <div class="card">
         <h2>Heridas</h2>
         <p>Diferentes heridas que puedes recibir.</p>
-        <a href="escenas/heridas.html" class="btn">Ver más</a>
+        <a href="escenas/heridas.html" class="btn">Ver más <i class="fa-solid fa-plus"></i></a>
     </div>
 </div>
 
@@ -62,55 +81,55 @@
     <div class="card">
         <h2>Curaciones</h2>
         <p>Cura a tu bestia o a ti mismo.</p>
-        <a href="escenas/curaciones.html" class="btn">Ver más</a>
+        <a href="escenas/curaciones.html" class="btn">Ver más <i class="fa-solid fa-plus"></i></a>
     </div>
 
     <div class="card">
         <h2>Taller</h2>
         <p>Centro de trabajo del artesano.</p>
-        <a href="escenas/taller.html" class="btn">Ver más</a>
+        <a href="escenas/taller.html" class="btn">Ver más <i class="fa-solid fa-plus"></i></a>
     </div>
 
     <div class="card">
         <h2>Cocina</h2>
         <p>Intenta preparar algo delicioso.</p>
-        <a href="escenas/cocina.html" class="btn">Ver más</a>
+        <a href="escenas/cocina.html" class="btn">Ver más <i class="fa-solid fa-plus"></i></a>
     </div>
 
     <div class="card">
         <h2>Lutear</h2>
         <p>Buca materiales muy utiles.</p>
-        <a href="escenas/lutear.html" class="btn">Ver más</a>
+        <a href="escenas/lutear.html" class="btn">Ver más <i class="fa-solid fa-plus"></i></a>
     </div>
 
     <div class="card">
         <h2>Herbolaria</h2>
         <p>La magia que sucede en el caldero de los brujos botanicos.</p>
-        <a href="escenas/herbolaria.html" class="btn">Ver más</a>
+        <a href="escenas/herbolaria.html" class="btn">Ver más <i class="fa-solid fa-plus"></i></a>
     </div>
 
     <div class="card">
         <h2>Eventos</h2>
         <p>Generador de sucesos comunes en los habitantes de Amara.</p>
-        <a href="escenas/eventos.html" class="btn">Ver más</a>
+        <a href="escenas/eventos.html" class="btn">Ver más <i class="fa-solid fa-plus"></i></a>
     </div>
 
     <div class="card">
         <h2>Domar</h2>
         <p>Todo para tener en cuenta con tu bestia vinculada</p>
-        <a href="domar.html" class="btn">Ver más</a>
+        <a href="domar.html" class="btn">Ver más <i class="fa-solid fa-plus"></i></a>
     </div>
 
     <div class="card">
         <h2>Entrenamiento</h2>
         <p>Los seres de Amara se pueden entrenar solos o entre si</p>
-        <a href="escenas/entrenamiento.html" class="btn">Ver más</a>
+        <a href="escenas/entrenamiento.html" class="btn">Ver más <i class="fa-solid fa-plus"></i></a>
     </div>
 
     <div class="card">
         <h2>Encontrar Bestias en Amara</h2>
         <p>Cuando quieras buscar una especie en particular en el vasto continente</p>
-        <a href="escenas/encontrarbestias.html" class="btn">Ver más</a>
+        <a href="escenas/encontrarbestias.html" class="btn">Ver más <i class="fa-solid fa-plus"></i></a>
     </div>
 </div>
 
@@ -120,7 +139,7 @@
     <div class="card">
         <h2>Comunicación</h2>
         <p>Sistema de comunicacion entre especies.</p>
-        <a href="escenas/comunicacion.html" class="btn">Ver más</a>
+        <a href="escenas/comunicacion.html" class="btn">Ver más <i class="fa-solid fa-plus"></i></a>
     </div>
 </div>
 
@@ -133,14 +152,14 @@
     <div class="card">
         <h2>Ganadores</h2>
         <p>Bebidas exquisitas de Amara.</p>
-        <a href="escenas/fin.html" class="btn">Ver más</a>
+        <a href="escenas/fin.html" class="btn">Ver más <i class="fa-solid fa-plus"></i></a>
     </div>
 
 </div>
 
 <button id="btn-arriba">↑</button>
 
-<a href="#" class="btn" onclick="history.back()">Volver</a>
+<a href="#" class="btn" onclick="history.back()"><i class="fa-solid fa-circle-chevron-left"></i> volver</a>
 
 <!-- ================= SCRIPTS ================= -->
 
