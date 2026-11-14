@@ -145,7 +145,7 @@ button:hover,
 
 
 /*-------------------------------------*/
-/*------------- BOTÓN <i class="fa-solid fa-circle-chevron-left"></i> volver ----------*/
+/*------------- BOTÓN  volver ----------*/
 /*-------------------------------------*/
 
 .btn {
@@ -1578,8 +1578,9 @@ body {
 
 
 
-/* ================= BUSCADORES MÚLTIPLES ================= */
+/* ================= BUSCADORES ================= */
 
+/* Contenedor opcional para varios buscadores en fila */
 .buscadores {
     display: flex;
     justify-content: center;
@@ -1589,22 +1590,30 @@ body {
     margin: 0 auto 20px auto;
 }
 
-.buscadores .buscador-container {
+/* Funciona dentro o fuera de .buscadores */
+.buscador-container {
     position: relative;
     width: 260px;
     margin: 0;
 }
 
-.buscadores .buscador-container i {
+.buscador-container i {
     position: absolute;
     left: 13px;
     top: 50%;
     transform: translateY(-50%);
     color: var(--color-text-muted);
+    opacity: 0.5;                 /* lupa más tenue */
     pointer-events: none;
+    transition: opacity .3s;
 }
 
-.buscadores input {
+/* La lupa se ilumina al escribir */
+.buscador-container:focus-within i {
+    opacity: 0.9;
+}
+
+.buscador-container input {
     width: 100%;
     padding: 12px 12px 12px 38px;
     box-sizing: border-box;
@@ -1619,13 +1628,47 @@ body {
     transition: .3s;
 }
 
-.buscadores input::placeholder {
+.buscador-container input::placeholder {
     color: var(--color-text-muted);
+    opacity: 0.5;                 /* texto "Buscar..." más tenue */
 }
 
-.buscadores input:focus {
+.buscador-container input:focus {
     outline: none;
     border-color: var(--color-primary);
     box-shadow: 0 0 5px var(--color-primary);
 }
 
+.buscador-container {
+    position: relative;
+    width: 260px;
+    margin: 0 auto 20px auto;   /* centrado horizontal + espacio abajo */
+}
+
+
+
+
+
+.filtro-container {
+    position: relative;
+    display: inline-block;
+}
+
+.filtro-container i {
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-muted);
+    opacity: 0.5;
+    pointer-events: none;      /* el clic pasa al select */
+    transition: opacity .3s;
+}
+
+.filtro-container:focus-within i {
+    opacity: 0.9;
+}
+
+.filtro-container select {
+    padding-left: 38px;        /* deja espacio para el ícono */
+}

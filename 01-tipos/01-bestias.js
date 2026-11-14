@@ -276,7 +276,7 @@ let bestias = [
     Habilidades: `
     <strong>Mensajes lejanos</strong><br> 
     Se puede comunicar a la distancia a 1km con su Veltar y otra  bestia elegida (se puede cambiar cada dia)
-    las bestias voladoras pueden de<i class="fa-solid fa-circle-chevron-left"></i> volver la comunicación <br><br> 
+    las bestias voladoras pueden de volver la comunicación <br><br> 
 
     <strong>Cantos de terror</strong><br>
     Daño psicológico 1d6, comunicación vs voluntad de la victima<br><br>
@@ -566,7 +566,7 @@ let bestias = [
     <div><a href="escenas/taller.html" class="btn">Ir a taller <i class="fa-solid fa-hammer"></i> </a></div> 
 
     <strong> Arma temporalmente bendecida </strong> <br>
-    En dos turnos en medio de un combate un arma se puede <i class="fa-solid fa-circle-chevron-left"></i> volver mas fuerte mas 2d6 de daño
+    En dos turnos en medio de un combate un arma se puede volver mas fuerte mas 2d6 de daño
     se requiere 2 de Nur y un material de artesano, la mejora solo dura 2 turnos o 2 minutos.<br><br>`,
     ataque: "Picotazo +1", daño: "1D6", dureza: "3", alcance: "1"
   },
@@ -644,7 +644,7 @@ let bestias = [
     enfoques: "Sigilo, Juego de manos", 
     Habilidades: `
     <strong> Invisible </strong> <br> 
-    gastando 2 de Nur se puede <i class="fa-solid fa-circle-chevron-left"></i> volver invisible 1D6 turnos (dif 20 detectarlo). <br><br>
+    gastando 2 de Nur se puede volver invisible 1D6 turnos (dif 20 detectarlo). <br><br>
 
     <strong> Lenguetazo </strong> <br> 
     Puede atacar con su lengua hasta 3 metros 1d6 de daño o agarrar objetos con ella.<br><br>
@@ -847,7 +847,7 @@ let bestias = [
 
     Habilidades: `
     <strong>Bestia social</strong><br>
-    Puede utilizar las habilidades de engañar, Persuadir, Trato con Nurkanos, trato con bestias, intimidar o seducción y Distraer (Elije 3) Puede <i class="fa-solid fa-circle-chevron-left"></i> volver a lanzar todas las acciones sociales que realice su Veltar, siempre que el pavo real pueda actuar.<br><br>
+    Puede utilizar las habilidades de engañar, Persuadir, Trato con Nurkanos, trato con bestias, intimidar o seducción y Distraer (Elije 3) Puede  volver a lanzar todas las acciones sociales que realice su Veltar, siempre que el pavo real pueda actuar.<br><br>
 
     <strong>Vida adicional</strong><br>
     El pavo real obtiene +1 de vida. cada vez que sube de rango max 3<br><br>
@@ -1017,7 +1017,7 @@ let bestias = [
     <div><a href="escenas/taller.html" class="btn">Ir a taller <i class="fa-solid fa-hammer"></i> </a></div> 
 
     <strong> Armadura temporalmente bendecida </strong> <br>
-    En dos turnos en medio de un combate una armadura se puede <i class="fa-solid fa-circle-chevron-left"></i> volver mas resistente mas 3d6 de resistencia del arma
+    En dos turnos en medio de un combate una armadura se puede volver mas resistente mas 3d6 de resistencia del arma
     se requiere 2 de Nur y un material de artesano, la mejora solo dura 2 turnos o 2 minutos.<br><br>
     `,
     ataque: "Mordida <br> ...", daño: "2d6 <br> ..", dureza: "3 <br> ..", alcance: "1 <br> .."

@@ -1117,7 +1117,9 @@ if (buscadorGeneral && contenedorResultados) {
 const boton = document.getElementById("btn");
 const sonido = document.getElementById("sfx");
 
-boton.addEventListener("click", () => {
-    sonido.currentTime = 0; // Reinicia el sonido
-    sonido.play();
-});
+if (boton && sonido) {
+    boton.addEventListener("click", () => {
+        sonido.currentTime = 0; // Reinicia el sonido
+        sonido.play();
+    });
+}

@@ -1,16 +1,49 @@
+/* ================= UTILIDADES ================= */
+
+// Escapa HTML para evitar inyección de código al usar innerHTML
+function esc(texto) {
+    return String(texto ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+}
+
+// Minúsculas, sin tildes y sin espacios sobrantes
+function normalizar(texto) {
+    return String(texto ?? "")
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim();
+}
+
+// true si el valor existe (acepta 0 como valor válido)
+function tieneValor(valor) {
+    return valor !== undefined && valor !== null && valor !== "";
+}
+
+// Devuelve <p><strong>Etiqueta:</strong> valor</p> o "" si no hay valor
+function campo(etiqueta, valor) {
+    return tieneValor(valor)
+        ? `<p><strong>${etiqueta}:</strong> ${esc(valor)}</p>`
+        : "";
+}
+
 /* ================= BUSCAR ESPECIALIDADES ================= */
 
 function buscarEspecialidades(texto) {
-    let resultados = [];
+    const resultados = [];
+    const busqueda = normalizar(texto);
 
     TODAS_LAS_CLASES.forEach(clase => {
         clase.secciones.forEach(seccion => {
-            // Ignorar espacios y mayúsculas
-            if (seccion.titulo.trim().toLowerCase() === "especialidades") {
+            if (normalizar(seccion.titulo) === "especialidades") {
                 seccion.items.forEach(item => {
-                    if (item.nombre && item.nombre.toLowerCase().includes(texto.trim().toLowerCase())) {
+                    if (item.nombre && normalizar(item.nombre).includes(busqueda)) {
                         resultados.push({
                             clase: clase.nombreClase,
+                            seccion: seccion.titulo,
                             item: item
                         });
                     }
@@ -22,18 +55,20 @@ function buscarEspecialidades(texto) {
     return resultados;
 }
 
-/* ================= BUSCAR TALENTOS / TALENTOS ================= */
+/* ================= BUSCAR TALENTOS ================= */
+
+// Agrega aquí otras variantes de título si las necesitas
+const TITULOS_TALENTOS = ["talentos", "talento"];
 
 function buscarTalentos(texto) {
-    let resultados = [];
+    const resultados = [];
+    const busqueda = normalizar(texto);
 
     TODAS_LAS_CLASES.forEach(clase => {
         clase.secciones.forEach(seccion => {
-            let titulo = seccion.titulo.trim().toLowerCase();
-
-            if (titulo === "talentos" || titulo === "talentos" || titulo === "talentos") {
+            if (TITULOS_TALENTOS.includes(normalizar(seccion.titulo))) {
                 seccion.items.forEach(item => {
-                    if (item.nombre && item.nombre.toLowerCase().includes(texto.trim().toLowerCase())) {
+                    if (item.nombre && normalizar(item.nombre).includes(busqueda)) {
                         resultados.push({
                             clase: clase.nombreClase,
                             seccion: seccion.titulo,
@@ -51,23 +86,22 @@ function buscarTalentos(texto) {
 /* ================= BUSCAR HECHIZOS ================= */
 
 function buscarHechizos(texto) {
-    let resultados = [];
+    const resultados = [];
+    const busqueda = normalizar(texto);
 
     TODAS_LAS_CLASES.forEach(clase => {
         clase.secciones.forEach(seccion => {
             seccion.items.forEach(item => {
-                if (item.hechizos && item.hechizos.length > 0) {
-                    item.hechizos.forEach(hechizo => {
-                        if (hechizo.nombreHechizo && hechizo.nombreHechizo.toLowerCase().includes(texto.trim().toLowerCase())) {
-                            resultados.push({
-                                clase: clase.nombreClase,
-                                seccion: seccion.titulo,
-                                talento: item.nombre,
-                                hechizo: hechizo
-                            });
-                        }
-                    });
-                }
+                (item.hechizos ?? []).forEach(hechizo => {
+                    if (hechizo.nombreHechizo && normalizar(hechizo.nombreHechizo).includes(busqueda)) {
+                        resultados.push({
+                            clase: clase.nombreClase,
+                            seccion: seccion.titulo,
+                            talento: item.nombre,
+                            hechizo: hechizo
+                        });
+                    }
+                });
             });
         });
     });
@@ -75,108 +109,115 @@ function buscarHechizos(texto) {
     return resultados;
 }
 
+/* ================= TARJETAS ================= */
+
+function tarjetaItem(r, mostrarSeccion = false) {
+    const item = r.item;
+    const hechizos = item.hechizos ?? [];
+    const niveles = [
+        ["Novato", item.novato],
+        ["Experto", item.experto],
+        ["Maestro", item.maestro],
+        ["Legendario", item.legendario]
+    ];
+
+    return `
+        <div class="resultado-card">
+            <h3>${esc(item.nombre)}</h3>
+            <p><strong>Senda:</strong> ${esc(r.clase)}</p>
+            ${mostrarSeccion ? campo("Sección", r.seccion) : ""}
+            ${campo("Descripción", item.descripcionGrimorio)}
+            ${niveles.map(([etiqueta, valor]) => campo(etiqueta, valor)).join("")}
+            <p><strong>Hechizos:</strong> ${hechizos.length}</p>
+            ${hechizos.length > 0 ? `
+                <div class="mini-hechizos">
+                    <ul>${hechizos.map(h => `<li>${esc(h.nombreHechizo)}</li>`).join("")}</ul>
+                </div>` : ""}
+        </div>
+    `;
+}
+
+function tarjetaHechizo(r) {
+    const h = r.hechizo;
+
+    return `
+        <div class="resultado-card">
+            <h3>${esc(h.nombreHechizo)}</h3>
+            <p><strong>Senda:</strong> ${esc(r.clase)}</p>
+            <p><strong>Sección:</strong> ${esc(r.seccion)}</p>
+            <p><strong>Pertenece a:</strong> ${esc(r.talento)}</p>
+            ${campo("Nivel", h.nivelHechizo)}
+            ${campo("Descripción", h.descripcion)}
+            ${campo("Tipo", h.tipoHechizo)}
+            ${campo("Costo de Nur", h.costoMana)}
+            ${campo("Dificultad", h.dificultad)}
+            ${campo("Alcance Máximo", h.alcanceMaximo)}
+        </div>
+    `;
+}
+
 /* ================= MOSTRAR RESULTADOS ================= */
 
 function mostrarResultadosEspecialidades(resultados) {
-    let contenedor = document.getElementById("resultados-especialidades");
+    const contenedor = document.getElementById("resultados-especialidades");
 
     if (resultados.length === 0) {
         contenedor.innerHTML = "<p>No se encontraron especialidades.</p>";
         return;
     }
 
-    contenedor.innerHTML = resultados.map(r => `
-        <div class="resultado-card">
-            <h3>${r.item.nombre}</h3>
-            <p><strong>Senda:</strong> ${r.clase}</p>
-
-            ${r.item.descripcionGrimorio ? `<p><strong>Descripción:</strong> ${r.item.descripcionGrimorio}</p>` : ""}
-            ${r.item.novato ? `<p><strong>Novato:</strong> ${r.item.novato}</p>` : ""}
-            ${r.item.experto ? `<p><strong>Experto:</strong> ${r.item.experto}</p>` : ""}
-            ${r.item.maestro ? `<p><strong>Maestro:</strong> ${r.item.maestro}</p>` : ""}
-            ${r.item.legendario ? `<p><strong>Legendario:</strong> ${r.item.legendario}</p>` : ""}
-            ${r.item.hechizos && r.item.hechizos.length > 0 ? `
-                <p><strong>Hechizos:</strong> ${r.item.hechizos.length}</p>
-                <div class="mini-hechizos">
-                    <ul>
-                        ${r.item.hechizos.map(h => `<li>${h.nombreHechizo}</li>`).join("")}
-                    </ul>
-                </div>` : `<p><strong>Hechizos:</strong> 0</p>`}
-        </div>
-    `).join("");
+    contenedor.innerHTML = resultados.map(r => tarjetaItem(r)).join("");
 }
 
 function mostrarResultadosTalentos(resultados) {
-    let contenedor = document.getElementById("resultados-talentos");
+    const contenedor = document.getElementById("resultados-talentos");
 
     if (resultados.length === 0) {
-        contenedor.innerHTML = "<p>No se encontraron talentos o talentos.</p>";
+        contenedor.innerHTML = "<p>No se encontraron talentos.</p>";
         return;
     }
 
-    contenedor.innerHTML = resultados.map(r => `
-        <div class="resultado-card">
-            <h3>${r.item.nombre}</h3>
-            <p><strong>Senda:</strong> ${r.clase}</p>
-            <p><strong>Sección:</strong> ${r.seccion}</p>
-
-            ${r.item.descripcionGrimorio ? `<p><strong>Descripción:</strong> ${r.item.descripcionGrimorio}</p>` : ""}
-            ${r.item.novato ? `<p><strong>Novato:</strong> ${r.item.novato}</p>` : ""}
-            ${r.item.experto ? `<p><strong>Experto:</strong> ${r.item.experto}</p>` : ""}
-            ${r.item.maestro ? `<p><strong>Maestro:</strong> ${r.item.maestro}</p>` : ""}
-            ${r.item.legendario ? `<p><strong>Legendario:</strong> ${r.item.legendario}</p>` : ""}
-            ${r.item.hechizos && r.item.hechizos.length > 0 ? `
-                <p><strong>Hechizos:</strong> ${r.item.hechizos.length}</p>
-                <div class="mini-hechizos">
-                    <ul>
-                        ${r.item.hechizos.map(h => `<li>${h.nombreHechizo}</li>`).join("")}
-                    </ul>
-                </div>` : `<p><strong>Hechizos:</strong> 0</p>`}
-        </div>
-    `).join("");
+    contenedor.innerHTML = resultados.map(r => tarjetaItem(r, true)).join("");
 }
 
 function mostrarResultadosHechizos(resultados) {
-    let contenedor = document.getElementById("resultados-hechizos");
+    const contenedor = document.getElementById("resultados-hechizos");
 
     if (resultados.length === 0) {
         contenedor.innerHTML = "<p>No se encontraron hechizos.</p>";
         return;
     }
 
-    contenedor.innerHTML = resultados.map(r => `
-        <div class="resultado-card">
-            <h3>${r.hechizo.nombreHechizo}</h3>
-            <p><strong>Senda:</strong> ${r.clase}</p>
-            <p><strong>Sección:</strong> ${r.seccion}</p>
-            <p><strong>Pertenece a:</strong> ${r.talento}</p>
-
-            ${r.hechizo.nivelHechizo ? `<p><strong>Nivel:</strong> ${r.hechizo.nivelHechizo}</p>` : ""}
-            ${r.hechizo.descripcion ? `<p><strong>Descripción:</strong> ${r.hechizo.descripcion}</p>` : ""}
-            ${r.hechizo.tipoHechizo ? `<p><strong>Tipo:</strong> ${r.hechizo.tipoHechizo}</p>` : ""}
-            ${r.hechizo.costoMana ? `<p><strong>Costo de Nur:</strong> ${r.hechizo.costoMana}</p>` : ""}
-            ${r.hechizo.dificultad ? `<p><strong>Dificultad:</strong> ${r.hechizo.dificultad}</p>` : ""}
-            ${r.hechizo.alcanceMaximo ? `<p><strong>Alcance Máximo:</strong> ${r.hechizo.alcanceMaximo}</p>` : ""}
-        </div>
-    `).join("");
+    contenedor.innerHTML = resultados.map(tarjetaHechizo).join("");
 }
 
 /* ================= EVENTOS INPUT ================= */
 
-document.getElementById("buscar-especialidad").addEventListener("input", function () {
-    let texto = this.value.trim();
-    if (!texto) return document.getElementById("resultados-especialidades").innerHTML = "";
-    mostrarResultadosEspecialidades(buscarEspecialidades(texto));
-});
+// Espera unos milisegundos tras dejar de escribir antes de buscar
+function debounce(fn, espera = 200) {
+    let temporizador;
+    return function (...args) {
+        clearTimeout(temporizador);
+        temporizador = setTimeout(() => fn.apply(this, args), espera);
+    };
+}
 
-document.getElementById("buscar-talento").addEventListener("input", function () {
-    let texto = this.value.trim();
-    if (!texto) return document.getElementById("resultados-talentos").innerHTML = "";
-    mostrarResultadosTalentos(buscarTalentos(texto));
-});
+function conectarBuscador(idInput, idResultados, buscar, mostrar) {
+    const input = document.getElementById(idInput);
+    const contenedor = document.getElementById(idResultados);
 
-document.getElementById("buscar-hechizo").addEventListener("input", function () {
-    let texto = this.value.trim();
-    if (!texto) return document.getElementById("resultados-hechizos").innerHTML = "";
-    mostrarResultadosHechizos(buscarHechizos(texto));
-});
+    input.addEventListener("input", debounce(function () {
+        const texto = input.value.trim();
+
+        if (!texto) {
+            contenedor.innerHTML = "";
+            return;
+        }
+
+        mostrar(buscar(texto));
+    }));
+}
+
+conectarBuscador("buscar-especialidad", "resultados-especialidades", buscarEspecialidades, mostrarResultadosEspecialidades);
+conectarBuscador("buscar-talento", "resultados-talentos", buscarTalentos, mostrarResultadosTalentos);
+conectarBuscador("buscar-hechizo", "resultados-hechizos", buscarHechizos, mostrarResultadosHechizos);
