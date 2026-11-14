@@ -38,7 +38,7 @@ navbarContainer.innerHTML = `
 
         <!-- MENÚ PARA ESCRITORIO -->
         <ul class="desktop-menu">
-            <li><a href="${base}roles.html">Sendas <i class="fa-solid fa-tree"></i></a></li>
+            <li><a href="${base}sendas.html">Sendas <i class="fa-solid fa-tree"></i></a></li>
             <li><a href="${base}bestias.html">Bestias <i class="fa-solid fa-cat"></i></a></li>
             <li><a href="${base}tutorialdruidabestia.html">Crear <i class="fa-solid fa-paintbrush"></i></a></li>
             <li><a href="${base}tienda.html">Tienda <i class="fa-solid fa-bag-shopping"></i></a></li>
@@ -52,7 +52,7 @@ navbarContainer.innerHTML = `
 
         <!-- MENÚ PARA MÓVIL -->
         <ul class="mobile-menu" id="mobile-menu">
-            <li><a href="${base}roles.html">Sendas <i class="fa-solid fa-tree"></i></a></li>
+            <li><a href="${base}sendas.html">Sendas <i class="fa-solid fa-tree"></i></a></li>
             <li><a href="${base}bestias.html">Bestias <i class="fa-solid fa-cat"></i></a></li>
             <li><a href="${base}tutorialdruidabestia.html">Crear PJ/BJ <i class="fa-solid fa-paintbrush"></i></a></li>
             <li><a href="${base}tienda.html">Tienda <i class="fa-solid fa-bag-shopping"></i></a></li>
