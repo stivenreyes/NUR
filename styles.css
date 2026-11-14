@@ -20,14 +20,14 @@
     /* Fuentes */
     --font-primary: Georgia, serif;
 
-    /* Tamaños */
-    --font-size-sm: 0.875rem;
-    --font-size-md: 1rem;
-    --font-size-lg: 1.25rem;
-    --font-size-xl: 1.5rem;
-    --font-size-2xl: 2rem;
-    --font-size-3xl: 3rem;
-    --font-size-4xl: 4rem;
+/* Tamaños */
+--font-size-sm: 0.875rem;   /* sin cambio */
+--font-size-md: 1rem;       /* sin cambio */
+--font-size-lg: 1.15rem;    /* antes 1.25rem */
+--font-size-xl: 1.3rem;     /* antes 1.5rem */
+--font-size-2xl: 1.65rem;   /* antes 2rem */
+--font-size-3xl: 2.25rem;   /* antes 3rem */
+--font-size-4xl: 2.75rem;   /* antes 4rem */
 
     /* Anchos de tarjetas (unificados acá desde un :root duplicado) */
     --ancho-card: 400px;
@@ -84,6 +84,17 @@ h6{
 
 p{
     font-size: var(--font-size-md);
+}
+
+/*------------- AJUSTE DE PANTALLA ---------------*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: clip;   /* red de seguridad; no rompe el navbar fijo */
 }
 
 /*-------------------------------------*/
@@ -1646,7 +1657,7 @@ body {
 }
 
 
-
+/* ================= FILTROS ================ */
 
 
 .filtro-container {
