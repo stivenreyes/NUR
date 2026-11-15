@@ -76,7 +76,7 @@ let EXPLORADOR = {
                 {                 
                     nombre: "Super velocidad",
                     descripcionGrimorio: "Movilidad extrema.",
-                    novato: "+2 velocidad. 1 vez/día corres el doble sin detenerte",
+                    novato: "+2 velocidad. 1 vez/día corres el doble sin detenerte, mas 2 a la esquiva",
                     experto: "Proeza: esquivar y moverte 1m",
                     maestro: "Proeza: esquivar y moverte 3m",
                     hechizos: []                   
@@ -84,7 +84,7 @@ let EXPLORADOR = {
                 {                 
                     nombre: "Ir en contra del tiempo",
                     descripcionGrimorio: "Manipulación del tiempo en combate.",
-                    novato: "1 vez por escena tienes una acción extra",
+                    novato: "1 vez por escena tienes una acción extra, mas 1 a la esquiva",
                     experto: "Puedes salvar a alguien en el último momento",
                     maestro: "Evitas fuego amigo gastando 5 Nur",
                     hechizos: []                   

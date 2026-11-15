@@ -380,7 +380,7 @@ let HECHICERO = {
           alcanceMaximo: "1 m"
         },
         {
-          nombreHechizo: "Remolino guardian",
+          nombreHechizo: "Remolino guardián",
           nivelHechizo: "Novato",
           descripcion: "Crea un remolino alrededor tuyo en 1m. que evita que cualquiera entre  ",
           tipoHechizo: "Soporte",
@@ -398,31 +398,43 @@ let HECHICERO = {
           alcanceMaximo: "1 m"
         },
         {
-          nombreHechizo: "Rafaga de viento",
-          nivelHechizo: "Novato",
-          descripcion: "Lanzas una rafaga cortante que hace daño de 1d6+inteligencia en el area de un cono",
-          tipoHechizo: "Ataque",
-          costoMana: 2,
-          dificultad: 15,
-          alcanceMaximo: "3 m"
-        },
-        {
-          nombreHechizo: "Remolino prisión",
-          nivelHechizo: "Novato",
-          descripcion: "Lanza una rafaga en forma de flecha",
-          tipoHechizo: "Curación",
-          costoMana: 2,
-          dificultad: 12,
-          alcanceMaximo: "1 m"
-        },
-        {
           nombreHechizo: "Tunel de flechas",
           nivelHechizo: "Novato",
-          descripcion: "Lanza una rafaga en forma de flecha",
-          tipoHechizo: "Curación",
+          descripcion: "Lanza un tunel de dos metros de diametro de aire que se transforman en flechas 2d6 de daño, máximo dos objetivos",
+          tipoHechizo: "Ataque",
+          costoMana: "3",
+          dificultad: "Inteligencia vs esquiva de los objetivos",
+          alcanceMaximo: "5"
+        },
+
+        {
+              nombreHechizo: "Rafaga de viento",
+              nivelHechizo: "Experto",
+              descripcion: "Lanzas una rafaga cortante que hace daño de 2d6+inteligencia en el area de un cono.",
+              tipoHechizo: "Ataque",
+              costoMana: "4",
+              dificultad: "15 / 15 para esquivar",
+              alcanceMaximo: "3 m"
+            },
+            {
+              nombreHechizo: "Remolino prisión",
+              nivelHechizo: "Experto",
+              descripcion: "Crea un remolino alrededor de una victima en 1m gastando 4 de Nur , este remolino no se mueve con la victima, duracion del remolino 1d3 turnos. que evita que la victima se mueva, pero aun podrá esquivar entre y evita que la victima haga ataques fisicos y magicos hacia fuera del remolino. vida del remolino de 50. se puede atacar hacia adentro. si se falla aun queda el remolino ahi el cual encerrara a cualquiera que entre",
+              tipoHechizo: "Ataque",
+              costoMana: "4",
+              dificultad: "Inteligencia vs esquiva de la victima",
+              alcanceMaximo: "5 m"
+            },
+
+
+                {
+          nombreHechizo: "Halcón de viento",
+          nivelHechizo: "Experto",
+          descripcion: "Lanza un Halcon que puede viajar por el espacio para ir contra un enemigo cercano, haciendo 2d6 de daño, el halcon puede esquivar obstáculos en el camino",
+          tipoHechizo: "Ataque",
           costoMana: 2,
           dificultad: 12,
-          alcanceMaximo: "1 m"
+          alcanceMaximo: "13 m"
         },
       ]
     },

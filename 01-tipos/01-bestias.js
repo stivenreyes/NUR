@@ -185,7 +185,7 @@ let bestias = [
     tamaño: "5",
     armadura: "0",
     Destreza: "1",Precision: "2",pelea: "0",percepción: "0",comunicación: "1",
-    fuerza: "-1",voluntad: "3",constitución: "-2",Instinto: "4",
+    fuerza: "-1",voluntad: "3", constitucion: "-2",Instinto: "4",
     enfoques: "Curación, Trepar",
     Habilidades: `
     <strong> Hechizo baba sanadora </strong> <br>
@@ -302,7 +302,7 @@ let bestias = [
 
     <strong> Amigo espinoso </strong> <br>
     Una vez por dia puede sin gastar acción y en cualquier momento hacer que su Nurkano vinculado, le aparezcan púas por todo 
-    su cuerpo hiriendo a los que estén cerca de 1 metro con 2d6 y dandole una armadura temporal de 10 `,
+    su cuerpo hiriendo a los que estén cerca de 1 metro con 2d6 y dándole una armadura temporal de 10 `,
     ataque: "Mordida +1", daño: "1D6", dureza: "3", alcance: "1"
 },
 
@@ -415,7 +415,11 @@ let bestias = [
     Una vez al dia usando su cola puede repetir un ataque fallido y hacer un ataque extra con la misma.<br><br>
     
     <strong> Puños de Nur </strong> Rango 7. <br>
-    Puede hacer daño mágico, y gastando 2 de Nur hacer que su golpe se extienda por 3 metros`,
+    Puede hacer daño mágico, y gastando 2 de Nur hacer que su golpe se extienda por 3 metros
+    
+    <strong> Distracción con monerías </strong> <br>
+    El mono albino puede distraer con mas 2 en comunicación a alguien para generar hasta un -2 en su próxima acción, 
+    ya sea acción de reacción <br><br>`,
     ataque: "puños +3", daño: "3d6", dureza: "3", alcance: "1"
   },
 
@@ -455,7 +459,7 @@ let bestias = [
     <strong> Lengua sanadora </strong> <br> 
     Cura 2D6 (Veltar) o 1D6+ 2 (aliado) distancia: 5 metros -3 de Nur<br> <br> 
      
-    <strong> Experta en cirugias</strong> <br>
+    <strong> Experta en cirugías</strong> <br>
     bonus cirugía +6 y podrá relanzar el dado especial si primero obtiene éxito<br> <br> 
     
     <strong> Estomago sanador</strong> <br> 
@@ -503,8 +507,12 @@ let bestias = [
     
     <strong> múltiples cerebros </strong> <br>
     Describe como puede ayudar a su Nurkano vinculado a resolver algún problema, o tratando de entender o 
-    recordar algo con mas 2 a inteligencia (no funciona para lanzar hechizos).`,
-    ataque: "Latigo +1", daño: "1D6", dureza: "4", alcance: "1"
+    recordar algo con mas 2 a inteligencia (no funciona para lanzar hechizos).
+    
+    
+    <strong> Patrones de terror </strong> <br> 
+    El Pulpo cíclope podrá cambiar el tono de su piel por formas extrañas y con movimientos de sus tentáculo para tener 3 para intimidar con comunicación <br><br>`,
+    ataque: "Látigo +1", daño: "1D6", dureza: "4", alcance: "1"
   },
 
   { 
@@ -825,7 +833,10 @@ let bestias = [
     Se realiza con una tirada de Instinto con dificultad 12. El dado especial representa cuántos metros de baba deja.<br>
 
     Para liberarse de la baba, la víctima debe superar una tirada enfrentada de Fuerza contra la resistencia de la baba, determinada 
-    por la primera tirada.<br><br>`,
+    por la primera tirada.<br><br>
+    
+    <strong> Mirada directa </strong> <br>
+    Mas 3 para agradar con comunicación<br><br>`,
 
     ataque: "Mordidas +5",
     daño: "1D6",

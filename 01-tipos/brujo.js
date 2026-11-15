@@ -367,7 +367,7 @@ let BRUJO = {
               alcanceMaximo: "5"
             },
             {
-              nombreHechizo: "Remolino guardian",
+              nombreHechizo: "Remolino guardián",
               nivelHechizo: "Novato",
               descripcion: "Crea un remolino alrededor tuyo en 1m gastando 2 de Nur o de 2m gastando 6 de Nur, este remolino no se mueve con el invocador, duracion del remolino 1d3 turnos. que evita que cualquiera entre y resiste ataques fisicos y magicos vida del remolino de 40. se puede atacar desde adentro ",
               tipoHechizo: "Soporte",

@@ -7,17 +7,17 @@ let MEDIADOR = {
         {
           nombre: "Erudito mental",
           descripcionGrimorio: "Manipulación mental, percepción emocional y control psíquico.",
-          novato: "Logras sentir las emociones de cualquier persona que sepas su nombre y la hayas visto al menos una vez en un radio de 5 km <br> Logras un +3 para calmar a cualquier druida que este a vista <br> Puedes poseer druidas de un rango inferior al tuyo, puedes hacer solo 2 veces por combate, poseerlos un turno, y quedar luego desmayado un turno, la victima no quedara inconsiente <br> Aprendes un nuevo talento",
+          novato: "Logras sentir las emociones de cualquier persona que sepas su nombre y la hayas visto al menos una vez en un radio de 5 km <br> Logras un +3 para calmar a cualquier druida que este a vista <br> Puedes poseer druidas de un rango inferior al tuyo, puedes hacer solo 2 veces por combate, poseerlos un turno, y quedar luego desmayado un turno, la victima no quedara inconsciente <br> Aprendes un nuevo talento",
           experto: "Puedes hacer que todos a tu alrededor hablen telepáticamente en un radio de 5 metros <br> Puedes enviarle mensajes solo a alguien que hayas marcado (solo se puede un druida) en un radio de 2 km",
           maestro: "Puedes poseer druidas de un rango inferior al tuyo, puedes hacer solo 4 veces por combate, poseerlos un turno, y quedar luego desmayado un turno, la victima no quedara inconsciente",
           hechizos: []
         },
         {
           nombre: "Orador de la verdad/mentira",
-          descripcionGrimorio: "Dominio social basado en la verdad o el engaño.",
-          novato: "+2 al enfoque elegido, doble influencia, acciones sociales sin costo",
-          experto: "+3 al enfoque, mejoras sociales con bestia",
-          maestro: "+4 al enfoque, triple influencia, dos acciones sociales gratis",
+          descripcionGrimorio: "Dominio social basado en la verdad o el engaño. Elije una de las dos",
+          novato: "+2 al dominio elegido (Verdad o mentira), ganas el doble de influencia con los demás, mas 2 para la tirada de comunicación con tu bestia y ganas con tu bestia siempre mas 1 unidad",
+          experto: "+3 al dominio elegido (Verdad o mentira), mas 3 para la tirada de comunicación con tu bestia y ganas con tu bestia siempre mas 2 unidades",
+          maestro: "+4 al dominio elegido (Verdad o mentira), triple influencia, dos acciones sociales gratis",
           hechizos: []
         }
       ]

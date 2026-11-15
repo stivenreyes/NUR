@@ -99,7 +99,7 @@ let RITUALISTA = {
                     ]
                 },
                 {
-                    nombre: "Grimorio sello A",
+                    nombre: "Grimorio sellos nocturnos",
                     descripcionGrimorio: "Requisito: Ritualista sellador <br> Encierro y tortura mágica.",
                     novato: "Aprendes 1 hechizo",
                     experto: "Aprendes 1 hechizo",
@@ -135,7 +135,7 @@ let RITUALISTA = {
                     ]
                 },
                 {
-                    nombre: "Grimorio sello B",
+                    nombre: "Grimorio sellos diurnos",
                     descripcionGrimorio: "Requisito: Ritualista sellador <br> Sellado de vida, partes y habilidades.",
                     novato: "Aprendes 1 hechizo",
                     experto: "Aprendes 1 hechizo",
@@ -197,9 +197,13 @@ let RITUALISTA = {
                 {
                     nombre: "Sangre maldita",
                     descripcionGrimorio: "Requisito: Ritualista pactador <br> Una sola vez por dia, te haces daño y la sangre la usas en una ceremonia para bañar sobre un arma, tus manos o las de alguien, este daño se reflejara como daño maldito depende de cuanta vida pierdes haciendo este ritual y este daño adicional se podra aplicar solo una vez <br> Dif 13 -5 de Nur",
-                    novato: "Lanzas 4d6 de daño para ti y tambien es el daño maldito que hara tu sangre. Podras hacer hasta dos ceremonias",
-                    experto: "Lanzas 6d6 de daño para ti y tambien es el daño maldito que hara tu sangre. Podras hacer hasta dos ceremonias",
+
+                    novato: "Lanzas 4d6 de daño para ti y también es el daño maldito que hará tu sangre. Podrás hacer hasta dos ceremonias  <br> Gastando un punto de Nur, puedes hacer que tu sangre sea mas fácil de rastrear por bestias con un +4 a la tirada y hasta duplicar la distancia para ser encontrada ",
+
+                    experto: "Lanzas 6d6 de daño para ti y también es el daño maldito que hará tu sangre. Podrás hacer hasta dos ceremonias",
+
                     maestro: "Todo daño se vuelve maldito",
+                    
                     hechizos: []
                 },
                 {
