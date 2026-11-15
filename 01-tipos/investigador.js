@@ -100,11 +100,11 @@ let INVESTIGADOR = {
                     solo estas cambiando tu físico no toda tu mentalidad para eso, eso si, tendrás +3 con especies 
                     similares a tu forma y +1 a especies diferentes con tirada de trato con animales/comunicación<br>
                     y no tendrás mas vida que tu en estado Nurkano, si llegas a tener en tu estado animal 0 de vida
-                    te destranformas restando la vida que perdiste, si también llegas a 0 tu personaje muere`,
+                    te destransformas restando la vida que perdiste, si también llegas a 0 tu personaje muere`,
 
-                    novato: "Transformación tamaño 3-10 por 1d6 turnos (2 Nur)",
-                    experto: "Transformación tamaño 3-15 por 1d6 turnos (5 Nur)",
-                    maestro: "Transformación tamaño 3-20 por 1d6 turnos (8 Nur)",
+                    novato: "Transformación tamaño 3-10 por 1d6 turnos (2 Nur) dificultad inteligencia / zoología 12",
+                    experto: "Transformación tamaño 3-15 por 1d6 turnos (5 Nur) dificultad inteligencia / zoología 14",
+                    maestro: "Transformación tamaño 3-20 por 1d6 turnos (8 Nur) dificultad inteligencia / zoología 17",
                     hechizos: []                   
                 },
                 {                 
@@ -118,14 +118,16 @@ let INVESTIGADOR = {
                 {                 
                     nombre: "Hablar con bestias desconocidas",
                     descripcionGrimorio: `
-                    Habilidad para hablar con las bestias mas fácilmente de acuerdo a su tipo: 
+                    Habilidad para hablar con las bestias mas fácilmente de acuerdo a su tipo: <br>
                     Mamiferos <br> 
                     Anfibios <br> 
                     Aves <br> 
                     Reptiles <br> 
                     Moluscos <br> 
                     Crustaceos <br> 
-                    Peces <br> 
+                    Peces <br>
+                    Miriápodos <br> 
+                    Insectos <br> 
                     Cefalópodos `,
                     novato: "+3 hablar con bestias y elije dos tipos",
                     experto: "+5 hablar con bestias y elije dos tipos",
