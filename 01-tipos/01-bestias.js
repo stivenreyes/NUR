@@ -191,7 +191,7 @@ let bestias = [
     <strong> Hechizo baba sanadora </strong> <br>
     Puede curar a su Nurkano vinculado 2D6 o a un aliado 1D6 + voluntad Dificultad 12 -2 de Nur<br><br>
 
-    <strong> Baba para cirugias </strong> <br>
+    <strong> Baba para cirugías </strong> <br>
     En cirugía la babosa plateada tiene +6 a la tirada de curación. <br><br>
 
     <strong> Baba antídoto </strong> <br>
@@ -550,7 +550,7 @@ let bestias = [
     <strong> Montura </strong> <br> 
     Tamaño 15. <br><br>
 
-    <strong> Montura acuatica </strong> <br> 
+    <strong> Montura acuática </strong> <br> 
     Da oxígeno bajo el agua y transporta aliados según tamaño`,
     ataque: "Tenazas +1", daño: "3D6", dureza: "6", alcance: "1"
   },

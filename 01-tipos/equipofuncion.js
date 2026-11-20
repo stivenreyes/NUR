@@ -1,4 +1,3 @@
-
 const info = document.getElementById("info");
 
 const botones = [
@@ -14,13 +13,33 @@ const botones = [
     ["btn10", informacion10]
 ];
 
+// Función para mostrar la información y activar el botón
+function mostrarInfo(id, informacion) {
+
+    // Mostrar información
+    info.innerHTML = informacion;
+
+    // Quitar active de todos los botones
+    botones.forEach(([otroId]) => {
+        document.getElementById(otroId).classList.remove("active");
+    });
+
+    // Activar el botón seleccionado
+    const botonActivo = document.getElementById(id);
+
+    if (botonActivo) {
+        botonActivo.classList.add("active");
+    }
+}
+
+// Eventos de los botones
 botones.forEach(([id, informacion]) => {
     const boton = document.getElementById(id);
 
     boton.addEventListener("click", () => {
-        info.innerHTML = informacion;
+        mostrarInfo(id, informacion);
     });
 });
 
-// Mostrar el Guerrero al cargar la página
-info.innerHTML = informacion1;
+// Iniciar con el Guerrero seleccionado
+mostrarInfo("btn1", informacion1);

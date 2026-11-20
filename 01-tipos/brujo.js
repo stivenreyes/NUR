@@ -12,9 +12,9 @@ let BRUJO = {
           maestro: "Mejoras o creas un hechizo de nivel experto de un grimorio de curación, discutelo con tu master",
           hechizos: [            
             {
-              nombreHechizo: "Daga de cirugias",
+              nombreHechizo: "Daga de cirugías",
               nivelHechizo: "Experto",
-              descripcion: "Ataque magico de daño 5d6, con el atributo pelea",
+              descripcion: "Ataque mágico de daño 5d6, con el atributo pelea",
               tipoHechizo: "Ataque",
               costoMana: 4,
               dificultad: "-",
@@ -271,7 +271,7 @@ let BRUJO = {
         },
         {
           nombre: "Pocion de guerra",
-          descripcionGrimorio: "Requisitos: (Brujo Botánico rango 5) <br> puedes crear una pocion de rango 3 muy poderosa que requerirá tiempo y preparacion para alcanzar su punto máximo, empezara como una simple pocion, requerirá horas y dias de trabajo arduo ",
+          descripcionGrimorio: "Requisitos: (Brujo Botánico rango 5) <br> puedes crear una pocion de rango 3 muy poderosa que requerirá tiempo y preparación para alcanzar su punto máximo, empezara como una simple pocion, requerirá horas y dias de trabajo arduo ",
           novato: "Tu bestia podrá almacenar otra pocion asi (adicional si ya cuenta con una pocion asi)",
           experto: "...",
           maestro: "...",

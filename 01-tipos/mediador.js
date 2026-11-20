@@ -15,9 +15,12 @@ let MEDIADOR = {
         {
           nombre: "Orador de la verdad/mentira",
           descripcionGrimorio: "Dominio social basado en la verdad o el engaño. Elije una de las dos",
-          novato: "+2 al dominio elegido (Verdad o mentira), ganas el doble de influencia con los demás, mas 2 para la tirada de comunicación con tu bestia y ganas con tu bestia siempre mas 1 unidad",
-          experto: "+3 al dominio elegido (Verdad o mentira), mas 3 para la tirada de comunicación con tu bestia y ganas con tu bestia siempre mas 2 unidades",
-          maestro: "+4 al dominio elegido (Verdad o mentira), triple influencia, dos acciones sociales gratis",
+
+          novato: "+2 al dominio elegido (Verdad o mentira), ganas el doble de influencia con los demás, mas 2 para la tirada de comunicación con tu bestia y ganas con tu bestia siempre mas 1 unidad. <br>  cuando intimidas, persuades o engañas y tienes exito a alguien este tendra -3 para ir en contra del mensaje que quisite dejarle en la mente <br>  <br>  ",
+
+          experto: "+3 al dominio elegido (Verdad o mentira), mas 3 para la tirada de comunicación con tu bestia y ganas con tu bestia siempre mas 2 unidades . <br> cuando intimidas, persuades o engañas y tienes exito a alguien este tendra -4 para ir en contra del mensaje que quisite dejarle en la mente",
+
+          maestro: "+4 al dominio elegido (Verdad o mentira), triple influencia, dos acciones sociales gratis . <br> cuando intimidas, persuades o engañas y tienes exito a alguien este tendra -5 para ir en contra del mensaje que quisite dejarle en la mente",
           hechizos: []
         }
       ]
@@ -73,6 +76,15 @@ let MEDIADOR = {
           maestro: "Olvidar especialidad y más habilidades",
           hechizos: []
         },
+        {
+          nombre: "Escudo de palabras",
+          descripcionGrimorio: "...",
+          novato: "mas 2 en voluntad para evitar se atacado dando -3 a su victima",
+          experto: "...",
+          maestro: "...",
+          hechizos: []
+        },
+
         {
           nombre: "Curar daño psíquico",
           descripcionGrimorio: "Requisito: Erudito mental.<br> Puedes enfocarte en el daño psicológico, y ayudar a hacer mas sesiones de terapia al dia",

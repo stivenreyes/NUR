@@ -724,7 +724,7 @@ let armadurasbestia = [
         nombre: "Casco de coral",
         precio: "70L",
         proteccion: "20",
-        requisitos: "Tamaño 6 a 10, Bestia acuatica",
+        requisitos: "Tamaño 6 a 10, Bestia acuática",
         tipoProteccion: "Normal",
         rango: "2"
     },
@@ -823,7 +823,7 @@ let miscelanea = [
         nombre: "1 Material para herbolaria",
         precio: "20 L",
         tipo: "Normal",
-        descripcion: "Material para crear pociones, venenos y antidotos",
+        descripcion: "Material para crear pociones, venenos y antídotos",
         contenido: "plantas, frutas secas, flores secas..."
     },
 

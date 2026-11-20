@@ -13,7 +13,7 @@ let HECHICERO = {
       hechizos: [         {
           nombreHechizo: "fénix legendarios de fuego",
           nivelHechizo: "Legendario",
-          descripcion: "Una vez por dia, puedes encender una llama interna con tu bestia, sin gastar acción. luego de usar 3 hechizos de fuego, podras por una acción tu y tu bestia convertirsen en dos grandes fénix de fuego (30 de tamaño), quien toque cada uno de esos fénix puede recibir 7d6+ inteligencia o instinto de curación o daño magico. dura solo un turno",
+          descripcion: "Una vez por dia, puedes encender una llama interna con tu bestia, sin gastar acción. luego de usar 3 hechizos de fuego, podras por una acción tu y tu bestia convertirsen en dos grandes fénix de fuego (30 de tamaño), quien toque cada uno de esos fénix puede recibir 7d6+ voluntad o instinto de curación o daño mágico. dura solo un turno",
           tipoHechizo: "Ataque",
           costoMana: "0",
           dificultad: "Inteligencia + 5 vs esquiva",
@@ -133,7 +133,7 @@ let HECHICERO = {
           descripcion: "Inflige 12D6 daño y te vuelve invulnerable temporalmente",
           tipoHechizo: "Ataque",
           costoMana: "5",
-          dificultad: "Inteligencia vs destreza",
+          dificultad: "Inteligencia vs esquiva",
           alcanceMaximo: "1"
         }
       ]
@@ -148,7 +148,7 @@ let HECHICERO = {
         {
           nombreHechizo: "Silbido de rayo",
           nivelHechizo: "Novato",
-          descripcion: "Observas a tu victima y lo atacas con un trueno, puedes encadenar tu ataque a otros objetivos hasta max 4 solo si los puedes ver y que estén cerca de min 2 metros unos de los otros, solo se lanza para acertar al primer objetivo, las cadenas son automáticas <br> El daño será de 2D6 de daño + inteligencia repartidos entre los objetivos",
+          descripcion: "Observas a tu victima y lo atacas con un trueno, puedes encadenar tu ataque a otros objetivos hasta max 4 solo si los puedes ver y que estén cerca de min 2 metros unos de los otros, solo se lanza para acertar al primer objetivo, las cadenas son automáticas <br> El daño será de 2D6 de daño + voluntad repartidos entre los objetivos",
           tipoHechizo: "Ataque",
           costoMana: "2",
           dificultad: "Inteligencia vs esquiva",
@@ -166,7 +166,7 @@ let HECHICERO = {
         {
           nombreHechizo: "Rayo en el rostro",
           nivelHechizo: "Novato",
-          descripcion: "En vez de la proeza doble ataque puede usar este hechizo, luego de atacarlo con un hechizo de rayo tu objetivo debe estar a un metro para hacerlo ver al cielo donde caerá un rayo en su rostro haciéndole 4D6 +  inteligencia de daño ",
+          descripcion: "En vez de la proeza doble ataque puede usar este hechizo, luego de atacarlo con un hechizo de rayo tu objetivo debe estar a un metro para hacerlo ver al cielo donde caerá un rayo en su rostro haciéndole 4D6 +  voluntad de daño ",
           tipoHechizo: "Ataque",
           costoMana: "...",
           dificultad: "...",
@@ -184,7 +184,7 @@ let HECHICERO = {
         {
           nombreHechizo: "Cadena de dos",
           nivelHechizo: "Experto",
-          descripcion: "Una vez ataques a un objetivo puedes encadenar tu ataque a otro objetivo solo si lo puedes ver y que esté cerca de min 8 metros de la primera victima, solo se lanza para acertar al primer objetivo, las cadenas son automáticas <br> El daño será de 4D6 de daño + inteligencia repartidos entre los objetivos",
+          descripcion: "Una vez ataques a un objetivo puedes encadenar tu ataque a otro objetivo solo si lo puedes ver y que esté cerca de min 8 metros de la primera victima, solo se lanza para acertar al primer objetivo, las cadenas son automáticas <br> El daño será de 4D6 de daño + voluntad repartidos entre los objetivos",
           tipoHechizo: "Ataque",
           costoMana: "2",
           dificultad: "Inteligencia vs esquiva",
@@ -410,7 +410,7 @@ let HECHICERO = {
         {
               nombreHechizo: "Rafaga de viento",
               nivelHechizo: "Experto",
-              descripcion: "Lanzas una rafaga cortante que hace daño de 2d6+inteligencia en el area de un cono.",
+              descripcion: "Lanzas una rafaga cortante que hace daño de 2d6+voluntad en el area de un cono.",
               tipoHechizo: "Ataque",
               costoMana: "4",
               dificultad: "15 / 15 para esquivar",

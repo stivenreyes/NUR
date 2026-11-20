@@ -7,7 +7,8 @@ let CAOTICO = {
         {
           nombre: "Loco del caos",
           descripcionGrimorio: "Especialista en destrucción mágica caótica y manipulación del Nur.",
-          novato: "Todo el daño que haces es mágico ",
+          novato: "Todo el daño que haces con tus hechizos es mágico ",
+
           experto: `Tus explosiones de Nur ya no afectaran no solo a tu bestia sino hasta dos bestias vinculadas de tu elección<br> <br> 
           Aprendes 2 hechizos uno novato y otro experto del grimorio loco del caos y si no tienes aprendida el talento, lo adquieres <br> <br> 
           Tus hechizos evolucionaran en: 
@@ -20,7 +21,7 @@ let CAOTICO = {
         },
         {
           nombre: "Roca del caos",
-          descripcionGrimorio: "Todo el daño mágico que recibes lo resistes y lo reduces a la mitad. APrendes otro talento",
+          descripcionGrimorio: "Todo el daño mágico que recibes lo resistes y lo reduces a la mitad. Aprendes otro talento",
           novato: "Resistes daño mágico (mitad) y lo transformas en Nur con tu bestia",
           experto: "Puedes repartir daño mágico entre tú y tu bestia",
           maestro: "...",
@@ -44,31 +45,32 @@ let CAOTICO = {
               descripcion: "Explosión que afecta 3 objetivos en área. haces 1d6 de daño mas inteligencia",
               tipoHechizo: "Ataque",
               costoMana: 2,
-              dificultad: `16, 14 para esquivar `,
+              dificultad: `16, Las victimas esquivan dif 13 `,
               alcanceMaximo: "8 m"
             },
             {
               nombreHechizo: "Catapulta de Nur",
               nivelHechizo: "Novato",
               descripcion: "Debes poder mirar a tu objetivo para marcarlo con dos puntos de Nur, luego puedes lanzarle un bola de Nur desde donde quieras hasta un máximo de 15 metros, la bola explotara y afectara 3 objetivos druidas y bestias (solo terrestres) en un rango de 1 metro a la redonda del objetivo marcado con 1D6 de daño por punto gastado + inteligencia , una vez hecho el hechizo la marca de Nur se desaparece",
+
               tipoHechizo: "Ataque",
               costoMana: "2-3",
-              dificultad: 16,
+              dificultad: "16 <br> Las victimas esquivan dif 13",
               alcanceMaximo: "15 m"
             },
             {
               nombreHechizo: "Columna de Nur",
               nivelHechizo: "Novato",
-              descripcion: "Columna vertical de daño en área",
+              descripcion: "Puedes hacer una columna de nur, afectando 3objetivos druidas y bestias (terrestres, aéreos y acuáticos) en un radio de 1 metros a la redonda y 5 metros hacia arriba y debajo de ti, con 1D6 por punto de Nur gastado + inteligencia",
               tipoHechizo: "Ataque",
               costoMana: "1-3",
-              dificultad: "16",
-              alcanceMaximo: "-"
+              dificultad: "16 <br> Las victimas esquivan dif 13",
+              alcanceMaximo: "1m x 5m"
             },
             {
               nombreHechizo: "Quemar Nur",
               nivelHechizo: "Experto",
-              descripcion: "Drena Nur y causa daño duplicado",
+              descripcion: "Toca con tus manos a un druida y lanzas 1d6 + inteligencia. y esto es lo que le quitaras de nur al objetivo y será el doble lo que hagas de daño. si el objetivo se queda sin nur, no se puede activar el hechizo",
               tipoHechizo: "Ataque",
               costoMana: 4,
               dificultad: 16,
@@ -89,7 +91,7 @@ let CAOTICO = {
               descripcion: "Podrás saltar hasta 5 metros hacia arriba tuyo y explotar en el aire ",
               tipoHechizo: "Ataque",
               costoMana: 2,
-              dificultad: "10. Las victimas esquivan dif 13",
+              dificultad: "10. <br> Las victimas esquivan dif 13",
               alcanceMaximo: "12 m"
             },
             {
@@ -98,7 +100,7 @@ let CAOTICO = {
               descripcion: "Explosión en forma de cruz",
               tipoHechizo: "Ataque",
               costoMana: 2,
-              dificultad: "10. Las victimas esquivan dif 13 " ,
+              dificultad: "10. <br> Las victimas esquivan dif 13 " ,
               alcanceMaximo: "12 m"
             },
             {
@@ -107,7 +109,7 @@ let CAOTICO = {
               descripcion: "Podrás hacer una recta frente a ti de 8 metros donde todos los objetivos terrestres sean afectados",
               tipoHechizo: "Ataque",
               costoMana: 2,
-              dificultad: 10,
+              dificultad: "10. <br> Las victimas esquivan dif 13 ",
               alcanceMaximo: "12 m"
             },
             {
@@ -116,7 +118,7 @@ let CAOTICO = {
               descripcion: "Reúnes Nur del lugar máximo de 8 y Nur de aliados máximo 10, eso te tomara dos turnos, la reserva que hayas reunido divídela en 2 y ese es el numero de dados d6 de daño que haces a un objetivo, al haber expulsado de tu boca un gran rayo de Nur que quema y llegado el caso desintegra el objetivo que se cruce ",
               tipoHechizo: "Ataque",
               costoMana: "6",
-              dificultad: "18",
+              dificultad: "18 <br> Las victimas esquivan dif 13",
               alcanceMaximo: "5 m"
             },
             {
@@ -142,17 +144,20 @@ let CAOTICO = {
         {
           nombre: "Conocimiento en grimorios",
           descripcionGrimorio: "Requisito: loco del caos (novato) <br> Mejora o creación de hechizos.",
-          novato: "Mejora hechizo (discutelo con tu master)",
-          experto: "Crea hechizo (discutelo con tu master)",
+          novato: "Mejora hechizo (discútelo con tu master)",
+          experto: "Crea hechizo (discútelo con tu master)",
           maestro: "...",
           hechizos: []
         },
         {
           nombre: "Imán de seres del Nur",
-          descripcionGrimorio: "Requisito: loco del caos (novato) <br> Atrae enemigos cercanos.",
-          novato: "Atrae hasta 2 objetivos en 5 m",
-          experto: "...",
-          maestro: "...",
+          descripcionGrimorio: "Requisito: loco del caos (novato) <br> Atrae Nuritas o Bestias de tamaño 10 o menos cercanos hacia ti. si no hay obstáculos, de lo contrario reciben 1d6 de daño por obstáculo",
+          novato: "Atrae hasta 2 objetivos que puedas ver, o escuchar que estén en 5 m, hacia ti gastando 2 de nur",
+
+          experto: "Atrae hasta 3 objetivos que puedas ver, o escuchar que estén en 5 m, hacia ti gastando 3 de nur",
+
+          maestro: "Atrae hasta 4 objetivos que puedas ver, o escuchar que estén en 5 m, hacia ti gastando 4 de nur o Atrae 1 objetivo que puedas ver, o escuchar que estén en 8 m, hacia ti gastando 3 de nur",
+
           hechizos: []
         },
         {
@@ -174,7 +179,7 @@ let CAOTICO = {
         {
           nombre: "Transformar daño en Nur 🛡️",
           descripcionGrimorio: "Requisito: Roca del caos (novato) <br> Convierte daño mágico en energía.",
-          novato: "La mitad del daño magico que recibes lo puedes repartir entre mínimo dos aliados cercanos como Nur",
+          novato: "La mitad del daño mágico que recibes lo puedes repartir entre mínimo dos aliados cercanos como Nur",
           experto: "...",
           maestro: "...",
           hechizos: []
